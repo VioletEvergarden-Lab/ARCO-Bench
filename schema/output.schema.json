@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Candidate A response syntax; frozen parser enforces instance-specific domains",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_id", "decisions"],
+  "properties": {
+    "record_id": {"type": "string"},
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["mission_id", "uav_id", "held", "path_id", "depart_slot", "charge_blocks"],
+        "properties": {
+          "mission_id": {"type": "string"},
+          "uav_id": {"type": "string"},
+          "held": {"type": "boolean"},
+          "path_id": {"type": ["string", "null"]},
+          "depart_slot": {"type": ["integer", "null"], "minimum": 0},
+          "charge_blocks": {"type": "integer", "minimum": 0}
+        },
+        "allOf": [{
+          "if": {"properties": {"held": {"const": true}}},
+          "then": {"properties": {"path_id": {"const": null}, "depart_slot": {"const": null}, "charge_blocks": {"const": 0}}},
+          "else": {"properties": {"path_id": {"type": "string"}, "depart_slot": {"type": "integer", "minimum": 0}}}
+        }]
+      }
+    }
+  }
+}

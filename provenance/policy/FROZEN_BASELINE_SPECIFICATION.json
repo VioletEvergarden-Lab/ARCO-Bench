@@ -1,0 +1,41 @@
+{
+  "allowed_actions": [
+    "suffix hold",
+    "path choice",
+    "departure slot",
+    "post-service charge blocks"
+  ],
+  "candidate_priority": "one-step next-mission serviceability, then exact local L3 repair burden, L4 weighted tardiness, L5 delay-plus-charge wait, L6 service-plus-deadhead energy, deterministic IDs",
+  "core72_index_sha256": "25a100eb0b5bb65ee3ece76078d79a2bc8e11a9400c2b76063bb5258b41409eb",
+  "core72_runs_per_record": 1,
+  "date_frozen": "2026-08-14",
+  "failure_rule": "if no feasible option exists, hold current and all later missions on that UAV",
+  "fixed_skeleton": [
+    "mission-to-UAV assignment",
+    "per-UAV sequence",
+    "incoming deadhead path"
+  ],
+  "forbidden_inputs": [
+    "private evaluator records",
+    "oracle solutions",
+    "hidden labels",
+    "model outputs",
+    "scorer conclusions"
+  ],
+  "input_boundary": "FROZEN_PUBLIC_CORE72_ONLY",
+  "lookahead": "one immediate next mission on same UAV; feasibility existence only",
+  "mission_chain_priority": "descending count of urgent missions in remaining fixed suffix, then effective release, baseline departure, UAV ID, sequence index, mission ID",
+  "outcome_adaptive_tuning": false,
+  "record_count": 72,
+  "scientific_role": "DETERMINISTIC_RESOURCE_AWARE_SIMPLE_OPERATIONAL_POLICY_BASELINE",
+  "solver_or_verifier_during_generation": false,
+  "source_sha256": "a7142b588aa009e18d0bb0268c17d02bd504742bac8c8e3cb2e2b9834578295d",
+  "state": [
+    "per-UAV clock",
+    "per-UAV SOC",
+    "corridor calendar",
+    "pad calendar",
+    "charger calendar"
+  ],
+  "version": "candidate_a_v12p1_resource_aware_sequential_greedy_v1"
+}

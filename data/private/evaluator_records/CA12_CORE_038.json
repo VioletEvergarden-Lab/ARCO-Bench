@@ -1,0 +1,1816 @@
+{
+  "baseline": {
+    "artifact_flags": [
+      "ANALYSIS_ONLY",
+      "PREVIEW_NOT_RELEASE",
+      "NOT_A_BENCHMARK_REFERENCE",
+      "NO_MODEL_API"
+    ],
+    "claimed_changed_decisions": [],
+    "decisions": [
+      {
+        "charge_blocks": 0,
+        "depart_slot": 2,
+        "held": false,
+        "mission_id": "M_07230fd4a04b",
+        "path_id": "PATH_C_07230fd4a04b",
+        "uav_id": "U_b2738d5fd887"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 5,
+        "held": false,
+        "mission_id": "M_1fb9505e9aae",
+        "path_id": "PATH_C_1fb9505e9aae",
+        "uav_id": "U_b2738d5fd887"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 21,
+        "held": false,
+        "mission_id": "M_a05d6974837b",
+        "path_id": "PATH_C_710ee5844b19",
+        "uav_id": "U_b2738d5fd887"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 2,
+        "held": false,
+        "mission_id": "M_c4c7c26218d2",
+        "path_id": "PATH_C_c4c7c26218d2",
+        "uav_id": "U_c4c7c26218d2"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 7,
+        "held": false,
+        "mission_id": "M_b2738d5fd887",
+        "path_id": "PATH_C_943c5c88c573",
+        "uav_id": "U_c4c7c26218d2"
+      }
+    ],
+    "instance_id": "calv1_bc347e91c59a0532ad3666af",
+    "instance_sha256": "fc47caa8371334b899fb91762a031b5ea4eb8a8fcab56df93e73ecec15d170f6",
+    "intervention_sha256": "977708472007b2abddb4971f05dd007eb5e6d750d39083ac852ec6fb25e59e65",
+    "model_version": "deterministic_baseline::calibration_preintervention_baseline",
+    "plan_sha256": "87509541e040c830cd722400f0114b9c0bda95cd280220855adad2c53d9a180b",
+    "status": "CANDIDATE",
+    "strategy": "calibration_preintervention_baseline"
+  },
+  "gold_public_output": {
+    "decisions": [
+      {
+        "charge_blocks": 1,
+        "depart_slot": 2,
+        "held": false,
+        "mission_id": "MISSION_05",
+        "path_id": "PATH_05",
+        "uav_id": "UAV_01"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 7,
+        "held": false,
+        "mission_id": "MISSION_04",
+        "path_id": "PATH_09",
+        "uav_id": "UAV_01"
+      },
+      {
+        "charge_blocks": 1,
+        "depart_slot": 5,
+        "held": false,
+        "mission_id": "MISSION_01",
+        "path_id": "PATH_07",
+        "uav_id": "UAV_02"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 21,
+        "held": false,
+        "mission_id": "MISSION_03",
+        "path_id": "PATH_01",
+        "uav_id": "UAV_02"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 2,
+        "held": false,
+        "mission_id": "MISSION_02",
+        "path_id": "PATH_04",
+        "uav_id": "UAV_02"
+      }
+    ],
+    "record_id": "CA12_CORE_038"
+  },
+  "instance": {
+    "artifact_flags": [
+      "CERTIFICATE_FIRST_DEVELOPMENT_ONLY",
+      "NOT_FORMAL_CONFIRMATION",
+      "NO_MODEL_API"
+    ],
+    "assignment_order_contract": "FIXED_UAV_ASSIGNMENT_AND_FIXED_UAV_ORDER",
+    "deadhead_contract": "FIXED_REGISTERED_INCOMING_DEADHEAD_PATH",
+    "difficulty": "development_constructive_control",
+    "fleet": [
+      {
+        "available_slot": 2,
+        "battery_capacity_kwh": 22.0,
+        "charge_kwh_per_block": 0.95,
+        "compatible_layers": [
+          "L120_220",
+          "L220_320"
+        ],
+        "empty_energy_kwh_per_km": 0.145,
+        "initial_soc_kwh": 3.822246,
+        "legacy_vehicle_id": "CERTIFICATE_FIRST_DEVELOPMENT_ONLY",
+        "max_wind_level": 2,
+        "payload_capacity_kg": 7.0,
+        "payload_energy_kwh_per_km_kg": 0.012,
+        "reserve_kwh": 2.5,
+        "start_vertiport": "V_c4c7c26218d2",
+        "travel_time_coefficient": 0.86,
+        "uav_id": "U_c4c7c26218d2",
+        "uav_type": "fixed_wing_vtol_cargo_uav",
+        "unmanned": true,
+        "wind_energy_multiplier_per_level": 0.065
+      },
+      {
+        "available_slot": 2,
+        "battery_capacity_kwh": 16.0,
+        "charge_kwh_per_block": 1.2,
+        "compatible_layers": [
+          "L120_220",
+          "L220_320"
+        ],
+        "empty_energy_kwh_per_km": 0.1,
+        "initial_soc_kwh": 3.387263,
+        "legacy_vehicle_id": "CERTIFICATE_FIRST_DEVELOPMENT_ONLY",
+        "max_wind_level": 1,
+        "payload_capacity_kg": 4.0,
+        "payload_energy_kwh_per_km_kg": 0.026,
+        "reserve_kwh": 1.5,
+        "start_vertiport": "V_c4c7c26218d2",
+        "travel_time_coefficient": 1.0,
+        "uav_id": "U_b2738d5fd887",
+        "uav_type": "multirotor_cargo_uav",
+        "unmanned": true,
+        "wind_energy_multiplier_per_level": 0.11
+      }
+    ],
+    "horizon_slots": 42,
+    "instance_id": "calv1_bc347e91c59a0532ad3666af",
+    "instance_sha256": "fc47caa8371334b899fb91762a031b5ea4eb8a8fcab56df93e73ecec15d170f6",
+    "instance_version": "integrated_repair_phase_minus1d_instance_v1",
+    "max_charge_blocks": 3,
+    "missions": [
+      {
+        "destination_vertiport": "V_b2738d5fd887",
+        "due_slot": 8,
+        "expected_incoming_origin_vertiport": "V_c4c7c26218d2",
+        "incoming_deadhead": null,
+        "mission_id": "M_c4c7c26218d2",
+        "origin_vertiport": "V_c4c7c26218d2",
+        "path_options": [
+          {
+            "compatibility_evidence": {
+              "corridor_available": true,
+              "endpoint_continuous": true,
+              "layer": true,
+              "wind": true
+            },
+            "compatible": true,
+            "corridor_ids": [
+              "C_c4c7c26218d2"
+            ],
+            "distance_km": 1.248,
+            "edge_segments": [
+              {
+                "corridor_id": "C_c4c7c26218d2",
+                "duration_slots": 2,
+                "offset_slot": 0,
+                "wind_level": 0
+              }
+            ],
+            "energy_kwh": 0.188448,
+            "energy_provenance": "literature_bounded_synthetic_uav_payload_distance_wind_affine_v2",
+            "max_wind_level": 0,
+            "node_sequence": [
+              "V_c4c7c26218d2",
+              "V_b2738d5fd887"
+            ],
+            "path_id": "PATH_C_c4c7c26218d2",
+            "travel_slots": 2,
+            "travel_time_min_unrounded": 5.031
+          },
+          {
+            "compatibility_evidence": {
+              "corridor_available": true,
+              "endpoint_continuous": true,
+              "layer": true,
+              "wind": true
+            },
+            "compatible": true,
+            "corridor_ids": [
+              "C_b2738d5fd887"
+            ],
+            "distance_km": 0.936,
+            "edge_segments": [
+              {
+                "corridor_id": "C_b2738d5fd887",
+                "duration_slots": 2,
+                "offset_slot": 0,
+                "wind_level": 0
+              }
+            ],
+            "energy_kwh": 0.141336,
+            "energy_provenance": "literature_bounded_synthetic_uav_payload_distance_wind_affine_v2",
+            "max_wind_level": 0,
+            "node_sequence": [
+              "V_c4c7c26218d2",
+              "V_b2738d5fd887"
+            ],
+            "path_id": "PATH_C_b2738d5fd887",
+            "travel_slots": 2,
+            "travel_time_min_unrounded": 5.031
+          },
+          {
+            "compatibility_evidence": {
+              "corridor_available": true,
+              "endpoint_continuous": true,
+              "layer": true,
+              "wind": true
+            },
+            "compatible": true,
+            "corridor_ids": [
+              "C_5ad61db7cbfc"
+            ],
+            "distance_km": 1.056,
+            "edge_segments": [
+              {
+                "corridor_id": "C_5ad61db7cbfc",
+                "duration_slots": 3,
+                "offset_slot": 0,
+                "wind_level": 0
+              }
+            ],
+            "energy_kwh": 0.159456,
+            "energy_provenance": "literature_bounded_synthetic_uav_payload_distance_wind_affine_v2",
+            "max_wind_level": 0,
+            "node_sequence": [
+              "V_c4c7c26218d2",
+              "V_b2738d5fd887"
+            ],
+            "path_id": "PATH_C_5ad61db7cbfc",
+            "travel_slots": 3,
+            "travel_time_min_unrounded": 10.019
+          }
+        ],
+        "payload_kg": 0.5,
+        "preferred_construction_path_id": "PATH_C_c4c7c26218d2",
+        "priority": "routine",
+        "release_slot": 2,
+        "sequence_index": 0,
+        "uav_id": "U_c4c7c26218d2"
+      },
+      {
+        "destination_vertiport": "V_943c5c88c573",
+        "due_slot": 20,
+        "expected_incoming_origin_vertiport": "V_b2738d5fd887",
+        "incoming_deadhead": null,
+        "mission_id": "M_b2738d5fd887",
+        "origin_vertiport": "V_b2738d5fd887",
+        "path_options": [
+          {
+            "compatibility_evidence": {
+              "corridor_available": true,
+              "endpoint_continuous": true,
+              "layer": true,
+              "wind": true
+            },
+            "compatible": true,
+            "corridor_ids": [
+              "C_943c5c88c573"
+            ],
+            "distance_km": 0.832,
+            "edge_segments": [
+              {
+                "corridor_id": "C_943c5c88c573",
+                "duration_slots": 1,
+                "offset_slot": 0,
+                "wind_level": 1
+              }
+            ],
+            "energy_kwh": 0.133798,
+            "energy_provenance": "literature_bounded_synthetic_uav_payload_distance_wind_affine_v2",
+            "max_wind_level": 1,
+            "node_sequence": [
+              "V_b2738d5fd887",
+              "V_943c5c88c573"
+            ],
+            "path_id": "PATH_C_943c5c88c573",
+            "travel_slots": 1,
+            "travel_time_min_unrounded": 0.043
+          }
+        ],
+        "payload_kg": 0.5,
+        "preferred_construction_path_id": "PATH_C_943c5c88c573",
+        "priority": "routine",
+        "release_slot": 7,
+        "sequence_index": 1,
+        "uav_id": "U_c4c7c26218d2"
+      },
+      {
+        "destination_vertiport": "V_916b05cca802",
+        "due_slot": 22,
+        "expected_incoming_origin_vertiport": "V_b2738d5fd887",
+        "incoming_deadhead": null,
+        "mission_id": "M_1fb9505e9aae",
+        "origin_vertiport": "V_b2738d5fd887",
+        "path_options": [
+          {
+            "compatibility_evidence": {
+              "corridor_available": true,
+              "endpoint_continuous": true,
+              "layer": true,
+              "wind": true
+            },
+            "compatible": true,
+            "corridor_ids": [
+              "C_1fb9505e9aae"
+            ],
+            "distance_km": 1.04,
+            "edge_segments": [
+              {
+                "corridor_id": "C_1fb9505e9aae",
+                "duration_slots": 2,
+                "offset_slot": 0,
+                "wind_level": 0
+              }
+            ],
+            "energy_kwh": 0.11752,
+            "energy_provenance": "literature_bounded_synthetic_uav_payload_distance_wind_affine_v2",
+            "max_wind_level": 0,
+            "node_sequence": [
+              "V_b2738d5fd887",
+              "V_916b05cca802"
+            ],
+            "path_id": "PATH_C_1fb9505e9aae",
+            "travel_slots": 2,
+            "travel_time_min_unrounded": 5.05
+          },
+          {
+            "compatibility_evidence": {
+              "corridor_available": true,
+              "endpoint_continuous": true,
+              "layer": true,
+              "wind": true
+            },
+            "compatible": true,
+            "corridor_ids": [
+              "C_a05d6974837b"
+            ],
+            "distance_km": 8.32,
+            "edge_segments": [
+              {
+                "corridor_id": "C_a05d6974837b",
+                "duration_slots": 14,
+                "offset_slot": 0,
+                "wind_level": 1
+              }
+            ],
+            "energy_kwh": 1.043578,
+            "energy_provenance": "literature_bounded_synthetic_uav_payload_distance_wind_affine_v2",
+            "max_wind_level": 1,
+            "node_sequence": [
+              "V_b2738d5fd887",
+              "V_916b05cca802"
+            ],
+            "path_id": "PATH_C_a05d6974837b",
+            "travel_slots": 14,
+            "travel_time_min_unrounded": 61.35
+          },
+          {
+            "compatibility_evidence": {
+              "corridor_available": true,
+              "endpoint_continuous": true,
+              "layer": true,
+              "wind": true
+            },
+            "compatible": true,
+            "corridor_ids": [
+              "C_0f90b4415509"
+            ],
+            "distance_km": 1.04,
+            "edge_segments": [
+              {
+                "corridor_id": "C_0f90b4415509",
+                "duration_slots": 2,
+                "offset_slot": 0,
+                "wind_level": 0
+              }
+            ],
+            "energy_kwh": 0.11752,
+            "energy_provenance": "literature_bounded_synthetic_uav_payload_distance_wind_affine_v2",
+            "max_wind_level": 0,
+            "node_sequence": [
+              "V_b2738d5fd887",
+              "V_916b05cca802"
+            ],
+            "path_id": "PATH_C_0f90b4415509",
+            "travel_slots": 2,
+            "travel_time_min_unrounded": 5.05
+          }
+        ],
+        "payload_kg": 0.5,
+        "preferred_construction_path_id": "PATH_C_1fb9505e9aae",
+        "priority": "routine",
+        "release_slot": 5,
+        "sequence_index": 1,
+        "uav_id": "U_b2738d5fd887"
+      },
+      {
+        "destination_vertiport": "V_bc696d27a8e3",
+        "due_slot": 25,
+        "expected_incoming_origin_vertiport": "V_916b05cca802",
+        "incoming_deadhead": null,
+        "mission_id": "M_a05d6974837b",
+        "origin_vertiport": "V_916b05cca802",
+        "path_options": [
+          {
+            "compatibility_evidence": {
+              "corridor_available": true,
+              "endpoint_continuous": true,
+              "layer": true,
+              "wind": true
+            },
+            "compatible": true,
+            "corridor_ids": [
+              "C_710ee5844b19"
+            ],
+            "distance_km": 8.32,
+            "edge_segments": [
+              {
+                "corridor_id": "C_710ee5844b19",
+                "duration_slots": 1,
+                "offset_slot": 0,
+                "wind_level": 1
+              }
+            ],
+            "energy_kwh": 1.043578,
+            "energy_provenance": "literature_bounded_synthetic_uav_payload_distance_wind_affine_v2",
+            "max_wind_level": 1,
+            "node_sequence": [
+              "V_916b05cca802",
+              "V_bc696d27a8e3"
+            ],
+            "path_id": "PATH_C_710ee5844b19",
+            "travel_slots": 1,
+            "travel_time_min_unrounded": 0.05
+          }
+        ],
+        "payload_kg": 0.5,
+        "preferred_construction_path_id": "PATH_C_710ee5844b19",
+        "priority": "routine",
+        "release_slot": 21,
+        "sequence_index": 2,
+        "uav_id": "U_b2738d5fd887"
+      },
+      {
+        "destination_vertiport": "V_b2738d5fd887",
+        "due_slot": 4,
+        "expected_incoming_origin_vertiport": "V_c4c7c26218d2",
+        "incoming_deadhead": null,
+        "mission_id": "M_07230fd4a04b",
+        "origin_vertiport": "V_c4c7c26218d2",
+        "path_options": [
+          {
+            "compatibility_evidence": {
+              "corridor_available": true,
+              "endpoint_continuous": true,
+              "layer": true,
+              "wind": true
+            },
+            "compatible": true,
+            "corridor_ids": [
+              "C_b2738d5fd887"
+            ],
+            "distance_km": 0.936,
+            "edge_segments": [
+              {
+                "corridor_id": "C_b2738d5fd887",
+                "duration_slots": 2,
+                "offset_slot": 0,
+                "wind_level": 0
+              }
+            ],
+            "energy_kwh": 0.105768,
+            "energy_provenance": "literature_bounded_synthetic_uav_payload_distance_wind_affine_v2",
+            "max_wind_level": 0,
+            "node_sequence": [
+              "V_c4c7c26218d2",
+              "V_b2738d5fd887"
+            ],
+            "path_id": "PATH_C_07230fd4a04b",
+            "travel_slots": 2,
+            "travel_time_min_unrounded": 5.85
+          }
+        ],
+        "payload_kg": 0.5,
+        "preferred_construction_path_id": "PATH_C_07230fd4a04b",
+        "priority": "routine",
+        "release_slot": 2,
+        "sequence_index": 0,
+        "uav_id": "U_b2738d5fd887"
+      }
+    ],
+    "model_version": "integrated_repair_phase_minus1d_calibration_milp_v1",
+    "ood_axis": "not_applicable_development",
+    "parent_phase_minus1b_scenario_id": null,
+    "parent_scenario_content_sha256": null,
+    "parent_skeleton_content_sha256": null,
+    "pool_role": "not_a_formal_pool_record",
+    "preregistered_regime": "binding",
+    "provenance": {
+      "evidence_scope": "DEVELOPMENT_ONLY_NOT_FORMAL_CONFIRMATION_NOT_MODEL_EVIDENCE",
+      "generator_version": "candidate_a_v12_shortcut_neutral_population_calibration_v1",
+      "mixed_fleet": true,
+      "prospective_fixed_denominator": true
+    },
+    "resources": {
+      "charger_capacity_by_slot_default": {
+        "V_916b05cca802": 2,
+        "V_943c5c88c573": 2,
+        "V_b2738d5fd887": 2,
+        "V_bc696d27a8e3": 2,
+        "V_c4c7c26218d2": 2
+      },
+      "corridor_capacity_by_slot_default": {
+        "C_07230fd4a04b": 2,
+        "C_0f90b4415509": 2,
+        "C_1fb9505e9aae": 2,
+        "C_5ad61db7cbfc": 2,
+        "C_710ee5844b19": 2,
+        "C_943c5c88c573": 2,
+        "C_a05d6974837b": 2,
+        "C_b2738d5fd887": 2,
+        "C_c4c7c26218d2": 2
+      },
+      "pad_capacity_by_slot_default": {
+        "V_916b05cca802": 2,
+        "V_943c5c88c573": 2,
+        "V_b2738d5fd887": 2,
+        "V_bc696d27a8e3": 2,
+        "V_c4c7c26218d2": 2
+      }
+    },
+    "scenario_family": "composed_resource_repair",
+    "scenario_id": "dev_cf_153eb047571718fe7aae",
+    "slot_min": 5,
+    "split": "certificate_first_development_only",
+    "structural_signatures": {
+      "coarse_sha256": "b5e4941abfaa9e3ad24f11ee118e2548f4e67b4c74658fd4f94a0fd7b5c4bc45",
+      "exact_sha256": "58615a97a05653f3b1c18994b122f143a0a3d8e7f3e35ac4ff7ce8299cb9ae49",
+      "template_sha256": "f78a4a716a0c23dbe43b3a467d7dad06d0c6226a6abaf3a8168823afea4b8bf4"
+    },
+    "topology": {
+      "corridors": [
+        {
+          "altitude_layer": "L120_220",
+          "authorized": true,
+          "base_travel_time_min": 5.85,
+          "corridor_id": "C_c4c7c26218d2",
+          "distance_km": 1.248,
+          "from_vertiport": "V_c4c7c26218d2",
+          "no_fly": false,
+          "to_vertiport": "V_b2738d5fd887",
+          "weather_closed": false
+        },
+        {
+          "altitude_layer": "L120_220",
+          "authorized": true,
+          "base_travel_time_min": 5.85,
+          "corridor_id": "C_b2738d5fd887",
+          "distance_km": 0.936,
+          "from_vertiport": "V_c4c7c26218d2",
+          "no_fly": false,
+          "to_vertiport": "V_b2738d5fd887",
+          "weather_closed": false
+        },
+        {
+          "altitude_layer": "L120_220",
+          "authorized": true,
+          "base_travel_time_min": 0.05,
+          "corridor_id": "C_943c5c88c573",
+          "distance_km": 0.832,
+          "from_vertiport": "V_b2738d5fd887",
+          "no_fly": false,
+          "to_vertiport": "V_943c5c88c573",
+          "weather_closed": false
+        },
+        {
+          "altitude_layer": "L120_220",
+          "authorized": true,
+          "base_travel_time_min": 5.05,
+          "corridor_id": "C_1fb9505e9aae",
+          "distance_km": 1.04,
+          "from_vertiport": "V_b2738d5fd887",
+          "no_fly": false,
+          "to_vertiport": "V_916b05cca802",
+          "weather_closed": false
+        },
+        {
+          "altitude_layer": "L120_220",
+          "authorized": true,
+          "base_travel_time_min": 61.35,
+          "corridor_id": "C_a05d6974837b",
+          "distance_km": 8.32,
+          "from_vertiport": "V_b2738d5fd887",
+          "no_fly": false,
+          "to_vertiport": "V_916b05cca802",
+          "weather_closed": false
+        },
+        {
+          "altitude_layer": "L120_220",
+          "authorized": true,
+          "base_travel_time_min": 5.05,
+          "corridor_id": "C_0f90b4415509",
+          "distance_km": 1.04,
+          "from_vertiport": "V_b2738d5fd887",
+          "no_fly": false,
+          "to_vertiport": "V_916b05cca802",
+          "weather_closed": false
+        },
+        {
+          "altitude_layer": "L120_220",
+          "authorized": true,
+          "base_travel_time_min": 0.05,
+          "corridor_id": "C_710ee5844b19",
+          "distance_km": 8.32,
+          "from_vertiport": "V_916b05cca802",
+          "no_fly": false,
+          "to_vertiport": "V_bc696d27a8e3",
+          "weather_closed": false
+        },
+        {
+          "altitude_layer": "L120_220",
+          "authorized": true,
+          "base_travel_time_min": 11.65,
+          "corridor_id": "C_5ad61db7cbfc",
+          "distance_km": 1.056,
+          "from_vertiport": "V_c4c7c26218d2",
+          "no_fly": false,
+          "to_vertiport": "V_b2738d5fd887",
+          "weather_closed": false
+        },
+        {
+          "altitude_layer": "L120_220",
+          "authorized": true,
+          "base_travel_time_min": 4.75,
+          "corridor_id": "C_07230fd4a04b",
+          "distance_km": 1.11,
+          "from_vertiport": "V_c4c7c26218d2",
+          "no_fly": false,
+          "to_vertiport": "V_b2738d5fd887",
+          "weather_closed": false
+        }
+      ],
+      "vertiports": [
+        {
+          "charger_count": 2,
+          "pad_capacity": 2,
+          "vertiport_id": "V_916b05cca802"
+        },
+        {
+          "charger_count": 2,
+          "pad_capacity": 2,
+          "vertiport_id": "V_943c5c88c573"
+        },
+        {
+          "charger_count": 2,
+          "pad_capacity": 2,
+          "vertiport_id": "V_b2738d5fd887"
+        },
+        {
+          "charger_count": 2,
+          "pad_capacity": 2,
+          "vertiport_id": "V_bc696d27a8e3"
+        },
+        {
+          "charger_count": 2,
+          "pad_capacity": 2,
+          "vertiport_id": "V_c4c7c26218d2"
+        }
+      ]
+    },
+    "topology_motif": "mixed_fleet_connector_coupled_certificate_bridge",
+    "turnaround_slots": 1
+  },
+  "intervention": {
+    "artifact_flags": [
+      "ANALYSIS_ONLY",
+      "PREVIEW_NOT_RELEASE",
+      "NOT_A_BENCHMARK_REFERENCE",
+      "NO_MODEL_API"
+    ],
+    "baseline_plan_sha256": "87509541e040c830cd722400f0114b9c0bda95cd280220855adad2c53d9a180b",
+    "before_after_allowlisted_diff": [
+      {
+        "after": "private_constructive_parameters",
+        "before": "baseline",
+        "field": "certificate_first_control"
+      }
+    ],
+    "charger_capacity_overrides": [],
+    "closed_corridor_slots": [
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 5
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 6
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 7
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 8
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 9
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 10
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 11
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 12
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 13
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 14
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 15
+      },
+      {
+        "corridor_id": "C_0f90b4415509",
+        "slot": 16
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 5
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 6
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 7
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 8
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 9
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 10
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 11
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 12
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 13
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 14
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 15
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 16
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 17
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 18
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 19
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 20
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 21
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 22
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 23
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 24
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 25
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 26
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 27
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 28
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 29
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 30
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 31
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 32
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 33
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 34
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 35
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 36
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 37
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 38
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 39
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 40
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 41
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 42
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 43
+      },
+      {
+        "corridor_id": "C_1fb9505e9aae",
+        "slot": 44
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 5
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 6
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 7
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 8
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 9
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 10
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 11
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 12
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 13
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 14
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 15
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 16
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 17
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 18
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 19
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 20
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 21
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 22
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 23
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 24
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 25
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 26
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 27
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 28
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 29
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 30
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 31
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 32
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 33
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 34
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 35
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 36
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 37
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 38
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 39
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 40
+      },
+      {
+        "corridor_id": "C_5ad61db7cbfc",
+        "slot": 41
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 2
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 3
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 4
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 5
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 6
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 8
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 9
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 10
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 11
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 12
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 13
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 14
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 15
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 16
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 17
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 18
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 19
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 20
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 21
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 22
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 23
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 24
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 25
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 26
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 27
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 28
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 29
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 30
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 31
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 32
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 33
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 34
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 35
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 36
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 37
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 38
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 39
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 40
+      },
+      {
+        "corridor_id": "C_943c5c88c573",
+        "slot": 41
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 4
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 5
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 6
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 7
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 8
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 9
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 10
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 11
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 12
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 13
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 14
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 15
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 16
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 17
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 18
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 19
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 20
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 21
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 22
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 23
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 24
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 25
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 26
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 27
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 28
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 29
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 30
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 31
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 32
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 33
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 34
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 35
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 36
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 37
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 38
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 39
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 40
+      },
+      {
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 41
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 2
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 3
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 4
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 5
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 6
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 7
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 8
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 9
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 10
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 11
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 12
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 13
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 14
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 15
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 16
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 17
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 18
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 19
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 20
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 21
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 22
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 23
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 24
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 25
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 26
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 27
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 28
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 29
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 30
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 31
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 32
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 33
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 34
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 35
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 36
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 37
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 38
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 39
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 40
+      },
+      {
+        "corridor_id": "C_c4c7c26218d2",
+        "slot": 41
+      }
+    ],
+    "compiler_version": "integrated_repair_phase_minus1d_intervention_compiler_v1",
+    "corridor_capacity_overrides": [
+      {
+        "capacity": 1,
+        "corridor_id": "C_b2738d5fd887",
+        "slot": 2
+      }
+    ],
+    "family": "composed_resource_repair",
+    "initial_soc_overrides": [
+      {
+        "initial_soc_kwh": 2.717295,
+        "uav_id": "U_c4c7c26218d2"
+      }
+    ],
+    "instance_id": "calv1_bc347e91c59a0532ad3666af",
+    "intervention_sha256": "72337148b91c9d4f20b361d0bb9cfcc84b7cb2007b773a7fd65ce0b9e1637c8e",
+    "mission_window_overrides": [],
+    "operations": [
+      {
+        "evidence_role": "DEVELOPMENT_PRIVATE_CERTIFICATE",
+        "type": "certificate_first_constructive_control"
+      },
+      {
+        "resource": {
+          "capacity": 1,
+          "kind": "corridor",
+          "node": "C_b2738d5fd887",
+          "slot": 2
+        },
+        "topology": "SHARED_CORRIDOR_CAPACITY",
+        "type": "mixed_fleet_coupling_capacity"
+      }
+    ],
+    "pad_capacity_overrides": [],
+    "regime": "binding",
+    "target_selection_provenance": "solver_certified_first_complete_witness"
+  },
+  "metadata": {
+    "ancestor_id": "mtancestor_71bb1a181b96dd1b0dcb1a3d",
+    "attempt_id": "mtattempt_71bb1a181b96dd1b0dcb1a3d",
+    "attempt_rank": 89,
+    "coarse_structural_sha256": "b5e4941abfaa9e3ad24f11ee118e2548f4e67b4c74658fd4f94a0fd7b5c4bc45",
+    "constraint_incidence_sha256": "4cad7429b59c09a7f49790bb95de38d52e961bcdfbc7932aea8c194b07624685",
+    "coupling_topology": "SHARED_CORRIDOR_CAPACITY",
+    "mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_AND_PRETARGET_CHARGE_WITH_FIXED_DEPARTURES",
+    "objective_role": "L5_DELAY_CHARGE_WAIT_PREFIX_CONTROL",
+    "operational_motif": "BASE_SINGLE_RESOURCE",
+    "structural_template_sha256": "f78a4a716a0c23dbe43b3a467d7dad06d0c6226a6abaf3a8168823afea4b8bf4",
+    "target_uav_type": "fixed_wing_vtol_cargo_uav"
+  },
+  "oracle_competitor_plan": {
+    "artifact_flags": [
+      "ANALYSIS_ONLY",
+      "PREVIEW_NOT_RELEASE",
+      "NOT_A_BENCHMARK_REFERENCE",
+      "NO_MODEL_API"
+    ],
+    "claimed_changed_decisions": [],
+    "decisions": [
+      {
+        "charge_blocks": 1,
+        "depart_slot": 2,
+        "held": false,
+        "mission_id": "M_c4c7c26218d2",
+        "path_id": "PATH_C_5ad61db7cbfc",
+        "uav_id": "U_c4c7c26218d2"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 7,
+        "held": false,
+        "mission_id": "M_b2738d5fd887",
+        "path_id": "PATH_C_943c5c88c573",
+        "uav_id": "U_c4c7c26218d2"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 17,
+        "held": false,
+        "mission_id": "M_1fb9505e9aae",
+        "path_id": "PATH_C_0f90b4415509",
+        "uav_id": "U_b2738d5fd887"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 21,
+        "held": false,
+        "mission_id": "M_a05d6974837b",
+        "path_id": "PATH_C_710ee5844b19",
+        "uav_id": "U_b2738d5fd887"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 2,
+        "held": false,
+        "mission_id": "M_07230fd4a04b",
+        "path_id": "PATH_C_07230fd4a04b",
+        "uav_id": "U_b2738d5fd887"
+      }
+    ],
+    "instance_id": "calv1_bc347e91c59a0532ad3666af",
+    "instance_sha256": "fc47caa8371334b899fb91762a031b5ea4eb8a8fcab56df93e73ecec15d170f6",
+    "intervention_sha256": "72337148b91c9d4f20b361d0bb9cfcc84b7cb2007b773a7fd65ce0b9e1637c8e",
+    "model_version": "deterministic_baseline::best_mechanism_preserving_equal_prefix_alternative",
+    "plan_sha256": "35005e2d2ff53a0247ebabc2d72856c4ab789070127c2c9d0dc8fb439baf4dbb",
+    "status": "CANDIDATE",
+    "strategy": "best_mechanism_preserving_equal_prefix_alternative"
+  },
+  "oracle_target_plan": {
+    "alternative_optimum_exists": false,
+    "artifact_flags": [
+      "ANALYSIS_ONLY",
+      "PREVIEW_NOT_RELEASE",
+      "NOT_A_BENCHMARK_REFERENCE",
+      "NO_MODEL_API"
+    ],
+    "decisions": [
+      {
+        "charge_blocks": 1,
+        "depart_slot": 2,
+        "held": false,
+        "mission_id": "M_c4c7c26218d2",
+        "path_id": "PATH_C_5ad61db7cbfc",
+        "uav_id": "U_c4c7c26218d2"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 7,
+        "held": false,
+        "mission_id": "M_b2738d5fd887",
+        "path_id": "PATH_C_943c5c88c573",
+        "uav_id": "U_c4c7c26218d2"
+      },
+      {
+        "charge_blocks": 1,
+        "depart_slot": 5,
+        "held": false,
+        "mission_id": "M_1fb9505e9aae",
+        "path_id": "PATH_C_a05d6974837b",
+        "uav_id": "U_b2738d5fd887"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 21,
+        "held": false,
+        "mission_id": "M_a05d6974837b",
+        "path_id": "PATH_C_710ee5844b19",
+        "uav_id": "U_b2738d5fd887"
+      },
+      {
+        "charge_blocks": 0,
+        "depart_slot": 2,
+        "held": false,
+        "mission_id": "M_07230fd4a04b",
+        "path_id": "PATH_C_07230fd4a04b",
+        "uav_id": "U_b2738d5fd887"
+      }
+    ],
+    "instance_id": "calv1_bc347e91c59a0532ad3666af",
+    "instance_sha256": "fc47caa8371334b899fb91762a031b5ea4eb8a8fcab56df93e73ecec15d170f6",
+    "intervention_sha256": "72337148b91c9d4f20b361d0bb9cfcc84b7cb2007b773a7fd65ce0b9e1637c8e",
+    "model_version": "integrated_repair_phase_minus1d_calibration_milp_v1",
+    "objective_vector": [
+      {
+        "mip_gap": 0.0,
+        "name": "urgent_holds",
+        "node_count": 1,
+        "value": 0.0
+      },
+      {
+        "mip_gap": 0.0,
+        "name": "total_holds",
+        "node_count": 1,
+        "value": 0.0
+      },
+      {
+        "mip_gap": 0.0,
+        "name": "repair_distance",
+        "node_count": 1,
+        "value": 64.0
+      },
+      {
+        "mip_gap": 0.0,
+        "name": "weighted_tardiness_min",
+        "node_count": 1,
+        "value": 0.0
+      },
+      {
+        "mip_gap": 0.0,
+        "name": "delay_and_charge_wait_min",
+        "node_count": 0,
+        "value": 10.0
+      },
+      {
+        "mip_gap": 0.0,
+        "name": "energy_kwh",
+        "node_count": 1,
+        "value": 2.486178
+      }
+    ],
+    "plan_sha256": "135c555e3a555a74c13d74745ad1382b9b620c8d4b976adbd3486f32aa2b5aad",
+    "status": "OPTIMAL",
+    "telemetry": {
+      "backend": "scipy.optimize.milp/HiGHS",
+      "constraint_count": 224,
+      "mip_gap": 0.0,
+      "node_count": 5,
+      "runtime_sec": 0.035507,
+      "variable_count": 255
+    }
+  },
+  "public_to_internal_id": {
+    "COR_01": "C_1fb9505e9aae",
+    "COR_02": "C_710ee5844b19",
+    "COR_03": "C_0f90b4415509",
+    "COR_04": "C_b2738d5fd887",
+    "COR_05": "C_a05d6974837b",
+    "COR_06": "C_943c5c88c573",
+    "COR_07": "C_5ad61db7cbfc",
+    "COR_08": "C_07230fd4a04b",
+    "COR_09": "C_c4c7c26218d2",
+    "MISSION_01": "M_1fb9505e9aae",
+    "MISSION_02": "M_07230fd4a04b",
+    "MISSION_03": "M_a05d6974837b",
+    "MISSION_04": "M_b2738d5fd887",
+    "MISSION_05": "M_c4c7c26218d2",
+    "PATH_01": "PATH_C_710ee5844b19",
+    "PATH_02": "PATH_C_0f90b4415509",
+    "PATH_03": "PATH_C_1fb9505e9aae",
+    "PATH_04": "PATH_C_07230fd4a04b",
+    "PATH_05": "PATH_C_5ad61db7cbfc",
+    "PATH_06": "PATH_C_c4c7c26218d2",
+    "PATH_07": "PATH_C_a05d6974837b",
+    "PATH_08": "PATH_C_b2738d5fd887",
+    "PATH_09": "PATH_C_943c5c88c573",
+    "UAV_01": "U_c4c7c26218d2",
+    "UAV_02": "U_b2738d5fd887",
+    "VP_01": "V_b2738d5fd887",
+    "VP_02": "V_c4c7c26218d2",
+    "VP_03": "V_bc696d27a8e3",
+    "VP_04": "V_916b05cca802",
+    "VP_05": "V_943c5c88c573"
+  },
+  "record_id": "CA12_CORE_038",
+  "schema_version": "candidate_a_v12_private_evaluator_record_v1",
+  "selected_pair": {
+    "family": "composed_resource_repair",
+    "generator_declared_mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_AND_PRETARGET_CHARGE_WITH_FIXED_DEPARTURES",
+    "pair_id": "PAIR_7c396206643fd6a8253b",
+    "pair_payload_sha256": "43afe02583cb006431f2e5dd6c849010eb5e7cdbaffa9de05f6cb79e0642863b",
+    "route": {
+      "baseline_path_id": "PATH_C_c4c7c26218d2",
+      "designated_route_target_path_id": "PATH_C_c4c7c26218d2",
+      "mission_id": "M_c4c7c26218d2",
+      "uav_id": "U_c4c7c26218d2"
+    },
+    "soc": {
+      "guard_kwh": 0.05,
+      "soc_target_mission_id": "M_b2738d5fd887",
+      "uav_id": "U_c4c7c26218d2",
+      "uav_type": "fixed_wing_vtol_cargo_uav"
+    }
+  },
+  "source_cell_id": "calv1_bc347e91c59a0532ad3666af",
+  "subset": "CORE"
+}

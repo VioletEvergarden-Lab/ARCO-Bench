@@ -1,0 +1,43 @@
+{
+  "currency": "CNY",
+  "limits": [
+    "Estimated cost, not invoice",
+    "Observed latency, not controlled speed",
+    "No exchange-rate conversion",
+    "Equal cap is not equal compute"
+  ],
+  "old_v4pro": {
+    "classification": "counterfactual_standardized_cost_at_0813_price",
+    "estimated_cost_cny": 5.3406212,
+    "input_tokens": 361732,
+    "limitation": "Old execution-time cache-price basis was not uniquely recovered.",
+    "output_tokens": 886373,
+    "reasoning_tokens": 862571,
+    "total_tokens": 1248105
+  },
+  "price_snapshot_per_million": {
+    "cache_hit_input": 0.025,
+    "cache_miss_input": 3.0,
+    "output": 6.0
+  },
+  "ratios_0813_over_old": {
+    "observed_mean_latency": 2.256242591828174,
+    "output_tokens": 2.4714076353860057,
+    "reasoning_tokens": 2.5167273186786945,
+    "same_price_cost": 2.6449414161783276
+  },
+  "v4pro0813": {
+    "classification": "execution_time_estimated_cost",
+    "estimated_cost_cny": 14.1256302,
+    "formula": "(hit*0.025 + miss*3.0 + output*6.0)/1e6",
+    "tokens": {
+      "cache_hit_input_tokens": 35328,
+      "cache_miss_input_tokens": 327071,
+      "input_tokens": 362399,
+      "output_tokens": 2190589,
+      "reasoning_tokens": 2170856,
+      "total_tokens": 2552988,
+      "visible_output_tokens_derived": 19733
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "api_model_id": "deepseek-v4-flash",
+  "endpoint": "/chat/completions",
+  "interface": "OpenAI-compatible Chat Completions",
+  "models_endpoint": "/models",
+  "official_base_url": "https://api.deepseek.com",
+  "official_docs": [
+    {
+      "observed_claim": "deepseek-v4-flash maps to DeepSeek-V4-Flash-0731; default thinking supported; 1M context; max output 384K",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/"
+    },
+    {
+      "observed_claim": "Chat Completions accepts deepseek-v4-flash; thinking defaults enabled; reasoning_effort defaults high when omitted",
+      "url": "https://api-docs.deepseek.com/api/create-chat-completion"
+    },
+    {
+      "observed_claim": "GET /models lists callable aliases and does not promise a snapshot identifier",
+      "url": "https://api-docs.deepseek.com/api/list-models"
+    },
+    {
+      "observed_claim": "2026-07-31 Flash update applies additional post-training to Flash while V4-Pro remains unchanged",
+      "url": "https://api-docs.deepseek.com/updates/"
+    }
+  ],
+  "official_docs_observed_at_utc": "2026-08-12T05:02:48.638512+00:00",
+  "official_version": "DeepSeek-V4-Flash-0731",
+  "version_limitation": "The callable API alias may not return an immutable snapshot ID. Freeze call time, /models result, returned model alias, and system_fingerprint where available."
+}

@@ -1,5 +1,8 @@
 # ARCO-Bench
 
+> **Version notice — 12 September 2026:** this remains the archival reproduction package. Read [V4 contract reconciliation and known limitations](V4_CONTRACT_RECONCILIATION.md) before interpreting the original counts or preparing new experiments. The complete-instruction, reconciled-contract panel has not been executed. Historical tasks, requests, responses and scoring code are unchanged.
+
+
 **Aerial Recovery and Coordination — Candidate A V12P1, Core-72.**
 
 ARCO-Bench evaluates candidate repairs for disrupted UAV logistics plans. Assignment, service order, vehicle type and incoming route are fixed; candidates adjust mission holds, service paths, departures and post-service charging under time, SOC and shared-resource constraints.

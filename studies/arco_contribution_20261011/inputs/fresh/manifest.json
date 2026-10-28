@@ -1,0 +1,339 @@
+{
+  "protocol": "fresh_transfer_v1",
+  "generated_utc": "2026-10-12T06:55:08.153247+00:00",
+  "methods_fixed_protocol": "notes/fresh_protocol.md",
+  "cells": [
+    [
+      "ladder",
+      "M",
+      20261012
+    ],
+    [
+      "ladder",
+      "L",
+      20262012
+    ],
+    [
+      "regions",
+      "M",
+      20263012
+    ],
+    [
+      "regions",
+      "L",
+      20264012
+    ]
+  ],
+  "base_count_planned": 4,
+  "conditions_planned": 8,
+  "admission": "original pre-disruption baseline and generator structural validity only",
+  "generator_source": "arco_focused_revision_20261002/scripts/new_networks.py",
+  "generator_config": {
+    "version": "dispersed_pair_v1",
+    "topologies": [
+      "ladder",
+      "regions"
+    ],
+    "scales": {
+      "S": {
+        "nodes": 7,
+        "chains": [
+          2,
+          3,
+          4
+        ]
+      },
+      "M": {
+        "nodes": 11,
+        "chains": [
+          3,
+          4,
+          4,
+          4,
+          5
+        ]
+      },
+      "L": {
+        "nodes": 16,
+        "chains": [
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5
+        ]
+      }
+    },
+    "development_cells": [
+      [
+        "ladder",
+        "S",
+        81001
+      ],
+      [
+        "regions",
+        "S",
+        81002
+      ],
+      [
+        "ladder",
+        "M",
+        81003
+      ],
+      [
+        "regions",
+        "M",
+        81004
+      ]
+    ],
+    "formal_seeds": {
+      "ladder": {
+        "S": [
+          51001,
+          51002
+        ],
+        "M": [
+          52001,
+          52002
+        ],
+        "L": [
+          53001,
+          53002
+        ]
+      },
+      "regions": {
+        "S": [
+          61001,
+          61002
+        ],
+        "M": [
+          62001,
+          62002
+        ],
+        "L": [
+          63001,
+          63002
+        ]
+      }
+    },
+    "closures_min": {
+      "short": 10,
+      "long": 35
+    },
+    "horizon_extension_min": 12,
+    "geometry": "Two rails with end and internal rungs; or two local cycles linked by exactly two inter-region corridors. Bidirectional edges.",
+    "coordinate_jitter_km": 0.025,
+    "path_count": 3,
+    "chargers": "Three geographically separated nodes; every chain first arrives at one, then visits varying endpoints. Single charger each.",
+    "mission_pattern": "Seeded endpoints; first service to a facility, second service crosses to the opposite rail/region where possible; later services rotate among facilities and non-facilities.",
+    "initial_soc_fraction": 0.8,
+    "baseline_charge_margin_kwh": 0.003,
+    "closure_target": "First corridor of the second mission of the first chain, selected before any disrupted optimization.",
+    "attempts_per_base": 20,
+    "attempt_seed_increment": 100,
+    "validity": "Valid pre-disruption incumbent and task structure only. No quality, routing, difficulty or solver-completion filter.",
+    "preference": "Original L1,L2,L3,L4,L5,L6",
+    "reference_budget_seconds": [
+      1800,
+      3600
+    ],
+    "formal_solver_threads": 1,
+    "online_budget_seconds": 600,
+    "development_rule_changes": 0
+  },
+  "references_seconds": 600,
+  "query_seconds": 60,
+  "records": [
+    {
+      "base_id": "FRESH_ladder_M01",
+      "topology": "ladder",
+      "scale": "M",
+      "base_seed": 20261012,
+      "seed": 20261012,
+      "filled": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "seed": 20261012,
+          "accepted": true,
+          "reason": "pre-disruption incumbent and generator structural validity"
+        }
+      ],
+      "task_paths": [
+        "arco_contribution_20261011/inputs/fresh/tasks/FRESH_ladder_M01_short.json",
+        "arco_contribution_20261011/inputs/fresh/tasks/FRESH_ladder_M01_long.json"
+      ],
+      "generator_metadata": {
+        "network_id": "NEW_ladder_M01",
+        "topology": "ladder",
+        "scale": "M",
+        "seed": 20261012,
+        "index": 1,
+        "development": false,
+        "pre_incumbent_valid": true,
+        "facilities": [
+          "V02",
+          "V06",
+          "V09"
+        ],
+        "affected_mission": "M002",
+        "closed_corridor": "E_V02_V01",
+        "closure_start_min": 7,
+        "horizon_min": 40,
+        "missions": 20,
+        "chains": 5,
+        "final_origins": [
+          "V02",
+          "V07",
+          "V09"
+        ],
+        "incumbent_charge_blocks": 1
+      }
+    },
+    {
+      "base_id": "FRESH_ladder_L01",
+      "topology": "ladder",
+      "scale": "L",
+      "base_seed": 20262012,
+      "seed": 20262012,
+      "filled": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "seed": 20262012,
+          "accepted": true,
+          "reason": "pre-disruption incumbent and generator structural validity"
+        }
+      ],
+      "task_paths": [
+        "arco_contribution_20261011/inputs/fresh/tasks/FRESH_ladder_L01_short.json",
+        "arco_contribution_20261011/inputs/fresh/tasks/FRESH_ladder_L01_long.json"
+      ],
+      "generator_metadata": {
+        "network_id": "NEW_ladder_L01",
+        "topology": "ladder",
+        "scale": "L",
+        "seed": 20262012,
+        "index": 1,
+        "development": false,
+        "pre_incumbent_valid": true,
+        "facilities": [
+          "V02",
+          "V08",
+          "V13"
+        ],
+        "affected_mission": "M002",
+        "closed_corridor": "E_V02_V01",
+        "closure_start_min": 7,
+        "horizon_min": 57,
+        "missions": 32,
+        "chains": 8,
+        "final_origins": [
+          "V02",
+          "V06",
+          "V08",
+          "V09",
+          "V11",
+          "V13"
+        ],
+        "incumbent_charge_blocks": 5
+      }
+    },
+    {
+      "base_id": "FRESH_regions_M01",
+      "topology": "regions",
+      "scale": "M",
+      "base_seed": 20263012,
+      "seed": 20263012,
+      "filled": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "seed": 20263012,
+          "accepted": true,
+          "reason": "pre-disruption incumbent and generator structural validity"
+        }
+      ],
+      "task_paths": [
+        "arco_contribution_20261011/inputs/fresh/tasks/FRESH_regions_M01_short.json",
+        "arco_contribution_20261011/inputs/fresh/tasks/FRESH_regions_M01_long.json"
+      ],
+      "generator_metadata": {
+        "network_id": "NEW_regions_M01",
+        "topology": "regions",
+        "scale": "M",
+        "seed": 20263012,
+        "index": 1,
+        "development": false,
+        "pre_incumbent_valid": true,
+        "facilities": [
+          "V02",
+          "V06",
+          "V09"
+        ],
+        "affected_mission": "M002",
+        "closed_corridor": "E_V02_V01",
+        "closure_start_min": 9,
+        "horizon_min": 70,
+        "missions": 20,
+        "chains": 5,
+        "final_origins": [
+          "V03",
+          "V06",
+          "V09",
+          "V10"
+        ],
+        "incumbent_charge_blocks": 10
+      }
+    },
+    {
+      "base_id": "FRESH_regions_L01",
+      "topology": "regions",
+      "scale": "L",
+      "base_seed": 20264012,
+      "seed": 20264012,
+      "filled": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "seed": 20264012,
+          "accepted": true,
+          "reason": "pre-disruption incumbent and generator structural validity"
+        }
+      ],
+      "task_paths": [
+        "arco_contribution_20261011/inputs/fresh/tasks/FRESH_regions_L01_short.json",
+        "arco_contribution_20261011/inputs/fresh/tasks/FRESH_regions_L01_long.json"
+      ],
+      "generator_metadata": {
+        "network_id": "NEW_regions_L01",
+        "topology": "regions",
+        "scale": "L",
+        "seed": 20264012,
+        "index": 1,
+        "development": false,
+        "pre_incumbent_valid": true,
+        "facilities": [
+          "V02",
+          "V08",
+          "V13"
+        ],
+        "affected_mission": "M002",
+        "closed_corridor": "E_V02_V01",
+        "closure_start_min": 8,
+        "horizon_min": 60,
+        "missions": 32,
+        "chains": 8,
+        "final_origins": [
+          "V02",
+          "V08",
+          "V09"
+        ],
+        "incumbent_charge_blocks": 6
+      }
+    }
+  ]
+}

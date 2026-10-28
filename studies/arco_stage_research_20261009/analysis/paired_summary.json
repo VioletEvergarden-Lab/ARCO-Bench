@@ -1,0 +1,172 @@
+{
+  "definitions": {
+    "scope": "Twelve base networks x reference/DeepSeek/Luna; only scheduled first responses, never repeated attempts.",
+    "reroutes": "Served missions with service path different from incumbent.",
+    "charge_changed_missions": "Served missions with charging-block count different from incumbent; not total charging blocks.",
+    "wait_to_reroute": "short reroutes = 0 and long reroutes > 0.",
+    "joint_route_charge": "Both long rerouted-mission count and long changed-charging-mission count exceed short.",
+    "invalid": "Counts may describe submitted infeasible decisions; transition labels require both conditions admissible. Missing plans have null counts, never zero."
+  },
+  "sources": {
+    "reference": {
+      "base_networks": 12,
+      "both_admissible_pairs": 12,
+      "wait_to_reroute": {
+        "reference_population": 7,
+        "evaluable_reference_pairs": 7,
+        "reproduced": 7,
+        "all_reference_denominator": "7/7",
+        "conditional_denominator": "7/7",
+        "reference_networks": [
+          "NEW_ladder_S01",
+          "NEW_ladder_S02",
+          "NEW_ladder_L02",
+          "NEW_regions_S01",
+          "NEW_regions_S02",
+          "NEW_regions_L01",
+          "NEW_regions_L02"
+        ],
+        "not_evaluable": [],
+        "evaluable_disagreements": []
+      },
+      "joint_route_charge": {
+        "reference_population": 4,
+        "evaluable_reference_pairs": 4,
+        "reproduced": 4,
+        "all_reference_denominator": "4/4",
+        "conditional_denominator": "4/4",
+        "reference_networks": [
+          "NEW_ladder_L02",
+          "NEW_regions_S02",
+          "NEW_regions_L01",
+          "NEW_regions_L02"
+        ],
+        "not_evaluable": [],
+        "evaluable_disagreements": []
+      },
+      "nontransition_pairs_retained": [
+        "NEW_ladder_M01",
+        "NEW_ladder_M02",
+        "NEW_ladder_L01",
+        "NEW_regions_M01",
+        "NEW_regions_M02"
+      ],
+      "admissible_conditions_with_different_reference_decisions": [],
+      "first_response_outcomes": {
+        "certified_reference": 24
+      }
+    },
+    "deepseek": {
+      "base_networks": 12,
+      "both_admissible_pairs": 7,
+      "wait_to_reroute": {
+        "reference_population": 7,
+        "evaluable_reference_pairs": 4,
+        "reproduced": 4,
+        "all_reference_denominator": "4/7",
+        "conditional_denominator": "4/4",
+        "reference_networks": [
+          "NEW_ladder_S01",
+          "NEW_ladder_S02",
+          "NEW_ladder_L02",
+          "NEW_regions_S01",
+          "NEW_regions_S02",
+          "NEW_regions_L01",
+          "NEW_regions_L02"
+        ],
+        "not_evaluable": [
+          "NEW_regions_S01",
+          "NEW_regions_L01",
+          "NEW_regions_L02"
+        ],
+        "evaluable_disagreements": []
+      },
+      "joint_route_charge": {
+        "reference_population": 4,
+        "evaluable_reference_pairs": 2,
+        "reproduced": 2,
+        "all_reference_denominator": "2/4",
+        "conditional_denominator": "2/2",
+        "reference_networks": [
+          "NEW_ladder_L02",
+          "NEW_regions_S02",
+          "NEW_regions_L01",
+          "NEW_regions_L02"
+        ],
+        "not_evaluable": [
+          "NEW_regions_L01",
+          "NEW_regions_L02"
+        ],
+        "evaluable_disagreements": []
+      },
+      "nontransition_pairs_retained": [
+        "NEW_ladder_M01",
+        "NEW_ladder_M02",
+        "NEW_ladder_L01",
+        "NEW_regions_M01",
+        "NEW_regions_M02"
+      ],
+      "admissible_conditions_with_different_reference_decisions": [],
+      "first_response_outcomes": {
+        "valid_plan": 19,
+        "no_candidate_output": 2,
+        "returned_plan_invalid": 3
+      }
+    },
+    "luna": {
+      "base_networks": 12,
+      "both_admissible_pairs": 10,
+      "wait_to_reroute": {
+        "reference_population": 7,
+        "evaluable_reference_pairs": 6,
+        "reproduced": 6,
+        "all_reference_denominator": "6/7",
+        "conditional_denominator": "6/6",
+        "reference_networks": [
+          "NEW_ladder_S01",
+          "NEW_ladder_S02",
+          "NEW_ladder_L02",
+          "NEW_regions_S01",
+          "NEW_regions_S02",
+          "NEW_regions_L01",
+          "NEW_regions_L02"
+        ],
+        "not_evaluable": [
+          "NEW_regions_L02"
+        ],
+        "evaluable_disagreements": []
+      },
+      "joint_route_charge": {
+        "reference_population": 4,
+        "evaluable_reference_pairs": 3,
+        "reproduced": 3,
+        "all_reference_denominator": "3/4",
+        "conditional_denominator": "3/3",
+        "reference_networks": [
+          "NEW_ladder_L02",
+          "NEW_regions_S02",
+          "NEW_regions_L01",
+          "NEW_regions_L02"
+        ],
+        "not_evaluable": [
+          "NEW_regions_L02"
+        ],
+        "evaluable_disagreements": []
+      },
+      "nontransition_pairs_retained": [
+        "NEW_ladder_M01",
+        "NEW_ladder_M02",
+        "NEW_ladder_L01",
+        "NEW_regions_M01",
+        "NEW_regions_M02"
+      ],
+      "admissible_conditions_with_different_reference_decisions": [
+        "NEW_regions_L02_long"
+      ],
+      "first_response_outcomes": {
+        "valid_plan": 22,
+        "output_token_limit_no_complete_plan": 2
+      }
+    }
+  }
+}

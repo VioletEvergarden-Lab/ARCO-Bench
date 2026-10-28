@@ -1,0 +1,62 @@
+[
+  {
+    "source": "deepseek",
+    "label": "DeepSeek V4-Pro / 11 Aug 2026",
+    "instruction_condition": "original_names_order",
+    "responses": "responses/deepseek.jsonl",
+    "terminals": "provenance/terminals/deepseek.jsonl",
+    "pair_with_policy": true
+  },
+  {
+    "source": "qwen",
+    "label": "Qwen 3.7-Plus / 11 Aug 2026",
+    "instruction_condition": "original_names_order",
+    "responses": "responses/qwen.jsonl",
+    "terminals": "provenance/terminals/qwen.jsonl",
+    "pair_with_policy": true
+  },
+  {
+    "source": "luna",
+    "label": "GPT-5.6 Luna / 11–12 Aug 2026",
+    "instruction_condition": "original_names_order",
+    "responses": "responses/luna.jsonl",
+    "terminals": "provenance/terminals/luna.jsonl",
+    "pair_with_policy": true
+  },
+  {
+    "source": "policy",
+    "label": "Deterministic operational policy",
+    "instruction_condition": "code_defined_objectives",
+    "responses": "responses/policy.jsonl",
+    "terminals": "provenance/terminals/policy.jsonl",
+    "pair_with_policy": false
+  },
+  {
+    "source": "deepseek_explicit",
+    "label": "DeepSeek V4-Pro / 13–16 Sep 2026",
+    "instruction_condition": "explicit_objectives_20260913",
+    "responses": "responses/deepseek_explicit.jsonl",
+    "terminals": "provenance/terminals/deepseek_explicit.jsonl",
+    "pair_with_policy": true
+  },
+  {
+    "source": "deepseek_complete",
+    "label": "deepseek-v4-pro / 22-23 Sep 2026",
+    "instruction_condition": "complete_public_rules_20260922",
+    "responses": "responses/deepseek_complete.jsonl",
+    "terminals": "provenance/terminals/deepseek_complete.jsonl",
+    "pair_with_policy": true,
+    "execution_config": "provenance/complete_public/deepseek/CONFIG.json",
+    "usage_records": "evidence/complete_public/deepseek/USAGE_AND_LATENCY.jsonl"
+  },
+  {
+    "source": "luna_complete",
+    "label": "gpt-5.6-luna / 22 Sep 2026",
+    "instruction_condition": "complete_public_rules_20260922",
+    "responses": "responses/luna_complete.jsonl",
+    "terminals": "provenance/terminals/luna_complete.jsonl",
+    "pair_with_policy": true,
+    "execution_config": "provenance/complete_public/luna/CONFIG.json",
+    "usage_records": "evidence/complete_public/luna/USAGE_AND_LATENCY.jsonl"
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "protocol": "target_coordination_direct_v1",
+  "record_id": "NEW_regions_L02_long",
+  "origin_name": "G",
+  "target_prefix": 6,
+  "target_mode": "match",
+  "target_objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 86.40000000000002,
+    "weighted_tardiness_min": 803.0,
+    "delay_and_charge_wait_min": 258.0,
+    "energy_kwh": 0.4300690176107938
+  },
+  "quality_tolerance": [
+    0.0,
+    0.0,
+    1e-07,
+    1e-05,
+    1e-05,
+    0.0001
+  ],
+  "minimize": "feasibility",
+  "allowed_uavs": [
+    "U04",
+    "U05",
+    "U07"
+  ],
+  "task_budget": null,
+  "chain_budget": null,
+  "no_good_supports": [],
+  "status": "infeasible",
+  "feasible": false,
+  "optimal": false,
+  "lower_bound": null,
+  "upper_bound": null,
+  "raw_dual_bound": null,
+  "solver_objective": null,
+  "decisions": null,
+  "objective": null,
+  "changed_missions": null,
+  "changed_uavs": null,
+  "mission_changes": null,
+  "chain_changes": null,
+  "witness_source": null,
+  "independent_verification": false,
+  "rejected_candidates": [
+    {
+      "source": "origin",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    }
+  ],
+  "solver_status": "Infeasible",
+  "solver_nodes": 0,
+  "solver": "HiGHS 1.15.1",
+  "solver_threads": 1,
+  "started_utc": "2026-10-12T01:19:28.478207+00:00",
+  "budget_seconds": 30.0,
+  "elapsed_seconds": 0.2898788000456989,
+  "query_build_seconds": 0.06964649993460625,
+  "base_build_seconds_in_query": 0.0,
+  "preparation_seconds_cumulative": 0.42818579997401685,
+  "solver_seconds": 0.2185575000476092,
+  "validation_seconds": 0.001674800063483417,
+  "completed_within_budget": true,
+  "variables": 9911,
+  "constraints": 3963,
+  "query": {
+    "prefix": 6,
+    "allowed": [
+      "U04",
+      "U05",
+      "U07"
+    ],
+    "mission_budget": null
+  },
+  "query_key": "j6__U04-U05-U07__kall",
+  "mode": "cross_query_reuse",
+  "evidence": "direct_restricted_MIP_or_static_witness",
+  "direct_solver_called": true
+}

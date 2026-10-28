@@ -1,0 +1,347 @@
+{
+  "scope": {
+    "tasks": 72,
+    "candidate_rows": 360,
+    "restriction_rows": 248,
+    "distance_cases": 14,
+    "route_domain_cases": 4,
+    "witness_verifier_replays": 18,
+    "selector_record_replays": 432,
+    "new_solves": 0,
+    "api_calls": 0
+  },
+  "design_relations": {
+    "tasks": 72,
+    "public_relations_retained": 72,
+    "designated_tiers": {
+      "L5": 24,
+      "L6": 24,
+      "L4": 24
+    },
+    "public_service_necessity_label_changed": [
+      "CA12_CORE_025",
+      "CA12_CORE_056",
+      "CA12_CORE_058",
+      "CA12_CORE_071"
+    ]
+  },
+  "candidate_outcomes": {
+    "G": {
+      "admissible_reference_miss": 34,
+      "reference_quality_repair": 38
+    },
+    "R3": {
+      "reference_quality_repair": 58,
+      "admissible_reference_miss": 14
+    },
+    "R4": {
+      "reference_quality_repair": 72
+    },
+    "DeepSeek": {
+      "reference_quality_repair": 69,
+      "schema_invalid_answer": 1,
+      "no_candidate_answer": 2
+    },
+    "Luna": {
+      "reference_quality_repair": 68,
+      "formally_infeasible_plan": 2,
+      "admissible_reference_miss": 2
+    }
+  },
+  "restriction_counts": {
+    "charge_disabled": {
+      "full_service_infeasible": 72
+    },
+    "departures_fixed": {
+      "full_service_infeasible": 16,
+      "reference_quality_feasible": 16
+    },
+    "full": {
+      "reference_quality_feasible": 72
+    },
+    "route_disabled": {
+      "full_service_infeasible": 28,
+      "full_service_only": 4
+    },
+    "routes_fixed": {
+      "full_service_infeasible": 20,
+      "reference_quality_feasible": 20
+    }
+  },
+  "distance_candidates": {
+    "G": {
+      "quality": 0,
+      "first_losses": {
+        "L4": 10,
+        "L2": 2,
+        "L3": 2
+      },
+      "mission_change_distribution_from_G": {
+        "0": 14
+      }
+    },
+    "R3": {
+      "quality": 0,
+      "first_losses": {
+        "L4": 10,
+        "L2": 2,
+        "L3": 2
+      },
+      "mission_change_distribution_from_G": {
+        "0": 12,
+        "3": 2
+      }
+    },
+    "R4": {
+      "quality": 14,
+      "first_losses": {
+        "quality": 14
+      },
+      "mission_change_distribution_from_G": {
+        "4": 14
+      }
+    },
+    "DeepSeek": {
+      "quality": 14,
+      "first_losses": {
+        "quality": 14
+      },
+      "mission_change_distribution_from_G": {
+        "4": 14
+      }
+    },
+    "Luna": {
+      "quality": 13,
+      "first_losses": {
+        "quality": 13,
+        "L3": 1
+      },
+      "mission_change_distribution_from_G": {
+        "4": 13,
+        "3": 1
+      }
+    }
+  },
+  "distance_chain_conclusion": {
+    "minimum_changed_chains": 2,
+    "covered_cases": 14,
+    "premises": "Relative to G, fixed chains, k*=4, maximum chain length 3, verified two-chain reference-quality witness."
+  },
+  "capacity_cross": [
+    {
+      "global_first_changed_layer": 3,
+      "designated_gap_changed": false,
+      "tasks": 36
+    },
+    {
+      "global_first_changed_layer": 6,
+      "designated_gap_changed": false,
+      "tasks": 16
+    },
+    {
+      "global_first_changed_layer": null,
+      "designated_gap_changed": true,
+      "tasks": 11
+    },
+    {
+      "global_first_changed_layer": 6,
+      "designated_gap_changed": true,
+      "tasks": 1
+    },
+    {
+      "global_first_changed_layer": 3,
+      "designated_gap_changed": true,
+      "tasks": 8
+    }
+  ],
+  "capacity_event_counts": {
+    "global_objective_changed": 61,
+    "selected_public_optimum_decisions_changed": 61,
+    "construction_target_decisions_changed": 61,
+    "construction_competitor_decisions_changed": 61,
+    "construction_resource_order_changed": 41,
+    "construction_capacity_rejects_at_least_one": 72,
+    "designated_gap_changed": 20
+  },
+  "capacity_event_set_disagreements_with_global": {
+    "construction_target_decisions_changed": 0,
+    "construction_competitor_decisions_changed": 22,
+    "construction_resource_order_changed": 32,
+    "designated_gap_changed": 63
+  },
+  "selector_summary": {
+    "G+DeepSeek": {
+      "selected_quality": 71,
+      "model_selected": 33,
+      "model_only_quality": 33
+    },
+    "G+Luna": {
+      "selected_quality": 71,
+      "model_selected": 33,
+      "model_only_quality": 33
+    },
+    "R3+DeepSeek": {
+      "selected_quality": 72,
+      "model_selected": 14,
+      "model_only_quality": 14
+    },
+    "R3+Luna": {
+      "selected_quality": 71,
+      "model_selected": 13,
+      "model_only_quality": 13
+    },
+    "R4+DeepSeek": {
+      "selected_quality": 72,
+      "model_selected": 0,
+      "model_only_quality": 0
+    },
+    "R4+Luna": {
+      "selected_quality": 72,
+      "model_selected": 0,
+      "model_only_quality": 0
+    }
+  },
+  "model_nonquality": [
+    {
+      "record_id": "CA12_CORE_005",
+      "source": "DeepSeek",
+      "outcome": "schema_invalid_answer",
+      "first_loss": null,
+      "first_loss_gap": null,
+      "formal_errors": [],
+      "objective": null,
+      "reference": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 52,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 5.0,
+        "energy_kwh": 1.174091
+      }
+    },
+    {
+      "record_id": "CA12_CORE_016",
+      "source": "Luna",
+      "outcome": "formally_infeasible_plan",
+      "first_loss": null,
+      "first_loss_gap": null,
+      "formal_errors": [
+        "SOC_RESERVE_VIOLATION"
+      ],
+      "objective": null,
+      "reference": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 1.005148
+      }
+    },
+    {
+      "record_id": "CA12_CORE_030",
+      "source": "DeepSeek",
+      "outcome": "no_candidate_answer",
+      "first_loss": null,
+      "first_loss_gap": null,
+      "formal_errors": [],
+      "objective": null,
+      "reference": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 3.195192
+      }
+    },
+    {
+      "record_id": "CA12_CORE_034",
+      "source": "Luna",
+      "outcome": "admissible_reference_miss",
+      "first_loss": "L3",
+      "first_loss_gap": 1,
+      "formal_errors": [],
+      "objective": {
+        "delay_and_charge_wait_min": 25.0,
+        "energy_kwh": 1.092456,
+        "repair_distance": 56,
+        "total_holds": 0,
+        "urgent_holds": 0,
+        "weighted_tardiness_min": 50.0
+      },
+      "reference": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 55,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 1.086189
+      }
+    },
+    {
+      "record_id": "CA12_CORE_046",
+      "source": "Luna",
+      "outcome": "admissible_reference_miss",
+      "first_loss": "L4",
+      "first_loss_gap": 5.0,
+      "formal_errors": [],
+      "objective": {
+        "delay_and_charge_wait_min": 75.0,
+        "energy_kwh": 1.952855,
+        "repair_distance": 66,
+        "total_holds": 0,
+        "urgent_holds": 0,
+        "weighted_tardiness_min": 5.0
+      },
+      "reference": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 66,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 3.012583
+      }
+    },
+    {
+      "record_id": "CA12_CORE_052",
+      "source": "DeepSeek",
+      "outcome": "no_candidate_answer",
+      "first_loss": null,
+      "first_loss_gap": null,
+      "formal_errors": [],
+      "objective": null,
+      "reference": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 65,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 2.52727
+      }
+    },
+    {
+      "record_id": "CA12_CORE_063",
+      "source": "Luna",
+      "outcome": "formally_infeasible_plan",
+      "first_loss": null,
+      "first_loss_gap": null,
+      "formal_errors": [
+        "SOC_RESERVE_VIOLATION"
+      ],
+      "objective": null,
+      "reference": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 53,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 0.919508
+      }
+    }
+  ],
+  "quality_plans_differing_from_stored_reference": {
+    "DeepSeek": 2,
+    "Luna": 2
+  }
+}

@@ -1,0 +1,38 @@
+# Candidate A v1.2.1 zero-shot repair task
+
+Return one complete repair covering every mission exactly once. Respect fixed UAV assignment and mission order, route compatibility, release/due windows, incoming deadhead, charging, SOC/reserve, corridor/pad/charger capacity, closures, and all intervention overrides. Optimize the stated task lexicographically: urgent holds, total holds, repair distance, weighted tardiness, delay plus charge wait, then energy.
+
+## Normative SOC event order
+
+For every served mission, use this exact order:
+
+`incoming deadhead -> service flight -> reserve check -> destination turnaround -> post-service charge`
+
+The `charge_blocks` attached to a mission occurs at that mission's destination after its service flight and the stated turnaround. It cannot power that mission's incoming deadhead, service flight, or reserve check. Its energy is available only to later missions assigned to the same UAV. At the start of a later mission, all legal post-service charging completed after earlier missions is already included in the UAV's available energy. Check reserve immediately after incoming-deadhead plus service energy are deducted. Check the battery upper bound immediately after post-service charging. Charger capacity applies to every occupied post-service charging slot at the destination.
+
+Return exactly this JSON shape:
+
+```json
+{"record_id":"...","decisions":[{"mission_id":"...","uav_id":"...","held":false,"path_id":"...","depart_slot":0,"charge_blocks":0}]}
+```
+
+Include every mission exactly once. Use only IDs and path choices present in the task. If `held` is true, `path_id` and `depart_slot` must be null and `charge_blocks` must be 0. Do not emit Markdown, explanations, comments, or additional keys. You receive no verifier feedback and get one response.
+
+## Explicit numerical definition of the six objectives
+
+Minimize the following vector lexicographically, in the stated L1-to-L6 order. A later component is optimized only after every earlier component has been minimized. Do not combine the six components into a weighted sum.
+
+Let h_i be 1 for a held mission and 0 for a served mission. For a served mission let p_i, d_i and c_i denote its selected path, departure slot and number of post-service charging blocks; let p_i^0, d_i^0 and c_i^0 be its baseline decisions. Indicator [condition] is 1 when the condition holds, otherwise 0. Time is discrete; one slot and one charging block each last instance.slot_min minutes (5 minutes in these tasks). Intervention overrides replace the corresponding release, due, initial SOC and resource values.
+
+* L1, urgent_holds: sum of h_i over urgent missions.
+* L2, total_holds: sum of h_i over all missions.
+* L3, repair_distance: 1000 * L2, plus the following contribution for each mission served in both the candidate and the baseline:
+  20 * [p_i != p_i^0] + abs(d_i - d_i^0) + 10 * [(c_i > 0) != (c_i^0 > 0)] + 2 * abs(c_i - c_i^0).
+  Departure changes in this component are measured in slots, not minutes. A held mission contributes through 1000 * L2 and has no additional route, departure or charging-change contribution. A mission that was held in the baseline has no baseline-relative served-mission contribution.
+* L4, weighted_tardiness_min: sum, over served missions, of w_i * instance.slot_min * max(0, arrival_slot_i - effective_due_slot_i), where w_i = 10 for an urgent mission and 1 for a routine mission. Due times are soft: arriving later incurs this objective, not a hard due-time violation.
+* L5, delay_and_charge_wait_min: sum, over served missions, of instance.slot_min * (max(0, d_i - effective_release_slot_i) + c_i). This measures departure delay after release plus post-service charging time; flight duration is not part of L5.
+* L6, energy_kwh: total incoming-deadhead and service-flight energy of served missions, evaluated under the supplied instance's flight-energy contract. Energy added by charging is not added to L6. Held missions contribute zero flight energy.
+
+All six components are minimized. The requested output remains the original repair JSON only: do not include objective values or explanatory text. These definitions supply the existing numerical objective rules; the public task, allowed decision fields and SOC event order below are unchanged.
+
+

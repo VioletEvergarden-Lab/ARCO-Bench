@@ -1,0 +1,40 @@
+{
+  "protocol": "derived_chain_lower_exclusion_v1",
+  "record_id": "ADDS_PACZ05_N09__CLOSE_5MIN",
+  "origin_name": "fixed_formal_G",
+  "target_mode": "match",
+  "target_objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 6.199999999999999,
+    "weighted_tardiness_min": 5.5,
+    "delay_and_charge_wait_min": 64.0,
+    "energy_kwh": 0.10593181472377988
+  },
+  "minimize": "missions",
+  "chain_budget": 0,
+  "task_budget": null,
+  "allowed_uavs": [
+    "U01",
+    "U02",
+    "U03"
+  ],
+  "status": "infeasible",
+  "feasible": false,
+  "optimal": false,
+  "lower_bound": null,
+  "upper_bound": null,
+  "decisions": null,
+  "objective": null,
+  "mission_changes": null,
+  "chain_changes": null,
+  "derivation": "Chain cap is smaller than the valid unrestricted chain lower bound",
+  "source_query": "runs/capacity_sensitivity/ADDS_PACZ05_N09__CLOSE_5MIN/new_T6_chains.json",
+  "source_chain_lower": 3,
+  "task_sha256": "b977e3ac3a52cfe07280fc843f1ef254ed330c6b480a3bb94266da8e25e3a727",
+  "origin_sha256": "47051a8d7ff2f61d82878be37c4625bb84e2eb0e35532e9e31ac33cfc5c9590e",
+  "query_path": "runs/capacity_sensitivity/ADDS_PACZ05_N09__CLOSE_5MIN/new_T6_chain_cap_0.json",
+  "solver_calls_for_record": 0,
+  "solver_seconds": 0.0,
+  "elapsed_seconds": 0.0
+}

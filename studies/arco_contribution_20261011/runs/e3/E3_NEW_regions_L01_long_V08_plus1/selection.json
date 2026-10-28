@@ -1,0 +1,18 @@
+{
+  "record_id": "NEW_regions_L01_long",
+  "intervention_id": "E3_NEW_regions_L01_long_V08_plus1",
+  "group": "paired_input_selected",
+  "facility": "V08",
+  "pre_incumbent_charger_users": [
+    "U07",
+    "U08"
+  ],
+  "old_capacity": 1,
+  "new_capacity": 2,
+  "selection": "base index01 in each topology/scale; most distinct incumbent charging UAVs, lexicographic tie break",
+  "source_task": "arco_focused_revision_20261002\\new_networks\\tasks\\NEW_regions_L01_long.json",
+  "folder": "runs\\e3\\E3_NEW_regions_L01_long_V08_plus1",
+  "fixed_origin": "original stored G",
+  "fixed_target": "each original reference objective is an upper aspiration bound, with its original tolerance",
+  "new_target": "componentwise match to newly optimized reference prefix"
+}

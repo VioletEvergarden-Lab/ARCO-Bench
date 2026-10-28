@@ -1,0 +1,130 @@
+{
+  "as_of_utc": "2026-10-04T09:37:20.195601+00:00",
+  "scheduled_attempts": 96,
+  "terminal_attempts": 96,
+  "pending_attempts": 0,
+  "in_flight_attempts": 0,
+  "terminal_outcomes": {
+    "valid_plan": 71,
+    "output_token_limit_no_complete_plan": 2,
+    "no_candidate_output": 20,
+    "returned_plan_invalid": 3
+  },
+  "deterministic": [
+    {
+      "method": "G",
+      "completed": 24,
+      "admissible": 24,
+      "service_target": 21,
+      "reference_quality": 17,
+      "first_miss_counts": {
+        "urgent_holds": 2,
+        "total_holds": 1,
+        "repair_distance": 3,
+        "weighted_tardiness_min": 1
+      }
+    },
+    {
+      "method": "R4",
+      "completed": 24,
+      "admissible": 24,
+      "service_target": 22,
+      "reference_quality": 19,
+      "first_miss_counts": {
+        "repair_distance": 3,
+        "total_holds": 2
+      }
+    },
+    {
+      "method": "Full-MILP",
+      "completed": 24,
+      "admissible": 24,
+      "service_target": 24,
+      "reference_quality": 24,
+      "first_miss_counts": {}
+    },
+    {
+      "method": "Iter-R4",
+      "completed": 24,
+      "admissible": 24,
+      "service_target": 23,
+      "reference_quality": 21,
+      "first_miss_counts": {
+        "total_holds": 1,
+        "repair_distance": 2
+      }
+    },
+    {
+      "method": "R_frac",
+      "completed": 24,
+      "admissible": 24,
+      "service_target": 24,
+      "reference_quality": 20,
+      "first_miss_counts": {
+        "repair_distance": 4
+      }
+    }
+  ],
+  "providers_main": {
+    "deepseek": {
+      "scheduled_main": 24,
+      "terminal_main": 24,
+      "not_yet_terminal": 0,
+      "outcomes": {
+        "valid_plan": 19,
+        "no_candidate_output": 2,
+        "returned_plan_invalid": 3
+      },
+      "valid_plans": 19,
+      "reference_quality": 19,
+      "service_target": 19,
+      "complete_valid_pairs": 7,
+      "reference_quality_pairs": 7,
+      "observed_wait_to_reroute_pairs": 4,
+      "observed_route_charge_pairs": 2
+    },
+    "luna": {
+      "scheduled_main": 24,
+      "terminal_main": 24,
+      "not_yet_terminal": 0,
+      "outcomes": {
+        "valid_plan": 22,
+        "output_token_limit_no_complete_plan": 2
+      },
+      "valid_plans": 22,
+      "reference_quality": 22,
+      "service_target": 22,
+      "complete_valid_pairs": 10,
+      "reference_quality_pairs": 10,
+      "observed_wait_to_reroute_pairs": 6,
+      "observed_route_charge_pairs": 3
+    }
+  },
+  "providers_all": {
+    "deepseek": {
+      "scheduled": 48,
+      "outcomes": {
+        "valid_plan": 43,
+        "no_candidate_output": 2,
+        "returned_plan_invalid": 3
+      },
+      "valid_plans": 43,
+      "reference_quality": 42
+    },
+    "luna": {
+      "scheduled": 48,
+      "outcomes": {
+        "valid_plan": 28,
+        "output_token_limit_no_complete_plan": 2,
+        "no_candidate_output": 18
+      },
+      "valid_plans": 28,
+      "reference_quality": 26
+    }
+  },
+  "score_alignment_checked": true,
+  "returned_plan_violations": 3,
+  "invalid_event_count": 4,
+  "paired_scope": "First formal attempts only. Repetitions do not create independent networks. Pending and in-flight requests are not failures.",
+  "route_and_charge_scope": "Actions in returned plans relative to the incumbent; observed response does not identify a model internal reasoning process."
+}

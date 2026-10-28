@@ -1,0 +1,156 @@
+[
+  {
+    "record_id": "NET_S02_C",
+    "distance_lower_bound": 5,
+    "distance_upper_bound": 5,
+    "witness_changed_missions": [
+      "M002",
+      "M006",
+      "M007",
+      "M008",
+      "M009"
+    ],
+    "witness_changed_chains": [
+      "U01",
+      "U02",
+      "U03"
+    ],
+    "witness_chain_count": 3,
+    "chain_lengths": {
+      "U01": 2,
+      "U02": 4,
+      "U03": 3
+    },
+    "greedy_L3_by_chain": {
+      "U01": 3.8000000000000003,
+      "U02": 1000.0,
+      "U03": 1022.0
+    },
+    "reference_L3": 1055.0,
+    "necessary_minimum_changed_chains": 2,
+    "exact_minimum_changed_chains": null,
+    "exclusion": "Any reference-quality plan differs from G on at least five missions, whereas every UAV chain contains at most four missions."
+  },
+  {
+    "record_id": "NET_M01_B",
+    "distance_lower_bound": 5,
+    "distance_upper_bound": 5,
+    "witness_changed_missions": [
+      "M004",
+      "M006",
+      "M007",
+      "M008",
+      "M009"
+    ],
+    "witness_changed_chains": [
+      "U01",
+      "U02"
+    ],
+    "witness_chain_count": 2,
+    "chain_lengths": {
+      "U01": 5,
+      "U02": 4,
+      "U03": 3,
+      "U04": 4,
+      "U05": 4
+    },
+    "greedy_L3_by_chain": {
+      "U01": 0.0,
+      "U02": 2016.0,
+      "U03": 0.0,
+      "U04": 0.0,
+      "U05": 2.2
+    },
+    "reference_L3": 38.800000000000004,
+    "necessary_minimum_changed_chains": 2,
+    "exact_minimum_changed_chains": 2,
+    "forced_recovery_mission": "M008",
+    "forced_recovery_chain": "U02",
+    "forced_recovery_chain_length": 4,
+    "exclusion": "Zero urgent holds requires restoring M008 on U02. Changing only this four-mission chain cannot meet the certified five-mission distance lower bound."
+  },
+  {
+    "record_id": "NET_M01_C",
+    "distance_lower_bound": 5,
+    "distance_upper_bound": 7,
+    "witness_changed_missions": [
+      "M005",
+      "M006",
+      "M007",
+      "M008",
+      "M012",
+      "M016",
+      "M020"
+    ],
+    "witness_changed_chains": [
+      "U01",
+      "U02",
+      "U03",
+      "U04",
+      "U05"
+    ],
+    "witness_chain_count": 5,
+    "chain_lengths": {
+      "U01": 5,
+      "U02": 4,
+      "U03": 3,
+      "U04": 4,
+      "U05": 4
+    },
+    "greedy_L3_by_chain": {
+      "U01": 3.4000000000000004,
+      "U02": 2016.0,
+      "U03": 3.6,
+      "U04": 3.8000000000000003,
+      "U05": 1002.2
+    },
+    "reference_L3": 2034.6,
+    "necessary_minimum_changed_chains": 2,
+    "exact_minimum_changed_chains": null,
+    "forced_recovery_mission": "M008",
+    "forced_recovery_chain": "U02",
+    "forced_recovery_chain_length": 4,
+    "exclusion": "Zero urgent holds requires restoring M008 on U02. Changing only this four-mission chain cannot meet the certified five-mission distance lower bound."
+  },
+  {
+    "record_id": "NET_M03_B",
+    "distance_lower_bound": 5,
+    "distance_upper_bound": 7,
+    "witness_changed_missions": [
+      "M004",
+      "M005",
+      "M010",
+      "M011",
+      "M012",
+      "M017",
+      "M020"
+    ],
+    "witness_changed_chains": [
+      "U01",
+      "U03",
+      "U04",
+      "U05"
+    ],
+    "witness_chain_count": 4,
+    "chain_lengths": {
+      "U01": 5,
+      "U02": 4,
+      "U03": 4,
+      "U04": 4,
+      "U05": 3
+    },
+    "greedy_L3_by_chain": {
+      "U01": 1.2000000000000002,
+      "U02": 0.0,
+      "U03": 39.0,
+      "U04": 0.2,
+      "U05": 0.2
+    },
+    "reference_L3": 22.0,
+    "necessary_minimum_changed_chains": 2,
+    "exact_minimum_changed_chains": null,
+    "only_chain_long_enough": "U01",
+    "fixed_other_chain_L3": 39.4,
+    "exclusion": "Only U01 has five missions; fixing all other chains at G already incurs L3=39.4, exceeding reference L3=22 before adding any nonnegative U01 cost."
+  }
+]

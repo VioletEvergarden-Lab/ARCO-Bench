@@ -1,0 +1,16 @@
+﻿field,value,source_version,url,interpretation
+instrumented_mass_kg,3.680,arXiv:2103.13313v1,https://arxiv.org/html/2103.13313,dataset equipment mass sum
+payload_kg,0.25;0.50,arXiv:2103.13313v1,https://arxiv.org/html/2103.13313,tested levels; assignment by priority is scenario rule
+cruise_speed_m_s;altitude_m,10;25,arXiv:2103.13313v1,https://arxiv.org/html/2103.13313,single selected experimental condition
+takeoff_speed_m_s;landing_speed_m_s,2.5;2.0,arXiv:2111.11463v1,https://arxiv.org/html/2111.11463,phase time assumptions
+takeoff_power_coefficients,1.97;13.8,arXiv:2111.11463v1 Table 1,https://arxiv.org/html/2111.11463,P=b1*Pi+b0 W
+cruise_power_coefficients,1.69;16.8,arXiv:2111.11463v1 Table 1,https://arxiv.org/html/2111.11463,P=b1*Pi+b0 W
+landing_power_coefficients,1.62;-4.7,arXiv:2111.11463v1 Table 1,https://arxiv.org/html/2111.11463,P=b1*Pi+b0 W
+rotor_diameter_m,0.3302,1345S + DJI nomenclature,https://viewpoints.dji.com/blog/dji-propellers,13 inches inferred from propeller designation
+battery_capacity_wh,99.9,DJI M100 User Manual v1.2,https://download.dji-innovations.com/downloads/dev/Matrice/en/M100_User_Manual_v1.2__en.pdf,TB47D 600 g; matches dataset battery mass
+charging_efficiency,0.88,arXiv:2111.11463v1,https://arxiv.org/html/2111.11463,system charging-efficiency assumption
+charger_input_power_w,100,scenario assumption,,"constant power, below manual maximum; not a fitted charge curve"
+reserve_fraction;initial_fraction,0.20;0.80,scenario assumption,,pre-disruption values
+geometry_radius_km,0.6,scenario assumption,,synthetic geometry; shared corridor distances
+air_density_kg_m3;gravity_m_s2,1.225;9.80665,standard condition assumption,,calm air
+slot_min;maximum_charging_min,5;15,scenario convention,,physical power retained; ground waiting has zero flight energy

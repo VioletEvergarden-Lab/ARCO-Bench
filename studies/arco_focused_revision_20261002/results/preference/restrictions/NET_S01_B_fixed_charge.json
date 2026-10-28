@@ -1,0 +1,40 @@
+{
+  "record_id": "NET_S01_B",
+  "objective_order": [
+    "urgent_holds",
+    "total_holds",
+    "weighted_tardiness_min",
+    "repair_distance",
+    "delay_and_charge_wait_min",
+    "energy_kwh"
+  ],
+  "optimal": false,
+  "proved_prefix": 0,
+  "phases": [
+    {
+      "tier": "urgent_holds",
+      "status": 2,
+      "status_text": "Infeasible",
+      "seconds": 0.13837609998881817,
+      "upper_bound": null,
+      "lower_bound": null,
+      "mip_gap": null
+    }
+  ],
+  "decisions": null,
+  "objective": null,
+  "status": "infeasible",
+  "build_seconds": 0.07735859998501837,
+  "total_seconds": 0.21578349999617785,
+  "budget_seconds": 600.0,
+  "solver": "HiGHS 1.15.1",
+  "solver_threads": 1,
+  "fixed_service": [
+    0.0,
+    0.0
+  ],
+  "variables": 2429,
+  "prefix_policy": "fix only status=optimal or a valid certified service bound; stop at first unproved layer",
+  "restriction": "fixed_charge",
+  "original_reference_optimal": true
+}

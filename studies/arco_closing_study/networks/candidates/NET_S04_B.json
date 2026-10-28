@@ -1,0 +1,1936 @@
+{
+  "record_id": "NET_S04_B",
+  "network_id": "NET_S04",
+  "scale": "S",
+  "condition": "B",
+  "G": {
+    "decisions": [
+      {
+        "mission_id": "M001",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 0,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M002",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 32,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M003",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 4,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M004",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 18,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M005",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 25,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M006",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 32,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M007",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 0,
+        "charge_blocks": 2
+      },
+      {
+        "mission_id": "M008",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 24,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M009",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 33,
+        "charge_blocks": 0
+      }
+    ],
+    "score": {
+      "admissible": true,
+      "errors": [],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 16.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 30.0,
+        "energy_kwh": 0.11258103043280411
+      },
+      "events": [
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 0,
+          "arrival_min": 1.3494594290334905,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 6.349459429033491,
+          "finish_min": 6.349459429033491,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.3494594290334905,
+          "soc_before_kwh": 0.07992,
+          "soc_service_departure_kwh": 0.07992,
+          "soc_arrival_kwh": 0.06858250135003152,
+          "soc_after_charge_kwh": 0.06858250135003152,
+          "reserve_margin_kwh": 0.048602501350031524,
+          "flight_energy_kwh": 0.011337498649968487,
+          "charge_kwh": 0.0,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 32,
+          "arrival_min": 33.354518110065534,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 38.354518110065534,
+          "finish_min": 38.354518110065534,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.354518110065533,
+          "soc_before_kwh": 0.06858250135003152,
+          "soc_service_departure_kwh": 0.06858250135003152,
+          "soc_arrival_kwh": 0.05818207560940952,
+          "soc_after_charge_kwh": 0.05818207560940952,
+          "reserve_margin_kwh": 0.038202075609409525,
+          "flight_energy_kwh": 0.010400425740621999,
+          "charge_kwh": 0.0,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M003",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 4,
+          "arrival_min": 5.844608413339636,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 10.844608413339635,
+          "finish_min": 10.844608413339635,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.8446084133396363,
+          "soc_before_kwh": 0.07992,
+          "soc_service_departure_kwh": 0.07992,
+          "soc_arrival_kwh": 0.0657770079069458,
+          "soc_after_charge_kwh": 0.0657770079069458,
+          "reserve_margin_kwh": 0.0457970079069458,
+          "flight_energy_kwh": 0.014142992093054217,
+          "charge_kwh": 0.0,
+          "release_wait_min": 2,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 18,
+          "arrival_min": 19.2946149846831,
+          "incoming_start_min": 11.705385015316901,
+          "incoming_arrival_min": 13,
+          "charge_start_min": 24.2946149846831,
+          "finish_min": 24.2946149846831,
+          "charge_blocks": 0,
+          "continuous_flight_min": 2.5892299693661984,
+          "soc_before_kwh": 0.0657770079069458,
+          "soc_service_departure_kwh": 0.05674129471384081,
+          "soc_arrival_kwh": 0.04679831818199542,
+          "soc_after_charge_kwh": 0.04679831818199542,
+          "reserve_margin_kwh": 0.026818318181995416,
+          "flight_energy_kwh": 0.01897868972495038,
+          "charge_kwh": 0.0,
+          "release_wait_min": 1,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 25,
+          "arrival_min": 26.541636994113045,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 31.541636994113045,
+          "finish_min": 31.541636994113045,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.5416369941130457,
+          "soc_before_kwh": 0.04679831818199542,
+          "soc_service_departure_kwh": 0.04679831818199542,
+          "soc_arrival_kwh": 0.03385623574877422,
+          "soc_after_charge_kwh": 0.03385623574877422,
+          "reserve_margin_kwh": 0.01387623574877422,
+          "flight_energy_kwh": 0.012942082433221192,
+          "charge_kwh": 0.0,
+          "release_wait_min": 3,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 32,
+          "arrival_min": 32.73927172199733,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 37.73927172199733,
+          "finish_min": 37.73927172199733,
+          "charge_blocks": 0,
+          "continuous_flight_min": 0.7392717219973348,
+          "soc_before_kwh": 0.03385623574877422,
+          "soc_service_departure_kwh": 0.03385623574877422,
+          "soc_arrival_kwh": 0.028154128695660856,
+          "soc_after_charge_kwh": 0.028154128695660856,
+          "reserve_margin_kwh": 0.008174128695660855,
+          "flight_energy_kwh": 0.005702107053113366,
+          "charge_kwh": 0.0,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 0,
+          "arrival_min": 2.3289775390990233,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 7.328977539099023,
+          "finish_min": 17.32897753909902,
+          "charge_blocks": 2,
+          "continuous_flight_min": 2.3289775390990233,
+          "soc_before_kwh": 0.04449597085697587,
+          "soc_service_departure_kwh": 0.04449597085697587,
+          "soc_arrival_kwh": 0.02498,
+          "soc_after_charge_kwh": 0.03964666666666666,
+          "reserve_margin_kwh": 0.0049999999999999975,
+          "flight_energy_kwh": 0.01951597085697587,
+          "charge_kwh": 0.014666666666666666,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 24,
+          "arrival_min": 24.849089112936046,
+          "incoming_start_min": 18.11957100287051,
+          "incoming_arrival_min": 19,
+          "charge_start_min": 29.849089112936046,
+          "finish_min": 29.849089112936046,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.729518110065533,
+          "soc_before_kwh": 0.03964666666666666,
+          "soc_service_departure_kwh": 0.03348781203129986,
+          "soc_arrival_kwh": 0.026328148054689963,
+          "soc_after_charge_kwh": 0.026328148054689963,
+          "reserve_margin_kwh": 0.006348148054689962,
+          "flight_energy_kwh": 0.013318518611976703,
+          "charge_kwh": 0.0,
+          "release_wait_min": 13,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 10
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 33,
+          "arrival_min": 33.73927172199733,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 38.73927172199733,
+          "finish_min": 38.73927172199733,
+          "charge_blocks": 0,
+          "continuous_flight_min": 0.7392717219973348,
+          "soc_before_kwh": 0.026328148054689963,
+          "soc_service_departure_kwh": 0.026328148054689963,
+          "soc_arrival_kwh": 0.02008540278576809,
+          "soc_after_charge_kwh": 0.02008540278576809,
+          "reserve_margin_kwh": 0.00010540278576809045,
+          "flight_energy_kwh": 0.006242745268921873,
+          "charge_kwh": 0.0,
+          "release_wait_min": 1,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        }
+      ],
+      "resource_intervals": [
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V05_V04",
+          "start_min": 0.0,
+          "end_min": 1.3494594290334905
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V04_V02",
+          "start_min": 32.0,
+          "end_min": 32.64075577960271
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "start_min": 32.64075577960271,
+          "end_min": 33.354518110065534
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M003",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V01_V02",
+          "start_min": 4.0,
+          "end_min": 4.9437271988293015
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M003",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V02_V07",
+          "start_min": 4.9437271988293015,
+          "end_min": 5.844608413339636
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V03_V07",
+          "start_min": 18.0,
+          "end_min": 19.2946149846831
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V07_V03",
+          "start_min": 11.705385015316901,
+          "end_min": 13.0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V07_V02",
+          "start_min": 25.0,
+          "end_min": 25.859214547843667
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V02_V04",
+          "start_min": 25.859214547843667,
+          "end_min": 26.541636994113045
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "start_min": 32.0,
+          "end_min": 32.73927172199733
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V05_V04",
+          "start_min": 0.0,
+          "end_min": 1.1411260957001572
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V04_V02",
+          "start_min": 1.1411260957001572,
+          "end_min": 1.6152152086362017
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "start_min": 1.6152152086362017,
+          "end_min": 2.3289775390990233
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "kind": "charger",
+          "resource": "V06",
+          "start_min": 7.328977539099023,
+          "end_min": 17.32897753909902
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V02_V04",
+          "start_min": 24.0,
+          "end_min": 24.849089112936046
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V06_V02",
+          "start_min": 18.11957100287051,
+          "end_min": 19.0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "start_min": 33.0,
+          "end_min": 33.73927172199733
+        }
+      ],
+      "window_loads": [
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 7,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 8,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 9,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 10,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 12,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 13,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 14,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 15,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 16,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 17,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V02",
+          "bucket": 4,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V04",
+          "bucket": 24,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V04",
+          "bucket": 25,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V04",
+          "bucket": 26,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "bucket": 2,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V07",
+          "bucket": 4,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V07",
+          "bucket": 5,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V07",
+          "bucket": 18,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V07",
+          "bucket": 19,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V02",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V02",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V05_V04",
+          "bucket": 0,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V05_V04",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V06_V02",
+          "bucket": 18,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V02",
+          "bucket": 25,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V03",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V03",
+          "bucket": 12,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 4,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V02",
+          "bucket": 19,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V02",
+          "bucket": 24,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V03",
+          "bucket": 13,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V03",
+          "bucket": 18,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 24,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 26,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V05",
+          "bucket": 0,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 2,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 18,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 5,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 19,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 25,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        }
+      ]
+    },
+    "quality": true,
+    "total_seconds": 0.05225829999835696
+  },
+  "R4": {
+    "result": {
+      "record_id": "NET_S04_B",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 32,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M003",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 25,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 32,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 0,
+          "charge_blocks": 2
+        },
+        {
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 24,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 33,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 16.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 30.0,
+        "energy_kwh": 0.11258103043280411
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.0012189999979455024,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0,
+          "proof": "final-departure pad quota",
+          "public_bound_rows": [
+            {
+              "origin": "V04",
+              "final_missions": [
+                "M002",
+                "M006",
+                "M009"
+              ],
+              "movement_quota": 57
+            }
+          ]
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.0003361000053700991,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0,
+          "proof": "final-departure pad quota",
+          "public_bound_rows": [
+            {
+              "origin": "V04",
+              "final_missions": [
+                "M002",
+                "M006",
+                "M009"
+              ],
+              "movement_quota": 57
+            }
+          ]
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 1.764449100002821,
+          "upper_bound": 16.0,
+          "lower_bound": 16.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.17880970000260277,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.08604290000221226,
+          "upper_bound": 30.0,
+          "lower_bound": 30.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.08511490000091726,
+          "upper_bound": 0.11258103043280408,
+          "lower_bound": 0.11258103043280408,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.06241560000489699,
+      "total_seconds": 2.190202199999476,
+      "variables": 3155,
+      "constraints": 1700,
+      "prefix_values": "extracted finite-option plan",
+      "solver_threads": 1,
+      "solver": "HiGHS 1.15.1",
+      "warm_start": "preceding tier integer plan",
+      "continuous_prefix_tol": 1e-05,
+      "anytime_preserves_seed": true,
+      "service_bound_proofs": true
+    },
+    "score": {
+      "admissible": true,
+      "errors": [],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 16.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 30.0,
+        "energy_kwh": 0.11258103043280411
+      },
+      "events": [
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 0,
+          "arrival_min": 1.3494594290334905,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 6.349459429033491,
+          "finish_min": 6.349459429033491,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.3494594290334905,
+          "soc_before_kwh": 0.07992,
+          "soc_service_departure_kwh": 0.07992,
+          "soc_arrival_kwh": 0.06858250135003152,
+          "soc_after_charge_kwh": 0.06858250135003152,
+          "reserve_margin_kwh": 0.048602501350031524,
+          "flight_energy_kwh": 0.011337498649968487,
+          "charge_kwh": 0.0,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 32,
+          "arrival_min": 33.354518110065534,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 38.354518110065534,
+          "finish_min": 38.354518110065534,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.354518110065533,
+          "soc_before_kwh": 0.06858250135003152,
+          "soc_service_departure_kwh": 0.06858250135003152,
+          "soc_arrival_kwh": 0.05818207560940952,
+          "soc_after_charge_kwh": 0.05818207560940952,
+          "reserve_margin_kwh": 0.038202075609409525,
+          "flight_energy_kwh": 0.010400425740621999,
+          "charge_kwh": 0.0,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M003",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 4,
+          "arrival_min": 5.844608413339636,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 10.844608413339635,
+          "finish_min": 10.844608413339635,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.8446084133396363,
+          "soc_before_kwh": 0.07992,
+          "soc_service_departure_kwh": 0.07992,
+          "soc_arrival_kwh": 0.0657770079069458,
+          "soc_after_charge_kwh": 0.0657770079069458,
+          "reserve_margin_kwh": 0.0457970079069458,
+          "flight_energy_kwh": 0.014142992093054217,
+          "charge_kwh": 0.0,
+          "release_wait_min": 2,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 18,
+          "arrival_min": 19.2946149846831,
+          "incoming_start_min": 11.705385015316901,
+          "incoming_arrival_min": 13,
+          "charge_start_min": 24.2946149846831,
+          "finish_min": 24.2946149846831,
+          "charge_blocks": 0,
+          "continuous_flight_min": 2.5892299693661984,
+          "soc_before_kwh": 0.0657770079069458,
+          "soc_service_departure_kwh": 0.05674129471384081,
+          "soc_arrival_kwh": 0.04679831818199542,
+          "soc_after_charge_kwh": 0.04679831818199542,
+          "reserve_margin_kwh": 0.026818318181995416,
+          "flight_energy_kwh": 0.01897868972495038,
+          "charge_kwh": 0.0,
+          "release_wait_min": 1,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 25,
+          "arrival_min": 26.541636994113045,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 31.541636994113045,
+          "finish_min": 31.541636994113045,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.5416369941130457,
+          "soc_before_kwh": 0.04679831818199542,
+          "soc_service_departure_kwh": 0.04679831818199542,
+          "soc_arrival_kwh": 0.03385623574877422,
+          "soc_after_charge_kwh": 0.03385623574877422,
+          "reserve_margin_kwh": 0.01387623574877422,
+          "flight_energy_kwh": 0.012942082433221192,
+          "charge_kwh": 0.0,
+          "release_wait_min": 3,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 32,
+          "arrival_min": 32.73927172199733,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 37.73927172199733,
+          "finish_min": 37.73927172199733,
+          "charge_blocks": 0,
+          "continuous_flight_min": 0.7392717219973348,
+          "soc_before_kwh": 0.03385623574877422,
+          "soc_service_departure_kwh": 0.03385623574877422,
+          "soc_arrival_kwh": 0.028154128695660856,
+          "soc_after_charge_kwh": 0.028154128695660856,
+          "reserve_margin_kwh": 0.008174128695660855,
+          "flight_energy_kwh": 0.005702107053113366,
+          "charge_kwh": 0.0,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 0,
+          "arrival_min": 2.3289775390990233,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 7.328977539099023,
+          "finish_min": 17.32897753909902,
+          "charge_blocks": 2,
+          "continuous_flight_min": 2.3289775390990233,
+          "soc_before_kwh": 0.04449597085697587,
+          "soc_service_departure_kwh": 0.04449597085697587,
+          "soc_arrival_kwh": 0.02498,
+          "soc_after_charge_kwh": 0.03964666666666666,
+          "reserve_margin_kwh": 0.0049999999999999975,
+          "flight_energy_kwh": 0.01951597085697587,
+          "charge_kwh": 0.014666666666666666,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 24,
+          "arrival_min": 24.849089112936046,
+          "incoming_start_min": 18.11957100287051,
+          "incoming_arrival_min": 19,
+          "charge_start_min": 29.849089112936046,
+          "finish_min": 29.849089112936046,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.729518110065533,
+          "soc_before_kwh": 0.03964666666666666,
+          "soc_service_departure_kwh": 0.03348781203129986,
+          "soc_arrival_kwh": 0.026328148054689963,
+          "soc_after_charge_kwh": 0.026328148054689963,
+          "reserve_margin_kwh": 0.006348148054689962,
+          "flight_energy_kwh": 0.013318518611976703,
+          "charge_kwh": 0.0,
+          "release_wait_min": 13,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 10
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 33,
+          "arrival_min": 33.73927172199733,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 38.73927172199733,
+          "finish_min": 38.73927172199733,
+          "charge_blocks": 0,
+          "continuous_flight_min": 0.7392717219973348,
+          "soc_before_kwh": 0.026328148054689963,
+          "soc_service_departure_kwh": 0.026328148054689963,
+          "soc_arrival_kwh": 0.02008540278576809,
+          "soc_after_charge_kwh": 0.02008540278576809,
+          "reserve_margin_kwh": 0.00010540278576809045,
+          "flight_energy_kwh": 0.006242745268921873,
+          "charge_kwh": 0.0,
+          "release_wait_min": 1,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        }
+      ],
+      "resource_intervals": [
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V05_V04",
+          "start_min": 0.0,
+          "end_min": 1.3494594290334905
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V04_V02",
+          "start_min": 32.0,
+          "end_min": 32.64075577960271
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "start_min": 32.64075577960271,
+          "end_min": 33.354518110065534
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M003",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V01_V02",
+          "start_min": 4.0,
+          "end_min": 4.9437271988293015
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M003",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V02_V07",
+          "start_min": 4.9437271988293015,
+          "end_min": 5.844608413339636
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V03_V07",
+          "start_min": 18.0,
+          "end_min": 19.2946149846831
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V07_V03",
+          "start_min": 11.705385015316901,
+          "end_min": 13.0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V07_V02",
+          "start_min": 25.0,
+          "end_min": 25.859214547843667
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V02_V04",
+          "start_min": 25.859214547843667,
+          "end_min": 26.541636994113045
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "start_min": 32.0,
+          "end_min": 32.73927172199733
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V05_V04",
+          "start_min": 0.0,
+          "end_min": 1.1411260957001572
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V04_V02",
+          "start_min": 1.1411260957001572,
+          "end_min": 1.6152152086362017
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "start_min": 1.6152152086362017,
+          "end_min": 2.3289775390990233
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "kind": "charger",
+          "resource": "V06",
+          "start_min": 7.328977539099023,
+          "end_min": 17.32897753909902
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V02_V04",
+          "start_min": 24.0,
+          "end_min": 24.849089112936046
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V06_V02",
+          "start_min": 18.11957100287051,
+          "end_min": 19.0
+        },
+        {
+          "record_id": "NET_S04_B",
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "start_min": 33.0,
+          "end_min": 33.73927172199733
+        }
+      ],
+      "window_loads": [
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 7,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 8,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 9,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 10,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 12,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 13,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 14,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 15,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 16,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V06",
+          "bucket": 17,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V02",
+          "bucket": 4,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V04",
+          "bucket": 24,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V04",
+          "bucket": 25,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V04",
+          "bucket": 26,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "bucket": 2,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V06",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V07",
+          "bucket": 4,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V02_V07",
+          "bucket": 5,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V07",
+          "bucket": 18,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V07",
+          "bucket": 19,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V02",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V02",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V05_V04",
+          "bucket": 0,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V05_V04",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V06_V02",
+          "bucket": 18,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V02",
+          "bucket": 25,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V03",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V03",
+          "bucket": 12,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 4,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V02",
+          "bucket": 19,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V02",
+          "bucket": 24,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V03",
+          "bucket": 13,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V03",
+          "bucket": 18,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 24,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 26,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V05",
+          "bucket": 0,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 2,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 18,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 5,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 19,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 25,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        }
+      ]
+    },
+    "quality": true,
+    "full_seconds": 2.2436562000002596
+  }
+}

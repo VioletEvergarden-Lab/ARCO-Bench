@@ -1,0 +1,327 @@
+{
+  "completion": {
+    "planned": 96,
+    "terminal": 96,
+    "pending": []
+  },
+  "sources": {
+    "G": {
+      "admissible": 36,
+      "quality": 13,
+      "tasks": 36,
+      "statuses": {
+        "admissible_miss": 23,
+        "reference_quality": 13
+      },
+      "first_miss": {
+        "urgent_holds": 8,
+        "repair_distance": 14,
+        "total_holds": 1
+      },
+      "extra_urgent_holds": 8.0,
+      "extra_total_holds": 13.0,
+      "admissible_service_denominator": 36,
+      "mean_extra_total_fraction": 0.016628086419753087,
+      "same_service_energy_denominator": 23,
+      "energy_difference_same_service": {
+        "n": 23,
+        "minimum": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      }
+    },
+    "R4": {
+      "admissible": 36,
+      "quality": 23,
+      "tasks": 36,
+      "statuses": {
+        "admissible_miss": 13,
+        "reference_quality": 23
+      },
+      "first_miss": {
+        "repair_distance": 11,
+        "weighted_tardiness_min": 1,
+        "urgent_holds": 1
+      },
+      "extra_urgent_holds": 1.0,
+      "extra_total_holds": 2.0,
+      "admissible_service_denominator": 36,
+      "mean_extra_total_fraction": 0.001736111111111111,
+      "same_service_energy_denominator": 28,
+      "energy_difference_same_service": {
+        "n": 28,
+        "minimum": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "maximum": 0.003766313028469803
+      }
+    },
+    "deepseek": {
+      "admissible": 28,
+      "quality": 24,
+      "tasks": 36,
+      "statuses": {
+        "reference_quality": 24,
+        "infeasible": 2,
+        "admissible_miss": 4,
+        "no_answer": 6
+      },
+      "first_miss": {
+        "repair_distance": 3,
+        "weighted_tardiness_min": 1
+      },
+      "extra_urgent_holds": 0.0,
+      "extra_total_holds": 0.0,
+      "admissible_service_denominator": 28,
+      "mean_extra_total_fraction": 0.0,
+      "same_service_energy_denominator": 27,
+      "energy_difference_same_service": {
+        "n": 27,
+        "minimum": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      }
+    },
+    "luna": {
+      "admissible": 36,
+      "quality": 32,
+      "tasks": 36,
+      "statuses": {
+        "reference_quality": 32,
+        "admissible_miss": 4
+      },
+      "first_miss": {
+        "repair_distance": 4
+      },
+      "extra_urgent_holds": 0.0,
+      "extra_total_holds": 0.0,
+      "admissible_service_denominator": 36,
+      "mean_extra_total_fraction": 0.0,
+      "same_service_energy_denominator": 36,
+      "energy_difference_same_service": {
+        "n": 36,
+        "minimum": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      }
+    },
+    "G+deepseek": {
+      "admissible": 36,
+      "quality": 26,
+      "tasks": 36
+    },
+    "G+luna": {
+      "admissible": 36,
+      "quality": 32,
+      "tasks": 36
+    },
+    "R4+deepseek": {
+      "admissible": 36,
+      "quality": 31,
+      "tasks": 36
+    },
+    "R4+luna": {
+      "admissible": 36,
+      "quality": 33,
+      "tasks": 36
+    }
+  },
+  "timing": {
+    "G": {
+      "n": 36,
+      "minimum": 0.04611780000414001,
+      "median": 0.16325784999935422,
+      "p95": 0.43026962500334776,
+      "maximum": 0.46537910000188276
+    },
+    "R4": {
+      "n": 36,
+      "minimum": 1.6557763000018895,
+      "median": 48.99415360000057,
+      "p95": 601.0494864499997,
+      "maximum": 604.5145019999982
+    },
+    "R4_complete": 33
+  },
+  "latency": {
+    "deepseek": {
+      "seconds": {
+        "n": 48,
+        "minimum": 1.69971,
+        "median": 247.0348555,
+        "p95": 542.29557815,
+        "maximum": 725.805519
+      },
+      "usable_response_seconds": {
+        "n": 42,
+        "minimum": 139.306511,
+        "median": 256.49327,
+        "p95": 547.1959794499999,
+        "maximum": 725.805519
+      },
+      "returned_models": {
+        "deepseek-v4-pro": 42
+      },
+      "first_request": "2026-09-30T17:58:17.006865+00:00",
+      "last_terminal": "2026-10-01T02:24:00.819051+00:00"
+    },
+    "luna": {
+      "seconds": {
+        "n": 48,
+        "minimum": 79.160006,
+        "median": 269.9312715,
+        "p95": 573.7803703,
+        "maximum": 1193.259047
+      },
+      "usable_response_seconds": {
+        "n": 48,
+        "minimum": 79.160006,
+        "median": 269.9312715,
+        "p95": 573.7803703,
+        "maximum": 1193.259047
+      },
+      "returned_models": {
+        "gpt-5.6-luna": 48
+      },
+      "first_request": "2026-09-30T17:58:17.007865+00:00",
+      "last_terminal": "2026-09-30T19:19:33.840132+00:00"
+    }
+  },
+  "window_comparison": [
+    {
+      "record_id": "NET_S01_B",
+      "half_minute_reference_optimal": true,
+      "half_minute_proved_prefix": 6,
+      "reference_equal": true,
+      "one_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 27.2,
+        "weighted_tardiness_min": 87.0,
+        "delay_and_charge_wait_min": 83.0,
+        "energy_kwh": 0.12400473726072944
+      },
+      "half_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 27.2,
+        "weighted_tardiness_min": 87.0,
+        "delay_and_charge_wait_min": 83.0,
+        "energy_kwh": 0.12400473726072944
+      }
+    },
+    {
+      "record_id": "NET_S01_C",
+      "half_minute_reference_optimal": true,
+      "half_minute_proved_prefix": 6,
+      "reference_equal": true,
+      "one_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 1.0,
+        "repair_distance": 1039.6000000000001,
+        "weighted_tardiness_min": 247.0,
+        "delay_and_charge_wait_min": 95.0,
+        "energy_kwh": 0.11010244196370544
+      },
+      "half_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 1.0,
+        "repair_distance": 1039.6000000000001,
+        "weighted_tardiness_min": 247.0,
+        "delay_and_charge_wait_min": 95.0,
+        "energy_kwh": 0.11010244196370544
+      }
+    },
+    {
+      "record_id": "NET_M01_B",
+      "half_minute_reference_optimal": true,
+      "half_minute_proved_prefix": 6,
+      "reference_equal": true,
+      "one_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 38.800000000000004,
+        "weighted_tardiness_min": 180.0,
+        "delay_and_charge_wait_min": 112.0,
+        "energy_kwh": 0.22690605490183952
+      },
+      "half_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 38.800000000000004,
+        "weighted_tardiness_min": 180.0,
+        "delay_and_charge_wait_min": 112.0,
+        "energy_kwh": 0.22690605490183952
+      }
+    },
+    {
+      "record_id": "NET_M01_C",
+      "half_minute_reference_optimal": true,
+      "half_minute_proved_prefix": 6,
+      "reference_equal": true,
+      "one_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 2.0,
+        "repair_distance": 2034.6,
+        "weighted_tardiness_min": 168.0,
+        "delay_and_charge_wait_min": 160.0,
+        "energy_kwh": 0.20977006746781762
+      },
+      "half_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 2.0,
+        "repair_distance": 2034.6000000000001,
+        "weighted_tardiness_min": 168.0,
+        "delay_and_charge_wait_min": 160.0,
+        "energy_kwh": 0.20977006746781762
+      }
+    },
+    {
+      "record_id": "NET_L01_B",
+      "half_minute_reference_optimal": true,
+      "half_minute_proved_prefix": 6,
+      "reference_equal": false,
+      "one_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 40.59999999999999,
+        "weighted_tardiness_min": 12.0,
+        "delay_and_charge_wait_min": 179.0,
+        "energy_kwh": 0.4403609910024902
+      },
+      "half_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 40.199999999999996,
+        "weighted_tardiness_min": 12.0,
+        "delay_and_charge_wait_min": 177.0,
+        "energy_kwh": 0.4403609910024902
+      }
+    },
+    {
+      "record_id": "NET_L01_C",
+      "half_minute_reference_optimal": true,
+      "half_minute_proved_prefix": 6,
+      "reference_equal": false,
+      "one_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 4.0,
+        "repair_distance": 4044.9999999999995,
+        "weighted_tardiness_min": 221.0,
+        "delay_and_charge_wait_min": 245.0,
+        "energy_kwh": 0.38272428585992807
+      },
+      "half_minute": {
+        "urgent_holds": 0.0,
+        "total_holds": 4.0,
+        "repair_distance": 4044.999999999999,
+        "weighted_tardiness_min": 211.0,
+        "delay_and_charge_wait_min": 253.0,
+        "energy_kwh": 0.38272428585992807
+      }
+    }
+  ]
+}

@@ -1,0 +1,2893 @@
+{
+  "record_id": "NET_S01_B",
+  "window_min": 0.5,
+  "reference": {
+    "record_id": "NET_S01_B",
+    "optimal": true,
+    "proved_prefix": 6,
+    "decisions": [
+      {
+        "mission_id": "M001",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 10,
+        "charge_blocks": 3
+      },
+      {
+        "mission_id": "M002",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 38,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M003",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 44,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M004",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 1,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M005",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 7,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M006",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 21,
+        "charge_blocks": 1
+      },
+      {
+        "mission_id": "M007",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 33,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M008",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 11,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M009",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 33,
+        "charge_blocks": 0
+      }
+    ],
+    "objective": {
+      "urgent_holds": 0.0,
+      "total_holds": 0.0,
+      "repair_distance": 27.2,
+      "weighted_tardiness_min": 87.0,
+      "delay_and_charge_wait_min": 83.0,
+      "energy_kwh": 0.12400473726072944
+    },
+    "phases": [
+      {
+        "tier": "urgent_holds",
+        "status": 0,
+        "seconds": 0.0006989000030444004,
+        "upper_bound": 0.0,
+        "lower_bound": 0.0,
+        "mip_gap": 0.0,
+        "proof": "all-service nonnegativity",
+        "public_bound_rows": [
+          {
+            "origin": "V04",
+            "final_missions": [
+              "M003",
+              "M007",
+              "M009"
+            ],
+            "movement_quota": 54
+          }
+        ]
+      },
+      {
+        "tier": "total_holds",
+        "status": 0,
+        "seconds": 0.00035480000224197283,
+        "upper_bound": 0.0,
+        "lower_bound": 0.0,
+        "mip_gap": 0.0,
+        "proof": "all-service nonnegativity",
+        "public_bound_rows": [
+          {
+            "origin": "V04",
+            "final_missions": [
+              "M003",
+              "M007",
+              "M009"
+            ],
+            "movement_quota": 54
+          }
+        ]
+      },
+      {
+        "tier": "repair_distance",
+        "status": 0,
+        "seconds": 1.6103192000009585,
+        "upper_bound": 27.2,
+        "lower_bound": 27.2,
+        "mip_gap": 0.0
+      },
+      {
+        "tier": "weighted_tardiness_min",
+        "status": 0,
+        "seconds": 0.7511037000003853,
+        "upper_bound": 87.0,
+        "lower_bound": 87.0,
+        "mip_gap": 0.0
+      },
+      {
+        "tier": "delay_and_charge_wait_min",
+        "status": 0,
+        "seconds": 0.5651118000023416,
+        "upper_bound": 83.0,
+        "lower_bound": 83.0,
+        "mip_gap": 0.0
+      },
+      {
+        "tier": "energy_kwh",
+        "status": 0,
+        "seconds": 0.5563226000012946,
+        "upper_bound": 0.12400473726072946,
+        "lower_bound": 0.12400473726072946,
+        "mip_gap": 0.0
+      }
+    ],
+    "build_seconds": 0.10223400000541005,
+    "total_seconds": 3.6325120000037714,
+    "variables": 2429,
+    "constraints": 2538,
+    "prefix_values": "extracted finite-option plan",
+    "solver_threads": 1,
+    "solver": "HiGHS 1.15.1",
+    "warm_start": "preceding tier integer plan",
+    "continuous_prefix_tol": 1e-05,
+    "anytime_preserves_seed": true,
+    "service_bound_proofs": true
+  },
+  "G": {
+    "decisions": [
+      {
+        "mission_id": "M001",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 11,
+        "charge_blocks": 1
+      },
+      {
+        "mission_id": "M002",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 29,
+        "charge_blocks": 2
+      },
+      {
+        "mission_id": "M003",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 45,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M004",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 1,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M005",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 7,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M006",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 21,
+        "charge_blocks": 1
+      },
+      {
+        "mission_id": "M007",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 33,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M008",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 10,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M009",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 33,
+        "charge_blocks": 0
+      }
+    ],
+    "score": {
+      "admissible": true,
+      "errors": [],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 35.599999999999994,
+        "weighted_tardiness_min": 78.0,
+        "delay_and_charge_wait_min": 75.0,
+        "energy_kwh": 0.12400473726072944
+      },
+      "events": [
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 11,
+          "arrival_min": 13.190285966466403,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 18.190285966466405,
+          "finish_min": 23.190285966466405,
+          "charge_blocks": 1,
+          "continuous_flight_min": 2.1902859664664036,
+          "soc_before_kwh": 0.04333796758938326,
+          "soc_service_departure_kwh": 0.04333796758938326,
+          "soc_arrival_kwh": 0.024980000000000002,
+          "soc_after_charge_kwh": 0.03231333333333333,
+          "reserve_margin_kwh": 0.005000000000000001,
+          "flight_energy_kwh": 0.01835796758938326,
+          "charge_kwh": 0.007333333333333333,
+          "release_wait_min": 11,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 11
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 29,
+          "arrival_min": 29.879408959652856,
+          "incoming_start_min": 23.320997478519292,
+          "incoming_arrival_min": 24,
+          "charge_start_min": 34.87940895965286,
+          "finish_min": 44.87940895965286,
+          "charge_blocks": 2,
+          "continuous_flight_min": 1.5584114811335645,
+          "soc_before_kwh": 0.03231333333333333,
+          "soc_service_departure_kwh": 0.02755354939962862,
+          "soc_arrival_kwh": 0.020781286689754538,
+          "soc_after_charge_kwh": 0.0354479533564212,
+          "reserve_margin_kwh": 0.0008012866897545365,
+          "flight_energy_kwh": 0.011532046643578795,
+          "charge_kwh": 0.014666666666666666,
+          "release_wait_min": 18,
+          "tardiness_min": 8.0,
+          "route_changed": false,
+          "departure_shift_min": 16
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M003",
+          "uav_id": "U01",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 45,
+          "arrival_min": 46.183756461030896,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 51.183756461030896,
+          "finish_min": 51.183756461030896,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.1837564610308966,
+          "soc_before_kwh": 0.0354479533564212,
+          "soc_service_departure_kwh": 0.0354479533564212,
+          "soc_arrival_kwh": 0.02635154607462889,
+          "soc_after_charge_kwh": 0.02635154607462889,
+          "reserve_margin_kwh": 0.006371546074628889,
+          "flight_energy_kwh": 0.009096407281792314,
+          "charge_kwh": 0.0,
+          "release_wait_min": 12,
+          "tardiness_min": 4.0,
+          "route_changed": false,
+          "departure_shift_min": 12
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 1,
+          "arrival_min": 1.6790025214807074,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 6.679002521480707,
+          "finish_min": 6.679002521480707,
+          "charge_blocks": 0,
+          "continuous_flight_min": 0.6790025214807074,
+          "soc_before_kwh": 0.07992,
+          "soc_service_departure_kwh": 0.07992,
+          "soc_arrival_kwh": 0.07418047154381355,
+          "soc_after_charge_kwh": 0.07418047154381355,
+          "reserve_margin_kwh": 0.05420047154381355,
+          "flight_energy_kwh": 0.00573952845618646,
+          "charge_kwh": 0.0,
+          "release_wait_min": 1,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 7,
+          "arrival_min": 9.149484436098689,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 14.149484436098689,
+          "finish_min": 14.149484436098689,
+          "charge_blocks": 0,
+          "continuous_flight_min": 2.149484436098689,
+          "soc_before_kwh": 0.07418047154381355,
+          "soc_service_departure_kwh": 0.07418047154381355,
+          "soc_arrival_kwh": 0.05616317573853176,
+          "soc_after_charge_kwh": 0.05616317573853176,
+          "reserve_margin_kwh": 0.03618317573853176,
+          "flight_energy_kwh": 0.01801729580528179,
+          "charge_kwh": 0.0,
+          "release_wait_min": 1,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 21,
+          "arrival_min": 22.183756461030896,
+          "incoming_start_min": 14.254610663383737,
+          "incoming_arrival_min": 16,
+          "charge_start_min": 27.183756461030896,
+          "finish_min": 32.183756461030896,
+          "charge_blocks": 1,
+          "continuous_flight_min": 2.929145797647159,
+          "soc_before_kwh": 0.05616317573853176,
+          "soc_service_departure_kwh": 0.043996468038279314,
+          "soc_arrival_kwh": 0.03404250390850176,
+          "soc_after_charge_kwh": 0.04137583724183509,
+          "reserve_margin_kwh": 0.01406250390850176,
+          "flight_energy_kwh": 0.022120671830029998,
+          "charge_kwh": 0.007333333333333333,
+          "release_wait_min": 2,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M007",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 33,
+          "arrival_min": 34.813089088188086,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 39.813089088188086,
+          "finish_min": 39.813089088188086,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.8130890881880883,
+          "soc_before_kwh": 0.04137583724183509,
+          "soc_service_departure_kwh": 0.04137583724183509,
+          "soc_arrival_kwh": 0.02747354194481109,
+          "soc_after_charge_kwh": 0.02747354194481109,
+          "reserve_margin_kwh": 0.00749354194481109,
+          "flight_energy_kwh": 0.013902295297024001,
+          "charge_kwh": 0.0,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 10,
+          "arrival_min": 11.645075476445832,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 16.645075476445832,
+          "finish_min": 16.645075476445832,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.6450754764458315,
+          "soc_before_kwh": 0.07992,
+          "soc_service_departure_kwh": 0.07992,
+          "soc_arrival_kwh": 0.06730073782127359,
+          "soc_after_charge_kwh": 0.06730073782127359,
+          "reserve_margin_kwh": 0.04732073782127359,
+          "flight_energy_kwh": 0.012619262178726418,
+          "charge_kwh": 0.0,
+          "release_wait_min": 10,
+          "tardiness_min": 3.0,
+          "route_changed": false,
+          "departure_shift_min": 9
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 33,
+          "arrival_min": 34.64507547644583,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 39.64507547644583,
+          "finish_min": 39.64507547644583,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.6450754764458315,
+          "soc_before_kwh": 0.06730073782127359,
+          "soc_service_departure_kwh": 0.06730073782127359,
+          "soc_arrival_kwh": 0.054681475642547175,
+          "soc_after_charge_kwh": 0.054681475642547175,
+          "reserve_margin_kwh": 0.03470147564254718,
+          "flight_energy_kwh": 0.012619262178726418,
+          "charge_kwh": 0.0,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        }
+      ],
+      "resource_intervals": [
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "start_min": 11.0,
+          "end_min": 12.436742143112498
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V04_V03",
+          "start_min": 12.436742143112498,
+          "end_min": 13.190285966466403
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "kind": "charger",
+          "resource": "V03",
+          "start_min": 18.190285966466405,
+          "end_min": 23.190285966466405
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "start_min": 29.0,
+          "end_min": 29.879408959652856
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "start_min": 23.320997478519292,
+          "end_min": 24.0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "kind": "charger",
+          "resource": "V04",
+          "start_min": 34.87940895965286,
+          "end_min": 44.87940895965286
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M003",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "start_min": 45.0,
+          "end_min": 46.183756461030896
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "start_min": 1.0,
+          "end_min": 1.6790025214807074
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "start_min": 7.0,
+          "end_min": 7.671075626319524
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "start_min": 7.671075626319524,
+          "end_min": 9.149484436098689
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V01_V04",
+          "start_min": 21.0,
+          "end_min": 22.183756461030896
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V07_V01",
+          "start_min": 14.254610663383737,
+          "end_min": 16.0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "kind": "charger",
+          "resource": "V04",
+          "start_min": 27.183756461030896,
+          "end_min": 32.183756461030896
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M007",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "start_min": 33.0,
+          "end_min": 33.97542312769756
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M007",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V01_V05",
+          "start_min": 33.97542312769756,
+          "end_min": 34.813089088188086
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "start_min": 10.0,
+          "end_min": 11.645075476445832
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "start_min": 33.0,
+          "end_min": 34.64507547644583
+        }
+      ],
+      "window_loads": [
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 36,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 37,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 38,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 39,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 40,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 41,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 42,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 43,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 44,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 45,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 46,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 54,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 55,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 56,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 57,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 58,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 59,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 60,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 61,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 62,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 63,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 64,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 69,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 70,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 71,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 72,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 73,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 74,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 75,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 76,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 77,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 78,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 79,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 80,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 81,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 82,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 83,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 84,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 85,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 86,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 87,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 88,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 89,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V04",
+          "bucket": 42,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V04",
+          "bucket": 43,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V04",
+          "bucket": 44,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V05",
+          "bucket": 67,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V05",
+          "bucket": 68,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V05",
+          "bucket": 69,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "bucket": 2,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "bucket": 3,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "bucket": 46,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "bucket": 47,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 66,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 67,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 90,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 91,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 92,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V03",
+          "bucket": 24,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V03",
+          "bucket": 25,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V03",
+          "bucket": 26,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 15,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 16,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 17,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 18,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 66,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 67,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 68,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 69,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "bucket": 14,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "bucket": 15,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "bucket": 58,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "bucket": 59,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V01",
+          "bucket": 28,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V01",
+          "bucket": 29,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V01",
+          "bucket": 30,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V01",
+          "bucket": 31,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 20,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 21,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 22,
+          "width_min": 0.5,
+          "count": 2,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 23,
+          "width_min": 0.5,
+          "count": 2,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 24,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 16,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 21,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 46,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V03",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V03",
+          "bucket": 13,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V03",
+          "bucket": 23,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 22,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 29,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 45,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V05",
+          "bucket": 34,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 7,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 24,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 29,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 9,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 10,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 14,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 34,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        }
+      ]
+    }
+  },
+  "R4": {
+    "result": {
+      "record_id": "NET_S01_B",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 10,
+          "charge_blocks": 3
+        },
+        {
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 38,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M003",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 44,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 21,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "M007",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 33,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 33,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 27.2,
+        "weighted_tardiness_min": 87.0,
+        "delay_and_charge_wait_min": 83.0,
+        "energy_kwh": 0.12400473726072944
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.009582099999533966,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0,
+          "proof": "final-departure pad quota",
+          "public_bound_rows": [
+            {
+              "origin": "V04",
+              "final_missions": [
+                "M003",
+                "M007",
+                "M009"
+              ],
+              "movement_quota": 54
+            }
+          ]
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.0004619999963324517,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0,
+          "proof": "final-departure pad quota",
+          "public_bound_rows": [
+            {
+              "origin": "V04",
+              "final_missions": [
+                "M003",
+                "M007",
+                "M009"
+              ],
+              "movement_quota": 54
+            }
+          ]
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 3.06584479999583,
+          "upper_bound": 27.2,
+          "lower_bound": 27.2,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.9130643000025884,
+          "upper_bound": 87.0,
+          "lower_bound": 87.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.5604452000043239,
+          "upper_bound": 83.0,
+          "lower_bound": 83.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.5581807999988087,
+          "upper_bound": 0.12400473726072946,
+          "lower_bound": 0.12400473726072944,
+          "mip_gap": 1.1459928893944264e-16
+        }
+      ],
+      "build_seconds": 0.05007430000114255,
+      "total_seconds": 5.17026949999854,
+      "variables": 2429,
+      "constraints": 2530,
+      "prefix_values": "extracted finite-option plan",
+      "solver_threads": 1,
+      "solver": "HiGHS 1.15.1",
+      "warm_start": "preceding tier integer plan",
+      "continuous_prefix_tol": 1e-05,
+      "anytime_preserves_seed": true,
+      "service_bound_proofs": true
+    },
+    "score": {
+      "admissible": true,
+      "errors": [],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 27.2,
+        "weighted_tardiness_min": 87.0,
+        "delay_and_charge_wait_min": 83.0,
+        "energy_kwh": 0.12400473726072944
+      },
+      "events": [
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 10,
+          "arrival_min": 12.190285966466403,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 17.190285966466405,
+          "finish_min": 32.190285966466405,
+          "charge_blocks": 3,
+          "continuous_flight_min": 2.1902859664664036,
+          "soc_before_kwh": 0.04333796758938326,
+          "soc_service_departure_kwh": 0.04333796758938326,
+          "soc_arrival_kwh": 0.024980000000000002,
+          "soc_after_charge_kwh": 0.04698,
+          "reserve_margin_kwh": 0.005000000000000001,
+          "flight_energy_kwh": 0.01835796758938326,
+          "charge_kwh": 0.022,
+          "release_wait_min": 10,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 10
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 38,
+          "arrival_min": 38.87940895965286,
+          "incoming_start_min": 32.320997478519295,
+          "incoming_arrival_min": 33,
+          "charge_start_min": 43.87940895965286,
+          "finish_min": 43.87940895965286,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.5584114811335645,
+          "soc_before_kwh": 0.04698,
+          "soc_service_departure_kwh": 0.04222021606629529,
+          "soc_arrival_kwh": 0.03544795335642121,
+          "soc_after_charge_kwh": 0.03544795335642121,
+          "reserve_margin_kwh": 0.015467953356421208,
+          "flight_energy_kwh": 0.011532046643578795,
+          "charge_kwh": 0.0,
+          "release_wait_min": 27,
+          "tardiness_min": 17.0,
+          "route_changed": false,
+          "departure_shift_min": 25
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M003",
+          "uav_id": "U01",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 44,
+          "arrival_min": 45.183756461030896,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 50.183756461030896,
+          "finish_min": 50.183756461030896,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.1837564610308966,
+          "soc_before_kwh": 0.03544795335642121,
+          "soc_service_departure_kwh": 0.03544795335642121,
+          "soc_arrival_kwh": 0.026351546074628897,
+          "soc_after_charge_kwh": 0.026351546074628897,
+          "reserve_margin_kwh": 0.006371546074628896,
+          "flight_energy_kwh": 0.009096407281792314,
+          "charge_kwh": 0.0,
+          "release_wait_min": 11,
+          "tardiness_min": 3.0,
+          "route_changed": false,
+          "departure_shift_min": 11
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 1,
+          "arrival_min": 1.6790025214807074,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 6.679002521480707,
+          "finish_min": 6.679002521480707,
+          "charge_blocks": 0,
+          "continuous_flight_min": 0.6790025214807074,
+          "soc_before_kwh": 0.07992,
+          "soc_service_departure_kwh": 0.07992,
+          "soc_arrival_kwh": 0.07418047154381355,
+          "soc_after_charge_kwh": 0.07418047154381355,
+          "reserve_margin_kwh": 0.05420047154381355,
+          "flight_energy_kwh": 0.00573952845618646,
+          "charge_kwh": 0.0,
+          "release_wait_min": 1,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 7,
+          "arrival_min": 9.149484436098689,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 14.149484436098689,
+          "finish_min": 14.149484436098689,
+          "charge_blocks": 0,
+          "continuous_flight_min": 2.149484436098689,
+          "soc_before_kwh": 0.07418047154381355,
+          "soc_service_departure_kwh": 0.07418047154381355,
+          "soc_arrival_kwh": 0.05616317573853176,
+          "soc_after_charge_kwh": 0.05616317573853176,
+          "reserve_margin_kwh": 0.03618317573853176,
+          "flight_energy_kwh": 0.01801729580528179,
+          "charge_kwh": 0.0,
+          "release_wait_min": 1,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 21,
+          "arrival_min": 22.183756461030896,
+          "incoming_start_min": 14.254610663383737,
+          "incoming_arrival_min": 16,
+          "charge_start_min": 27.183756461030896,
+          "finish_min": 32.183756461030896,
+          "charge_blocks": 1,
+          "continuous_flight_min": 2.929145797647159,
+          "soc_before_kwh": 0.05616317573853176,
+          "soc_service_departure_kwh": 0.043996468038279314,
+          "soc_arrival_kwh": 0.03404250390850176,
+          "soc_after_charge_kwh": 0.04137583724183509,
+          "reserve_margin_kwh": 0.01406250390850176,
+          "flight_energy_kwh": 0.022120671830029998,
+          "charge_kwh": 0.007333333333333333,
+          "release_wait_min": 2,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M007",
+          "uav_id": "U02",
+          "held": false,
+          "priority": "routine",
+          "path_id": "P1",
+          "depart_min": 33,
+          "arrival_min": 34.813089088188086,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 39.813089088188086,
+          "finish_min": 39.813089088188086,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.8130890881880883,
+          "soc_before_kwh": 0.04137583724183509,
+          "soc_service_departure_kwh": 0.04137583724183509,
+          "soc_arrival_kwh": 0.02747354194481109,
+          "soc_after_charge_kwh": 0.02747354194481109,
+          "reserve_margin_kwh": 0.00749354194481109,
+          "flight_energy_kwh": 0.013902295297024001,
+          "charge_kwh": 0.0,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 11,
+          "arrival_min": 12.645075476445832,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 17.645075476445832,
+          "finish_min": 17.645075476445832,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.6450754764458315,
+          "soc_before_kwh": 0.07992,
+          "soc_service_departure_kwh": 0.07992,
+          "soc_arrival_kwh": 0.06730073782127359,
+          "soc_after_charge_kwh": 0.06730073782127359,
+          "reserve_margin_kwh": 0.04732073782127359,
+          "flight_energy_kwh": 0.012619262178726418,
+          "charge_kwh": 0.0,
+          "release_wait_min": 11,
+          "tardiness_min": 4.0,
+          "route_changed": false,
+          "departure_shift_min": 10
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "held": false,
+          "priority": "urgent",
+          "path_id": "P1",
+          "depart_min": 33,
+          "arrival_min": 34.64507547644583,
+          "incoming_start_min": null,
+          "incoming_arrival_min": null,
+          "charge_start_min": 39.64507547644583,
+          "finish_min": 39.64507547644583,
+          "charge_blocks": 0,
+          "continuous_flight_min": 1.6450754764458315,
+          "soc_before_kwh": 0.06730073782127359,
+          "soc_service_departure_kwh": 0.06730073782127359,
+          "soc_arrival_kwh": 0.054681475642547175,
+          "soc_after_charge_kwh": 0.054681475642547175,
+          "reserve_margin_kwh": 0.03470147564254718,
+          "flight_energy_kwh": 0.012619262178726418,
+          "charge_kwh": 0.0,
+          "release_wait_min": 0,
+          "tardiness_min": 0,
+          "route_changed": false,
+          "departure_shift_min": 0
+        }
+      ],
+      "resource_intervals": [
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "start_min": 10.0,
+          "end_min": 11.436742143112498
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V04_V03",
+          "start_min": 11.436742143112498,
+          "end_min": 12.190285966466403
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "kind": "charger",
+          "resource": "V03",
+          "start_min": 17.190285966466405,
+          "end_min": 32.190285966466405
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "start_min": 38.0,
+          "end_min": 38.87940895965286
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "start_min": 32.320997478519295,
+          "end_min": 33.0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M003",
+          "uav_id": "U01",
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "start_min": 44.0,
+          "end_min": 45.183756461030896
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "start_min": 1.0,
+          "end_min": 1.6790025214807074
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "start_min": 7.0,
+          "end_min": 7.671075626319524
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "start_min": 7.671075626319524,
+          "end_min": 9.149484436098689
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V01_V04",
+          "start_min": 21.0,
+          "end_min": 22.183756461030896
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V07_V01",
+          "start_min": 14.254610663383737,
+          "end_min": 16.0
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "kind": "charger",
+          "resource": "V04",
+          "start_min": 27.183756461030896,
+          "end_min": 32.183756461030896
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M007",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "start_min": 33.0,
+          "end_min": 33.97542312769756
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M007",
+          "uav_id": "U02",
+          "kind": "corridor",
+          "resource": "E_V01_V05",
+          "start_min": 33.97542312769756,
+          "end_min": 34.813089088188086
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "start_min": 11.0,
+          "end_min": 12.645075476445832
+        },
+        {
+          "record_id": "NET_S01_B",
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "start_min": 33.0,
+          "end_min": 34.64507547644583
+        }
+      ],
+      "window_loads": [
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 34,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 35,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 36,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 37,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 38,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 39,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 40,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 41,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 42,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 43,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 44,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 45,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 46,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 47,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 48,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 49,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 50,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 51,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 52,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 53,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 54,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 55,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 56,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 57,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 58,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 59,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 60,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 61,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 62,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 63,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V03",
+          "bucket": 64,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 54,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 55,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 56,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 57,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 58,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 59,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 60,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 61,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 62,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 63,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "charger",
+          "resource": "V04",
+          "bucket": 64,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V04",
+          "bucket": 42,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V04",
+          "bucket": 43,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V04",
+          "bucket": 44,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V05",
+          "bucket": 67,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V05",
+          "bucket": 68,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V05",
+          "bucket": 69,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "bucket": 2,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "bucket": 3,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "bucket": 64,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V03_V06",
+          "bucket": 65,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 66,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 67,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 88,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 89,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V01",
+          "bucket": 90,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V03",
+          "bucket": 22,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V03",
+          "bucket": 23,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V03",
+          "bucket": 24,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 15,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 16,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 17,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 18,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 66,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 67,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 68,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V04_V07",
+          "bucket": 69,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "bucket": 14,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "bucket": 15,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "bucket": 76,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V06_V04",
+          "bucket": 77,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V01",
+          "bucket": 28,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V01",
+          "bucket": 29,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V01",
+          "bucket": 30,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V01",
+          "bucket": 31,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 20,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 21,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 22,
+          "width_min": 0.5,
+          "count": 2,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 23,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 24,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "corridor",
+          "resource": "E_V07_V04",
+          "bucket": 25,
+          "width_min": 0.5,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 16,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 21,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V01",
+          "bucket": 45,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 2
+        },
+        {
+          "kind": "pad",
+          "resource": "V03",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V03",
+          "bucket": 12,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V03",
+          "bucket": 32,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 12,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 22,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 38,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V04",
+          "bucket": 44,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 3
+        },
+        {
+          "kind": "pad",
+          "resource": "V05",
+          "bucket": 34,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 1,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 7,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 33,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V06",
+          "bucket": 38,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 9,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 10,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 14,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        },
+        {
+          "kind": "pad",
+          "resource": "V07",
+          "bucket": 34,
+          "width_min": 1,
+          "count": 1,
+          "capacity": 1
+        }
+      ]
+    }
+  }
+}

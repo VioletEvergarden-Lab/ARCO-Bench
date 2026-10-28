@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "runtime_version": "adds_complete_sortie_v1",
+  "checks": [
+    {
+      "name": "archived_six_task_legacy_equivalence",
+      "passed": true,
+      "record_id": "ADDS_PACZ05_C1_PAD5",
+      "greedy_and_reference_replays": true,
+      "sparse_model_identical": true
+    },
+    {
+      "name": "reference_vs_exhaustive_grid_1",
+      "passed": true,
+      "feasible_plans_enumerated": 12,
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 0.6000000000000001,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 8.0,
+        "energy_kwh": 0.02699430477160137
+      },
+      "l3_scale": 5.0,
+      "resource_window_min": 1
+    },
+    {
+      "name": "reference_vs_exhaustive_grid_0.5",
+      "passed": true,
+      "feasible_plans_enumerated": 32,
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 0.6000000000000001,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 8.0,
+        "energy_kwh": 0.02699430477160137
+      },
+      "l3_scale": 10.0,
+      "resource_window_min": 1
+    },
+    {
+      "name": "reference_vs_exhaustive_grid_0.25",
+      "passed": true,
+      "feasible_plans_enumerated": 99,
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 0.6000000000000001,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 8.0,
+        "energy_kwh": 0.02699430477160137
+      },
+      "l3_scale": 20.0,
+      "resource_window_min": 1
+    },
+    {
+      "name": "half_minute_L3_prefix_and_scope_query",
+      "passed": true,
+      "L3": 0.1,
+      "minimum_changes": 1
+    },
+    {
+      "name": "half_minute_L3_actual_scope_MILP",
+      "passed": true,
+      "target_L3": 0.1,
+      "minimum_changes": 2
+    },
+    {
+      "name": "quarter_minute_L3_prefix",
+      "passed": true,
+      "L3": 0.05,
+      "l3_scale": 20
+    },
+    {
+      "name": "suffix_final_return_precedence_SOC_resource_checks",
+      "passed": true,
+      "suffix_return_energy_counted": true
+    },
+    {
+      "name": "release_limits_departure_not_loading",
+      "passed": true
+    },
+    {
+      "name": "same_window_departure_and_return_count_twice",
+      "passed": true,
+      "capacity_one_options": 0,
+      "capacity_two_feasible": true
+    },
+    {
+      "name": "fixed_problem_nested_grids",
+      "passed": true,
+      "coarse_options": 14,
+      "fine_options": 30
+    },
+    {
+      "name": "fixed_lex_threshold_distinct_from_componentwise",
+      "passed": true,
+      "minimum_changes": 2,
+      "earlier_improvement_accepts_later_deterioration": true
+    }
+  ],
+  "check_count": 12,
+  "targeted_solver_calls": 24,
+  "seconds": 0.11263309977948666,
+  "scope": "Optional complete sorties, grid semantics, original pilot regression, and valid fixed-lex bounds; no formal evaluation results.",
+  "base_engine_sha256": "fde61215356fa69c793a81a694dfee3bd723b2c3786f1fd87544d32a8630266c"
+}

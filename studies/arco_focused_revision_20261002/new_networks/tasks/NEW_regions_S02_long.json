@@ -1,0 +1,997 @@
+{
+  "record_id": "NEW_regions_S02_long",
+  "schema_version": "arco_continuous_events_v1",
+  "model": {
+    "version": "M100_Rodrigues_arxiv_v1_20211122",
+    "airframe_instrumented_mass_kg": 3.68,
+    "rotor_diameter_m": 0.3302,
+    "rotors": 4,
+    "air_density_kg_m3": 1.225,
+    "g_m_s2": 9.80665,
+    "cruise_speed_m_s": 10.0,
+    "cruise_altitude_m": 25.0,
+    "takeoff_speed_m_s": 2.5,
+    "landing_speed_m_s": 2.0,
+    "power_coefficients": {
+      "takeoff": [
+        1.97,
+        13.8
+      ],
+      "cruise": [
+        1.69,
+        16.8
+      ],
+      "landing": [
+        1.62,
+        -4.7
+      ]
+    },
+    "battery_capacity_kwh": 0.0999,
+    "reserve_fraction": 0.2,
+    "initial_fraction": 0.8,
+    "charger_input_power_w": 100.0,
+    "charging_efficiency": 0.88,
+    "slot_min": 5,
+    "max_charge_minutes": 15
+  },
+  "timing": {
+    "departure_grid_min": 1,
+    "resource_window_min": 1,
+    "charge_block_min": 5,
+    "max_charge_blocks": 3,
+    "turnaround_min": 5,
+    "horizon_departure_min": 35
+  },
+  "nodes": [
+    {
+      "vertiport_id": "V01",
+      "xy_km": [
+        -0.13637133911166338,
+        0.009908563912114865
+      ]
+    },
+    {
+      "vertiport_id": "V02",
+      "xy_km": [
+        -0.3833956515812254,
+        0.282580593545608
+      ]
+    },
+    {
+      "vertiport_id": "V03",
+      "xy_km": [
+        -0.6493244363248313,
+        0.0016815577355769418
+      ]
+    },
+    {
+      "vertiport_id": "V04",
+      "xy_km": [
+        -0.41166933069640355,
+        -0.29405280752756435
+      ]
+    },
+    {
+      "vertiport_id": "V05",
+      "xy_km": [
+        0.6621106711965812,
+        0.015007475355259502
+      ]
+    },
+    {
+      "vertiport_id": "V06",
+      "xy_km": [
+        0.29556966293218806,
+        0.25205777044134026
+      ]
+    },
+    {
+      "vertiport_id": "V07",
+      "xy_km": [
+        0.2732552985429019,
+        -0.24728589013525049
+      ]
+    }
+  ],
+  "corridors": [
+    {
+      "corridor_id": "E_V01_V02",
+      "origin": "V01",
+      "destination": "V02",
+      "distance_km": 0.36792804554084807,
+      "geometry_xy_km": [
+        [
+          -0.13637133911166338,
+          0.009908563912114865
+        ],
+        [
+          -0.3833956515812254,
+          0.282580593545608
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V02_V01",
+      "origin": "V02",
+      "destination": "V01",
+      "distance_km": 0.36792804554084807,
+      "geometry_xy_km": [
+        [
+          -0.3833956515812254,
+          0.282580593545608
+        ],
+        [
+          -0.13637133911166338,
+          0.009908563912114865
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V01_V04",
+      "origin": "V01",
+      "destination": "V04",
+      "distance_km": 0.4100993775880211,
+      "geometry_xy_km": [
+        [
+          -0.13637133911166338,
+          0.009908563912114865
+        ],
+        [
+          -0.41166933069640355,
+          -0.29405280752756435
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V04_V01",
+      "origin": "V04",
+      "destination": "V01",
+      "distance_km": 0.4100993775880211,
+      "geometry_xy_km": [
+        [
+          -0.41166933069640355,
+          -0.29405280752756435
+        ],
+        [
+          -0.13637133911166338,
+          0.009908563912114865
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V01_V06",
+      "origin": "V01",
+      "destination": "V06",
+      "distance_km": 0.49518609377624884,
+      "geometry_xy_km": [
+        [
+          -0.13637133911166338,
+          0.009908563912114865
+        ],
+        [
+          0.29556966293218806,
+          0.25205777044134026
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V06_V01",
+      "origin": "V06",
+      "destination": "V01",
+      "distance_km": 0.49518609377624884,
+      "geometry_xy_km": [
+        [
+          0.29556966293218806,
+          0.25205777044134026
+        ],
+        [
+          -0.13637133911166338,
+          0.009908563912114865
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V02_V03",
+      "origin": "V02",
+      "destination": "V03",
+      "distance_km": 0.38681053097636336,
+      "geometry_xy_km": [
+        [
+          -0.3833956515812254,
+          0.282580593545608
+        ],
+        [
+          -0.6493244363248313,
+          0.0016815577355769418
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V03_V02",
+      "origin": "V03",
+      "destination": "V02",
+      "distance_km": 0.38681053097636336,
+      "geometry_xy_km": [
+        [
+          -0.6493244363248313,
+          0.0016815577355769418
+        ],
+        [
+          -0.3833956515812254,
+          0.282580593545608
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V03_V04",
+      "origin": "V03",
+      "destination": "V04",
+      "distance_km": 0.37939262516402744,
+      "geometry_xy_km": [
+        [
+          -0.6493244363248313,
+          0.0016815577355769418
+        ],
+        [
+          -0.41166933069640355,
+          -0.29405280752756435
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V04_V03",
+      "origin": "V04",
+      "destination": "V03",
+      "distance_km": 0.37939262516402744,
+      "geometry_xy_km": [
+        [
+          -0.41166933069640355,
+          -0.29405280752756435
+        ],
+        [
+          -0.6493244363248313,
+          0.0016815577355769418
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V03_V05",
+      "origin": "V03",
+      "destination": "V05",
+      "distance_km": 1.311502810260087,
+      "geometry_xy_km": [
+        [
+          -0.6493244363248313,
+          0.0016815577355769418
+        ],
+        [
+          0.6621106711965812,
+          0.015007475355259502
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V05_V03",
+      "origin": "V05",
+      "destination": "V03",
+      "distance_km": 1.311502810260087,
+      "geometry_xy_km": [
+        [
+          0.6621106711965812,
+          0.015007475355259502
+        ],
+        [
+          -0.6493244363248313,
+          0.0016815577355769418
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V05_V06",
+      "origin": "V05",
+      "destination": "V06",
+      "distance_km": 0.43651477997872634,
+      "geometry_xy_km": [
+        [
+          0.6621106711965812,
+          0.015007475355259502
+        ],
+        [
+          0.29556966293218806,
+          0.25205777044134026
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V06_V05",
+      "origin": "V06",
+      "destination": "V05",
+      "distance_km": 0.43651477997872634,
+      "geometry_xy_km": [
+        [
+          0.29556966293218806,
+          0.25205777044134026
+        ],
+        [
+          0.6621106711965812,
+          0.015007475355259502
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V05_V07",
+      "origin": "V05",
+      "destination": "V07",
+      "distance_km": 0.4690483028665278,
+      "geometry_xy_km": [
+        [
+          0.6621106711965812,
+          0.015007475355259502
+        ],
+        [
+          0.2732552985429019,
+          -0.24728589013525049
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V07_V05",
+      "origin": "V07",
+      "destination": "V05",
+      "distance_km": 0.4690483028665278,
+      "geometry_xy_km": [
+        [
+          0.2732552985429019,
+          -0.24728589013525049
+        ],
+        [
+          0.6621106711965812,
+          0.015007475355259502
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V06_V07",
+      "origin": "V06",
+      "destination": "V07",
+      "distance_km": 0.4998419972512587,
+      "geometry_xy_km": [
+        [
+          0.29556966293218806,
+          0.25205777044134026
+        ],
+        [
+          0.2732552985429019,
+          -0.24728589013525049
+        ]
+      ]
+    },
+    {
+      "corridor_id": "E_V07_V06",
+      "origin": "V07",
+      "destination": "V06",
+      "distance_km": 0.4998419972512587,
+      "geometry_xy_km": [
+        [
+          0.2732552985429019,
+          -0.24728589013525049
+        ],
+        [
+          0.29556966293218806,
+          0.25205777044134026
+        ]
+      ]
+    }
+  ],
+  "fleet": [
+    {
+      "uav_id": "U01",
+      "initial_soc_kwh": 0.07992,
+      "battery_capacity_kwh": 0.0999,
+      "reserve_kwh": 0.01998,
+      "available_min": 3,
+      "initial_vertiport": "V04"
+    },
+    {
+      "uav_id": "U02",
+      "initial_soc_kwh": 0.07992,
+      "battery_capacity_kwh": 0.0999,
+      "reserve_kwh": 0.01998,
+      "available_min": 2,
+      "initial_vertiport": "V02"
+    },
+    {
+      "uav_id": "U03",
+      "initial_soc_kwh": 0.07992,
+      "battery_capacity_kwh": 0.0999,
+      "reserve_kwh": 0.01998,
+      "available_min": 1,
+      "initial_vertiport": "V04"
+    }
+  ],
+  "missions": [
+    {
+      "mission_id": "M001",
+      "uav_id": "U01",
+      "sequence_index": 1,
+      "origin": "V04",
+      "destination": "V02",
+      "payload_kg": 0.5,
+      "priority": "routine",
+      "release_min": 2,
+      "due_min": 12.652005260233985,
+      "paths": [
+        {
+          "path_id": "P1",
+          "origin": "V04",
+          "destination": "V02",
+          "corridor_ids": [
+            "E_V04_V03",
+            "E_V03_V02"
+          ],
+          "flight_min": 1.6520052602339845,
+          "energy_kwh": 0.013863600665227443
+        },
+        {
+          "path_id": "P2",
+          "origin": "V04",
+          "destination": "V02",
+          "corridor_ids": [
+            "E_V04_V01",
+            "E_V01_V02"
+          ],
+          "flight_min": 1.6717123718814486,
+          "energy_kwh": 0.014028144907169424
+        },
+        {
+          "path_id": "P3",
+          "origin": "V04",
+          "destination": "V02",
+          "corridor_ids": [
+            "E_V04_V03",
+            "E_V03_V05",
+            "E_V05_V06",
+            "E_V06_V01",
+            "E_V01_V02"
+          ],
+          "flight_min": 5.359207257866563,
+          "energy_kwh": 0.04481682980090094
+        }
+      ],
+      "incoming": null
+    },
+    {
+      "mission_id": "M002",
+      "uav_id": "U01",
+      "sequence_index": 2,
+      "origin": "V02",
+      "destination": "V07",
+      "payload_kg": 0.5,
+      "priority": "routine",
+      "release_min": 9,
+      "due_min": 26.64659356094726,
+      "paths": [
+        {
+          "path_id": "P1",
+          "origin": "V02",
+          "destination": "V07",
+          "corridor_ids": [
+            "E_V02_V01",
+            "E_V01_V06",
+            "E_V06_V07"
+          ],
+          "flight_min": 2.6465935609472595,
+          "energy_kwh": 0.022167901209761542
+        },
+        {
+          "path_id": "P2",
+          "origin": "V02",
+          "destination": "V07",
+          "corridor_ids": [
+            "E_V02_V01",
+            "E_V01_V06",
+            "E_V06_V05",
+            "E_V05_V07"
+          ],
+          "flight_min": 3.322795370270585,
+          "energy_kwh": 0.027813838377282553
+        },
+        {
+          "path_id": "P3",
+          "origin": "V02",
+          "destination": "V07",
+          "corridor_ids": [
+            "E_V02_V03",
+            "E_V03_V05",
+            "E_V05_V07"
+          ],
+          "flight_min": 3.9872694068382972,
+          "energy_kwh": 0.03336185467683158
+        }
+      ],
+      "incoming": null
+    },
+    {
+      "mission_id": "M003",
+      "uav_id": "U02",
+      "sequence_index": 1,
+      "origin": "V02",
+      "destination": "V04",
+      "payload_kg": 0.5,
+      "priority": "routine",
+      "release_min": 1,
+      "due_min": 15.652005260233985,
+      "paths": [
+        {
+          "path_id": "P1",
+          "origin": "V02",
+          "destination": "V04",
+          "corridor_ids": [
+            "E_V02_V03",
+            "E_V03_V04"
+          ],
+          "flight_min": 1.6520052602339845,
+          "energy_kwh": 0.013863600665227443
+        },
+        {
+          "path_id": "P2",
+          "origin": "V02",
+          "destination": "V04",
+          "corridor_ids": [
+            "E_V02_V01",
+            "E_V01_V04"
+          ],
+          "flight_min": 1.6717123718814486,
+          "energy_kwh": 0.014028144907169424
+        },
+        {
+          "path_id": "P3",
+          "origin": "V02",
+          "destination": "V04",
+          "corridor_ids": [
+            "E_V02_V01",
+            "E_V01_V06",
+            "E_V06_V05",
+            "E_V05_V03",
+            "E_V03_V04"
+          ],
+          "flight_min": 5.359207257866563,
+          "energy_kwh": 0.04481682980090094
+        }
+      ],
+      "incoming": null
+    },
+    {
+      "mission_id": "M004",
+      "uav_id": "U02",
+      "sequence_index": 2,
+      "origin": "V04",
+      "destination": "V07",
+      "payload_kg": 0.25,
+      "priority": "urgent",
+      "release_min": 7,
+      "due_min": 16.716879114359216,
+      "paths": [
+        {
+          "path_id": "P1",
+          "origin": "V04",
+          "destination": "V07",
+          "corridor_ids": [
+            "E_V04_V01",
+            "E_V01_V06",
+            "E_V06_V07"
+          ],
+          "flight_min": 2.716879114359214,
+          "energy_kwh": 0.020804072620539193
+        },
+        {
+          "path_id": "P2",
+          "origin": "V04",
+          "destination": "V07",
+          "corridor_ids": [
+            "E_V04_V01",
+            "E_V01_V06",
+            "E_V06_V05",
+            "E_V05_V07"
+          ],
+          "flight_min": 3.39308092368254,
+          "energy_kwh": 0.025967876356545468
+        },
+        {
+          "path_id": "P3",
+          "origin": "V04",
+          "destination": "V07",
+          "corridor_ids": [
+            "E_V04_V03",
+            "E_V03_V02",
+            "E_V02_V01",
+            "E_V01_V06",
+            "E_V06_V07"
+          ],
+          "flight_min": 3.923598821181244,
+          "energy_kwh": 0.030019167351852644
+        }
+      ],
+      "incoming": null
+    },
+    {
+      "mission_id": "M005",
+      "uav_id": "U02",
+      "sequence_index": 3,
+      "origin": "V07",
+      "destination": "V04",
+      "payload_kg": 0.25,
+      "priority": "urgent",
+      "release_min": 16,
+      "due_min": 23.716879114359216,
+      "paths": [
+        {
+          "path_id": "P1",
+          "origin": "V07",
+          "destination": "V04",
+          "corridor_ids": [
+            "E_V07_V06",
+            "E_V06_V01",
+            "E_V01_V04"
+          ],
+          "flight_min": 2.716879114359214,
+          "energy_kwh": 0.020804072620539193
+        },
+        {
+          "path_id": "P2",
+          "origin": "V07",
+          "destination": "V04",
+          "corridor_ids": [
+            "E_V07_V05",
+            "E_V05_V06",
+            "E_V06_V01",
+            "E_V01_V04"
+          ],
+          "flight_min": 3.39308092368254,
+          "energy_kwh": 0.025967876356545468
+        },
+        {
+          "path_id": "P3",
+          "origin": "V07",
+          "destination": "V04",
+          "corridor_ids": [
+            "E_V07_V06",
+            "E_V06_V01",
+            "E_V01_V02",
+            "E_V02_V03",
+            "E_V03_V04"
+          ],
+          "flight_min": 3.923598821181244,
+          "energy_kwh": 0.030019167351852644
+        }
+      ],
+      "incoming": null
+    },
+    {
+      "mission_id": "M006",
+      "uav_id": "U03",
+      "sequence_index": 1,
+      "origin": "V04",
+      "destination": "V06",
+      "payload_kg": 0.25,
+      "priority": "routine",
+      "release_min": 0,
+      "due_min": 9.88380911894045,
+      "paths": [
+        {
+          "path_id": "P1",
+          "origin": "V04",
+          "destination": "V06",
+          "corridor_ids": [
+            "E_V04_V01",
+            "E_V01_V06"
+          ],
+          "flight_min": 1.8838091189404498,
+          "energy_kwh": 0.014442347621602906
+        },
+        {
+          "path_id": "P2",
+          "origin": "V04",
+          "destination": "V06",
+          "corridor_ids": [
+            "E_V04_V03",
+            "E_V03_V02",
+            "E_V02_V01",
+            "E_V01_V06"
+          ],
+          "flight_min": 3.0905288257624797,
+          "energy_kwh": 0.02365744235291635
+        },
+        {
+          "path_id": "P3",
+          "origin": "V04",
+          "destination": "V06",
+          "corridor_ids": [
+            "E_V04_V03",
+            "E_V03_V05",
+            "E_V05_V06"
+          ],
+          "flight_min": 3.920683692338068,
+          "energy_kwh": 0.029996906019505127
+        }
+      ],
+      "incoming": null
+    },
+    {
+      "mission_id": "M007",
+      "uav_id": "U03",
+      "sequence_index": 2,
+      "origin": "V06",
+      "destination": "V03",
+      "payload_kg": 0.25,
+      "priority": "urgent",
+      "release_min": 8,
+      "due_min": 13.458207783822434,
+      "paths": [
+        {
+          "path_id": "P1",
+          "origin": "V06",
+          "destination": "V03",
+          "corridor_ids": [
+            "E_V06_V01",
+            "E_V01_V02",
+            "E_V02_V03"
+          ],
+          "flight_min": 2.458207783822434,
+          "energy_kwh": 0.018828733358492257
+        },
+        {
+          "path_id": "P2",
+          "origin": "V06",
+          "destination": "V03",
+          "corridor_ids": [
+            "E_V06_V01",
+            "E_V01_V04",
+            "E_V04_V03"
+          ],
+          "flight_min": 2.5161301608804956,
+          "energy_kwh": 0.019271056616027002
+        },
+        {
+          "path_id": "P3",
+          "origin": "V06",
+          "destination": "V03",
+          "corridor_ids": [
+            "E_V06_V05",
+            "E_V05_V03"
+          ],
+          "flight_min": 3.288362650398023,
+          "energy_kwh": 0.02516819702508103
+        }
+      ],
+      "incoming": null
+    },
+    {
+      "mission_id": "M008",
+      "uav_id": "U03",
+      "sequence_index": 3,
+      "origin": "V03",
+      "destination": "V02",
+      "payload_kg": 0.25,
+      "priority": "urgent",
+      "release_min": 15,
+      "due_min": 24.01968421829394,
+      "paths": [
+        {
+          "path_id": "P1",
+          "origin": "V03",
+          "destination": "V02",
+          "corridor_ids": [
+            "E_V03_V02"
+          ],
+          "flight_min": 1.019684218293939,
+          "energy_kwh": 0.00784347236156804
+        },
+        {
+          "path_id": "P2",
+          "origin": "V03",
+          "destination": "V02",
+          "corridor_ids": [
+            "E_V03_V04",
+            "E_V04_V01",
+            "E_V01_V02"
+          ],
+          "flight_min": 2.3040334138214944,
+          "energy_kwh": 0.017651383376829314
+        },
+        {
+          "path_id": "P3",
+          "origin": "V03",
+          "destination": "V02",
+          "corridor_ids": [
+            "E_V03_V05",
+            "E_V05_V06",
+            "E_V06_V01",
+            "E_V01_V02"
+          ],
+          "flight_min": 4.726886215926517,
+          "energy_kwh": 0.036153458022005244
+        }
+      ],
+      "incoming": null
+    },
+    {
+      "mission_id": "M009",
+      "uav_id": "U03",
+      "sequence_index": 4,
+      "origin": "V02",
+      "destination": "V06",
+      "payload_kg": 0.5,
+      "priority": "urgent",
+      "release_min": 21,
+      "due_min": 29.813523565528495,
+      "paths": [
+        {
+          "path_id": "P1",
+          "origin": "V02",
+          "destination": "V06",
+          "corridor_ids": [
+            "E_V02_V01",
+            "E_V01_V06"
+          ],
+          "flight_min": 1.813523565528495,
+          "energy_kwh": 0.015212195405028335
+        },
+        {
+          "path_id": "P2",
+          "origin": "V02",
+          "destination": "V06",
+          "corridor_ids": [
+            "E_V02_V03",
+            "E_V03_V04",
+            "E_V04_V01",
+            "E_V01_V06"
+          ],
+          "flight_min": 3.1608143791744343,
+          "energy_kwh": 0.02646138044911342
+        },
+        {
+          "path_id": "P3",
+          "origin": "V02",
+          "destination": "V06",
+          "corridor_ids": [
+            "E_V02_V03",
+            "E_V03_V05",
+            "E_V05_V06"
+          ],
+          "flight_min": 3.9330468686919615,
+          "energy_kwh": 0.03290912438357183
+        }
+      ],
+      "incoming": null
+    }
+  ],
+  "resources": {
+    "corridor": {
+      "E_V01_V02": 2,
+      "E_V02_V01": 2,
+      "E_V01_V04": 2,
+      "E_V04_V01": 2,
+      "E_V01_V06": 2,
+      "E_V06_V01": 2,
+      "E_V02_V03": 2,
+      "E_V03_V02": 2,
+      "E_V03_V04": 2,
+      "E_V04_V03": 2,
+      "E_V03_V05": 2,
+      "E_V05_V03": 2,
+      "E_V05_V06": 2,
+      "E_V06_V05": 2,
+      "E_V05_V07": 2,
+      "E_V07_V05": 2,
+      "E_V06_V07": 2,
+      "E_V07_V06": 2
+    },
+    "pad": {
+      "V01": 2,
+      "V02": 2,
+      "V03": 2,
+      "V04": 2,
+      "V05": 2,
+      "V06": 2,
+      "V07": 2
+    },
+    "charger": {
+      "V01": 0,
+      "V02": 1,
+      "V03": 0,
+      "V04": 1,
+      "V05": 0,
+      "V06": 1,
+      "V07": 0
+    }
+  },
+  "baseline": {
+    "decisions": [
+      {
+        "mission_id": "M001",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 3,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M002",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 10,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M003",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 2,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M004",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 9,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M005",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 17,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M006",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 1,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M007",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 8,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M008",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 16,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M009",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 23,
+        "charge_blocks": 0
+      }
+    ]
+  },
+  "intervention": {
+    "resource_intervals": [
+      {
+        "kind": "corridor",
+        "resource": "E_V02_V01",
+        "start_min": 10,
+        "end_min": 45,
+        "capacity": 0
+      }
+    ],
+    "initial_soc_overrides": {}
+  }
+}

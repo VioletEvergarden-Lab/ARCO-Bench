@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-26",
+  "status": "formal_complete_independent_replay_passed",
+  "formal_generation_posts": 30,
+  "planned_conditions": 15,
+  "planned_first_requests": 30,
+  "providers": {
+    "deepseek": "deepseek-v4-pro",
+    "luna": "gpt-5.6-luna"
+  },
+  "generation_settings": {
+    "deepseek": {
+      "max_tokens": 128000,
+      "model": "deepseek-v4-pro",
+      "temperature": 0.0
+    },
+    "luna": {
+      "background": true,
+      "max_output_tokens": 128000,
+      "model": "gpt-5.6-luna",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "max",
+        "mode": "standard"
+      },
+      "store": false,
+      "stream": false,
+      "tools": []
+    }
+  },
+  "deterministic_methods": [
+    "G",
+    "R4",
+    "Full-MILP",
+    "Iter-R4",
+    "R_frac"
+  ],
+  "total_budget_seconds": 600,
+  "iterative_slice_seconds": 60,
+  "R_frac_radius": "max(4,ceil(mission_count/4))",
+  "R_frac_reuse_if_missions_le_16": true,
+  "solver": {
+    "version": "HiGHS 1.15.1",
+    "threads": 1,
+    "random_seed": 0,
+    "absolute_gap": 0,
+    "relative_gap": 0,
+    "feasibility_tolerance": 1e-07
+  },
+  "quality_tolerances": [
+    0,
+    0,
+    1e-07,
+    1e-05,
+    1e-05,
+    0.0001
+  ],
+  "input_contract": {
+    "freeze": "instances/FROZEN.json",
+    "task_directory": "instances/tasks",
+    "runtime_loader": "scripts/adds_runtime.py::load_runtime",
+    "public_instructions": "source/ADDS_public_instructions.md",
+    "runner": "scripts/run_adds_candidates.py",
+    "online_directory": "runs/generation",
+    "reference_directory": "runs/deterministic",
+    "reference_pattern": "<record_id>__Full-MILP.json",
+    "offline_scorer": "scripts/score_adds_candidates.py",
+    "offline_score_output": "analysis/candidate_evaluation"
+  },
+  "retries": {
+    "post": 0,
+    "quality": 0,
+    "accepted_luna_recovery": "GET-only",
+    "uncertain_prior_post": "preserve; never re-POST"
+  },
+  "endpoint_check": "analysis/endpoint_readonly_preflight.json",
+  "core_and_historical_denominators": "separate",
+  "sources": [
+    {
+      "path": "arco_adds_operational_20261021/paper/sections/05_candidate_sources_and_verifier_gated_selection.tex",
+      "sha256": "9ced0a1fb7664a55bf0a1ba693583b7216963231e31eb7e42626bfa9724b3741"
+    },
+    {
+      "path": "arco_adds_operational_20261021/paper/sections/06_experimental_design.tex",
+      "sha256": "4b56c27c44b80b7cc80b51be78b595906c3004cc9d5dc161bb36e27e79e6ee54"
+    },
+    {
+      "path": "arco_closing_study/run_models.py",
+      "sha256": "8fdef20f458fc5be5a4ce65ed5b2adaf4f614f61ba39ad4460b077341f86817a"
+    },
+    {
+      "path": "arco_closing_study/provider_transport.py",
+      "sha256": "c19888b493a01b52aeb92ec918f8fe07dd258344722ab53928a360075921f1ce"
+    },
+    {
+      "path": "arco_closing_study/continuous_public_instructions.md",
+      "sha256": "ca2b10b4ef770070724e60295a2ac818409c80d3673184056bb67528e405e27a"
+    },
+    {
+      "path": "arco_focused_revision_20261002/scripts/run_new_models.py",
+      "sha256": "11378ec1aa87e60e95eac73b9f63f0d13b24173a926012ab533f0752632293e6"
+    },
+    {
+      "path": "arco_focused_revision_20261002/scripts/optimization_online.py",
+      "sha256": "7ef6f4586e87ab590f5730fca95ff18fb5581b090851f896fa650e5b51d36070"
+    },
+    {
+      "path": "arco_focused_revision_20261002/scripts/run_comparison.py",
+      "sha256": "76228ef52120e011885351789b0add52123a16514aa6d478ee7855ecfd6c6be6"
+    },
+    {
+      "path": "arco_focused_revision_20261002/scripts/score_new_models.py",
+      "sha256": "90d441ab76e8b8563b7303ec97134ce5d714985c474d162e12ead07dcb07f332"
+    },
+    {
+      "path": "arco_focused_revision_20261002/protocol/comparison_v1.md",
+      "sha256": "25a334b1d630a732a74e74d9862925d9b0873e8e77d7338c54fbd8871fb6848c"
+    },
+    {
+      "path": "arco_focused_revision_20261002/protocol/comparison_generation_execution.md",
+      "sha256": "3d6ed7a25ea6557c68f3ed4b241485f87c39f2338808b2d4dcca7a7f694d1ab8"
+    },
+    {
+      "path": "arco_focused_revision_20261002/online/new_generation/CONFIG.json",
+      "sha256": "5d0deca525d04aeb17081c933c8b8072af36cb59abd172a736ef79c2ad4d9524"
+    }
+  ],
+  "driver_checks": "analysis/candidate_driver_checks.json",
+  "candidate_timed_evaluation_budget_seconds": 600,
+  "candidate_collection": "Original completed outputs retained even when available after 600 seconds; deadline coverage reported separately",
+  "candidate_summary": "analysis/candidate_summary.json",
+  "candidate_diagnostics": "analysis/candidate_diagnostics.json",
+  "first_generation_request_time_ranges_utc": {
+    "deepseek": {
+      "start": "2026-10-25T06:12:10.203699+00:00",
+      "end": "2026-10-26T05:42:32.611196+00:00"
+    },
+    "luna": {
+      "start": "2026-10-26T03:48:36.144314+00:00",
+      "end": "2026-10-26T05:41:19.103892+00:00"
+    }
+  }
+}

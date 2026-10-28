@@ -1,0 +1,231 @@
+{
+  "attempt_id": "NEW_regions_L02_long__deepseek__r1",
+  "record_id": "NEW_regions_L02_long",
+  "provider": "deepseek",
+  "repeat": 1,
+  "verifier_errors": [
+    "CORRIDOR_WINDOW_CAPACITY"
+  ],
+  "violations": [
+    {
+      "attempt_id": "NEW_regions_L02_long__deepseek__r1",
+      "record_id": "NEW_regions_L02_long",
+      "kind": "corridor",
+      "resource": "E_V01_V13",
+      "bucket": 11,
+      "width_min": 1,
+      "count": 3,
+      "capacity": 2,
+      "violation_type": "resource_window_capacity",
+      "window_start_min": 11,
+      "window_end_min": 12,
+      "contributors": [
+        {
+          "mission_id": "M012",
+          "uav_id": "U04",
+          "path_id": "P3",
+          "depart_min": 8,
+          "route_changed": true,
+          "actual_entry_min": 10.676585132162387,
+          "actual_exit_min": 11.252805456473984,
+          "reservation_windows_min": [
+            [
+              10,
+              11
+            ],
+            [
+              11,
+              12
+            ]
+          ]
+        },
+        {
+          "mission_id": "M016",
+          "uav_id": "U05",
+          "path_id": "P1",
+          "depart_min": 10,
+          "route_changed": false,
+          "actual_entry_min": 10.497993479594353,
+          "actual_exit_min": 11.07421380390595,
+          "reservation_windows_min": [
+            [
+              10,
+              11
+            ],
+            [
+              11,
+              12
+            ]
+          ]
+        },
+        {
+          "mission_id": "M024",
+          "uav_id": "U07",
+          "path_id": "P3",
+          "depart_min": 9,
+          "route_changed": true,
+          "actual_entry_min": 11.676585132162387,
+          "actual_exit_min": 12.252805456473984,
+          "reservation_windows_min": [
+            [
+              11,
+              12
+            ],
+            [
+              12,
+              13
+            ]
+          ]
+        }
+      ],
+      "maximum_actual_occupancy_within_window": 2,
+      "actual_capacity_violation_within_window": false,
+      "actual_occupancy_spans": [
+        {
+          "start_min": 11,
+          "end_min": 11.07421380390595,
+          "mission_ids": [
+            "M012",
+            "M016"
+          ],
+          "actual_count": 2,
+          "actual_capacity": 2
+        },
+        {
+          "start_min": 11.07421380390595,
+          "end_min": 11.252805456473984,
+          "mission_ids": [
+            "M012"
+          ],
+          "actual_count": 1,
+          "actual_capacity": 2
+        },
+        {
+          "start_min": 11.252805456473984,
+          "end_min": 11.676585132162387,
+          "mission_ids": [],
+          "actual_count": 0,
+          "actual_capacity": 2
+        },
+        {
+          "start_min": 11.676585132162387,
+          "end_min": 12,
+          "mission_ids": [
+            "M024"
+          ],
+          "actual_count": 1,
+          "actual_capacity": 2
+        }
+      ]
+    }
+  ],
+  "returned_plan_structure": {
+    "served": 32,
+    "urgent_served": 11,
+    "urgent_demand": 11,
+    "urgent_on_time": 8,
+    "reroutes": 2,
+    "rerouted_missions": [
+      "M012",
+      "M024"
+    ],
+    "charge_blocks": 5,
+    "charge_changes": 1,
+    "charge_changed_missions": [
+      "M025"
+    ],
+    "minimum_reserve_margin_kwh": 0.003590852885443068,
+    "energy_kwh": 0.43006901761079386,
+    "max_lateness_min": 29.0
+  },
+  "contributing_decisions": [
+    {
+      "mission_id": "M012",
+      "model": {
+        "charge_blocks": 0,
+        "depart_min": 8,
+        "held": false,
+        "mission_id": "M012",
+        "path_id": "P3",
+        "uav_id": "U04"
+      },
+      "reference": {
+        "mission_id": "M012",
+        "uav_id": "U04",
+        "held": false,
+        "path_id": "P3",
+        "depart_min": 8,
+        "charge_blocks": 0
+      }
+    },
+    {
+      "mission_id": "M016",
+      "model": {
+        "charge_blocks": 0,
+        "depart_min": 10,
+        "held": false,
+        "mission_id": "M016",
+        "path_id": "P1",
+        "uav_id": "U05"
+      },
+      "reference": {
+        "mission_id": "M016",
+        "uav_id": "U05",
+        "held": false,
+        "path_id": "P1",
+        "depart_min": 9,
+        "charge_blocks": 0
+      }
+    },
+    {
+      "mission_id": "M024",
+      "model": {
+        "charge_blocks": 0,
+        "depart_min": 9,
+        "held": false,
+        "mission_id": "M024",
+        "path_id": "P3",
+        "uav_id": "U07"
+      },
+      "reference": {
+        "mission_id": "M024",
+        "uav_id": "U07",
+        "held": false,
+        "path_id": "P3",
+        "depart_min": 9,
+        "charge_blocks": 0
+      }
+    }
+  ],
+  "reference_resource_intervals": [
+    {
+      "record_id": "NEW_regions_L02_long",
+      "mission_id": "M012",
+      "uav_id": "U04",
+      "kind": "corridor",
+      "resource": "E_V01_V13",
+      "start_min": 10.676585132162387,
+      "end_min": 11.252805456473984
+    },
+    {
+      "record_id": "NEW_regions_L02_long",
+      "mission_id": "M016",
+      "uav_id": "U05",
+      "kind": "corridor",
+      "resource": "E_V01_V13",
+      "start_min": 9.497993479594353,
+      "end_min": 10.07421380390595
+    },
+    {
+      "record_id": "NEW_regions_L02_long",
+      "mission_id": "M024",
+      "uav_id": "U07",
+      "kind": "corridor",
+      "resource": "E_V01_V13",
+      "start_min": 11.676585132162387,
+      "end_min": 12.252805456473984
+    }
+  ],
+  "interpretation": "The returned reroutes and charging decisions leave three cross-UAV reservations in one capacity-two corridor window. This is a booking-window coordination failure; the witness does not imply three aircraft occupy the corridor simultaneously.",
+  "reference_role": "Existing certified reference only; no corrected generation or new optimization."
+}

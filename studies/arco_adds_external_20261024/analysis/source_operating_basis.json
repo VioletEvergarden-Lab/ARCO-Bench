@@ -1,0 +1,378 @@
+{
+  "status": "source_basis_complete_design_recommendations_not_formal_freeze",
+  "checked_local_date": "2026-10-25",
+  "task": "ADDS external network study stageA: operating source basis",
+  "recommended_main_configuration": "ADDS Demand identities/weights/locker assignments plus recovered meter geometry, ARCO M100 full parameter set, distinct 5s loading and 5s unloading, explicit return for every served mission; adopted main scenario has 2 movements per fixed 60s window, 30s departures, 5 independent locker networks and 3 UAVs per network.",
+  "sources": {
+    "ADDS_workbook": {
+      "path": "arco_adds_operational_20261021/source/Data.xlsx",
+      "sha256": "350baba0bd8701b0073fcd49d0cb920f3da7717badf375823195e70d194bf692"
+    },
+    "ADDS_record_metadata": {
+      "path": "arco_adds_operational_20261021/source/zenodo_record.json",
+      "sha256": "d7fe41441f42b8830c44c1950d48fa2c9a2a0d2ba182da32ee4adc12ef3521c8"
+    },
+    "ADDS_readme": {
+      "path": "arco_adds_operational_20261021/source/README.txt",
+      "sha256": "9a998efded343e088140da820b1d08a9c59af61655f4ea586d9969cbd2306c6a"
+    },
+    "workbook_cells": {
+      "path": "arco_adds_operational_20261021/analysis/data_cells.json",
+      "sha256": "3fd97925e7cfbfa5d8abb44a89a2bbd3387f9bc18a3315a60c8194b2bd3a981c"
+    },
+    "model_configuration": {
+      "path": "arco_adds_operational_20261021/analysis/flexsim_configuration.json",
+      "sha256": "1888be5c68627b1bbd529b8c6d205d35c516f83a71d9a8e8ac1e81839325e4ef"
+    },
+    "captured_model_code": {
+      "path": "arco_adds_operational_20261021/analysis/flexsim_source_code_evidence.json",
+      "sha256": "2ca382f40b344f72a8da5e570ccad229c100fcc212794e080721356789dff9d4"
+    },
+    "model_geometry": {
+      "path": "arco_adds_operational_20261021/analysis/model_geometry.json",
+      "sha256": "bed51f426715f248ae05167c41ac1d3451d4aead03c1db580b7f0ad33ea67279"
+    },
+    "demand_geometry": {
+      "path": "arco_adds_operational_20261021/analysis/demand_model_geometry.csv",
+      "sha256": "39b5a08bf8f5202cf3a8ba8b8e3adec0db0d3c16bef8a1312476cb2734837e30"
+    },
+    "shared_tables": {
+      "path": "arco_adds_operational_20261021/analysis/shared_table_comparison.json",
+      "sha256": "3202e4913482bac595a8d2793550407da7fbbd7bc91b5e294268d828e87c3f9e"
+    },
+    "associated_paper": {
+      "path": "arco_adds_operational_20261021/sources/related/Klodawski_2025_APTE_last_mile.pdf",
+      "sha256": "c0158890f7ac8b13ff5d0c8b81905045316cb005c9a21f38102c23cd0de9e1f0"
+    },
+    "associated_paper_text": {
+      "path": "arco_adds_operational_20261021/sources/related/Klodawski_2025_APTE_last_mile.txt",
+      "sha256": "e1293bdc88ddd7dd9f98786e417b326da4b60d77e5adc5e3253ac77da08c4f84"
+    },
+    "ARCO_aircraft": {
+      "path": "arco_adds_operational_20261021/runtime/model_parameters.json",
+      "sha256": "2c2a9a5476523600dc09e8d585f47554782db616f1f73bad591e0146abd0ae11"
+    }
+  },
+  "parameters": [
+    {
+      "name": "source_demand_rows",
+      "value": 300,
+      "unit": "generated demand records",
+      "role": "source input",
+      "source": "ADDS_workbook",
+      "locator": "Demand rows 2:301; Main parametres row2"
+    },
+    {
+      "name": "locker_count",
+      "value": 5,
+      "role": "source input",
+      "source": "ADDS_workbook",
+      "locator": "Parcel lockers rows2:6"
+    },
+    {
+      "name": "saved_geometry_units",
+      "value": {
+        "length": "meter",
+        "time": "second",
+        "length_multiple": 1,
+        "time_multiple": 1
+      },
+      "role": "saved model setting",
+      "source": "model_configuration",
+      "locator": "units; units_evidence offset_start12659789 offset_end_exclusive12666841"
+    },
+    {
+      "name": "loading_sec",
+      "value": 5,
+      "unit": "s",
+      "role": "source-supported scenario parameter",
+      "source": [
+        "ADDS_workbook",
+        "model_configuration",
+        "associated_paper"
+      ],
+      "locator": [
+        "Main parametres row24",
+        "Dane row26",
+        "Table1 p179"
+      ]
+    },
+    {
+      "name": "unloading_sec",
+      "value": 5,
+      "unit": "s",
+      "role": "source-supported scenario parameter",
+      "source": [
+        "ADDS_workbook",
+        "model_configuration",
+        "associated_paper"
+      ],
+      "locator": [
+        "Main parametres row25",
+        "Dane row27",
+        "Table1 p179"
+      ]
+    },
+    {
+      "name": "workbook_empty_speed_m_s",
+      "value": 12,
+      "role": "source workbook setting; not adopted in ARCO main aircraft",
+      "source": "ADDS_workbook",
+      "locator": "Main parametres row23"
+    },
+    {
+      "name": "saved_model_empty_speed_m_s",
+      "value": 16,
+      "role": "saved model setting; not adopted in ARCO main aircraft",
+      "source": "model_configuration",
+      "locator": "Dane row25"
+    },
+    {
+      "name": "workbook_fleet_per_locker",
+      "value": 10,
+      "role": "source workbook setting",
+      "source": "ADDS_workbook",
+      "locator": "Main parametres row18"
+    },
+    {
+      "name": "saved_model_fleet_per_locker",
+      "value": 2,
+      "role": "saved model setting",
+      "source": "model_configuration",
+      "locator": "Dane row20; captured code offset15100479"
+    },
+    {
+      "name": "published_fleet_per_locker",
+      "value": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "role": "published simulation settings",
+      "source": "associated_paper",
+      "locator": "Table1 p179"
+    },
+    {
+      "name": "active_source_payload_limit_kg",
+      "value": 6,
+      "role": "source speed-formula setting; not ARCO aircraft limit",
+      "source": "captured_model_code",
+      "locator": "offset16182688 and19487017 use Dane[29][2]"
+    },
+    {
+      "name": "duplicate_payload_parameter_kg",
+      "value": 10,
+      "role": "unused or unconfirmed alternative parameter in inspected code",
+      "source": [
+        "ADDS_workbook",
+        "model_configuration"
+      ],
+      "locator": [
+        "Main parametres row22",
+        "Dane row24"
+      ]
+    },
+    {
+      "name": "other_per_parcel_handling_sec",
+      "value": 15,
+      "role": "declaration; active role not established, do not automatically add to5+5",
+      "source": [
+        "ADDS_workbook",
+        "model_configuration"
+      ],
+      "locator": [
+        "Main parametres row21",
+        "Dane row23"
+      ]
+    },
+    {
+      "name": "ARCO_aircraft_parameters",
+      "value": {
+        "version": "M100_Rodrigues_arxiv_v1_20211122",
+        "airframe_instrumented_mass_kg": 3.68,
+        "rotor_diameter_m": 0.3302,
+        "rotors": 4,
+        "air_density_kg_m3": 1.225,
+        "g_m_s2": 9.80665,
+        "cruise_speed_m_s": 10.0,
+        "cruise_altitude_m": 25.0,
+        "takeoff_speed_m_s": 2.5,
+        "landing_speed_m_s": 2.0,
+        "power_coefficients": {
+          "takeoff": [
+            1.97,
+            13.8
+          ],
+          "cruise": [
+            1.69,
+            16.8
+          ],
+          "landing": [
+            1.62,
+            -4.7
+          ]
+        },
+        "battery_capacity_kwh": 0.0999,
+        "reserve_fraction": 0.2,
+        "initial_fraction": 0.8,
+        "charger_input_power_w": 100.0,
+        "charging_efficiency": 0.88,
+        "slot_min": 5,
+        "max_charge_minutes": 15
+      },
+      "role": "retained research aircraft scenario",
+      "source": "ARCO_aircraft"
+    },
+    {
+      "name": "payload_subset",
+      "value": "36 unchanged source rows among 79 with WAGA=0.5 and SZT=1, from 300 generated demand records; all 5 locker areas",
+      "role": "adopted input-based light-parcel selection; not a hardware payload rating",
+      "locator": "analysis/input_selection.json; analysis/instance_source_check.json"
+    },
+    {
+      "name": "locker_movement_capacity",
+      "value": 2,
+      "unit": "arrival or departure actions per fixed 60s window",
+      "role": "adopted pre-freeze scheduling scenario; not measured physical capacity or number of physical pads",
+      "locator": "analysis/pre_freeze_design_decision.md; instances/DESIGN.json"
+    },
+    {
+      "name": "locker_capacity_candidates",
+      "value": [
+        1,
+        2
+      ],
+      "unit": "arrival or departure actions per fixed 60s window",
+      "role": "pre-freeze scenario candidates; capacity 1 prevents some complete short sorties on integer-minute departures; main and both grid probes adopt 2, no formal capacity factorial promised"
+    },
+    {
+      "name": "departure_grids_to_compare_sec",
+      "value": [
+        60,
+        30
+      ],
+      "role": "controlled discretization analysis; main design 30s; retain 60s resource window, capacity 2 and common incumbent/G/target"
+    },
+    {
+      "name": "promise_rule",
+      "value": "Incumbent service arrival plus 3 min",
+      "role": "adopted scenario rule; no observed per-order promise times"
+    },
+    {
+      "name": "disruption_rule",
+      "value": "CONTROL, shared locker pad closure [0,2) min, shared locker pad closure [0,5) min; same baseline within each locker network",
+      "role": "adopted scenario; no observed disruption log"
+    }
+  ],
+  "service_cycle": {
+    "order": [
+      "load5s at locker",
+      "loaded outbound flight",
+      "service arrival used by original tardiness metric",
+      "unload5s at customer",
+      "empty return flight",
+      "next loading5s before next departure"
+    ],
+    "source": "associated paper p181 RS03 for return organization; Table1 for5s/5s; immediate deterministic return and snapshot commitments are derived operating rules",
+    "return_requirements": [
+      "all served missions including actual last served mission return",
+      "include return in optimizer and verifier, not posthoc feasibility only",
+      "reserve after loaded and empty legs",
+      "include roundtrip energy inL6",
+      "keep originalL5 definition; full-cycle completion time may be a separate reported metric"
+    ],
+    "no_automatic_extra_handling_15s": true
+  },
+  "code_evidence": [
+    {
+      "offset_start": 15100479,
+      "node_name": "codeNode",
+      "code": "/**Custom Code*/\r\nObject current = param(1);\r\ntreenode activity = param(2);\r\nToken token = param(3);\r\ntreenode processFlow = ownerobject(activity);\r\n\r\n/*for (int i = 1; i<=Group(\"Drony\").subnodes.length;i++)\r\n{\r\n\tGroup(\"Drony\")[Group(\"Drony\").subnodes.length].destroy();\r\n}*/\r\n\r\n\r\nif (token.iteracja==0)\r\n\r\n{\r\nGroup(\"Drony\").subnodes.clear();\r\n\r\nfor (int i = 1; i <= Table(\"Paczkomaty\").numRows; i++) {\r\n\tstring paczkomat_name = Table(\"Paczkomaty\")[i][1];\r\n\tdouble wsp_x =Table(\"Paczkomaty\")[i][2]; \r\n\tdouble wsp_y =Table(\"Paczkomaty\")[i][3]; \r\n\tdouble wsp_z = 6;\r\n\t\r\n\tfor (int j = 1; j <= Table(\"Dane\")[20][2]; j++) {\r\n\t\tObject dron = createcopy(Model.find(\"Dron_000\"),model);\r\n\t\tdron.paczkomat = paczkomat_name;\r\n\t\tdron.location.x = wsp_x;\r\n\t\tdron.location.y = wsp_y;\r\n\t\tdron.location.z = wsp_z;\r\n\t\tdron.testowa_labelka=\"test\";\r\n\t\tGroup(\"Drony\").addMember(dron);\r\n\t\tList(\"Lista_dronow\").push(dron);\r\n\t\t\r\n}\r\n}\r\n}\r\ntoken.iteracja++;\r\n\r\n"
+    },
+    {
+      "offset_start": 16182688,
+      "node_name": "codeNode",
+      "code": "/**Custom Code*/\r\nObject current = param(1);\r\ntreenode activity = param(2);\r\nToken token = param(3);\r\ntreenode processFlow = ownerobject(activity);\r\n\r\ndouble V0 = Table(\"Dane\")[25][2];\r\ndouble alfa = Table(\"Dane\")[28][2];\r\ndouble Q_tow = token.Waga_total;\r\ndouble Qmax_dron = Table(\"Dane\")[29][2];\r\n\r\ndouble V_curr = V0*(1-(alfa*(Q_tow/Qmax_dron)));\r\n\r\n\r\nsetvarnum(token.dron, \"maxspeed\",V_curr);\r\n\r\n"
+    },
+    {
+      "offset_start": 19487017,
+      "node_name": "codeNode",
+      "code": "/**Custom Code*/\r\nObject current = param(1);\r\ntreenode activity = param(2);\r\nToken token = param(3);\r\ntreenode processFlow = ownerobject(activity);\r\n\r\ndouble V0 = Table(\"Dane\")[25][2];\r\ndouble alfa = Table(\"Dane\")[28][2];\r\ndouble Q_tow = token.Waga_total;\r\ndouble Qmax_dron = Table(\"Dane\")[29][2];\r\ndouble Vdronemin = Table(\"Dane\")[32][2];\r\ndouble Vdronemax = Table(\"Dane\")[33][2];\r\n\r\n\r\ndouble V_curr = V0*(1-(alfa*(Q_tow/Qmax_dron)));\r\nV_curr = Math.min(Math.max(V_curr,Vdronemin),Vdronemax);\r\n//setvarnum(token.dron, \"maxspeed\",V_curr);\r\ntoken.dron.Vpayload = V_curr;"
+    },
+    {
+      "offset_start": 19797332,
+      "node_name": "codeNode",
+      "code": "/**Custom Code*/\r\nObject current = param(1);\r\ntreenode activity = param(2);\r\nToken token = param(3);\r\ntreenode processFlow = ownerobject(activity);\r\n\r\n\r\nTable wyniki_drony = Table(\"Wyniki_czasy_dronow_w3\");\r\ndouble V = getvarnum(token.dron,\"maxspeed\");\r\ndouble kc = Table(\"Dane\")[34][2];\r\n\r\nwyniki_drony.addRow();\r\nwyniki_drony[wyniki_drony.numRows][1] = token.dron.name;\r\nwyniki_drony[wyniki_drony.numRows][3] = time - token.t_start;\r\n\r\ndouble x1 = token.d_start_x;\r\ndouble y1 = token.d_start_y;\r\ndouble x2 = token.dron.location.x;\r\ndouble y2 = token.dron.location.y;\r\ndouble dist = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));\r\nwyniki_drony[wyniki_drony.numRows][5] = dist;\r\nwyniki_drony[wyniki_drony.numRows][6] = token.Waga_total;\r\nwyniki_drony[wyniki_drony.numRows][7] = V;\r\n\r\n\r\ndouble Emp = -0.0012*Math.pow(V,5) + 0.0958*Math.pow(V,4) - 2.9107*Math.pow(V,3) + 43.463*Math.pow(V,2) - 334.74*V + 1292.8;\r\ndouble Emp2 = Emp*token.dron.Vpayload/token.dron.Vground;\r\ndouble Emp3 = Emp2*(1+kc*(Math.pow(Math.fabs(token.dron.WI_)/token.dron.Vpayload,2)));\r\n\r\n\r\n\r\nwyniki_drony[wyniki_drony.numRows][8] = Emp3;\r\n\r\nif (wyniki_drony[wyniki_drony.numRows][2]==0)\r\n{\r\n\twyniki_drony[wyniki_drony.numRows][9] = Emp3*wyniki_drony[wyniki_drony.numRows][5];\r\n}\r\nelse\r\n{\r\n\twyniki_drony[wyniki_drony.numRows][9] = Emp3*wyniki_drony[wyniki_drony.numRows][4];\r\n}"
+    }
+  ],
+  "code_evidence_limits": {
+    "captured_blocks": 165,
+    "loading_unloading_parameter_execution_chain_confirmed": false,
+    "complete_FlexSim_run_reproduced": false,
+    "geographic_CRS_confirmed": false,
+    "actual_UAV_facility_capacity_confirmed": false
+  },
+  "external_sources": [
+    {
+      "url": "https://zenodo.org/records/20491777",
+      "observed": "version1.0 published2026-06-01, files and MD5 match prior metadata",
+      "checked_date": "2026-10-25"
+    },
+    {
+      "url": "https://zenodo.org/records/20491477",
+      "observed": "associated dataset links APTE paper DOI",
+      "checked_date": "2026-10-25"
+    },
+    {
+      "url": "https://www.atlantis-press.com/proceedings/apte-25/126020420",
+      "observed": "paper available online2025-12-29; CC BY-NC4.0",
+      "checked_date": "2026-10-25"
+    }
+  ],
+  "licenses": {
+    "ADDS": {
+      "id": "cc-zero",
+      "evidence": "archived original Zenodo API metadata; current page did not expand license label and current API tool open failed",
+      "readme": "CC0 intent subject to final repository record"
+    },
+    "associated_paper": {
+      "id": "CC-BY-NC-4.0",
+      "evidence": "publisher page checked2026-10-25",
+      "recommended_delivery": "cite DOI and redraw own geometry figures; preserve license if including originalPDF"
+    }
+  },
+  "scope": "Source-basis documentation only; runtime, instances and original manuscript were not changed by this source-basis work.",
+  "input_selection_crosscheck": {
+    "path": "analysis/input_selection.json",
+    "recorded_utc": "2026-10-24T18:00:39.870476+00:00",
+    "source_count": 300,
+    "eligible_count": 79,
+    "selected_parcels": 36,
+    "selected_service_areas": 5,
+    "fixed_uavs_per_wave": 3,
+    "role": "Read-back of the root input-based selection; intended scenario settings remain subject to pre-freeze semantic/feasibility checks."
+  },
+  "adopted_capacity_decision": {
+    "path": "analysis/pre_freeze_design_decision.md",
+    "adopted_movements_per_fixed_60s_window": 2,
+    "timing": "before formal reference optimization and model requests",
+    "reason": "For source short distances, loaded flight plus unloading plus empty return may finish within 1 min. On integer-minute departures both hub movements then occupy the same fixed window; quota 1 gives those individual tasks no feasible option and prevents an all-service incumbent. Quota 2 supports the full-cycle input design without changing source selection.",
+    "physical_pad_count_inferred": false,
+    "main_and_grid_probes_share_quota": true
+  },
+  "formal_design_crosscheck": {
+    "path": "instances/DESIGN.json",
+    "check_path": "analysis/instance_source_check.json",
+    "base_instances": 5,
+    "conditions": 15,
+    "selected_source_records": 36,
+    "eligible_single_05kg_count": 79,
+    "uavs_per_locker_network": 3,
+    "all_served_missions_return": true,
+    "main_departure_grid_sec": 30,
+    "fixed_window_sec": 60,
+    "hub_movement_quota": 2,
+    "status": "constructed design; final freeze status belongs to DESIGN/freeze records"
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "record_id": "NET_L04_A",
+  "mode": "cross_query_reuse",
+  "wall_seconds": 2.0671551000559703,
+  "seed_validation_seconds": 0.007942400057800114,
+  "preparation_seconds": 0.8055679999524727,
+  "inference_seconds": 3.23000131174922e-05,
+  "queries": 8,
+  "solver_calls": 2,
+  "known": 8,
+  "query_elapsed_seconds": 2.0166398999281228,
+  "records": [
+    {
+      "feasible": true,
+      "evidence": "verified_witness_reuse",
+      "source": "stored:G",
+      "status": "feasible",
+      "solver_seconds": 0.0,
+      "elapsed_seconds": 4.800036549568176e-06,
+      "query": {
+        "prefix": 2,
+        "allowed": [],
+        "mission_budget": null
+      },
+      "query_key": "j2__empty__kall",
+      "mode": "cross_query_reuse",
+      "direct_solver_called": false
+    },
+    {
+      "feasible": true,
+      "evidence": "verified_witness_reuse",
+      "source": "stored:G",
+      "status": "feasible",
+      "solver_seconds": 0.0,
+      "elapsed_seconds": 5.300040356814861e-06,
+      "query": {
+        "prefix": 2,
+        "allowed": [],
+        "mission_budget": 0
+      },
+      "query_key": "j2__empty__k0",
+      "mode": "cross_query_reuse",
+      "direct_solver_called": false
+    },
+    {
+      "feasible": true,
+      "evidence": "verified_witness_reuse",
+      "source": "stored:G",
+      "status": "feasible",
+      "solver_seconds": 0.0,
+      "elapsed_seconds": 4.499917849898338e-06,
+      "query": {
+        "prefix": 2,
+        "allowed": [
+          "U03",
+          "U04",
+          "U05"
+        ],
+        "mission_budget": null
+      },
+      "query_key": "j2__U03-U04-U05__kall",
+      "mode": "cross_query_reuse",
+      "direct_solver_called": false
+    },
+    {
+      "feasible": true,
+      "evidence": "verified_witness_reuse",
+      "source": "stored:G",
+      "status": "feasible",
+      "solver_seconds": 0.0,
+      "elapsed_seconds": 5.00003807246685e-06,
+      "query": {
+        "prefix": 2,
+        "allowed": [
+          "U03",
+          "U04",
+          "U05"
+        ],
+        "mission_budget": 7
+      },
+      "query_key": "j2__U03-U04-U05__k7",
+      "mode": "cross_query_reuse",
+      "direct_solver_called": false
+    },
+    {
+      "protocol": "target_coordination_direct_v1",
+      "record_id": "NET_L04_A",
+      "origin_name": "G",
+      "target_prefix": 6,
+      "target_mode": "match",
+      "target_objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 1.5999999999999999,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 83.0,
+        "energy_kwh": 0.38106932880848665
+      },
+      "quality_tolerance": [
+        0.0,
+        0.0,
+        1e-07,
+        1e-05,
+        1e-05,
+        0.0001
+      ],
+      "minimize": "feasibility",
+      "allowed_uavs": [],
+      "task_budget": null,
+      "chain_budget": null,
+      "no_good_supports": [],
+      "status": "infeasible",
+      "feasible": false,
+      "optimal": false,
+      "lower_bound": null,
+      "upper_bound": null,
+      "raw_dual_bound": null,
+      "solver_objective": null,
+      "objective": null,
+      "changed_missions": null,
+      "changed_uavs": null,
+      "mission_changes": null,
+      "chain_changes": null,
+      "witness_source": null,
+      "independent_verification": false,
+      "solver_status": "Infeasible",
+      "solver_nodes": 0,
+      "solver": "HiGHS 1.15.1",
+      "solver_threads": 1,
+      "started_utc": "2026-10-12T01:18:16.563701+00:00",
+      "budget_seconds": 30.0,
+      "elapsed_seconds": 1.408106999937445,
+      "query_build_seconds": 0.9482681999215856,
+      "base_build_seconds_in_query": 0.8048060999717563,
+      "preparation_seconds_cumulative": 0.8055679999524727,
+      "solver_seconds": 0.4588165000313893,
+      "validation_seconds": 0.0010222999844700098,
+      "completed_within_budget": true,
+      "variables": 17869,
+      "constraints": 7439,
+      "query": {
+        "prefix": 6,
+        "allowed": [],
+        "mission_budget": null
+      },
+      "query_key": "j6__empty__kall",
+      "mode": "cross_query_reuse",
+      "evidence": "direct_restricted_MIP_or_static_witness",
+      "direct_solver_called": true
+    },
+    {
+      "feasible": false,
+      "evidence": "proved_exclusion_reuse",
+      "source": "runs\\e2\\NET_L04_A\\cross_query_reuse\\j6__empty__kall.json",
+      "status": "infeasible",
+      "solver_seconds": 0.0,
+      "elapsed_seconds": 8.09994526207447e-06,
+      "query": {
+        "prefix": 6,
+        "allowed": [],
+        "mission_budget": 0
+      },
+      "query_key": "j6__empty__k0",
+      "mode": "cross_query_reuse",
+      "direct_solver_called": false
+    },
+    {
+      "protocol": "target_coordination_direct_v1",
+      "record_id": "NET_L04_A",
+      "origin_name": "G",
+      "target_prefix": 6,
+      "target_mode": "match",
+      "target_objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 1.5999999999999999,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 83.0,
+        "energy_kwh": 0.38106932880848665
+      },
+      "quality_tolerance": [
+        0.0,
+        0.0,
+        1e-07,
+        1e-05,
+        1e-05,
+        0.0001
+      ],
+      "minimize": "feasibility",
+      "allowed_uavs": [
+        "U03",
+        "U04",
+        "U05"
+      ],
+      "task_budget": null,
+      "chain_budget": null,
+      "no_good_supports": [],
+      "status": "infeasible",
+      "feasible": false,
+      "optimal": false,
+      "lower_bound": null,
+      "upper_bound": null,
+      "raw_dual_bound": null,
+      "solver_objective": null,
+      "objective": null,
+      "changed_missions": null,
+      "changed_uavs": null,
+      "mission_changes": null,
+      "chain_changes": null,
+      "witness_source": null,
+      "independent_verification": false,
+      "solver_status": "Infeasible",
+      "solver_nodes": 0,
+      "solver": "HiGHS 1.15.1",
+      "solver_threads": 1,
+      "started_utc": "2026-10-12T01:18:17.977201+00:00",
+      "budget_seconds": 30.0,
+      "elapsed_seconds": 0.6084964000619948,
+      "query_build_seconds": 0.14487349998671561,
+      "base_build_seconds_in_query": 0.0,
+      "preparation_seconds_cumulative": 0.8055679999524727,
+      "solver_seconds": 0.46248370001558214,
+      "validation_seconds": 0.001139200059697032,
+      "completed_within_budget": true,
+      "variables": 17869,
+      "constraints": 7436,
+      "query": {
+        "prefix": 6,
+        "allowed": [
+          "U03",
+          "U04",
+          "U05"
+        ],
+        "mission_budget": null
+      },
+      "query_key": "j6__U03-U04-U05__kall",
+      "mode": "cross_query_reuse",
+      "evidence": "direct_restricted_MIP_or_static_witness",
+      "direct_solver_called": true
+    },
+    {
+      "feasible": false,
+      "evidence": "proved_exclusion_reuse",
+      "source": "runs\\e2\\NET_L04_A\\cross_query_reuse\\j6__U03-U04-U05__kall.json",
+      "status": "infeasible",
+      "solver_seconds": 0.0,
+      "elapsed_seconds": 8.79995059221983e-06,
+      "query": {
+        "prefix": 6,
+        "allowed": [
+          "U03",
+          "U04",
+          "U05"
+        ],
+        "mission_budget": 7
+      },
+      "query_key": "j6__U03-U04-U05__k7",
+      "mode": "cross_query_reuse",
+      "direct_solver_called": false
+    }
+  ]
+}

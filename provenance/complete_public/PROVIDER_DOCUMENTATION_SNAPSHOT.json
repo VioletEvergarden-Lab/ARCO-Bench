@@ -1,0 +1,32 @@
+{
+  "access_date_utc": "2026-09-22",
+  "deepseek": {
+    "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "model_alias": "deepseek-v4-pro",
+    "documented_version": "DeepSeek-V4-Pro-0813",
+    "context": "1M",
+    "official_max_output": "384K",
+    "experiment_max_output_tokens": 128000,
+    "thinking_default": "enabled; request leaves setting omitted",
+    "currency": "USD",
+    "per_million_tokens_off_peak": {"cache_hit": 0.022, "cache_miss": 0.66, "output": 1.98},
+    "per_million_tokens_peak": {"cache_hit": 0.044, "cache_miss": 1.32, "output": 3.96},
+    "peak_window_utc": "Monday-Friday 01:00-04:00 and 06:00-10:00, excluding Chinese public holidays",
+    "cost_formula": "(cache_hit_tokens * cache_hit_rate + cache_miss_tokens * cache_miss_rate + output_tokens * output_rate) / 1e6",
+    "cost_reporting": "Peak/off-peak bounds unless the applicable billing period can be established; not a bill. No currency conversion."
+  },
+  "luna": {
+    "url": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+    "background_url": "https://developers.openai.com/api/docs/guides/background",
+    "model_alias": "gpt-5.6-luna",
+    "context": 1050000,
+    "official_max_output_tokens": 128000,
+    "experiment_max_output_tokens": 128000,
+    "reasoning_effort": "max (supported per official model page)",
+    "currency": "USD",
+    "per_million_tokens": {"input": 0.20, "cached_input": 0.02, "output": 1.20},
+    "pricing_conditions": "Above 272K input tokens, input and output multipliers are 2 and 1.5; cache writes are billed at 1.25 times uncached input. Record usage detail availability before estimating cost.",
+    "background_store_false": "Supported; provider temporarily retains response data for asynchronous execution and polling."
+  },
+  "identity_scope": "Official alias mapping and authenticated model access are recorded alongside response metadata and execution times; no immutable snapshot ID is asserted."
+}

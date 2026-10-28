@@ -1,0 +1,465 @@
+[
+  {
+    "record_id": "NEW_regions_L02_long",
+    "base_source": "D:\\Backup\\Documents\\Human-AI Collaboration\\arco_focused_revision_20261002\\new_networks\\references\\NEW_regions_L02_long.json",
+    "edit": {
+      "M016": {
+        "depart_min": {
+          "before": 9,
+          "after": 10
+        }
+      }
+    },
+    "score": {
+      "admissible": false,
+      "objective": null,
+      "errors": [
+        "CORRIDOR_WINDOW_CAPACITY"
+      ]
+    },
+    "violating_windows": [
+      {
+        "kind": "corridor",
+        "resource": "E_V01_V13",
+        "bucket": 11,
+        "width_min": 1,
+        "count": 3,
+        "capacity": 2
+      }
+    ],
+    "contributors": [
+      {
+        "window": {
+          "kind": "corridor",
+          "resource": "E_V01_V13",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 3,
+          "capacity": 2
+        },
+        "intervals": [
+          {
+            "record_id": "NEW_regions_L02_long",
+            "mission_id": "M012",
+            "uav_id": "U04",
+            "kind": "corridor",
+            "resource": "E_V01_V13",
+            "start_min": 10.676585132162387,
+            "end_min": 11.252805456473984
+          },
+          {
+            "record_id": "NEW_regions_L02_long",
+            "mission_id": "M016",
+            "uav_id": "U05",
+            "kind": "corridor",
+            "resource": "E_V01_V13",
+            "start_min": 10.497993479594353,
+            "end_min": 11.07421380390595
+          },
+          {
+            "record_id": "NEW_regions_L02_long",
+            "mission_id": "M024",
+            "uav_id": "U07",
+            "kind": "corridor",
+            "resource": "E_V01_V13",
+            "start_min": 11.676585132162387,
+            "end_min": 12.252805456473984
+          }
+        ]
+      }
+    ],
+    "claim_scope": "Fixed-other-decisions event illustration; not a new unrestricted necessity proof."
+  },
+  {
+    "record_id": "NET_L01_C",
+    "base_source": "D:\\Backup\\Documents\\Human-AI Collaboration\\arco_closing_study\\evaluation\\scores.json",
+    "edit": {
+      "M020": {
+        "depart_min": {
+          "before": 53,
+          "after": 49
+        }
+      }
+    },
+    "score": {
+      "admissible": false,
+      "objective": null,
+      "errors": [
+        "CHARGER_ACTUAL_CAPACITY",
+        "CHARGER_WINDOW_CAPACITY"
+      ]
+    },
+    "violating_windows": [
+      {
+        "kind": "charger",
+        "resource": "V13",
+        "bucket": 56,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 1
+      },
+      {
+        "kind": "charger",
+        "resource": "V13",
+        "bucket": 57,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 1
+      },
+      {
+        "kind": "charger",
+        "resource": "V13",
+        "bucket": 58,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 1
+      },
+      {
+        "kind": "charger",
+        "resource": "V13",
+        "bucket": 59,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 1
+      }
+    ],
+    "contributors": [
+      {
+        "window": {
+          "kind": "charger",
+          "resource": "V13",
+          "bucket": 56,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 1
+        },
+        "intervals": [
+          {
+            "record_id": "NET_L01_C",
+            "mission_id": "M020",
+            "uav_id": "U05",
+            "kind": "charger",
+            "resource": "V13",
+            "start_min": 56.04468942902407,
+            "end_min": 66.04468942902406
+          },
+          {
+            "record_id": "NET_L01_C",
+            "mission_id": "M028",
+            "uav_id": "U07",
+            "kind": "charger",
+            "resource": "V13",
+            "start_min": 54.59410750390301,
+            "end_min": 59.59410750390301
+          }
+        ]
+      },
+      {
+        "window": {
+          "kind": "charger",
+          "resource": "V13",
+          "bucket": 57,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 1
+        },
+        "intervals": [
+          {
+            "record_id": "NET_L01_C",
+            "mission_id": "M020",
+            "uav_id": "U05",
+            "kind": "charger",
+            "resource": "V13",
+            "start_min": 56.04468942902407,
+            "end_min": 66.04468942902406
+          },
+          {
+            "record_id": "NET_L01_C",
+            "mission_id": "M028",
+            "uav_id": "U07",
+            "kind": "charger",
+            "resource": "V13",
+            "start_min": 54.59410750390301,
+            "end_min": 59.59410750390301
+          }
+        ]
+      },
+      {
+        "window": {
+          "kind": "charger",
+          "resource": "V13",
+          "bucket": 58,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 1
+        },
+        "intervals": [
+          {
+            "record_id": "NET_L01_C",
+            "mission_id": "M020",
+            "uav_id": "U05",
+            "kind": "charger",
+            "resource": "V13",
+            "start_min": 56.04468942902407,
+            "end_min": 66.04468942902406
+          },
+          {
+            "record_id": "NET_L01_C",
+            "mission_id": "M028",
+            "uav_id": "U07",
+            "kind": "charger",
+            "resource": "V13",
+            "start_min": 54.59410750390301,
+            "end_min": 59.59410750390301
+          }
+        ]
+      },
+      {
+        "window": {
+          "kind": "charger",
+          "resource": "V13",
+          "bucket": 59,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 1
+        },
+        "intervals": [
+          {
+            "record_id": "NET_L01_C",
+            "mission_id": "M020",
+            "uav_id": "U05",
+            "kind": "charger",
+            "resource": "V13",
+            "start_min": 56.04468942902407,
+            "end_min": 66.04468942902406
+          },
+          {
+            "record_id": "NET_L01_C",
+            "mission_id": "M028",
+            "uav_id": "U07",
+            "kind": "charger",
+            "resource": "V13",
+            "start_min": 54.59410750390301,
+            "end_min": 59.59410750390301
+          }
+        ]
+      }
+    ],
+    "claim_scope": "Fixed-other-decisions event illustration; not a new unrestricted necessity proof."
+  },
+  {
+    "record_id": "NET_M01_B",
+    "base_source": "D:\\Backup\\Documents\\Human-AI Collaboration\\arco_closing_study\\networks\\references\\NET_M01_B.json",
+    "edit": {
+      "M004": {
+        "charge_blocks": {
+          "before": 1,
+          "after": 2
+        }
+      }
+    },
+    "score": {
+      "admissible": false,
+      "objective": null,
+      "errors": [
+        "CHARGER_ACTUAL_CAPACITY",
+        "CHARGER_WINDOW_CAPACITY"
+      ]
+    },
+    "violating_windows": [
+      {
+        "kind": "charger",
+        "resource": "V11",
+        "bucket": 48,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 1
+      },
+      {
+        "kind": "charger",
+        "resource": "V11",
+        "bucket": 49,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 1
+      },
+      {
+        "kind": "charger",
+        "resource": "V11",
+        "bucket": 50,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 1
+      },
+      {
+        "kind": "charger",
+        "resource": "V11",
+        "bucket": 51,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 1
+      },
+      {
+        "kind": "charger",
+        "resource": "V11",
+        "bucket": 52,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 1
+      }
+    ],
+    "contributors": [
+      {
+        "window": {
+          "kind": "charger",
+          "resource": "V11",
+          "bucket": 48,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 1
+        },
+        "intervals": [
+          {
+            "record_id": "NET_M01_B",
+            "mission_id": "M004",
+            "uav_id": "U01",
+            "kind": "charger",
+            "resource": "V11",
+            "start_min": 42.7998215108242,
+            "end_min": 52.7998215108242
+          },
+          {
+            "record_id": "NET_M01_B",
+            "mission_id": "M008",
+            "uav_id": "U02",
+            "kind": "charger",
+            "resource": "V11",
+            "start_min": 48.00445337494162,
+            "end_min": 53.00445337494162
+          }
+        ]
+      },
+      {
+        "window": {
+          "kind": "charger",
+          "resource": "V11",
+          "bucket": 49,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 1
+        },
+        "intervals": [
+          {
+            "record_id": "NET_M01_B",
+            "mission_id": "M004",
+            "uav_id": "U01",
+            "kind": "charger",
+            "resource": "V11",
+            "start_min": 42.7998215108242,
+            "end_min": 52.7998215108242
+          },
+          {
+            "record_id": "NET_M01_B",
+            "mission_id": "M008",
+            "uav_id": "U02",
+            "kind": "charger",
+            "resource": "V11",
+            "start_min": 48.00445337494162,
+            "end_min": 53.00445337494162
+          }
+        ]
+      },
+      {
+        "window": {
+          "kind": "charger",
+          "resource": "V11",
+          "bucket": 50,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 1
+        },
+        "intervals": [
+          {
+            "record_id": "NET_M01_B",
+            "mission_id": "M004",
+            "uav_id": "U01",
+            "kind": "charger",
+            "resource": "V11",
+            "start_min": 42.7998215108242,
+            "end_min": 52.7998215108242
+          },
+          {
+            "record_id": "NET_M01_B",
+            "mission_id": "M008",
+            "uav_id": "U02",
+            "kind": "charger",
+            "resource": "V11",
+            "start_min": 48.00445337494162,
+            "end_min": 53.00445337494162
+          }
+        ]
+      },
+      {
+        "window": {
+          "kind": "charger",
+          "resource": "V11",
+          "bucket": 51,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 1
+        },
+        "intervals": [
+          {
+            "record_id": "NET_M01_B",
+            "mission_id": "M004",
+            "uav_id": "U01",
+            "kind": "charger",
+            "resource": "V11",
+            "start_min": 42.7998215108242,
+            "end_min": 52.7998215108242
+          },
+          {
+            "record_id": "NET_M01_B",
+            "mission_id": "M008",
+            "uav_id": "U02",
+            "kind": "charger",
+            "resource": "V11",
+            "start_min": 48.00445337494162,
+            "end_min": 53.00445337494162
+          }
+        ]
+      },
+      {
+        "window": {
+          "kind": "charger",
+          "resource": "V11",
+          "bucket": 52,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 1
+        },
+        "intervals": [
+          {
+            "record_id": "NET_M01_B",
+            "mission_id": "M004",
+            "uav_id": "U01",
+            "kind": "charger",
+            "resource": "V11",
+            "start_min": 42.7998215108242,
+            "end_min": 52.7998215108242
+          },
+          {
+            "record_id": "NET_M01_B",
+            "mission_id": "M008",
+            "uav_id": "U02",
+            "kind": "charger",
+            "resource": "V11",
+            "start_min": 48.00445337494162,
+            "end_min": 53.00445337494162
+          }
+        ]
+      }
+    ],
+    "claim_scope": "Fixed-other-decisions event illustration; not a new unrestricted necessity proof."
+  }
+]

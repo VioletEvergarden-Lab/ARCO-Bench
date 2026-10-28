@@ -1,0 +1,184 @@
+{
+  "record_id": "DEV_ladder_S01_long",
+  "optimal": true,
+  "proved_prefix": 6,
+  "decisions": [
+    {
+      "mission_id": "M001",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 1,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M002",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "P2",
+      "depart_min": 9,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M003",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 3,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M004",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 10,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M005",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 17,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M006",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 3,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M007",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 10,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M008",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 17,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M009",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "P2",
+      "depart_min": 24,
+      "charge_blocks": 0
+    }
+  ],
+  "objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 40.0,
+    "weighted_tardiness_min": 0.0,
+    "delay_and_charge_wait_min": 9.0,
+    "energy_kwh": 0.13602633363207636
+  },
+  "phases": [
+    {
+      "tier": "urgent_holds",
+      "status": 0,
+      "seconds": 0.0006885000038892031,
+      "upper_bound": 0.0,
+      "lower_bound": 0.0,
+      "mip_gap": 0.0,
+      "proof": "final-departure pad quota",
+      "public_bound_rows": [
+        {
+          "origin": "V02",
+          "final_missions": [
+            "M002",
+            "M009"
+          ],
+          "movement_quota": 58
+        },
+        {
+          "origin": "V06",
+          "final_missions": [
+            "M005"
+          ],
+          "movement_quota": 42
+        }
+      ]
+    },
+    {
+      "tier": "total_holds",
+      "status": 0,
+      "seconds": 0.000371600006474182,
+      "upper_bound": 0.0,
+      "lower_bound": 0.0,
+      "mip_gap": 0.0,
+      "proof": "final-departure pad quota",
+      "public_bound_rows": [
+        {
+          "origin": "V02",
+          "final_missions": [
+            "M002",
+            "M009"
+          ],
+          "movement_quota": 58
+        },
+        {
+          "origin": "V06",
+          "final_missions": [
+            "M005"
+          ],
+          "movement_quota": 42
+        }
+      ]
+    },
+    {
+      "tier": "repair_distance",
+      "status": 0,
+      "seconds": 0.38859750001574866,
+      "upper_bound": 40.0,
+      "lower_bound": 40.0,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "weighted_tardiness_min",
+      "status": 0,
+      "seconds": 0.44997200000216253,
+      "upper_bound": 0.0,
+      "lower_bound": 0.0,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "delay_and_charge_wait_min",
+      "status": 0,
+      "seconds": 0.09057159998337738,
+      "upper_bound": 9.0,
+      "lower_bound": 9.0,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "energy_kwh",
+      "status": 0,
+      "seconds": 0.04267429999890737,
+      "upper_bound": 0.13602633363207636,
+      "lower_bound": 0.1360263336320764,
+      "mip_gap": 0.0
+    }
+  ],
+  "build_seconds": 0.06570840001222678,
+  "total_seconds": 1.0571733000106178,
+  "variables": 1866,
+  "constraints": 1032,
+  "prefix_values": "extracted finite-option plan",
+  "solver_threads": 1,
+  "solver": "HiGHS 1.15.1",
+  "warm_start": "preceding tier integer plan",
+  "continuous_prefix_tol": 1e-05,
+  "anytime_preserves_seed": true,
+  "service_bound_proofs": true
+}

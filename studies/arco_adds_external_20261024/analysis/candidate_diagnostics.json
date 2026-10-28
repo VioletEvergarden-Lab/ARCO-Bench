@@ -1,0 +1,352 @@
+{
+  "origin": "formal_G",
+  "target": "T6",
+  "complete_miss_denominator": 2,
+  "evaluation_complete": true,
+  "planned_first_generation_requests": 30,
+  "terminal_records": 30,
+  "schema_complete": 30,
+  "quality": 28,
+  "category_counts": {
+    "same_scope_attainable": 1,
+    "task_budget_insufficient_within_chainset": 1
+  },
+  "trivial_G_witnesses": 0,
+  "providers": {
+    "deepseek": {
+      "denominator": 2,
+      "categories": {
+        "same_scope_attainable": 1,
+        "task_budget_insufficient_within_chainset": 1
+      }
+    },
+    "luna": {
+      "denominator": 0,
+      "categories": {}
+    }
+  },
+  "candidates": [
+    {
+      "record_id": "ADDS_PACZ03_N06__CLOSE_2MIN",
+      "provider": "deepseek",
+      "attempt_id": "ADDS_PACZ03_N06__CLOSE_2MIN__deepseek__r1",
+      "original_admissible": true,
+      "original_first_miss": "repair_distance",
+      "origin": "formal_G",
+      "target": "T6",
+      "candidate_changed_missions": [
+        "M001",
+        "M003",
+        "M004",
+        "M005",
+        "M006"
+      ],
+      "candidate_changed_chains": [
+        "U01",
+        "U02",
+        "U03"
+      ],
+      "candidate_task_budget": 5,
+      "candidate_chain_count": 3,
+      "category": "same_scope_attainable",
+      "G_already_attains_target": false,
+      "trivial_G_witness": false,
+      "queries": {
+        "all_chains_candidate_budget": {
+          "status": "feasible",
+          "feasible": true,
+          "optimal": true,
+          "elapsed_seconds": 0.00039820000529289246,
+          "mission_changes": 5,
+          "chain_changes": 3,
+          "witness_source": "supplied_witness_0"
+        },
+        "candidate_chains_unlimited_budget": {
+          "status": "feasible",
+          "feasible": true,
+          "optimal": true,
+          "elapsed_seconds": 0.0003900001756846905,
+          "mission_changes": 5,
+          "chain_changes": 3,
+          "witness_source": "supplied_witness_0"
+        },
+        "candidate_chains_candidate_budget": {
+          "status": "feasible",
+          "feasible": true,
+          "optimal": true,
+          "elapsed_seconds": 0.0003903997130692005,
+          "mission_changes": 5,
+          "chain_changes": 3,
+          "witness_source": "supplied_witness_0"
+        }
+      },
+      "query_paths": {
+        "all_chains_candidate_budget": "runs/candidate_diagnostics/ADDS_PACZ03_N06__CLOSE_2MIN__deepseek__r1__all_chains_candidate_budget.json",
+        "candidate_chains_unlimited_budget": "runs/candidate_diagnostics/ADDS_PACZ03_N06__CLOSE_2MIN__deepseek__r1__candidate_chains_unlimited_budget.json",
+        "candidate_chains_candidate_budget": "runs/candidate_diagnostics/ADDS_PACZ03_N06__CLOSE_2MIN__deepseek__r1__candidate_chains_candidate_budget.json"
+      },
+      "candidate_objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 1.8000000000000005,
+        "weighted_tardiness_min": 0.5,
+        "delay_and_charge_wait_min": 24.0,
+        "energy_kwh": 0.07883545640647328
+      },
+      "reference_objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 1.7000000000000004,
+        "weighted_tardiness_min": 0.5,
+        "delay_and_charge_wait_min": 23.5,
+        "energy_kwh": 0.07883545640647328
+      },
+      "minimum_task_budget_within_candidate_chains": 5,
+      "minimum_budget_evidence_path": "runs/coordination/ADDS_PACZ03_N06__CLOSE_2MIN__T6__missions.json",
+      "minimum_budget_witness_changed_chains": [
+        "U01",
+        "U02",
+        "U03"
+      ],
+      "minimum_budget_witness_differences_from_candidate": [
+        {
+          "mission_id": "M001",
+          "candidate": {
+            "mission_id": "M001",
+            "uav_id": "U01",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 3.5,
+            "charge_blocks": 0
+          },
+          "witness": {
+            "mission_id": "M001",
+            "uav_id": "U01",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 3.0,
+            "charge_blocks": 0
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "ADDS_PACZ05_N09__CLOSE_5MIN",
+      "provider": "deepseek",
+      "attempt_id": "ADDS_PACZ05_N09__CLOSE_5MIN__deepseek__r1",
+      "original_admissible": true,
+      "original_first_miss": "repair_distance",
+      "origin": "formal_G",
+      "target": "T6",
+      "candidate_changed_missions": [
+        "M002",
+        "M003",
+        "M004",
+        "M008",
+        "M009"
+      ],
+      "candidate_changed_chains": [
+        "U01",
+        "U02",
+        "U03"
+      ],
+      "candidate_task_budget": 5,
+      "candidate_chain_count": 3,
+      "category": "task_budget_insufficient_within_chainset",
+      "G_already_attains_target": false,
+      "trivial_G_witness": false,
+      "queries": {
+        "all_chains_candidate_budget": {
+          "status": "infeasible",
+          "feasible": false,
+          "optimal": false,
+          "elapsed_seconds": 0.03762069996446371,
+          "mission_changes": null,
+          "chain_changes": null,
+          "witness_source": null
+        },
+        "candidate_chains_unlimited_budget": {
+          "status": "feasible",
+          "feasible": true,
+          "optimal": true,
+          "elapsed_seconds": 0.0006117001175880432,
+          "mission_changes": 7,
+          "chain_changes": 3,
+          "witness_source": "supplied_witness_0"
+        },
+        "candidate_chains_candidate_budget": {
+          "status": "infeasible",
+          "feasible": false,
+          "optimal": false,
+          "elapsed_seconds": 0.03170830011367798,
+          "mission_changes": null,
+          "chain_changes": null,
+          "witness_source": null
+        }
+      },
+      "query_paths": {
+        "all_chains_candidate_budget": "runs/candidate_diagnostics/ADDS_PACZ05_N09__CLOSE_5MIN__deepseek__r1__all_chains_candidate_budget.json",
+        "candidate_chains_unlimited_budget": "runs/candidate_diagnostics/ADDS_PACZ05_N09__CLOSE_5MIN__deepseek__r1__candidate_chains_unlimited_budget.json",
+        "candidate_chains_candidate_budget": "runs/candidate_diagnostics/ADDS_PACZ05_N09__CLOSE_5MIN__deepseek__r1__candidate_chains_candidate_budget.json"
+      },
+      "candidate_objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 8.7,
+        "weighted_tardiness_min": 16.5,
+        "delay_and_charge_wait_min": 76.5,
+        "energy_kwh": 0.10593181472377988
+      },
+      "reference_objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 8.600000000000001,
+        "weighted_tardiness_min": 16.0,
+        "delay_and_charge_wait_min": 76.0,
+        "energy_kwh": 0.10593181472377988
+      },
+      "minimum_task_budget_within_candidate_chains": 6,
+      "minimum_budget_evidence_path": "runs/coordination/ADDS_PACZ05_N09__CLOSE_5MIN__T6__missions.json",
+      "minimum_budget_witness_changed_chains": [
+        "U01",
+        "U03"
+      ],
+      "minimum_budget_witness_differences_from_candidate": [
+        {
+          "mission_id": "M001",
+          "candidate": {
+            "mission_id": "M001",
+            "uav_id": "U01",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 5.0,
+            "charge_blocks": 0
+          },
+          "witness": {
+            "mission_id": "M001",
+            "uav_id": "U01",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 6.0,
+            "charge_blocks": 0
+          }
+        },
+        {
+          "mission_id": "M002",
+          "candidate": {
+            "mission_id": "M002",
+            "uav_id": "U02",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 6.0,
+            "charge_blocks": 0
+          },
+          "witness": {
+            "mission_id": "M002",
+            "uav_id": "U02",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 5.0,
+            "charge_blocks": 0
+          }
+        },
+        {
+          "mission_id": "M004",
+          "candidate": {
+            "mission_id": "M004",
+            "uav_id": "U01",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 8.0,
+            "charge_blocks": 0
+          },
+          "witness": {
+            "mission_id": "M004",
+            "uav_id": "U01",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 9.0,
+            "charge_blocks": 0
+          }
+        },
+        {
+          "mission_id": "M006",
+          "candidate": {
+            "mission_id": "M006",
+            "uav_id": "U03",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 10.0,
+            "charge_blocks": 0
+          },
+          "witness": {
+            "mission_id": "M006",
+            "uav_id": "U03",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 8.0,
+            "charge_blocks": 0
+          }
+        },
+        {
+          "mission_id": "M007",
+          "candidate": {
+            "mission_id": "M007",
+            "uav_id": "U01",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 10.0,
+            "charge_blocks": 0
+          },
+          "witness": {
+            "mission_id": "M007",
+            "uav_id": "U01",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 11.5,
+            "charge_blocks": 0
+          }
+        },
+        {
+          "mission_id": "M008",
+          "candidate": {
+            "mission_id": "M008",
+            "uav_id": "U02",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 11.5,
+            "charge_blocks": 0
+          },
+          "witness": {
+            "mission_id": "M008",
+            "uav_id": "U02",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 11.0,
+            "charge_blocks": 0
+          }
+        },
+        {
+          "mission_id": "M009",
+          "candidate": {
+            "mission_id": "M009",
+            "uav_id": "U03",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 12.5,
+            "charge_blocks": 0
+          },
+          "witness": {
+            "mission_id": "M009",
+            "uav_id": "U03",
+            "held": false,
+            "path_id": "DIRECT",
+            "depart_min": 12.0,
+            "charge_blocks": 0
+          }
+        }
+      ]
+    }
+  ],
+  "meaning": "The same scope permits different missions and values within the same allowed chain set and task budget. Witnesses do not replace submitted decisions."
+}

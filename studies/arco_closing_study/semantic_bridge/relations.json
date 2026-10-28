@@ -1,0 +1,1802 @@
+[
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_001",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_001",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.00504190000356175,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.005961499999102671,
+      "total_seconds": 0.011009699999704026,
+      "variables": 1150,
+      "constraints": 647
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_001",
+    "restriction": "target_routes_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": true,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_001",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_min": 35,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_min": 15,
+          "charge_blocks": 2
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_min": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_min": 30,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_min": 0,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 22.0,
+        "weighted_tardiness_min": 2.3248558243636452,
+        "delay_and_charge_wait_min": 55.0,
+        "energy_kwh": 0.10912862826920036
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.02536120000149822,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.025436800002353266,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.0265510000026552,
+          "upper_bound": 22.0,
+          "lower_bound": 22.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.004991000001609791,
+          "upper_bound": 2.3248558243636457,
+          "lower_bound": 2.3248558243636457,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.003810500005783979,
+          "upper_bound": 55.0,
+          "lower_bound": 55.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.003725700000359211,
+          "upper_bound": 0.10912862826920035,
+          "lower_bound": 0.10912862826920036,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.005615899994154461,
+      "total_seconds": 0.09708079999836627,
+      "variables": 1150,
+      "constraints": 647
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_002",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_002",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.005308400002832059,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.005684800002200063,
+      "total_seconds": 0.010998799996741582,
+      "variables": 1162,
+      "constraints": 653
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_002",
+    "restriction": "target_routes_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": true,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_002",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_min": 30,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_min": 15,
+          "charge_blocks": 2
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_min": 35,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_min": 10,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 22.0,
+        "weighted_tardiness_min": 2.3248558243636452,
+        "delay_and_charge_wait_min": 55.0,
+        "energy_kwh": 0.08796994372833691
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.03073240000230726,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.030938700001570396,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.03296129999944242,
+          "upper_bound": 22.0,
+          "lower_bound": 22.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.005058100003225263,
+          "upper_bound": 2.3248558243636466,
+          "lower_bound": 2.3248558243636466,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.004151100001763552,
+          "upper_bound": 55.0,
+          "lower_bound": 55.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.004112599999643862,
+          "upper_bound": 0.0879699437283369,
+          "lower_bound": 0.0879699437283369,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.010564800002612174,
+      "total_seconds": 0.1200849000015296,
+      "variables": 1162,
+      "constraints": 653
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_002",
+    "restriction": "target_departures_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_002",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_min": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_min": 30,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_min": 0,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_min": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_min": 10,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 34.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 0.08265019703871143
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.02406939999491442,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.025325500006147195,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.02438830000028247,
+          "upper_bound": 34.0,
+          "lower_bound": 34.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.009988599995267577,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.003930899998522364,
+          "upper_bound": 20.000000000000018,
+          "lower_bound": 20.000000000000018,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.004110499998205341,
+          "upper_bound": 0.08265019703871142,
+          "lower_bound": 0.08265019703871142,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.005761899999924935,
+      "total_seconds": 0.09905240000080084,
+      "variables": 1162,
+      "constraints": 653
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_003",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_003",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_min": 30,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_min": 5,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_min": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_min": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_min": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_min": 40,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 26.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 60.0,
+        "energy_kwh": 0.12387388626825925
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.03446100000292063,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.03464440000243485,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.03268190000380855,
+          "upper_bound": 26.0,
+          "lower_bound": 26.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.012795099995855708,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.0037169000061112456,
+          "upper_bound": 60.0,
+          "lower_bound": 60.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.0038733999972464517,
+          "upper_bound": 0.12387388626825924,
+          "lower_bound": 0.12387388626825924,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.0060028000007150695,
+      "total_seconds": 0.129826199998206,
+      "variables": 1167,
+      "constraints": 687
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_003",
+    "restriction": "target_routes_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": true,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_003",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_min": 30,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_min": 5,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_min": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_min": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_min": 0,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_min": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_min": 40,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 18.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 65.0,
+        "energy_kwh": 0.13004154327158035
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.04094999999506399,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.04165179999836255,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.03272589999687625,
+          "upper_bound": 18.0,
+          "lower_bound": 18.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.015883100000792183,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.003715300001204014,
+          "upper_bound": 65.0,
+          "lower_bound": 65.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.004102500002773013,
+          "upper_bound": 0.13004154327158038,
+          "lower_bound": 0.13004154327158035,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.0060651000021607615,
+      "total_seconds": 0.1466740000032587,
+      "variables": 1167,
+      "constraints": 687
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_004",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_004",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.003971300000557676,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.004265000003215391,
+      "total_seconds": 0.008242199997766875,
+      "variables": 837,
+      "constraints": 481
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_005",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_005",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.013558400001784321,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.011325999999826308,
+      "total_seconds": 0.024895800001104362,
+      "variables": 1231,
+      "constraints": 675
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_005",
+    "restriction": "target_routes_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": true,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_005",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_min": 0,
+          "charge_blocks": 2
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_min": 40,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_min": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_min": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_min": 30,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_min": 30,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_min": 0,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 26.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 85.0,
+        "energy_kwh": 0.09710908696616928
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.061267299999599345,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.06164899999566842,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.039363800002320204,
+          "upper_bound": 26.0,
+          "lower_bound": 26.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.00739909999538213,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.0035820999983116053,
+          "upper_bound": 85.0,
+          "lower_bound": 85.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.003341099996760022,
+          "upper_bound": 0.09710908696616928,
+          "lower_bound": 0.09710908696616927,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.0064571999973850325,
+      "total_seconds": 0.18483520000154385,
+      "variables": 1231,
+      "constraints": 675
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_006",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_006",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.00472339999396354,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.00553300000319723,
+      "total_seconds": 0.010263300006045029,
+      "variables": 1062,
+      "constraints": 600
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_007",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_007",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.01479529999778606,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.005192099997657351,
+      "total_seconds": 0.019993699999758974,
+      "variables": 937,
+      "constraints": 506
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_007",
+    "restriction": "target_routes_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": true,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_007",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_min": 35,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_min": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_min": 15,
+          "charge_blocks": 2
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_min": 30,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 22.0,
+        "weighted_tardiness_min": 69.17039083556864,
+        "delay_and_charge_wait_min": 55.0,
+        "energy_kwh": 0.07513963823581504
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.03415730000415351,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.03455709999980172,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.032156100001884624,
+          "upper_bound": 22.0,
+          "lower_bound": 22.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.004644799999368843,
+          "upper_bound": 69.17039083556864,
+          "lower_bound": 69.17039083556864,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.002781800001685042,
+          "upper_bound": 55.0,
+          "lower_bound": 55.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.0027637000021059066,
+          "upper_bound": 0.07513963823581504,
+          "lower_bound": 0.07513963823581504,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.004898700004559942,
+      "total_seconds": 0.11743720000231406,
+      "variables": 937,
+      "constraints": 506
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_007",
+    "restriction": "target_departures_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_007",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.0019297000035294332,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.005140600005688611,
+      "total_seconds": 0.007075200002873316,
+      "variables": 937,
+      "constraints": 506
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_008",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_008",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.0012992999982088804,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.004658199999539647,
+      "total_seconds": 0.005962900002487004,
+      "variables": 837,
+      "constraints": 481
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_009",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_009",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.005516900004295167,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.0071083000002545305,
+      "total_seconds": 0.012630600002012216,
+      "variables": 1286,
+      "constraints": 656
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_009",
+    "restriction": "target_routes_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": true,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_009",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_min": 30,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_min": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_min": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_min": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_min": 0,
+          "charge_blocks": 2
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 18.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 30.0,
+        "energy_kwh": 0.09006461615755788
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.03260920000320766,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.0330104000022402,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.047679699993750546,
+          "upper_bound": 18.0,
+          "lower_bound": 18.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.006009799995808862,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.0035570000036386773,
+          "upper_bound": 30.0,
+          "lower_bound": 30.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.003899499999533873,
+          "upper_bound": 0.09006461615755788,
+          "lower_bound": 0.09006461615755788,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.005937800000538118,
+      "total_seconds": 0.1342411000005086,
+      "variables": 1286,
+      "constraints": 656
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_010",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_010",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.013587899993581232,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.006104300002334639,
+      "total_seconds": 0.019698300005984493,
+      "variables": 1126,
+      "constraints": 588
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_010",
+    "restriction": "target_routes_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": true,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_010",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_min": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_min": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_min": 15,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_min": 30,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_min": 45,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_min": 30,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 27.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 105.0,
+        "energy_kwh": 0.10308269671300074
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.03595370000402909,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.03686110000126064,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.05241810000006808,
+          "upper_bound": 27.0,
+          "lower_bound": 27.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.015355299998191185,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.0030987999998615123,
+          "upper_bound": 105.0,
+          "lower_bound": 105.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.0029319000022951514,
+          "upper_bound": 0.10308269671300076,
+          "lower_bound": 0.10308269671300076,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.005584600003203377,
+      "total_seconds": 0.15372349999961443,
+      "variables": 1126,
+      "constraints": 588
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_011",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_011",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.004563799993775319,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.005914599998504855,
+      "total_seconds": 0.01048340000124881,
+      "variables": 1174,
+      "constraints": 600
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_011",
+    "restriction": "target_routes_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": true,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_011",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_min": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_min": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_min": 30,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_min": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_min": 0,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 15.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 0.09573986629124351
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.03119650000007823,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.031195900002785493,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.030761800000618678,
+          "upper_bound": 15.0,
+          "lower_bound": 15.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.004308400006266311,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.0033207000014954247,
+          "upper_bound": 20.0,
+          "lower_bound": 20.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.0026371999992989004,
+          "upper_bound": 0.09573986629124352,
+          "lower_bound": 0.09573986629124352,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.005433300000731833,
+      "total_seconds": 0.11029140000027837,
+      "variables": 1174,
+      "constraints": 600
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_012",
+    "restriction": "pretarget_charge_fixed",
+    "all_service_feasible": false,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_012",
+      "optimal": false,
+      "proved_prefix": 0,
+      "decisions": null,
+      "objective": null,
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 2,
+          "seconds": 0.004094800002349075,
+          "upper_bound": null,
+          "lower_bound": null,
+          "mip_gap": null
+        }
+      ],
+      "build_seconds": 0.004977200005669147,
+      "total_seconds": 0.00907740000548074,
+      "variables": 937,
+      "constraints": 478
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_012",
+    "restriction": "target_routes_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": true,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_012",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_min": 15,
+          "charge_blocks": 2
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_min": 35,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_min": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_min": 30,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 22.0,
+        "weighted_tardiness_min": 72.65219054368845,
+        "delay_and_charge_wait_min": 55.0,
+        "energy_kwh": 0.07804676183573694
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.028416499997547362,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.028836700003012083,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.030510899996443186,
+          "upper_bound": 22.0,
+          "lower_bound": 22.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.0044280000001890585,
+          "upper_bound": 72.65219054368845,
+          "lower_bound": 72.65219054368845,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.002505899996322114,
+          "upper_bound": 55.0,
+          "lower_bound": 55.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.002630300004966557,
+          "upper_bound": 0.07804676183573694,
+          "lower_bound": 0.07804676183573694,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.004501900002651382,
+      "total_seconds": 0.10320320000028005,
+      "variables": 937,
+      "constraints": 478
+    }
+  },
+  {
+    "record_id": "BRIDGE_ARCO_PHYS_012",
+    "restriction": "target_departures_fixed",
+    "all_service_feasible": true,
+    "reference_quality_possible": false,
+    "result": {
+      "record_id": "BRIDGE_ARCO_PHYS_012",
+      "optimal": true,
+      "proved_prefix": 6,
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_min": 0,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_min": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_min": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_min": 30,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 33.0,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.07513963823581504
+      },
+      "phases": [
+        {
+          "tier": "urgent_holds",
+          "status": 0,
+          "seconds": 0.027061299995693844,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "total_holds",
+          "status": 0,
+          "seconds": 0.026697399996919557,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "repair_distance",
+          "status": 0,
+          "seconds": 0.023385000000416767,
+          "upper_bound": 33.0,
+          "lower_bound": 33.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "weighted_tardiness_min",
+          "status": 0,
+          "seconds": 0.008517899994330946,
+          "upper_bound": 0.0,
+          "lower_bound": 0.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "delay_and_charge_wait_min",
+          "status": 0,
+          "seconds": 0.002203799995186273,
+          "upper_bound": 15.0,
+          "lower_bound": 15.0,
+          "mip_gap": 0.0
+        },
+        {
+          "tier": "energy_kwh",
+          "status": 0,
+          "seconds": 0.0021880999993300065,
+          "upper_bound": 0.07513963823581503,
+          "lower_bound": 0.07513963823581504,
+          "mip_gap": 0.0
+        }
+      ],
+      "build_seconds": 0.005368399994040374,
+      "total_seconds": 0.0967464999994263,
+      "variables": 937,
+      "constraints": 478
+    }
+  }
+]

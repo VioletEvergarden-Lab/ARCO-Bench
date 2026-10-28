@@ -1,0 +1,90 @@
+{
+  "record_id": "NEW_ladder_L02_long",
+  "optimal": false,
+  "proved_prefix": 0,
+  "phases": [
+    {
+      "tier": "urgent_holds",
+      "status": 2,
+      "status_text": "Infeasible",
+      "upper_bound": null,
+      "lower_bound": null,
+      "mip_gap": null,
+      "seconds": 0.4805735999834724
+    }
+  ],
+  "decisions": null,
+  "objective": null,
+  "total_seconds": 1.0400216999696568,
+  "segment_seconds": 1.0400216999696568,
+  "build_seconds": 0.5592072000144981,
+  "budget_seconds": 1800,
+  "previous_segment_seconds": 0,
+  "continued_certified_prefix": 0,
+  "variables": 10887,
+  "solver": "HiGHS 1.15.1",
+  "solver_threads": 1,
+  "prefix_policy": "Only proven prefixes fixed; unproved phase retains lower and upper bounds; no task dropped for an incomplete reference.",
+  "service_bounds": [
+    0,
+    0
+  ],
+  "service_bound_proof": [
+    {
+      "origin": "V09",
+      "final_missions": [
+        "M003"
+      ],
+      "movement_quota": 88
+    },
+    {
+      "origin": "V11",
+      "final_missions": [
+        "M006"
+      ],
+      "movement_quota": 88
+    },
+    {
+      "origin": "V13",
+      "final_missions": [
+        "M010",
+        "M014"
+      ],
+      "movement_quota": 72
+    },
+    {
+      "origin": "V08",
+      "final_missions": [
+        "M018"
+      ],
+      "movement_quota": 52
+    },
+    {
+      "origin": "V02",
+      "final_missions": [
+        "M022"
+      ],
+      "movement_quota": 72
+    },
+    {
+      "origin": "V07",
+      "final_missions": [
+        "M027"
+      ],
+      "movement_quota": 26
+    },
+    {
+      "origin": "V06",
+      "final_missions": [
+        "M032"
+      ],
+      "movement_quota": 28
+    }
+  ],
+  "restriction": "charges",
+  "fixed_service": [
+    0.0,
+    0.0
+  ],
+  "interpretation": "change required to retain certified service prefix"
+}

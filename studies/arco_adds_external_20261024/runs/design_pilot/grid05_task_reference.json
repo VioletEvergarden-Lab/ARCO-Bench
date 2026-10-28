@@ -1,0 +1,1227 @@
+{
+  "protocol": "online_comparison_v1_20261003",
+  "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+  "method": "Full-MILP",
+  "task_sha256": "67aadf7dae03988e0ee79e90e3238813b46738c75f278593e4f1cf5e846f4c28",
+  "budget_seconds": 600.0,
+  "slice_seconds": 60.0,
+  "radius": null,
+  "started_utc": "2026-10-25T06:09:52.193289+00:00",
+  "total_seconds": 0.060207000002264977,
+  "greedy_available_seconds": 0.002391899935901165,
+  "stop_reason": "all_objectives_proved",
+  "global_optimal": true,
+  "admissible": true,
+  "decisions": [
+    {
+      "mission_id": "M001",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 5.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M002",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 6.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M003",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 5.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M004",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 8.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M005",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 9.5,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M006",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 8.0,
+      "charge_blocks": 0
+    }
+  ],
+  "objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 4.1,
+    "weighted_tardiness_min": 5.499999999999999,
+    "delay_and_charge_wait_min": 41.5,
+    "energy_kwh": 0.0692559594623035
+  },
+  "metrics": {
+    "urgent_served": 0,
+    "total_served": 6,
+    "urgent_on_time": 0,
+    "total_on_time": 2,
+    "urgent_demand": 0,
+    "route_changes": 0,
+    "min_reserve_margin_kwh": 0.02787128262629952
+  },
+  "events": [
+    {
+      "generated_seconds": 0.0019439002498984337,
+      "available_seconds": 0.002389400266110897,
+      "validation_seconds": 0.00043640006333589554,
+      "source": "G",
+      "neighborhood": 0,
+      "tier": null,
+      "admissible": true,
+      "within_budget": true,
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 4.300000000000001,
+        "weighted_tardiness_min": 4.0,
+        "delay_and_charge_wait_min": 42.5,
+        "energy_kwh": 0.0692559594623035
+      },
+      "errors": [],
+      "urgent_served": 0,
+      "total_served": 6,
+      "urgent_on_time": 0,
+      "total_on_time": 2,
+      "urgent_demand": 0,
+      "route_changes": 0,
+      "min_reserve_margin_kwh": 0.02787128262629952,
+      "improved": true
+    },
+    {
+      "generated_seconds": 0.018322300165891647,
+      "available_seconds": 0.01857329998165369,
+      "validation_seconds": 0.00020919973030686378,
+      "source": "highs_mip_solution",
+      "neighborhood": 1,
+      "tier": "repair_distance",
+      "admissible": true,
+      "within_budget": true,
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 4.1,
+        "weighted_tardiness_min": 5.999999999999999,
+        "delay_and_charge_wait_min": 41.5,
+        "energy_kwh": 0.0692559594623035
+      },
+      "errors": [],
+      "urgent_served": 0,
+      "total_served": 6,
+      "urgent_on_time": 0,
+      "total_on_time": 3,
+      "urgent_demand": 0,
+      "route_changes": 0,
+      "min_reserve_margin_kwh": 0.02787128262629952,
+      "improved": true
+    },
+    {
+      "generated_seconds": 0.04576609982177615,
+      "available_seconds": 0.04601720022037625,
+      "validation_seconds": 0.000211300328373909,
+      "source": "highs_mip_solution",
+      "neighborhood": 1,
+      "tier": "weighted_tardiness_min",
+      "admissible": true,
+      "within_budget": true,
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 4.1,
+        "weighted_tardiness_min": 5.499999999999999,
+        "delay_and_charge_wait_min": 41.5,
+        "energy_kwh": 0.0692559594623035
+      },
+      "errors": [],
+      "urgent_served": 0,
+      "total_served": 6,
+      "urgent_on_time": 0,
+      "total_on_time": 2,
+      "urgent_demand": 0,
+      "route_changes": 0,
+      "min_reserve_margin_kwh": 0.02787128262629952,
+      "improved": true
+    },
+    {
+      "generated_seconds": 0.05236109998077154,
+      "available_seconds": 0.05263630021363497,
+      "validation_seconds": 0.00021999981254339218,
+      "source": "highs_mip_solution",
+      "neighborhood": 1,
+      "tier": "delay_and_charge_wait_min",
+      "admissible": true,
+      "within_budget": true,
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 4.1,
+        "weighted_tardiness_min": 5.499999999999999,
+        "delay_and_charge_wait_min": 41.5,
+        "energy_kwh": 0.0692559594623035
+      },
+      "errors": [],
+      "urgent_served": 0,
+      "total_served": 6,
+      "urgent_on_time": 0,
+      "total_on_time": 2,
+      "urgent_demand": 0,
+      "route_changes": 0,
+      "min_reserve_margin_kwh": 0.02787128262629952,
+      "improved": false
+    }
+  ],
+  "improvements": [
+    {
+      "generated_seconds": 0.0019439002498984337,
+      "available_seconds": 0.002389400266110897,
+      "validation_seconds": 0.00043640006333589554,
+      "source": "G",
+      "neighborhood": 0,
+      "tier": null,
+      "admissible": true,
+      "within_budget": true,
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 4.300000000000001,
+        "weighted_tardiness_min": 4.0,
+        "delay_and_charge_wait_min": 42.5,
+        "energy_kwh": 0.0692559594623035
+      },
+      "errors": [],
+      "urgent_served": 0,
+      "total_served": 6,
+      "urgent_on_time": 0,
+      "total_on_time": 2,
+      "urgent_demand": 0,
+      "route_changes": 0,
+      "min_reserve_margin_kwh": 0.02787128262629952,
+      "improved": true,
+      "decisions": [
+        {
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 5.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M002",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 5.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M003",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 7.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M004",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 7.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 8.5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M006",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 10.0,
+          "charge_blocks": 0
+        }
+      ]
+    },
+    {
+      "generated_seconds": 0.018322300165891647,
+      "available_seconds": 0.01857329998165369,
+      "validation_seconds": 0.00020919973030686378,
+      "source": "highs_mip_solution",
+      "neighborhood": 1,
+      "tier": "repair_distance",
+      "admissible": true,
+      "within_budget": true,
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 4.1,
+        "weighted_tardiness_min": 5.999999999999999,
+        "delay_and_charge_wait_min": 41.5,
+        "energy_kwh": 0.0692559594623035
+      },
+      "errors": [],
+      "urgent_served": 0,
+      "total_served": 6,
+      "urgent_on_time": 0,
+      "total_on_time": 3,
+      "urgent_demand": 0,
+      "route_changes": 0,
+      "min_reserve_margin_kwh": 0.02787128262629952,
+      "improved": true,
+      "decisions": [
+        {
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 6.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M002",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 5.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M003",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 5.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M004",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 9.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 8.5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M006",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 8.0,
+          "charge_blocks": 0
+        }
+      ]
+    },
+    {
+      "generated_seconds": 0.04576609982177615,
+      "available_seconds": 0.04601720022037625,
+      "validation_seconds": 0.000211300328373909,
+      "source": "highs_mip_solution",
+      "neighborhood": 1,
+      "tier": "weighted_tardiness_min",
+      "admissible": true,
+      "within_budget": true,
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 4.1,
+        "weighted_tardiness_min": 5.499999999999999,
+        "delay_and_charge_wait_min": 41.5,
+        "energy_kwh": 0.0692559594623035
+      },
+      "errors": [],
+      "urgent_served": 0,
+      "total_served": 6,
+      "urgent_on_time": 0,
+      "total_on_time": 2,
+      "urgent_demand": 0,
+      "route_changes": 0,
+      "min_reserve_margin_kwh": 0.02787128262629952,
+      "improved": true,
+      "decisions": [
+        {
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 5.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M002",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 6.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M003",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 5.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M004",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 8.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 9.5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M006",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 8.0,
+          "charge_blocks": 0
+        }
+      ]
+    }
+  ],
+  "neighborhoods": [
+    {
+      "index": 1,
+      "start_seconds": 0.0024083000607788563,
+      "build_seconds": 0.0014940002001821995,
+      "radius": null,
+      "center_objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 4.300000000000001,
+        "weighted_tardiness_min": 4.0,
+        "delay_and_charge_wait_min": 42.5,
+        "energy_kwh": 0.0692559594623035
+      },
+      "center_decisions": [
+        {
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 5.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M002",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 5.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M003",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 7.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M004",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 7.0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 8.5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M006",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "DIRECT",
+          "depart_min": 10.0,
+          "charge_blocks": 0
+        }
+      ],
+      "variables": 126,
+      "constraints": 291,
+      "slice_continuations": [],
+      "end_seconds": 0.06017420021817088,
+      "proved_prefix": 6,
+      "strict_improvement": true
+    }
+  ],
+  "phases": [
+    {
+      "neighborhood": 1,
+      "tier": "urgent_holds",
+      "status": "Optimal (public lower bound)",
+      "proved": true,
+      "start_seconds": 0.003934899810701609,
+      "end_seconds": 0.003939799964427948,
+      "seconds": 4.90015372633934e-06,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0,
+      "proof": "public final-departure pad quota"
+    },
+    {
+      "neighborhood": 1,
+      "tier": "total_holds",
+      "status": "Optimal (public lower bound)",
+      "proved": true,
+      "start_seconds": 0.004064999986439943,
+      "end_seconds": 0.004067200236022472,
+      "seconds": 2.200249582529068e-06,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0,
+      "proof": "public final-departure pad quota"
+    },
+    {
+      "neighborhood": 1,
+      "tier": "repair_distance",
+      "status": "Optimal",
+      "proved": true,
+      "start_seconds": 0.004168900195509195,
+      "end_seconds": 0.01871620025485754,
+      "seconds": 0.014547300059348345,
+      "lower_bound": 4.1,
+      "upper_bound": 4.1
+    },
+    {
+      "neighborhood": 1,
+      "tier": "weighted_tardiness_min",
+      "status": "Optimal",
+      "proved": true,
+      "start_seconds": 0.018902999814599752,
+      "end_seconds": 0.046158399898558855,
+      "seconds": 0.027255400083959103,
+      "lower_bound": 5.499999999999999,
+      "upper_bound": 5.5
+    },
+    {
+      "neighborhood": 1,
+      "tier": "delay_and_charge_wait_min",
+      "status": "Optimal",
+      "proved": true,
+      "start_seconds": 0.04636000003665686,
+      "end_seconds": 0.05273430002853274,
+      "seconds": 0.006374299991875887,
+      "lower_bound": 41.5,
+      "upper_bound": 41.5
+    },
+    {
+      "neighborhood": 1,
+      "tier": "energy_kwh",
+      "status": "Optimal",
+      "proved": true,
+      "start_seconds": 0.052881100215017796,
+      "end_seconds": 0.05999720003455877,
+      "seconds": 0.0071160998195409775,
+      "lower_bound": 0.06925595946230348,
+      "upper_bound": 0.06925595946230349
+    }
+  ],
+  "proof_events": [
+    {
+      "neighborhood": 1,
+      "proved_prefix": 1,
+      "available_seconds": 0.003939799964427948,
+      "scope": "global"
+    },
+    {
+      "neighborhood": 1,
+      "proved_prefix": 2,
+      "available_seconds": 0.004067200236022472,
+      "scope": "global"
+    },
+    {
+      "neighborhood": 1,
+      "proved_prefix": 3,
+      "available_seconds": 0.01871620025485754,
+      "scope": "global"
+    },
+    {
+      "neighborhood": 1,
+      "proved_prefix": 4,
+      "available_seconds": 0.046158399898558855,
+      "scope": "global"
+    },
+    {
+      "neighborhood": 1,
+      "proved_prefix": 5,
+      "available_seconds": 0.05273430002853274,
+      "scope": "global"
+    },
+    {
+      "neighborhood": 1,
+      "proved_prefix": 6,
+      "available_seconds": 0.05999720003455877,
+      "scope": "global"
+    }
+  ],
+  "service_bound_proof": [
+    {
+      "origin": "PACZ_05",
+      "final_missions": [
+        "M004",
+        "M005",
+        "M006"
+      ],
+      "movement_quota": 20
+    }
+  ],
+  "callback_count": 8,
+  "callback_seconds": 0.0010659005492925644,
+  "duplicate_candidates": 9,
+  "validation_seconds": 0.0010768999345600605,
+  "solver": "HiGHS 1.15.1",
+  "solver_threads": 1,
+  "warm_start": "own timed G and own proved preceding tier",
+  "reference_used_online": false,
+  "quality_tolerance": [
+    0.0,
+    0.0,
+    1e-07,
+    1e-05,
+    1e-05,
+    0.0001
+  ],
+  "replay": {
+    "admissible": true,
+    "errors": [],
+    "objective": {
+      "urgent_holds": 0.0,
+      "total_holds": 0.0,
+      "repair_distance": 4.1,
+      "weighted_tardiness_min": 5.499999999999999,
+      "delay_and_charge_wait_min": 41.5,
+      "energy_kwh": 0.0692559594623035
+    },
+    "events": [
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M001",
+        "uav_id": "U01",
+        "held": false,
+        "priority": "routine",
+        "path_id": "DIRECT",
+        "depart_min": 5.0,
+        "arrival_min": 5.682616199712246,
+        "loading_start_min": 4.916666666666667,
+        "incoming_start_min": null,
+        "incoming_arrival_min": null,
+        "charge_start_min": 5.765949533045579,
+        "finish_min": 6.448565732757825,
+        "return_start_min": 5.765949533045579,
+        "return_arrival_min": 6.448565732757825,
+        "return_destination": "PACZ_05",
+        "complete_cycle_duration_min": 1.5318990660911584,
+        "charge_blocks": 0,
+        "charge_kwh": 0.0,
+        "continuous_flight_min": 1.365232399424493,
+        "soc_before_kwh": 0.07992,
+        "soc_service_departure_kwh": 0.07992,
+        "soc_arrival_kwh": 0.074150299190002,
+        "soc_after_charge_kwh": 0.074150299190002,
+        "soc_after_return_kwh": 0.06936541532182891,
+        "reserve_margin_kwh": 0.04938541532182891,
+        "service_energy_kwh": 0.005769700809998003,
+        "return_energy_kwh": 0.004784883868173093,
+        "flight_energy_kwh": 0.010554584678171094,
+        "release_wait_min": 5.0,
+        "tardiness_min": 1.0,
+        "route_changed": false,
+        "departure_shift_min": 4.0
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M004",
+        "uav_id": "U01",
+        "held": false,
+        "priority": "routine",
+        "path_id": "DIRECT",
+        "depart_min": 8.0,
+        "arrival_min": 8.67692759066524,
+        "loading_start_min": 7.916666666666667,
+        "incoming_start_min": null,
+        "incoming_arrival_min": null,
+        "charge_start_min": 8.760260923998574,
+        "finish_min": 9.437188514663815,
+        "return_start_min": 8.760260923998574,
+        "return_arrival_min": 9.437188514663815,
+        "return_destination": "PACZ_05",
+        "complete_cycle_duration_min": 1.5205218479971476,
+        "charge_blocks": 0,
+        "charge_kwh": 0.0,
+        "continuous_flight_min": 1.3538551813304813,
+        "soc_before_kwh": 0.06936541532182891,
+        "soc_service_departure_kwh": 0.06936541532182891,
+        "soc_arrival_kwh": 0.06364321147029384,
+        "soc_after_charge_kwh": 0.06364321147029384,
+        "soc_after_return_kwh": 0.05889783961872751,
+        "reserve_margin_kwh": 0.03891783961872751,
+        "service_energy_kwh": 0.0057222038515350755,
+        "return_energy_kwh": 0.004745371851566332,
+        "flight_energy_kwh": 0.010467575703101407,
+        "release_wait_min": 8.0,
+        "tardiness_min": 2.0,
+        "route_changed": false,
+        "departure_shift_min": 5.0
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M002",
+        "uav_id": "U02",
+        "held": false,
+        "priority": "routine",
+        "path_id": "DIRECT",
+        "depart_min": 6.0,
+        "arrival_min": 6.635233273610486,
+        "loading_start_min": 5.916666666666667,
+        "incoming_start_min": null,
+        "incoming_arrival_min": null,
+        "charge_start_min": 6.718566606943819,
+        "finish_min": 7.353799880554305,
+        "return_start_min": 6.718566606943819,
+        "return_arrival_min": 7.353799880554305,
+        "return_destination": "PACZ_05",
+        "complete_cycle_duration_min": 1.4371332138876376,
+        "charge_blocks": 0,
+        "charge_kwh": 0.0,
+        "continuous_flight_min": 1.2704665472209722,
+        "soc_before_kwh": 0.07992,
+        "soc_service_departure_kwh": 0.07992,
+        "soc_arrival_kwh": 0.07454592224201888,
+        "soc_after_charge_kwh": 0.07454592224201888,
+        "soc_after_return_kwh": 0.07009015133406847,
+        "reserve_margin_kwh": 0.05011015133406847,
+        "service_energy_kwh": 0.005374077757981123,
+        "return_energy_kwh": 0.004455770907950406,
+        "flight_energy_kwh": 0.009829848665931529,
+        "release_wait_min": 6.0,
+        "tardiness_min": 1.9999999999999991,
+        "route_changed": false,
+        "departure_shift_min": 5.0
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M005",
+        "uav_id": "U02",
+        "held": false,
+        "priority": "routine",
+        "path_id": "DIRECT",
+        "depart_min": 9.5,
+        "arrival_min": 9.906756819984848,
+        "loading_start_min": 9.416666666666666,
+        "incoming_start_min": null,
+        "incoming_arrival_min": null,
+        "charge_start_min": 9.990090153318182,
+        "finish_min": 10.39684697330303,
+        "return_start_min": 9.990090153318182,
+        "return_arrival_min": 10.39684697330303,
+        "return_destination": "PACZ_05",
+        "complete_cycle_duration_min": 0.9801803066363632,
+        "charge_blocks": 0,
+        "charge_kwh": 0.0,
+        "continuous_flight_min": 0.8135136399696958,
+        "soc_before_kwh": 0.07009015133406847,
+        "soc_service_departure_kwh": 0.07009015133406847,
+        "soc_arrival_kwh": 0.06662373440106983,
+        "soc_after_charge_kwh": 0.06662373440106983,
+        "soc_after_return_kwh": 0.0637549182926695,
+        "reserve_margin_kwh": 0.043774918292669496,
+        "service_energy_kwh": 0.0034664169329986436,
+        "return_energy_kwh": 0.002868816108400339,
+        "flight_energy_kwh": 0.006335233041398982,
+        "release_wait_min": 9.5,
+        "tardiness_min": 0.5,
+        "route_changed": false,
+        "departure_shift_min": 3.5
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M003",
+        "uav_id": "U03",
+        "held": false,
+        "priority": "routine",
+        "path_id": "DIRECT",
+        "depart_min": 5.0,
+        "arrival_min": 5.979610943003954,
+        "loading_start_min": 4.916666666666667,
+        "incoming_start_min": null,
+        "incoming_arrival_min": null,
+        "charge_start_min": 6.062944276337287,
+        "finish_min": 7.042555219341241,
+        "return_start_min": 6.062944276337287,
+        "return_arrival_min": 7.042555219341241,
+        "return_destination": "PACZ_05",
+        "complete_cycle_duration_min": 2.1258885526745743,
+        "charge_blocks": 0,
+        "charge_kwh": 0.0,
+        "continuous_flight_min": 1.9592218860079076,
+        "soc_before_kwh": 0.07992,
+        "soc_service_departure_kwh": 0.07992,
+        "soc_arrival_kwh": 0.07167054590246348,
+        "soc_after_charge_kwh": 0.07167054590246348,
+        "soc_after_return_kwh": 0.0648227919843194,
+        "reserve_margin_kwh": 0.0448427919843194,
+        "service_energy_kwh": 0.00824945409753652,
+        "return_energy_kwh": 0.006847753918144085,
+        "flight_energy_kwh": 0.015097208015680605,
+        "release_wait_min": 5.0,
+        "tardiness_min": 0,
+        "route_changed": false,
+        "departure_shift_min": 2.0
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M006",
+        "uav_id": "U03",
+        "held": false,
+        "priority": "routine",
+        "path_id": "DIRECT",
+        "depart_min": 8.0,
+        "arrival_min": 9.102151951725258,
+        "loading_start_min": 7.916666666666667,
+        "incoming_start_min": null,
+        "incoming_arrival_min": null,
+        "charge_start_min": 9.185485285058592,
+        "finish_min": 10.28763723678385,
+        "return_start_min": 9.185485285058592,
+        "return_arrival_min": 10.28763723678385,
+        "return_destination": "PACZ_05",
+        "complete_cycle_duration_min": 2.3709705701171826,
+        "charge_blocks": 0,
+        "charge_kwh": 0.0,
+        "continuous_flight_min": 2.204303903450517,
+        "soc_before_kwh": 0.0648227919843194,
+        "soc_service_departure_kwh": 0.0648227919843194,
+        "soc_arrival_kwh": 0.05555018351756066,
+        "soc_after_charge_kwh": 0.05555018351756066,
+        "soc_after_return_kwh": 0.04785128262629952,
+        "reserve_margin_kwh": 0.02787128262629952,
+        "service_energy_kwh": 0.00927260846675874,
+        "return_energy_kwh": 0.007698900891261139,
+        "flight_energy_kwh": 0.01697150935801988,
+        "release_wait_min": 8.0,
+        "tardiness_min": 0,
+        "route_changed": false,
+        "departure_shift_min": 1.0
+      }
+    ],
+    "resource_intervals": [
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M001",
+        "uav_id": "U01",
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_339",
+        "start_min": 5.0,
+        "end_min": 5.682616199712246
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M001",
+        "uav_id": "U01",
+        "kind": "corridor",
+        "resource": "C_BUD_339_PACZ_05",
+        "start_min": 5.765949533045579,
+        "end_min": 6.448565732757825
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M004",
+        "uav_id": "U01",
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_444",
+        "start_min": 8.0,
+        "end_min": 8.67692759066524
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M004",
+        "uav_id": "U01",
+        "kind": "corridor",
+        "resource": "C_BUD_444_PACZ_05",
+        "start_min": 8.760260923998574,
+        "end_min": 9.437188514663815
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M002",
+        "uav_id": "U02",
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_316",
+        "start_min": 6.0,
+        "end_min": 6.635233273610486
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M002",
+        "uav_id": "U02",
+        "kind": "corridor",
+        "resource": "C_BUD_316_PACZ_05",
+        "start_min": 6.718566606943819,
+        "end_min": 7.353799880554305
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M005",
+        "uav_id": "U02",
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_396",
+        "start_min": 9.5,
+        "end_min": 9.906756819984848
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M005",
+        "uav_id": "U02",
+        "kind": "corridor",
+        "resource": "C_BUD_396_PACZ_05",
+        "start_min": 9.990090153318182,
+        "end_min": 10.39684697330303
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M003",
+        "uav_id": "U03",
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_583",
+        "start_min": 5.0,
+        "end_min": 5.979610943003954
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M003",
+        "uav_id": "U03",
+        "kind": "corridor",
+        "resource": "C_BUD_583_PACZ_05",
+        "start_min": 6.062944276337287,
+        "end_min": 7.042555219341241
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M006",
+        "uav_id": "U03",
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_685",
+        "start_min": 8.0,
+        "end_min": 9.102151951725258
+      },
+      {
+        "record_id": "DEV_PACZ05_N06__CLOSE_5MIN__GRID05",
+        "mission_id": "M006",
+        "uav_id": "U03",
+        "kind": "corridor",
+        "resource": "C_BUD_685_PACZ_05",
+        "start_min": 9.185485285058592,
+        "end_min": 10.28763723678385
+      }
+    ],
+    "window_loads": [
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_316_PACZ_05",
+        "bucket": 6,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_316_PACZ_05",
+        "bucket": 7,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_339_PACZ_05",
+        "bucket": 5,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_339_PACZ_05",
+        "bucket": 6,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_396_PACZ_05",
+        "bucket": 9,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_396_PACZ_05",
+        "bucket": 10,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_444_PACZ_05",
+        "bucket": 8,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_444_PACZ_05",
+        "bucket": 9,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_583_PACZ_05",
+        "bucket": 6,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_583_PACZ_05",
+        "bucket": 7,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_685_PACZ_05",
+        "bucket": 9,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_BUD_685_PACZ_05",
+        "bucket": 10,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_316",
+        "bucket": 6,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_339",
+        "bucket": 5,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_396",
+        "bucket": 9,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_444",
+        "bucket": 8,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_583",
+        "bucket": 5,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_685",
+        "bucket": 8,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "corridor",
+        "resource": "C_PACZ_05_BUD_685",
+        "bucket": 9,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "pad",
+        "resource": "BUD_316",
+        "bucket": 6,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 6
+      },
+      {
+        "kind": "pad",
+        "resource": "BUD_339",
+        "bucket": 5,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 6
+      },
+      {
+        "kind": "pad",
+        "resource": "BUD_396",
+        "bucket": 9,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 6
+      },
+      {
+        "kind": "pad",
+        "resource": "BUD_444",
+        "bucket": 8,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 6
+      },
+      {
+        "kind": "pad",
+        "resource": "BUD_583",
+        "bucket": 5,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 6
+      },
+      {
+        "kind": "pad",
+        "resource": "BUD_583",
+        "bucket": 6,
+        "width_min": 1,
+        "count": 1,
+        "capacity": 6
+      },
+      {
+        "kind": "pad",
+        "resource": "BUD_685",
+        "bucket": 9,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 6
+      },
+      {
+        "kind": "pad",
+        "resource": "PACZ_05",
+        "bucket": 5,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "pad",
+        "resource": "PACZ_05",
+        "bucket": 6,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "pad",
+        "resource": "PACZ_05",
+        "bucket": 7,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "pad",
+        "resource": "PACZ_05",
+        "bucket": 8,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "pad",
+        "resource": "PACZ_05",
+        "bucket": 9,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "pad",
+        "resource": "PACZ_05",
+        "bucket": 10,
+        "width_min": 1,
+        "count": 2,
+        "capacity": 2
+      }
+    ],
+    "complete_sorties": true,
+    "return_energy_in_objective": true,
+    "runtime_version": "adds_complete_sortie_v1"
+  }
+}

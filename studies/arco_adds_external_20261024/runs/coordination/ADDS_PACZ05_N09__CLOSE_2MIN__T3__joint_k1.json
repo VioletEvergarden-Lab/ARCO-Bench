@@ -1,0 +1,77 @@
+{
+  "protocol": "target_coordination_direct_v1",
+  "record_id": "ADDS_PACZ05_N09__CLOSE_2MIN",
+  "origin_name": "formal_G",
+  "target_prefix": 3,
+  "target_mode": "match",
+  "target_objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 3.2,
+    "weighted_tardiness_min": 0.0,
+    "delay_and_charge_wait_min": 49.0,
+    "energy_kwh": 0.10593181472377988
+  },
+  "quality_tolerance": [
+    0.0,
+    0.0,
+    1e-07,
+    1e-05,
+    1e-05,
+    0.0001
+  ],
+  "minimize": "missions",
+  "allowed_uavs": [
+    "U01",
+    "U02",
+    "U03"
+  ],
+  "task_budget": null,
+  "chain_budget": 1,
+  "no_good_supports": [],
+  "status": "infeasible",
+  "feasible": false,
+  "optimal": false,
+  "lower_bound": null,
+  "upper_bound": null,
+  "raw_dual_bound": null,
+  "analytic_distance_lower_bound": 1,
+  "solver_objective": null,
+  "decisions": null,
+  "objective": null,
+  "changed_missions": null,
+  "changed_uavs": null,
+  "mission_changes": null,
+  "chain_changes": null,
+  "witness_source": null,
+  "independent_verification": false,
+  "rejected_candidates": [
+    {
+      "source": "origin",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    },
+    {
+      "source": "supplied_witness_0",
+      "admissible": true,
+      "errors": [],
+      "target_met": true
+    }
+  ],
+  "solver_status": "Infeasible",
+  "solver_nodes": 0,
+  "solver": "HiGHS 1.15.1",
+  "solver_threads": 1,
+  "started_utc": "2026-10-25T06:11:30.046036+00:00",
+  "budget_seconds": 60.0,
+  "elapsed_seconds": 0.014723700005561113,
+  "query_build_seconds": 0.0012441999278962612,
+  "base_build_seconds_in_query": 0.0,
+  "preparation_seconds_cumulative": 0.00609000027179718,
+  "solver_seconds": 0.012933500111103058,
+  "validation_seconds": 0.0005459999665617943,
+  "completed_within_budget": true,
+  "variables": 273,
+  "constraints": 653
+}

@@ -1,0 +1,248 @@
+{
+  "record_id": "ADDS_PACZ03_N06__CLOSE_5MIN",
+  "base_id": "ADDS_PACZ03_N06",
+  "condition": "CLOSE_5MIN",
+  "hub": "PACZ_03",
+  "capacity_before": 2,
+  "capacity_after": 3,
+  "original_task_sha256": "3c283a9c227ace4331955f7be54f3ae9187100c3b1a30134df2f2ac86b8755da",
+  "expanded_task_path": "runs/capacity_sensitivity/tasks/ADDS_PACZ03_N06__CLOSE_5MIN.json",
+  "expanded_task_sha256": "28a856c400f16d7a44e5ffa11da0cfbb3c9ee19124ed51f98f533e8dd14870ad",
+  "only_capacity_changed": true,
+  "fixed_original_G": true,
+  "origin_sha256": "275db19fe22b4e078d897ec3edab48fb7e780fad63680f1d0515ad266360f58b",
+  "original_quality": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 5.2,
+    "weighted_tardiness_min": 9.0,
+    "delay_and_charge_wait_min": 41.0,
+    "energy_kwh": 0.07883545640647328
+  },
+  "expanded_quality": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 4.6000000000000005,
+    "weighted_tardiness_min": 6.000000000000001,
+    "delay_and_charge_wait_min": 38.0,
+    "energy_kwh": 0.07883545640647328
+  },
+  "expanded_reference_proved": true,
+  "quality_comparison": -1,
+  "new_reference_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/new_reference.json",
+  "original_scope": {
+    "missions": {
+      "lower_bound": 4,
+      "upper_bound": 4,
+      "status": "optimal",
+      "query_path": "runs/coordination/ADDS_PACZ03_N06__CLOSE_5MIN__T6__missions.json"
+    },
+    "chains": {
+      "lower_bound": 2,
+      "upper_bound": 2,
+      "status": "optimal",
+      "query_path": "runs/coordination/ADDS_PACZ03_N06__CLOSE_5MIN__T6__chains.json"
+    }
+  },
+  "original_frontier": {
+    "record_id": "ADDS_PACZ03_N06__CLOSE_5MIN",
+    "target": "T6",
+    "chain_cap_queries": [
+      {
+        "chain_cap": 0,
+        "lower": null,
+        "upper": null,
+        "status": "infeasible",
+        "mission_changes": null,
+        "chain_changes": null,
+        "query_path": "runs/coordination/ADDS_PACZ03_N06__CLOSE_5MIN__T6__joint_k0.json"
+      },
+      {
+        "chain_cap": 1,
+        "lower": null,
+        "upper": null,
+        "status": "infeasible",
+        "mission_changes": null,
+        "chain_changes": null,
+        "query_path": "runs/coordination/ADDS_PACZ03_N06__CLOSE_5MIN__T6__joint_k1.json"
+      },
+      {
+        "chain_cap": 2,
+        "lower": 4,
+        "upper": 4,
+        "status": "optimal",
+        "mission_changes": 4,
+        "chain_changes": 2,
+        "query_path": "runs/coordination/ADDS_PACZ03_N06__CLOSE_5MIN__T6__joint_k2.json"
+      },
+      {
+        "chain_cap": 3,
+        "lower": 4,
+        "upper": 4,
+        "status": "optimal",
+        "mission_changes": 4,
+        "chain_changes": 3,
+        "query_path": "runs/coordination/ADDS_PACZ03_N06__CLOSE_5MIN__T6__joint_k3.json"
+      }
+    ],
+    "verified_pareto_pairs": [
+      [
+        4,
+        2
+      ]
+    ],
+    "all_cap_queries_resolved": true
+  },
+  "targets": {
+    "old_lex": {
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 5.2,
+        "weighted_tardiness_min": 9.0,
+        "delay_and_charge_wait_min": 41.0,
+        "energy_kwh": 0.07883545640647328
+      },
+      "reference_proved_optimal": true,
+      "marginals": {
+        "missions": {
+          "lower_bound": 2,
+          "upper_bound": 2,
+          "status": "optimal",
+          "witness_missions": 2,
+          "witness_chains": 1,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/old_lex_missions.json"
+        },
+        "chains": {
+          "lower_bound": 1,
+          "upper_bound": 1,
+          "status": "optimal",
+          "witness_missions": 2,
+          "witness_chains": 1,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/old_lex_chains.json"
+        }
+      },
+      "chain_cap_queries": [
+        {
+          "chain_cap": 0,
+          "lower_bound": null,
+          "upper_bound": null,
+          "status": "infeasible",
+          "mission_changes": null,
+          "chain_changes": null,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/old_lex_chain_cap_0.json"
+        },
+        {
+          "chain_cap": 1,
+          "lower_bound": 2,
+          "upper_bound": 2,
+          "status": "optimal",
+          "mission_changes": 2,
+          "chain_changes": 1,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/old_lex_chain_cap_1.json"
+        },
+        {
+          "chain_cap": 2,
+          "lower_bound": 2,
+          "upper_bound": 2,
+          "status": "optimal",
+          "mission_changes": 2,
+          "chain_changes": 1,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/old_lex_chain_cap_2.json"
+        },
+        {
+          "chain_cap": 3,
+          "lower_bound": 2,
+          "upper_bound": 2,
+          "status": "optimal",
+          "mission_changes": 2,
+          "chain_changes": 1,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/old_lex_chain_cap_3.json"
+        }
+      ],
+      "verified_nondominated_pairs": [
+        [
+          2,
+          1
+        ]
+      ],
+      "frontier_exact": true,
+      "marginal_pair_jointly_attained": true
+    },
+    "new_T6": {
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0,
+        "repair_distance": 4.6000000000000005,
+        "weighted_tardiness_min": 6.000000000000001,
+        "delay_and_charge_wait_min": 38.0,
+        "energy_kwh": 0.07883545640647328
+      },
+      "reference_proved_optimal": true,
+      "marginals": {
+        "missions": {
+          "lower_bound": 3,
+          "upper_bound": 3,
+          "status": "optimal",
+          "witness_missions": 3,
+          "witness_chains": 2,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/new_T6_missions.json"
+        },
+        "chains": {
+          "lower_bound": 2,
+          "upper_bound": 2,
+          "status": "optimal",
+          "witness_missions": 3,
+          "witness_chains": 2,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/new_T6_chains.json"
+        }
+      },
+      "chain_cap_queries": [
+        {
+          "chain_cap": 0,
+          "lower_bound": null,
+          "upper_bound": null,
+          "status": "infeasible",
+          "mission_changes": null,
+          "chain_changes": null,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/new_T6_chain_cap_0.json"
+        },
+        {
+          "chain_cap": 1,
+          "lower_bound": null,
+          "upper_bound": null,
+          "status": "infeasible",
+          "mission_changes": null,
+          "chain_changes": null,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/new_T6_chain_cap_1.json"
+        },
+        {
+          "chain_cap": 2,
+          "lower_bound": 3,
+          "upper_bound": 3,
+          "status": "optimal",
+          "mission_changes": 3,
+          "chain_changes": 2,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/new_T6_chain_cap_2.json"
+        },
+        {
+          "chain_cap": 3,
+          "lower_bound": 3,
+          "upper_bound": 3,
+          "status": "optimal",
+          "mission_changes": 3,
+          "chain_changes": 2,
+          "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/new_T6_chain_cap_3.json"
+        }
+      ],
+      "verified_nondominated_pairs": [
+        [
+          3,
+          2
+        ]
+      ],
+      "frontier_exact": true,
+      "marginal_pair_jointly_attained": true
+    }
+  }
+}

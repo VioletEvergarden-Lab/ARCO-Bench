@@ -1,0 +1,408 @@
+{
+  "rule": "Each touched half-open booking window consumes one reservation; sweep uses the original cap_at and intervals. No alternate verifier or reference was computed.",
+  "cases": [
+    {
+      "record_id": "NET_L04_A",
+      "source": "deepseek",
+      "source_record": "arco_closing_study/evaluation/scores.json",
+      "admissible": false,
+      "verifier_errors": [
+        "CHARGER_WINDOW_CAPACITY"
+      ],
+      "booking_violations": [
+        {
+          "kind": "charger",
+          "resource": "V05",
+          "bucket": 52,
+          "width_min": 1,
+          "count": 2,
+          "capacity": 1,
+          "window_start_min": 52,
+          "window_end_min": 53,
+          "contributors": [
+            {
+              "mission_id": "M015",
+              "uav_id": "U04",
+              "path_id": "P1",
+              "depart_min": 36,
+              "route_changed": false,
+              "actual_entry_min": 42.783529653464655,
+              "actual_exit_min": 52.783529653464655,
+              "reservation_windows_min": [
+                [
+                  42,
+                  43
+                ],
+                [
+                  43,
+                  44
+                ],
+                [
+                  44,
+                  45
+                ],
+                [
+                  45,
+                  46
+                ],
+                [
+                  46,
+                  47
+                ],
+                [
+                  47,
+                  48
+                ],
+                [
+                  48,
+                  49
+                ],
+                [
+                  49,
+                  50
+                ],
+                [
+                  50,
+                  51
+                ],
+                [
+                  51,
+                  52
+                ],
+                [
+                  52,
+                  53
+                ]
+              ]
+            },
+            {
+              "mission_id": "M024",
+              "uav_id": "U06",
+              "path_id": "P1",
+              "depart_min": 47,
+              "route_changed": false,
+              "actual_entry_min": 52.99936214532236,
+              "actual_exit_min": 62.99936214532236,
+              "reservation_windows_min": [
+                [
+                  52,
+                  53
+                ],
+                [
+                  53,
+                  54
+                ],
+                [
+                  54,
+                  55
+                ],
+                [
+                  55,
+                  56
+                ],
+                [
+                  56,
+                  57
+                ],
+                [
+                  57,
+                  58
+                ],
+                [
+                  58,
+                  59
+                ],
+                [
+                  59,
+                  60
+                ],
+                [
+                  60,
+                  61
+                ],
+                [
+                  61,
+                  62
+                ],
+                [
+                  62,
+                  63
+                ]
+              ]
+            }
+          ],
+          "maximum_actual_occupancy_within_window": 1,
+          "actual_capacity_violation_within_window": false,
+          "actual_occupancy_spans": [
+            {
+              "start_min": 52,
+              "end_min": 52.783529653464655,
+              "mission_ids": [
+                "M015"
+              ],
+              "actual_count": 1,
+              "actual_capacity": 1
+            },
+            {
+              "start_min": 52.783529653464655,
+              "end_min": 52.99936214532236,
+              "mission_ids": [],
+              "actual_count": 0,
+              "actual_capacity": 1
+            },
+            {
+              "start_min": 52.99936214532236,
+              "end_min": 53,
+              "mission_ids": [
+                "M024"
+              ],
+              "actual_count": 1,
+              "actual_capacity": 1
+            }
+          ]
+        }
+      ],
+      "any_continuous_capacity_error": false
+    },
+    {
+      "record_id": "NEW_regions_L01_long",
+      "source": "deepseek",
+      "source_record": "arco_focused_revision_20261002/online/new_generation/attempts/NEW_regions_L01_long__deepseek__r1/TERMINAL.json",
+      "admissible": false,
+      "verifier_errors": [
+        "CORRIDOR_WINDOW_CAPACITY"
+      ],
+      "booking_violations": [
+        {
+          "kind": "corridor",
+          "resource": "E_V13_V01",
+          "bucket": 4,
+          "width_min": 1,
+          "count": 3,
+          "capacity": 2,
+          "window_start_min": 4,
+          "window_end_min": 5,
+          "contributors": [
+            {
+              "mission_id": "M004",
+              "uav_id": "U02",
+              "path_id": "P1",
+              "depart_min": 3,
+              "route_changed": false,
+              "actual_entry_min": 3.5218124609426593,
+              "actual_exit_min": 4.088948415168446,
+              "reservation_windows_min": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  5
+                ]
+              ]
+            },
+            {
+              "mission_id": "M015",
+              "uav_id": "U05",
+              "path_id": "P1",
+              "depart_min": 4,
+              "route_changed": false,
+              "actual_entry_min": 4.52181246094266,
+              "actual_exit_min": 5.088948415168446,
+              "reservation_windows_min": [
+                [
+                  4,
+                  5
+                ],
+                [
+                  5,
+                  6
+                ]
+              ]
+            },
+            {
+              "mission_id": "M023",
+              "uav_id": "U07",
+              "path_id": "P1",
+              "depart_min": 3,
+              "route_changed": false,
+              "actual_entry_min": 3.8279890873592333,
+              "actual_exit_min": 4.39512504158502,
+              "reservation_windows_min": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  5
+                ]
+              ]
+            }
+          ],
+          "maximum_actual_occupancy_within_window": 2,
+          "actual_capacity_violation_within_window": false,
+          "actual_occupancy_spans": [
+            {
+              "start_min": 4,
+              "end_min": 4.088948415168446,
+              "mission_ids": [
+                "M004",
+                "M023"
+              ],
+              "actual_count": 2,
+              "actual_capacity": 2
+            },
+            {
+              "start_min": 4.088948415168446,
+              "end_min": 4.39512504158502,
+              "mission_ids": [
+                "M023"
+              ],
+              "actual_count": 1,
+              "actual_capacity": 2
+            },
+            {
+              "start_min": 4.39512504158502,
+              "end_min": 4.52181246094266,
+              "mission_ids": [],
+              "actual_count": 0,
+              "actual_capacity": 2
+            },
+            {
+              "start_min": 4.52181246094266,
+              "end_min": 5,
+              "mission_ids": [
+                "M015"
+              ],
+              "actual_count": 1,
+              "actual_capacity": 2
+            }
+          ]
+        }
+      ],
+      "any_continuous_capacity_error": false
+    },
+    {
+      "record_id": "NEW_regions_L02_long",
+      "source": "deepseek",
+      "source_record": "arco_focused_revision_20261002/online/new_generation/attempts/NEW_regions_L02_long__deepseek__r1/TERMINAL.json",
+      "admissible": false,
+      "verifier_errors": [
+        "CORRIDOR_WINDOW_CAPACITY"
+      ],
+      "booking_violations": [
+        {
+          "kind": "corridor",
+          "resource": "E_V01_V13",
+          "bucket": 11,
+          "width_min": 1,
+          "count": 3,
+          "capacity": 2,
+          "window_start_min": 11,
+          "window_end_min": 12,
+          "contributors": [
+            {
+              "mission_id": "M012",
+              "uav_id": "U04",
+              "path_id": "P3",
+              "depart_min": 8,
+              "route_changed": true,
+              "actual_entry_min": 10.676585132162387,
+              "actual_exit_min": 11.252805456473984,
+              "reservation_windows_min": [
+                [
+                  10,
+                  11
+                ],
+                [
+                  11,
+                  12
+                ]
+              ]
+            },
+            {
+              "mission_id": "M016",
+              "uav_id": "U05",
+              "path_id": "P1",
+              "depart_min": 10,
+              "route_changed": false,
+              "actual_entry_min": 10.497993479594353,
+              "actual_exit_min": 11.07421380390595,
+              "reservation_windows_min": [
+                [
+                  10,
+                  11
+                ],
+                [
+                  11,
+                  12
+                ]
+              ]
+            },
+            {
+              "mission_id": "M024",
+              "uav_id": "U07",
+              "path_id": "P3",
+              "depart_min": 9,
+              "route_changed": true,
+              "actual_entry_min": 11.676585132162387,
+              "actual_exit_min": 12.252805456473984,
+              "reservation_windows_min": [
+                [
+                  11,
+                  12
+                ],
+                [
+                  12,
+                  13
+                ]
+              ]
+            }
+          ],
+          "maximum_actual_occupancy_within_window": 2,
+          "actual_capacity_violation_within_window": false,
+          "actual_occupancy_spans": [
+            {
+              "start_min": 11,
+              "end_min": 11.07421380390595,
+              "mission_ids": [
+                "M012",
+                "M016"
+              ],
+              "actual_count": 2,
+              "actual_capacity": 2
+            },
+            {
+              "start_min": 11.07421380390595,
+              "end_min": 11.252805456473984,
+              "mission_ids": [
+                "M012"
+              ],
+              "actual_count": 1,
+              "actual_capacity": 2
+            },
+            {
+              "start_min": 11.252805456473984,
+              "end_min": 11.676585132162387,
+              "mission_ids": [],
+              "actual_count": 0,
+              "actual_capacity": 2
+            },
+            {
+              "start_min": 11.676585132162387,
+              "end_min": 12,
+              "mission_ids": [
+                "M024"
+              ],
+              "actual_count": 1,
+              "actual_capacity": 2
+            }
+          ]
+        }
+      ],
+      "any_continuous_capacity_error": false
+    }
+  ]
+}

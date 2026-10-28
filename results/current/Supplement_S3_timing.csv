@@ -1,0 +1,12 @@
+source,boundary,n,mean_sec,median_sec,p95_sec,max_sec
+MILP_construction,archived six sequential solves; excludes build/load/probe,72,0.08196009722222222,0.074477,0.15347415,0.174981
+policy,archived construct(); excludes file loading/writing,72,0.0904923,0.08127,0.17642306000000002,0.1942095
+deepseek,archived POST intent to terminal frozen; network/generation/polling/persistence,72,207.4109481388889,199.36600349999998,372.58409720000003,424.286553
+policy_deepseek,archived local parse+verify+compare after candidates available,72,0.0008080972222222222,0.00081695,0.0009221850000000001,0.0012984
+qwen,archived POST intent to terminal frozen; network/generation/polling/persistence,72,230.12117729166667,216.1859715,358.69588930000003,569.333909
+policy_qwen,archived local parse+verify+compare after candidates available,72,0.0007571472222222222,0.0007891,0.0010220950000000004,0.0013793
+luna,archived POST intent to terminal frozen; network/generation/polling/persistence,72,427.0268994861111,312.41574049999997,1268.36559955,3608.452307
+policy_luna,archived local parse+verify+compare after candidates available,72,0.0007594875,0.0007646,0.0008726500000000001,0.0010529
+deepseek_explicit,recorded HTTP-call elapsed; includes failed attempts when timed,72,400.0201445847229,391.60287639999297,680.5294271049846,932.6861303999904
+deepseek_complete,recorded POST intent to terminal; includes timed failed attempts,72,317.67032613888887,310.19844850000004,511.20319880000005,589.693088
+luna_complete,recorded POST intent to terminal; includes timed failed attempts,72,179.41601202777778,127.225655,316.22609885,1731.751444

@@ -1,0 +1,523 @@
+{
+  "frozen_utc": "2026-10-23T07:58:09.803758+00:00",
+  "status": "frozen_before_new_Gprime_or_queries",
+  "conditions": [
+    {
+      "record_id": "NET_M01_B",
+      "reason": "Original medium; charging mechanism, known T3 and restricted-U02 T4 records",
+      "metadata": {
+        "record_id": "NET_M01_B",
+        "group": "original",
+        "network_id": "NET_M01",
+        "condition": "B",
+        "scale": "M",
+        "topology": "original",
+        "task_path": "arco_closing_study/networks/tasks/NET_M01_B.json",
+        "reference_path": "arco_closing_study/networks/references/NET_M01_B.json",
+        "mission_count": 20,
+        "uav_count": 5,
+        "chain_lengths": {
+          "U01": 5,
+          "U02": 4,
+          "U03": 3,
+          "U04": 4,
+          "U05": 4
+        }
+      },
+      "historical_G_bounds": [
+        {
+          "target_prefix": 2,
+          "metric": "missions",
+          "lower_bound": 4,
+          "upper_bound": 4,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 2,
+          "metric": "chains",
+          "lower_bound": 1,
+          "upper_bound": 1,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "missions",
+          "lower_bound": 5,
+          "upper_bound": 5,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "chains",
+          "lower_bound": 2,
+          "upper_bound": 2,
+          "status": "closed"
+        }
+      ]
+    },
+    {
+      "record_id": "NET_S02_C",
+      "reason": "Original small; service mission/chain joint-budget tradeoff",
+      "metadata": {
+        "record_id": "NET_S02_C",
+        "group": "original",
+        "network_id": "NET_S02",
+        "condition": "C",
+        "scale": "S",
+        "topology": "original",
+        "task_path": "arco_closing_study/networks/tasks/NET_S02_C.json",
+        "reference_path": "arco_closing_study/networks/references/NET_S02_C.json",
+        "mission_count": 9,
+        "uav_count": 3,
+        "chain_lengths": {
+          "U01": 2,
+          "U02": 4,
+          "U03": 3
+        }
+      },
+      "historical_G_bounds": [
+        {
+          "target_prefix": 2,
+          "metric": "missions",
+          "lower_bound": 2,
+          "upper_bound": 2,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 2,
+          "metric": "chains",
+          "lower_bound": 1,
+          "upper_bound": 1,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "missions",
+          "lower_bound": 5,
+          "upper_bound": 5,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "chains",
+          "lower_bound": 3,
+          "upper_bound": 3,
+          "status": "closed"
+        }
+      ]
+    },
+    {
+      "record_id": "NET_L01_C",
+      "reason": "Original large; preserved open global bounds and candidate-specific 10/11 budgets",
+      "metadata": {
+        "record_id": "NET_L01_C",
+        "group": "original",
+        "network_id": "NET_L01",
+        "condition": "C",
+        "scale": "L",
+        "topology": "original",
+        "task_path": "arco_closing_study/networks/tasks/NET_L01_C.json",
+        "reference_path": "arco_closing_study/networks/references/NET_L01_C.json",
+        "mission_count": 32,
+        "uav_count": 8,
+        "chain_lengths": {
+          "U01": 5,
+          "U02": 3,
+          "U03": 4,
+          "U04": 4,
+          "U05": 5,
+          "U06": 4,
+          "U07": 4,
+          "U08": 3
+        }
+      },
+      "historical_G_bounds": [
+        {
+          "target_prefix": 2,
+          "metric": "missions",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 2,
+          "metric": "chains",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "missions",
+          "lower_bound": 9,
+          "upper_bound": 11,
+          "status": "open"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "chains",
+          "lower_bound": 2,
+          "upper_bound": 5,
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "record_id": "NEW_regions_L02_long",
+      "reason": "Regions large; chain-set identity mechanism",
+      "metadata": {
+        "record_id": "NEW_regions_L02_long",
+        "group": "paired",
+        "network_id": "NEW_regions_L02",
+        "condition": "long",
+        "scale": "L",
+        "topology": "regions",
+        "task_path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_L02_long.json",
+        "reference_path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_L02_long.json",
+        "mission_count": 32,
+        "uav_count": 8,
+        "chain_lengths": {
+          "U01": 3,
+          "U02": 3,
+          "U03": 4,
+          "U04": 4,
+          "U05": 4,
+          "U06": 4,
+          "U07": 5,
+          "U08": 5
+        }
+      },
+      "historical_G_bounds": [
+        {
+          "target_prefix": 2,
+          "metric": "missions",
+          "lower_bound": 7,
+          "upper_bound": 7,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 2,
+          "metric": "chains",
+          "lower_bound": 2,
+          "upper_bound": 2,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "missions",
+          "lower_bound": 10,
+          "upper_bound": 10,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "chains",
+          "lower_bound": 4,
+          "upper_bound": 4,
+          "status": "closed"
+        }
+      ]
+    },
+    {
+      "record_id": "NEW_regions_L01_long",
+      "reason": "Regions large; original domain of the capacity case; capacity interventions themselves reused only",
+      "metadata": {
+        "record_id": "NEW_regions_L01_long",
+        "group": "paired",
+        "network_id": "NEW_regions_L01",
+        "condition": "long",
+        "scale": "L",
+        "topology": "regions",
+        "task_path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_L01_long.json",
+        "reference_path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_L01_long.json",
+        "mission_count": 32,
+        "uav_count": 8,
+        "chain_lengths": {
+          "U01": 3,
+          "U02": 3,
+          "U03": 4,
+          "U04": 4,
+          "U05": 4,
+          "U06": 4,
+          "U07": 5,
+          "U08": 5
+        }
+      },
+      "historical_G_bounds": [
+        {
+          "target_prefix": 2,
+          "metric": "missions",
+          "lower_bound": 5,
+          "upper_bound": 5,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 2,
+          "metric": "chains",
+          "lower_bound": 1,
+          "upper_bound": 1,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "missions",
+          "lower_bound": 12,
+          "upper_bound": 12,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "chains",
+          "lower_bound": 3,
+          "upper_bound": 3,
+          "status": "closed"
+        }
+      ]
+    },
+    {
+      "record_id": "NEW_ladder_M01_long",
+      "reason": "Ladder medium; archived G already reaches complete reference, retain zero control",
+      "metadata": {
+        "record_id": "NEW_ladder_M01_long",
+        "group": "paired",
+        "network_id": "NEW_ladder_M01",
+        "condition": "long",
+        "scale": "M",
+        "topology": "ladder",
+        "task_path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_M01_long.json",
+        "reference_path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_M01_long.json",
+        "mission_count": 20,
+        "uav_count": 5,
+        "chain_lengths": {
+          "U01": 3,
+          "U02": 4,
+          "U03": 4,
+          "U04": 4,
+          "U05": 5
+        }
+      },
+      "historical_G_bounds": [
+        {
+          "target_prefix": 2,
+          "metric": "missions",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 2,
+          "metric": "chains",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "missions",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "chains",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        }
+      ]
+    },
+    {
+      "record_id": "NEW_ladder_S01_short",
+      "reason": "Ladder small; short-closure scale/topology and archived-G-at-target control",
+      "metadata": {
+        "record_id": "NEW_ladder_S01_short",
+        "group": "paired",
+        "network_id": "NEW_ladder_S01",
+        "condition": "short",
+        "scale": "S",
+        "topology": "ladder",
+        "task_path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_S01_short.json",
+        "reference_path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_S01_short.json",
+        "mission_count": 9,
+        "uav_count": 3,
+        "chain_lengths": {
+          "U01": 2,
+          "U02": 3,
+          "U03": 4
+        }
+      },
+      "historical_G_bounds": [
+        {
+          "target_prefix": 2,
+          "metric": "missions",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 2,
+          "metric": "chains",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "missions",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "chains",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        }
+      ]
+    },
+    {
+      "record_id": "NET_S01_A",
+      "reason": "Original small A-only disruption; service already restored but complete quality not reached",
+      "metadata": {
+        "record_id": "NET_S01_A",
+        "group": "original",
+        "network_id": "NET_S01",
+        "condition": "A",
+        "scale": "S",
+        "topology": "original",
+        "task_path": "arco_closing_study/networks/tasks/NET_S01_A.json",
+        "reference_path": "arco_closing_study/networks/references/NET_S01_A.json",
+        "mission_count": 9,
+        "uav_count": 3,
+        "chain_lengths": {
+          "U01": 3,
+          "U02": 4,
+          "U03": 2
+        }
+      },
+      "historical_G_bounds": [
+        {
+          "target_prefix": 2,
+          "metric": "missions",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 2,
+          "metric": "chains",
+          "lower_bound": 0,
+          "upper_bound": 0,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "missions",
+          "lower_bound": 3,
+          "upper_bound": 3,
+          "status": "closed"
+        },
+        {
+          "target_prefix": 6,
+          "metric": "chains",
+          "lower_bound": 2,
+          "upper_bound": 2,
+          "status": "closed"
+        }
+      ]
+    }
+  ],
+  "selection_basis": "Purposeful mechanism coverage based exclusively on historical records; retain zero changes and unclosed intervals; no distributional representativeness claim",
+  "Gprime_rule": "Keep remaining-urgent count and release-time priorities; then select chain head by reverse fixed UAV ID before incumbent-departure tie-break. Reuse original option ranking, feasibility checks and one-successor lookahead. No reference values or scope answers enter construction.",
+  "Gprime_head_key": [
+    "-remaining_urgent_count",
+    "release_min",
+    "-sorted_UAV_rank",
+    "incumbent_depart_min",
+    "sequence_index",
+    "mission_id"
+  ],
+  "fixed": [
+    "task",
+    "incumbent",
+    "finite action domain",
+    "resource interventions",
+    "lexicographic reference",
+    "QUALITY_TOL"
+  ],
+  "base_panel": {
+    "conditions": 8,
+    "origins": [
+      "G",
+      "Gprime"
+    ],
+    "target_prefixes": [
+      2,
+      3,
+      4,
+      6
+    ],
+    "metrics": [
+      "missions",
+      "chains"
+    ],
+    "scalar_positions": 128
+  },
+  "solve_policy": {
+    "default_seconds": 15,
+    "pilot_queries": [
+      {
+        "record_id": "NET_M01_B",
+        "origin": "Gprime",
+        "prefix": 2,
+        "metric": "missions",
+        "seconds": 5
+      },
+      {
+        "record_id": "NET_L01_C",
+        "origin": "Gprime",
+        "prefix": 3,
+        "metric": "missions",
+        "seconds": 5
+      }
+    ],
+    "no_automatic_repeat": true,
+    "open_bounds_allowed": true,
+    "T5_trigger": "Only if closed T4/T6 minima differ, or a T6 lower bound exceeds the corresponding T4 upper bound",
+    "joint": "All closed marginal pairs: use verified stored witness if available, matching historical exclusions if valid, otherwise one bounded feasibility query. For open pairs report verified attainable witness budgets without calling them marginal minima."
+  },
+  "historical_sources": [
+    {
+      "path": "arco_contribution_20261011\\analysis\\e1_results.json",
+      "sha256": "3b3acff509d8251ff3610f2117755244272f6f9d1600422bb0216d6fa0200071"
+    },
+    {
+      "path": "arco_contribution_20261011\\analysis\\e1_origin_comparison.json",
+      "sha256": "a990a7466418bdd3d2a10821fe3bab4c696149dd5dc03816ddf440ccde05e828"
+    },
+    {
+      "path": "arco_contribution_20261011\\analysis\\e1_joint_minima.json",
+      "sha256": "91dca1e287ab0f46fe218e08e1d010d98b341ea0f56afa6568aa7975d3b592d9"
+    },
+    {
+      "path": "arco_contribution_20261011\\analysis\\e1_joint_tradeoff.json",
+      "sha256": "0ede3f25f37b3e15e8ce32c270cf33fa0d90892625e8931e245f2ec991b28533"
+    },
+    {
+      "path": "arco_contribution_20261011\\analysis\\e1_support_identity.json",
+      "sha256": "602d5c4792c2b38f6da5feeac2ff210354f98e9280cff2bea35bfec3129e08cb"
+    },
+    {
+      "path": "arco_contribution_20261011\\analysis\\e3_interventions.json",
+      "sha256": "b384df8629df968ccd0a5de31dfab1d856240f1342ede0f909c65835334c6d99"
+    },
+    {
+      "path": "arco_contribution_20261011\\analysis\\e3_fixed_lex_bounds.json",
+      "sha256": "63e340115ee4a4b855e172bb1fc1438239c5b1d605fee46010663a064613789e"
+    }
+  ],
+  "interpretation": "Historical incumbent-origin comparisons remain separate because incumbent can be infeasible after disruption. No capacity reruns, paid models, or ADDS experiments."
+}

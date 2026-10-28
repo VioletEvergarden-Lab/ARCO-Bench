@@ -1,0 +1,130 @@
+{
+  "version": "independent_networks_v2",
+  "formal_seeds": {
+    "S": [
+      41001,
+      41002,
+      41003,
+      41004
+    ],
+    "M": [
+      42001,
+      42002,
+      42003,
+      42004
+    ],
+    "L": [
+      43001,
+      43002,
+      43003,
+      43004
+    ]
+  },
+  "pilot_cells": [
+    [
+      "S",
+      91001,
+      "A"
+    ],
+    [
+      "M",
+      92001,
+      "B"
+    ],
+    [
+      "L",
+      93001,
+      "A"
+    ],
+    [
+      "L",
+      93002,
+      "C"
+    ]
+  ],
+  "scales": {
+    "S": {
+      "nodes": 7,
+      "chains": [
+        2,
+        3,
+        4
+      ]
+    },
+    "M": {
+      "nodes": 11,
+      "chains": [
+        3,
+        4,
+        4,
+        4,
+        5
+      ]
+    },
+    "L": {
+      "nodes": 16,
+      "chains": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5
+      ]
+    }
+  },
+  "engineering_adjustment": {
+    "count": 1,
+    "initial_L_chains": [
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6
+    ],
+    "initial_L_missions": 40,
+    "final_L_missions": 32,
+    "reason": "Independent L-C pilot reached 604.2 s with proved prefix 4; retain 8 UAVs and chains up to 5, reduce task quantity before any formal API generation",
+    "evidence": "pilots_L40_engineering/references/PILOT_L04_C.json"
+  },
+  "coordinate_box_km": [
+    -0.55,
+    0.55
+  ],
+  "minimum_node_separation_km": 0.08,
+  "graph": "bidirectional union of 3 nearest neighbours plus Euclidean MST",
+  "paths": "2 to 4 distinct shortest simple paths, seeded count per OD",
+  "incoming_successor_target_fraction": 0.25,
+  "initial_soc_fraction": 0.8,
+  "priorities": "independent Bernoulli .4; payload independent uniform choice .25/.5 kg",
+  "release_slack_min": [
+    0,
+    4
+  ],
+  "due_slack_min": {
+    "urgent": [
+      3,
+      8
+    ],
+    "routine": [
+      8,
+      15
+    ]
+  },
+  "final_release": "common pre-disruption outbound wave after all incumbent hub charges finish",
+  "horizon_extension_min": 18,
+  "A_closure_min": 10,
+  "B": "lower initial SOC of A-affected UAV to reserve + first-flight energy + 0.005 kWh",
+  "C": "A+B plus finite shared-hub pad outage, then ceil(UAV/2) unit movement windows before departure horizon",
+  "attempts_per_network": 20,
+  "reference_total_budget_seconds": 600,
+  "solver_threads": 1,
+  "solver": "HiGHS 1.15.1 through highspy; preceding-tier integer starts",
+  "selection_rule": "pre-incumbent valid; A/B optimum all served; C individual all served and joint unavoidable holds; six stages proved",
+  "quality_filter": false
+}

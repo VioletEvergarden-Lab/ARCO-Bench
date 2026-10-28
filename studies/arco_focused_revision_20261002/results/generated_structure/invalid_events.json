@@ -1,0 +1,286 @@
+[
+  {
+    "attempt_id": "NEW_regions_L02_long__deepseek__r1",
+    "record_id": "NEW_regions_L02_long",
+    "kind": "corridor",
+    "resource": "E_V01_V13",
+    "bucket": 11,
+    "width_min": 1,
+    "count": 3,
+    "capacity": 2,
+    "violation_type": "resource_window_capacity",
+    "window_start_min": 11,
+    "window_end_min": 12,
+    "contributors": [
+      {
+        "mission_id": "M012",
+        "uav_id": "U04",
+        "path_id": "P3",
+        "depart_min": 8,
+        "route_changed": true,
+        "actual_entry_min": 10.676585132162387,
+        "actual_exit_min": 11.252805456473984,
+        "reservation_windows_min": [
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ]
+        ]
+      },
+      {
+        "mission_id": "M016",
+        "uav_id": "U05",
+        "path_id": "P1",
+        "depart_min": 10,
+        "route_changed": false,
+        "actual_entry_min": 10.497993479594353,
+        "actual_exit_min": 11.07421380390595,
+        "reservation_windows_min": [
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ]
+        ]
+      },
+      {
+        "mission_id": "M024",
+        "uav_id": "U07",
+        "path_id": "P3",
+        "depart_min": 9,
+        "route_changed": true,
+        "actual_entry_min": 11.676585132162387,
+        "actual_exit_min": 12.252805456473984,
+        "reservation_windows_min": [
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ]
+        ]
+      }
+    ],
+    "maximum_actual_occupancy_within_window": 2,
+    "actual_capacity_violation_within_window": false,
+    "actual_occupancy_spans": [
+      {
+        "start_min": 11,
+        "end_min": 11.07421380390595,
+        "mission_ids": [
+          "M012",
+          "M016"
+        ],
+        "actual_count": 2,
+        "actual_capacity": 2
+      },
+      {
+        "start_min": 11.07421380390595,
+        "end_min": 11.252805456473984,
+        "mission_ids": [
+          "M012"
+        ],
+        "actual_count": 1,
+        "actual_capacity": 2
+      },
+      {
+        "start_min": 11.252805456473984,
+        "end_min": 11.676585132162387,
+        "mission_ids": [],
+        "actual_count": 0,
+        "actual_capacity": 2
+      },
+      {
+        "start_min": 11.676585132162387,
+        "end_min": 12,
+        "mission_ids": [
+          "M024"
+        ],
+        "actual_count": 1,
+        "actual_capacity": 2
+      }
+    ]
+  },
+  {
+    "attempt_id": "NEW_regions_L01_long__deepseek__r1",
+    "record_id": "NEW_regions_L01_long",
+    "kind": "corridor",
+    "resource": "E_V13_V01",
+    "bucket": 4,
+    "width_min": 1,
+    "count": 3,
+    "capacity": 2,
+    "violation_type": "resource_window_capacity",
+    "window_start_min": 4,
+    "window_end_min": 5,
+    "contributors": [
+      {
+        "mission_id": "M004",
+        "uav_id": "U02",
+        "path_id": "P1",
+        "depart_min": 3,
+        "route_changed": false,
+        "actual_entry_min": 3.5218124609426593,
+        "actual_exit_min": 4.088948415168446,
+        "reservation_windows_min": [
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      {
+        "mission_id": "M015",
+        "uav_id": "U05",
+        "path_id": "P1",
+        "depart_min": 4,
+        "route_changed": false,
+        "actual_entry_min": 4.52181246094266,
+        "actual_exit_min": 5.088948415168446,
+        "reservation_windows_min": [
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      {
+        "mission_id": "M023",
+        "uav_id": "U07",
+        "path_id": "P1",
+        "depart_min": 3,
+        "route_changed": false,
+        "actual_entry_min": 3.8279890873592333,
+        "actual_exit_min": 4.39512504158502,
+        "reservation_windows_min": [
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      }
+    ],
+    "maximum_actual_occupancy_within_window": 2,
+    "actual_capacity_violation_within_window": false,
+    "actual_occupancy_spans": [
+      {
+        "start_min": 4,
+        "end_min": 4.088948415168446,
+        "mission_ids": [
+          "M004",
+          "M023"
+        ],
+        "actual_count": 2,
+        "actual_capacity": 2
+      },
+      {
+        "start_min": 4.088948415168446,
+        "end_min": 4.39512504158502,
+        "mission_ids": [
+          "M023"
+        ],
+        "actual_count": 1,
+        "actual_capacity": 2
+      },
+      {
+        "start_min": 4.39512504158502,
+        "end_min": 4.52181246094266,
+        "mission_ids": [],
+        "actual_count": 0,
+        "actual_capacity": 2
+      },
+      {
+        "start_min": 4.52181246094266,
+        "end_min": 5,
+        "mission_ids": [
+          "M015"
+        ],
+        "actual_count": 1,
+        "actual_capacity": 2
+      }
+    ]
+  },
+  {
+    "attempt_id": "NEW_ladder_M02_short__deepseek__r1",
+    "record_id": "NEW_ladder_M02_short",
+    "kind": "reserve_deficit",
+    "mission_id": "M014",
+    "uav_id": "U04",
+    "held": false,
+    "priority": "routine",
+    "path_id": "P1",
+    "depart_min": 21,
+    "arrival_min": 23.77804684437661,
+    "incoming_start_min": null,
+    "incoming_arrival_min": null,
+    "charge_start_min": 28.77804684437661,
+    "finish_min": 38.77804684437661,
+    "charge_blocks": 2,
+    "continuous_flight_min": 2.7780468443766093,
+    "soc_before_kwh": 0.041781101575309176,
+    "soc_service_departure_kwh": 0.041781101575309176,
+    "soc_arrival_kwh": 0.01851563308833325,
+    "soc_after_charge_kwh": 0.033182299754999915,
+    "reserve_margin_kwh": -0.0014643669116667507,
+    "flight_energy_kwh": 0.023265468486975926,
+    "charge_kwh": 0.014666666666666666,
+    "release_wait_min": 1,
+    "tardiness_min": 0,
+    "route_changed": false,
+    "departure_shift_min": 0,
+    "reserve_required_kwh": 0.01998,
+    "first_reserve_violation_on_chain": true
+  },
+  {
+    "attempt_id": "NEW_ladder_M02_short__deepseek__r1",
+    "record_id": "NEW_ladder_M02_short",
+    "kind": "reserve_deficit",
+    "mission_id": "M015",
+    "uav_id": "U04",
+    "held": false,
+    "priority": "urgent",
+    "path_id": "P1",
+    "depart_min": 39,
+    "arrival_min": 41.016488977447636,
+    "incoming_start_min": null,
+    "incoming_arrival_min": null,
+    "charge_start_min": 46.016488977447636,
+    "finish_min": 46.016488977447636,
+    "charge_blocks": 0,
+    "continuous_flight_min": 2.0164889774476347,
+    "soc_before_kwh": 0.033182299754999915,
+    "soc_service_departure_kwh": 0.033182299754999915,
+    "soc_arrival_kwh": 0.01627544759650591,
+    "soc_after_charge_kwh": 0.01627544759650591,
+    "reserve_margin_kwh": -0.003704552403494092,
+    "flight_energy_kwh": 0.016906852158494006,
+    "charge_kwh": 0.0,
+    "release_wait_min": 1,
+    "tardiness_min": 0,
+    "route_changed": false,
+    "departure_shift_min": 0,
+    "reserve_required_kwh": 0.01998,
+    "first_reserve_violation_on_chain": false
+  }
+]

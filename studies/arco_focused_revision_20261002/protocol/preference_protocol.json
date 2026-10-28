@@ -1,0 +1,12 @@
+{
+  "version": "preference_20261002_v1",
+  "task_set": "The unchanged 36 archived NET_S/M/L tasks, four networks per scale and A/B/C conditions",
+  "objective_order": ["L1", "L2", "L4", "L3", "L5", "L6"],
+  "reference_budget_seconds": 600,
+  "reference_warm_start": "The archived feasible reference may initialize this offline preference diagnostic; it is not an online method timing experiment.",
+  "prefix_rule": "Only a HiGHS optimal status or a valid public service bound is fixed. Stop at the first unresolved layer; retain bounds and the best admissible candidate.",
+  "selection_rule": "At most two distinct tasks per scale. First select the earliest task whose service route decisions change, ordered by condition A,B,C then network index. Then select the earliest remaining task whose urgent on-time count changes, ordered by condition B,C,A then network index. A missing category leaves its slot empty; no replacement search by model outcome.",
+  "restriction_rule": "For each selected task, run two diagnostics: fix served mission routes to incumbent paths; fix served mission charge blocks to incumbent settings. Retain the original certified optimal L1/L2 service counts exactly. Each restriction has a 600-second budget.",
+  "restriction_classification": "Infeasible fixed-service model proves service necessity; a certified worse bound at the first relevant lexicographic layer proves quality necessity; a feasible equal-quality witness disproves necessity for that target; an unresolved bound remains unknown.",
+  "model_use": "No model calls. Archived candidates may be evaluated as fixed outputs and cannot establish adaptation to the altered preference."
+}

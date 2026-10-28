@@ -1,0 +1,218 @@
+{
+  "record_id": "NET_S02_C",
+  "target_prefix": 2,
+  "origin": "G",
+  "marginal_minima": [
+    2,
+    1
+  ],
+  "joint_feasible": false,
+  "query_source": "runs\\e1_joint\\NET_S02_C__T2__k2_c1.json",
+  "seconds": 0.15322760003618896,
+  "witnesses": [
+    {
+      "label": "missions",
+      "missions": 2,
+      "chains": 2,
+      "changed_missions": [
+        "M006",
+        "M008"
+      ],
+      "changed_uavs": [
+        "U02",
+        "U03"
+      ],
+      "decisions": [
+        {
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 47,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M003",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 14,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P2",
+          "depart_min": 46,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 13,
+          "charge_blocks": 2
+        },
+        {
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "P2",
+          "depart_min": 47,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "held": true,
+          "path_id": null,
+          "depart_min": null,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 1.0,
+        "repair_distance": 1081.2,
+        "weighted_tardiness_min": 80.4357445826456,
+        "delay_and_charge_wait_min": 102.0,
+        "energy_kwh": 0.09576133429675342
+      },
+      "source": "arco_contribution_20261011/runs/e1/NET_S02_C__T2__missions__initial.json"
+    },
+    {
+      "label": "chains",
+      "missions": 3,
+      "chains": 1,
+      "changed_missions": [
+        "M007",
+        "M008",
+        "M009"
+      ],
+      "changed_uavs": [
+        "U03"
+      ],
+      "decisions": [
+        {
+          "mission_id": "M001",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M002",
+          "uav_id": "U01",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 47,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M003",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M004",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 14,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M005",
+          "uav_id": "U02",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M006",
+          "uav_id": "U02",
+          "held": true,
+          "path_id": null,
+          "depart_min": null,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "M007",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "P2",
+          "depart_min": 3,
+          "charge_blocks": 2
+        },
+        {
+          "mission_id": "M008",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "P1",
+          "depart_min": 27,
+          "charge_blocks": 2
+        },
+        {
+          "mission_id": "M009",
+          "uav_id": "U03",
+          "held": false,
+          "path_id": "P3",
+          "depart_min": 46,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0.0,
+        "total_holds": 1.0,
+        "repair_distance": 1077.6,
+        "weighted_tardiness_min": 8.909930597906907,
+        "delay_and_charge_wait_min": 77.0,
+        "energy_kwh": 0.09977393326051769
+      },
+      "source": "arco_contribution_20261011/runs/e1/NET_S02_C__T2__chains__initial.json"
+    }
+  ],
+  "status": "proved_tradeoff",
+  "complete_nondominated_budget_frontier": [
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      1
+    ]
+  ],
+  "proof": "Integer lower bounds k>=2,c>=1; exclusion of (2,1); verified points (2,2),(3,1) dominate every remaining feasible integer budget."
+}

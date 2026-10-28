@@ -1,0 +1,136 @@
+{
+  "protocol": "fixed_lex_threshold_outer_bounds_verified_witness_v1",
+  "record_id": "ADDS_PACZ01_N09__CONTROL",
+  "origin_name": "fixed_formal_G",
+  "target_mode": "fixed_lexicographic_no_worse",
+  "target_objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 0.0,
+    "weighted_tardiness_min": 0.0,
+    "delay_and_charge_wait_min": 32.5,
+    "energy_kwh": 0.09433166878867363
+  },
+  "quality_tolerance": [
+    0.0,
+    0.0,
+    1e-07,
+    1e-05,
+    1e-05,
+    0.0001
+  ],
+  "minimize": "missions",
+  "allowed_uavs": [
+    "U01",
+    "U02",
+    "U03"
+  ],
+  "task_budget": null,
+  "chain_budget": 0,
+  "status": "optimal",
+  "feasible": true,
+  "optimal": true,
+  "lower_bound": 0,
+  "upper_bound": 0,
+  "decisions": [
+    {
+      "mission_id": "M001",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 0.5,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M002",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 0.5,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M003",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 1.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M004",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 3.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M005",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 3.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M006",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 5.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M007",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 5.5,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M008",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 7.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M009",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 7.0,
+      "charge_blocks": 0
+    }
+  ],
+  "objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 0.0,
+    "weighted_tardiness_min": 0.0,
+    "delay_and_charge_wait_min": 32.5,
+    "energy_kwh": 0.09433166878867363
+  },
+  "changed_missions": [],
+  "changed_uavs": [],
+  "mission_changes": 0,
+  "chain_changes": 0,
+  "witness_source": "origin",
+  "rejected_candidates": [],
+  "solver_calls": 0,
+  "solver_seconds": 0.0,
+  "elapsed_seconds": 0.0,
+  "budget_seconds": 60.0,
+  "started_utc": "2026-10-26T03:47:51.908559+00:00",
+  "solver": "HiGHS 1.15.1",
+  "boundary_handling": "Closed first-better rows give outer-union lower bounds; only compare<=0 independently replayed plans give upper bounds.",
+  "task_sha256": "40ec772104215d75a53ee3238839b87a3a658c8e0cb25bac0539df982a568fcf",
+  "origin_sha256": "fbfd917f03ce1f40a20c400ad839931d6f1cc120eba87ec354ee6d5a392ff5f0",
+  "solver_calls_for_record": 0,
+  "query_path": "runs/capacity_sensitivity/ADDS_PACZ01_N09__CONTROL/old_lex_chain_cap_0.json",
+  "derivation": "Unrestricted mission lower bound applies to the subset; its verified best witness meets this chain cap",
+  "source_query": "runs/capacity_sensitivity/ADDS_PACZ01_N09__CONTROL/old_lex_missions.json"
+}

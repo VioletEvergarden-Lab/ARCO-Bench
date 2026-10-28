@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "deepseek": {
+      "max_tokens": 128000,
+      "model": "deepseek-v4-pro",
+      "temperature": 0.0
+    },
+    "luna": {
+      "background": true,
+      "max_output_tokens": 128000,
+      "model": "gpt-5.6-luna",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "max",
+        "mode": "standard"
+      },
+      "store": false,
+      "stream": false,
+      "tools": []
+    }
+  },
+  "status": "prepared_only_not_sent",
+  "source": "arco_closing_study/run_models.py SETTINGS",
+  "requires_before_execution": "Confirm current authorized endpoint/model support and A-C frozen execution; no POST performed by this script."
+}

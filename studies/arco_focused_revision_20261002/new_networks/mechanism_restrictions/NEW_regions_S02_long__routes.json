@@ -1,0 +1,55 @@
+{
+  "record_id": "NEW_regions_S02_long",
+  "optimal": false,
+  "proved_prefix": 0,
+  "phases": [
+    {
+      "tier": "urgent_holds",
+      "status": 2,
+      "status_text": "Infeasible",
+      "upper_bound": null,
+      "lower_bound": null,
+      "mip_gap": null,
+      "seconds": 0.025297500018496066
+    }
+  ],
+  "decisions": null,
+  "objective": null,
+  "total_seconds": 0.08241380000254139,
+  "segment_seconds": 0.08241380000254139,
+  "build_seconds": 0.05705199996009469,
+  "budget_seconds": 1800,
+  "previous_segment_seconds": 0,
+  "continued_certified_prefix": 0,
+  "variables": 1635,
+  "solver": "HiGHS 1.15.1",
+  "solver_threads": 1,
+  "prefix_policy": "Only proven prefixes fixed; unproved phase retains lower and upper bounds; no task dropped for an incomplete reference.",
+  "service_bounds": [
+    0,
+    0
+  ],
+  "service_bound_proof": [
+    {
+      "origin": "V02",
+      "final_missions": [
+        "M002",
+        "M009"
+      ],
+      "movement_quota": 52
+    },
+    {
+      "origin": "V07",
+      "final_missions": [
+        "M005"
+      ],
+      "movement_quota": 38
+    }
+  ],
+  "restriction": "routes",
+  "fixed_service": [
+    0.0,
+    0.0
+  ],
+  "interpretation": "change required to retain certified service prefix"
+}

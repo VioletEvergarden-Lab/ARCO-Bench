@@ -1,0 +1,5462 @@
+{
+  "summary": {
+    "environment": {
+      "os": "Windows-10-10.0.19045-SP0",
+      "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+      "scipy": "1.13.1",
+      "numpy": "1.26.4",
+      "logical_processors": 24,
+      "threads": "HiGHS default; no override",
+      "highs_version": "1.2.0",
+      "cpu": "13th Gen Intel(R) Core(TM) i7-13700KF"
+    },
+    "R3": {
+      "total_sec": {
+        "mean_sec": 0.206178952777792,
+        "median_sec": 0.1762936000004629,
+        "p95_sec": 0.39293161499990675
+      },
+      "load_sec": {
+        "mean_sec": 0.003017272222425365,
+        "median_sec": 0.0008335500006069196,
+        "p95_sec": 0.009892844999558293
+      },
+      "greedy_sec": {
+        "mean_sec": 0.035919274999817695,
+        "median_sec": 0.029260599999361148,
+        "p95_sec": 0.06838155499935965
+      },
+      "neighborhood_build_sec": {
+        "mean_sec": 0.011204468055565384,
+        "median_sec": 0.010624100001223269,
+        "p95_sec": 0.017625980000320854
+      },
+      "lex_solve_sec": {
+        "mean_sec": 0.15345386527794996,
+        "median_sec": 0.12611209999886341,
+        "p95_sec": 0.3057785550004155
+      },
+      "verification_sec": {
+        "mean_sec": 0.0004981527777343015,
+        "median_sec": 0.0004904499992335332,
+        "p95_sec": 0.0005759199994827213
+      }
+    },
+    "selector": {
+      "G+deepseek": {
+        "mean_sec": 0.0007506430555774083,
+        "median_sec": 0.0007779500001561246,
+        "p95_sec": 0.0008597449991611938
+      },
+      "G+luna": {
+        "mean_sec": 0.0007702486111106231,
+        "median_sec": 0.0007844500005376176,
+        "p95_sec": 0.0008735149997846748
+      },
+      "R3+deepseek": {
+        "mean_sec": 0.0007580583333543069,
+        "median_sec": 0.0007799499999237014,
+        "p95_sec": 0.0008670949998304423
+      },
+      "R3+luna": {
+        "mean_sec": 0.0007676930555741516,
+        "median_sec": 0.0007814000000507804,
+        "p95_sec": 0.0008547149988771708
+      }
+    }
+  },
+  "tasks": [
+    {
+      "record_id": "CA12_CORE_001",
+      "load_sec": 0.00046829999882902484,
+      "greedy_sec": 0.07253330000094138,
+      "neighborhood_build_sec": 0.018568800000139163,
+      "lex_solve_sec": 0.3651196000009804,
+      "verification_sec": 0.0005899999996472616,
+      "total_sec": 0.4599758999993355,
+      "phase_seconds": {
+        "urgent_holds": 0.1124102000012499,
+        "total_holds": 0.15587500000037835,
+        "repair_distance": 0.06761039999946661,
+        "weighted_tardiness_min": 0.019872599999871454,
+        "delay_and_charge_wait_min": 0.005096299999422627,
+        "energy_kwh": 0.004255100000591483
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 8,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 14,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 24,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 24,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 65,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 2.644833
+      }
+    },
+    {
+      "record_id": "CA12_CORE_002",
+      "load_sec": 0.0005022999994253041,
+      "greedy_sec": 0.020061400000486174,
+      "neighborhood_build_sec": 0.00822869999865361,
+      "lex_solve_sec": 0.06595350000134204,
+      "verification_sec": 0.0004061999989062315,
+      "total_sec": 0.09706719999849156,
+      "phase_seconds": {
+        "urgent_holds": 0.02022420000139391,
+        "total_holds": 0.027498600000399165,
+        "repair_distance": 0.008761200000662939,
+        "weighted_tardiness_min": 0.005028300000049057,
+        "delay_and_charge_wait_min": 0.002623799999128096,
+        "energy_kwh": 0.0018173999997088686
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.919591
+      }
+    },
+    {
+      "record_id": "CA12_CORE_003",
+      "load_sec": 0.0005531999995582737,
+      "greedy_sec": 0.06857289999970817,
+      "neighborhood_build_sec": 0.015920899999400717,
+      "lex_solve_sec": 0.31860389999928884,
+      "verification_sec": 0.0005130999998073094,
+      "total_sec": 0.40661399999953574,
+      "phase_seconds": {
+        "urgent_holds": 0.09556519999932789,
+        "total_holds": 0.09843279999950028,
+        "repair_distance": 0.08590389999881154,
+        "weighted_tardiness_min": 0.02854049999950803,
+        "delay_and_charge_wait_min": 0.00532270000076096,
+        "energy_kwh": 0.00483880000138015
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 2,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 2,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 5,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 66,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 3.06495
+      }
+    },
+    {
+      "record_id": "CA12_CORE_004",
+      "load_sec": 0.009828600001128507,
+      "greedy_sec": 0.02619589999994787,
+      "neighborhood_build_sec": 0.010621700001138379,
+      "lex_solve_sec": 0.1471224999968399,
+      "verification_sec": 0.0005199999995966209,
+      "total_sec": 0.19626480000079027,
+      "phase_seconds": {
+        "urgent_holds": 0.046266400000604335,
+        "total_holds": 0.04945429999861517,
+        "repair_distance": 0.0327672999992501,
+        "weighted_tardiness_min": 0.012311999998928513,
+        "delay_and_charge_wait_min": 0.0036789999994653044,
+        "energy_kwh": 0.002643499999976484
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 0,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 19,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 2.57135
+      }
+    },
+    {
+      "record_id": "CA12_CORE_005",
+      "load_sec": 0.0009463999995205086,
+      "greedy_sec": 0.014259700001275633,
+      "neighborhood_build_sec": 0.006516499999634107,
+      "lex_solve_sec": 0.05387380000138364,
+      "verification_sec": 0.0005388000008679228,
+      "total_sec": 0.07774530000097002,
+      "phase_seconds": {
+        "urgent_holds": 0.018152700000428013,
+        "total_holds": 0.019361699998626136,
+        "repair_distance": 0.005990300000121351,
+        "weighted_tardiness_min": 0.005502900001374655,
+        "delay_and_charge_wait_min": 0.0034988999996130588,
+        "energy_kwh": 0.0013673000012204284
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_12",
+          "depart_slot": 5,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 25,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 52,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 5.0,
+        "energy_kwh": 1.174091
+      }
+    },
+    {
+      "record_id": "CA12_CORE_006",
+      "load_sec": 0.0005213000004005153,
+      "greedy_sec": 0.02592740000000049,
+      "neighborhood_build_sec": 0.010189499998887186,
+      "lex_solve_sec": 0.116081000000122,
+      "verification_sec": 0.0004862000005232403,
+      "total_sec": 0.15519180000046617,
+      "phase_seconds": {
+        "urgent_holds": 0.031034100000397302,
+        "total_holds": 0.03321219999997993,
+        "repair_distance": 0.038650000000416185,
+        "weighted_tardiness_min": 0.007355499999903259,
+        "delay_and_charge_wait_min": 0.0035850999993272126,
+        "energy_kwh": 0.002244100000098115
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 13,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 3,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 2,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 33,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 1.023913
+      }
+    },
+    {
+      "record_id": "CA12_CORE_007",
+      "load_sec": 0.0007913000008556992,
+      "greedy_sec": 0.02004309999938414,
+      "neighborhood_build_sec": 0.008189500000298722,
+      "lex_solve_sec": 0.07100439999885566,
+      "verification_sec": 0.00041880000026139896,
+      "total_sec": 0.10235579999971378,
+      "phase_seconds": {
+        "urgent_holds": 0.020668000001023756,
+        "total_holds": 0.022860099999888916,
+        "repair_distance": 0.017272099999900092,
+        "weighted_tardiness_min": 0.005065099998319056,
+        "delay_and_charge_wait_min": 0.0032625000003463356,
+        "energy_kwh": 0.001876599999377504
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 9,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 5,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.920955
+      }
+    },
+    {
+      "record_id": "CA12_CORE_008",
+      "load_sec": 0.000825700000859797,
+      "greedy_sec": 0.04575659999864001,
+      "neighborhood_build_sec": 0.013246900000012829,
+      "lex_solve_sec": 0.1969361999999819,
+      "verification_sec": 0.0005197999998927116,
+      "total_sec": 0.2597936000001937,
+      "phase_seconds": {
+        "urgent_holds": 0.06400989999929152,
+        "total_holds": 0.06776759999956994,
+        "repair_distance": 0.03319530000044324,
+        "weighted_tardiness_min": 0.023538200000984943,
+        "delay_and_charge_wait_min": 0.005509900000106427,
+        "energy_kwh": 0.002915299999585841
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 13,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_12",
+          "depart_slot": 4,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 52,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 5.0,
+        "energy_kwh": 1.208176
+      }
+    },
+    {
+      "record_id": "CA12_CORE_009",
+      "load_sec": 0.010234699999273289,
+      "greedy_sec": 0.013167999999495805,
+      "neighborhood_build_sec": 0.006079999999201391,
+      "lex_solve_sec": 0.05835479999950621,
+      "verification_sec": 0.0005303999987518182,
+      "total_sec": 0.0900389999987965,
+      "phase_seconds": {
+        "urgent_holds": 0.01814350000131526,
+        "total_holds": 0.024169099999198806,
+        "repair_distance": 0.005928099999437109,
+        "weighted_tardiness_min": 0.0054560000007768394,
+        "delay_and_charge_wait_min": 0.0033286999987467425,
+        "energy_kwh": 0.0013294000000314554
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 2,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 2,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 13,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 52,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 5.0,
+        "energy_kwh": 1.123345
+      }
+    },
+    {
+      "record_id": "CA12_CORE_010",
+      "load_sec": 0.0008788000013737474,
+      "greedy_sec": 0.05239229999824602,
+      "neighborhood_build_sec": 0.013192399999752524,
+      "lex_solve_sec": 0.24543059999814432,
+      "verification_sec": 0.0004903999997623032,
+      "total_sec": 0.3147121000001789,
+      "phase_seconds": {
+        "urgent_holds": 0.0641273999990517,
+        "total_holds": 0.10391200000049139,
+        "repair_distance": 0.03949289999945904,
+        "weighted_tardiness_min": 0.02971139999863226,
+        "delay_and_charge_wait_min": 0.005485100000441889,
+        "energy_kwh": 0.002701800000068033
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 3,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 9,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 0,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 52,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 5.0,
+        "energy_kwh": 1.384938
+      }
+    },
+    {
+      "record_id": "CA12_CORE_011",
+      "load_sec": 0.009190400000079535,
+      "greedy_sec": 0.06688260000009905,
+      "neighborhood_build_sec": 0.017913300000145682,
+      "lex_solve_sec": 0.2942950999986351,
+      "verification_sec": 0.0005254999996395782,
+      "total_sec": 0.39140210000005027,
+      "phase_seconds": {
+        "urgent_holds": 0.09357199999976729,
+        "total_holds": 0.09682530000100087,
+        "repair_distance": 0.07404029999997874,
+        "weighted_tardiness_min": 0.02035269999942102,
+        "delay_and_charge_wait_min": 0.005139899998539477,
+        "energy_kwh": 0.004364899999927729
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 8,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 26,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 10,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 65,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 3.074304
+      }
+    },
+    {
+      "record_id": "CA12_CORE_012",
+      "load_sec": 0.0005137999996804865,
+      "greedy_sec": 0.027428499999587075,
+      "neighborhood_build_sec": 0.00804710000011255,
+      "lex_solve_sec": 0.08392989999993006,
+      "verification_sec": 0.00042970000140485354,
+      "total_sec": 0.12230710000039835,
+      "phase_seconds": {
+        "urgent_holds": 0.032216600000538165,
+        "total_holds": 0.028271099999983562,
+        "repair_distance": 0.008217999999033054,
+        "weighted_tardiness_min": 0.009735400000863592,
+        "delay_and_charge_wait_min": 0.0034927999986393843,
+        "energy_kwh": 0.0019960000008723
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 54,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.808077
+      }
+    },
+    {
+      "record_id": "CA12_CORE_013",
+      "load_sec": 0.000972100000581122,
+      "greedy_sec": 0.019185999999535852,
+      "neighborhood_build_sec": 0.007549800000560936,
+      "lex_solve_sec": 0.07802929999888875,
+      "verification_sec": 0.0005022000004828442,
+      "total_sec": 0.10787150000032852,
+      "phase_seconds": {
+        "urgent_holds": 0.022822099999757484,
+        "total_holds": 0.02566789999946195,
+        "repair_distance": 0.014406099999177968,
+        "weighted_tardiness_min": 0.01051749999896856,
+        "delay_and_charge_wait_min": 0.0027604000006249407,
+        "energy_kwh": 0.0018553000008978415
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 5,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 24,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 8,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 2.659176
+      }
+    },
+    {
+      "record_id": "CA12_CORE_014",
+      "load_sec": 0.0008171999998012325,
+      "greedy_sec": 0.0275989000001573,
+      "neighborhood_build_sec": 0.010366500000600354,
+      "lex_solve_sec": 0.12682370000038645,
+      "verification_sec": 0.000459999999293359,
+      "total_sec": 0.16809679999823857,
+      "phase_seconds": {
+        "urgent_holds": 0.0354832000011811,
+        "total_holds": 0.048705199998948956,
+        "repair_distance": 0.026406999999380787,
+        "weighted_tardiness_min": 0.010134000000107335,
+        "delay_and_charge_wait_min": 0.003777300000365358,
+        "energy_kwh": 0.0023170000004029134
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 8,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 24,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.958015
+      }
+    },
+    {
+      "record_id": "CA12_CORE_015",
+      "load_sec": 0.0008832000003167195,
+      "greedy_sec": 0.04896940000071481,
+      "neighborhood_build_sec": 0.015691700000388664,
+      "lex_solve_sec": 0.2458676000005653,
+      "verification_sec": 0.000488499999846681,
+      "total_sec": 0.3143720000007306,
+      "phase_seconds": {
+        "urgent_holds": 0.05632479999985662,
+        "total_holds": 0.11168610000095214,
+        "repair_distance": 0.05345049999959883,
+        "weighted_tardiness_min": 0.014923599999747239,
+        "delay_and_charge_wait_min": 0.0054364000006899005,
+        "energy_kwh": 0.004046199999720557
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 4,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 23,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 45,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 3.262983
+      }
+    },
+    {
+      "record_id": "CA12_CORE_016",
+      "load_sec": 0.000799600000391365,
+      "greedy_sec": 0.024675799999386072,
+      "neighborhood_build_sec": 0.009848300000157906,
+      "lex_solve_sec": 0.0912110000026587,
+      "verification_sec": 0.00045620000128110405,
+      "total_sec": 0.12893220000114525,
+      "phase_seconds": {
+        "urgent_holds": 0.025782500000786968,
+        "total_holds": 0.044437600001401734,
+        "repair_distance": 0.010041499999715597,
+        "weighted_tardiness_min": 0.0057756999995035585,
+        "delay_and_charge_wait_min": 0.003057500000068103,
+        "energy_kwh": 0.002116200001182733
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 9,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 1.005148
+      }
+    },
+    {
+      "record_id": "CA12_CORE_017",
+      "load_sec": 0.0009503000001132023,
+      "greedy_sec": 0.015894500000285916,
+      "neighborhood_build_sec": 0.007309900000109337,
+      "lex_solve_sec": 0.1086247999992338,
+      "verification_sec": 0.0004904999987047631,
+      "total_sec": 0.13513009999951464,
+      "phase_seconds": {
+        "urgent_holds": 0.03865159999986645,
+        "total_holds": 0.047607299999071984,
+        "repair_distance": 0.010404599999674247,
+        "weighted_tardiness_min": 0.0082550999995874,
+        "delay_and_charge_wait_min": 0.002127400000972557,
+        "energy_kwh": 0.0015788000000611646
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 54,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 1.169123
+      }
+    },
+    {
+      "record_id": "CA12_CORE_018",
+      "load_sec": 0.0009515999990981072,
+      "greedy_sec": 0.00705030000062834,
+      "neighborhood_build_sec": 0.003602400000090711,
+      "lex_solve_sec": 0.03275250000115193,
+      "verification_sec": 0.00043279999954393134,
+      "total_sec": 0.046152799999617855,
+      "phase_seconds": {
+        "urgent_holds": 0.010207000001173583,
+        "total_holds": 0.010890800000197487,
+        "repair_distance": 0.0036627999998017913,
+        "weighted_tardiness_min": 0.004217600000629318,
+        "delay_and_charge_wait_min": 0.002950399999463116,
+        "energy_kwh": 0.0008238999998866348
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 3,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 0,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 0,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 52,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 5.0,
+        "energy_kwh": 0.679838
+      }
+    },
+    {
+      "record_id": "CA12_CORE_019",
+      "load_sec": 0.000662200000078883,
+      "greedy_sec": 0.012282699999559554,
+      "neighborhood_build_sec": 0.004689900000812486,
+      "lex_solve_sec": 0.04599459999917599,
+      "verification_sec": 0.00041910000072675757,
+      "total_sec": 0.06533719999970344,
+      "phase_seconds": {
+        "urgent_holds": 0.02613539999947534,
+        "total_holds": 0.009591500000169617,
+        "repair_distance": 0.0035812999994959682,
+        "weighted_tardiness_min": 0.0038234000003285473,
+        "delay_and_charge_wait_min": 0.0017451000003347872,
+        "energy_kwh": 0.0011178999993717298
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 4,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 9,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 54,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.678978
+      }
+    },
+    {
+      "record_id": "CA12_CORE_020",
+      "load_sec": 0.0006811000002926448,
+      "greedy_sec": 0.03633100000115519,
+      "neighborhood_build_sec": 0.011662999999316526,
+      "lex_solve_sec": 0.12376629999744182,
+      "verification_sec": 0.000501599999552127,
+      "total_sec": 0.17501910000100906,
+      "phase_seconds": {
+        "urgent_holds": 0.04435689999991155,
+        "total_holds": 0.04280829999879643,
+        "repair_distance": 0.017658599999776925,
+        "weighted_tardiness_min": 0.0114080000003014,
+        "delay_and_charge_wait_min": 0.00513419999879261,
+        "energy_kwh": 0.0024002999998629093
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 8,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 23,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 27,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 53,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 1.284806
+      }
+    },
+    {
+      "record_id": "CA12_CORE_021",
+      "load_sec": 0.0007922000004327856,
+      "greedy_sec": 0.03307630000017525,
+      "neighborhood_build_sec": 0.010138199999346398,
+      "lex_solve_sec": 0.12257580000004964,
+      "verification_sec": 0.0004406000007293187,
+      "total_sec": 0.16901719999987108,
+      "phase_seconds": {
+        "urgent_holds": 0.03487679999852844,
+        "total_holds": 0.03939119999995455,
+        "repair_distance": 0.021403400000053807,
+        "weighted_tardiness_min": 0.019473599999400903,
+        "delay_and_charge_wait_min": 0.005436000001282082,
+        "energy_kwh": 0.001994800000829855
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 52,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 5.0,
+        "energy_kwh": 1.042029
+      }
+    },
+    {
+      "record_id": "CA12_CORE_022",
+      "load_sec": 0.0007915999995020684,
+      "greedy_sec": 0.06447490000027756,
+      "neighborhood_build_sec": 0.01545070000065607,
+      "lex_solve_sec": 0.3086175999997067,
+      "verification_sec": 0.0004337999998824671,
+      "total_sec": 0.3923075999991852,
+      "phase_seconds": {
+        "urgent_holds": 0.08852219999971567,
+        "total_holds": 0.151791599999342,
+        "repair_distance": 0.03947840000000724,
+        "weighted_tardiness_min": 0.020793800000319607,
+        "delay_and_charge_wait_min": 0.004433500000232016,
+        "energy_kwh": 0.0035981000000901986
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 4,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 1,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 2.509268
+      }
+    },
+    {
+      "record_id": "CA12_CORE_023",
+      "load_sec": 0.00029829999948560726,
+      "greedy_sec": 0.020138899999437854,
+      "neighborhood_build_sec": 0.00825520000034885,
+      "lex_solve_sec": 0.05127590000302007,
+      "verification_sec": 0.0004087999986950308,
+      "total_sec": 0.08206479999898875,
+      "phase_seconds": {
+        "urgent_holds": 0.020389600000271457,
+        "total_holds": 0.014685100000860984,
+        "repair_distance": 0.005894199999602279,
+        "weighted_tardiness_min": 0.005305399999997462,
+        "delay_and_charge_wait_min": 0.003091800001129741,
+        "energy_kwh": 0.0019098000011581462
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 2,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.915784
+      }
+    },
+    {
+      "record_id": "CA12_CORE_024",
+      "load_sec": 0.009292700000514742,
+      "greedy_sec": 0.02627339999889955,
+      "neighborhood_build_sec": 0.008097199999610893,
+      "lex_solve_sec": 0.07633700000042154,
+      "verification_sec": 0.00042519999988144264,
+      "total_sec": 0.12201699999968696,
+      "phase_seconds": {
+        "urgent_holds": 0.031369500000437256,
+        "total_holds": 0.022209400000065216,
+        "repair_distance": 0.008757699999478064,
+        "weighted_tardiness_min": 0.009664799999882234,
+        "delay_and_charge_wait_min": 0.0025936000001820503,
+        "energy_kwh": 0.00174200000037672
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 9,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 54,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.92451
+      }
+    },
+    {
+      "record_id": "CA12_CORE_025",
+      "load_sec": 0.0008717000000615371,
+      "greedy_sec": 0.015196000000287313,
+      "neighborhood_build_sec": 0.007144999999582069,
+      "lex_solve_sec": 0.06232880000243313,
+      "verification_sec": 0.0005200999985390808,
+      "total_sec": 0.08753129999968223,
+      "phase_seconds": {
+        "urgent_holds": 0.020327300000644755,
+        "total_holds": 0.021987000000081025,
+        "repair_distance": 0.006668500000159838,
+        "weighted_tardiness_min": 0.005843599999934668,
+        "delay_and_charge_wait_min": 0.006098700001530233,
+        "energy_kwh": 0.0014037000000826083
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 9,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 23,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_12",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 52,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 5.0,
+        "energy_kwh": 1.055747
+      }
+    },
+    {
+      "record_id": "CA12_CORE_026",
+      "load_sec": 0.0008329000011144672,
+      "greedy_sec": 0.046878799999831244,
+      "neighborhood_build_sec": 0.011028899998564157,
+      "lex_solve_sec": 0.2510865999975067,
+      "verification_sec": 0.0007407000011880882,
+      "total_sec": 0.3133086000016192,
+      "phase_seconds": {
+        "urgent_holds": 0.07009309999921243,
+        "total_holds": 0.09846909999942,
+        "repair_distance": 0.04417240000111633,
+        "weighted_tardiness_min": 0.03061580000030517,
+        "delay_and_charge_wait_min": 0.005309499998475076,
+        "energy_kwh": 0.0024266999989777105
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 4,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 53,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 1.017458
+      }
+    },
+    {
+      "record_id": "CA12_CORE_027",
+      "load_sec": 0.010066200000437675,
+      "greedy_sec": 0.02577930000006745,
+      "neighborhood_build_sec": 0.009135399999649962,
+      "lex_solve_sec": 0.07025959999918996,
+      "verification_sec": 0.00042690000009315554,
+      "total_sec": 0.11756299999979092,
+      "phase_seconds": {
+        "urgent_holds": 0.029644700000062585,
+        "total_holds": 0.01565619999928458,
+        "repair_distance": 0.010086000000228523,
+        "weighted_tardiness_min": 0.009597199999916484,
+        "delay_and_charge_wait_min": 0.0033801000008679694,
+        "energy_kwh": 0.0018953999988298165
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 2,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 13,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 53,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 0.892199
+      }
+    },
+    {
+      "record_id": "CA12_CORE_028",
+      "load_sec": 0.00028670000028796494,
+      "greedy_sec": 0.019879900000887574,
+      "neighborhood_build_sec": 0.008089500001005945,
+      "lex_solve_sec": 0.050258399998710956,
+      "verification_sec": 0.00040129999979399145,
+      "total_sec": 0.08062470000004396,
+      "phase_seconds": {
+        "urgent_holds": 0.01980790000015986,
+        "total_holds": 0.013256599999294849,
+        "repair_distance": 0.0061141000005591195,
+        "weighted_tardiness_min": 0.006114799998613307,
+        "delay_and_charge_wait_min": 0.0030716000001120847,
+        "energy_kwh": 0.0018933999999717344
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 3,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 1,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.881397
+      }
+    },
+    {
+      "record_id": "CA12_CORE_029",
+      "load_sec": 0.0008844000003591646,
+      "greedy_sec": 0.06632189999982074,
+      "neighborhood_build_sec": 0.01642060000085621,
+      "lex_solve_sec": 0.2560777999988204,
+      "verification_sec": 0.0004755000009026844,
+      "total_sec": 0.34270910000122967,
+      "phase_seconds": {
+        "urgent_holds": 0.0879506000001129,
+        "total_holds": 0.08879660000093281,
+        "repair_distance": 0.04721880000033707,
+        "weighted_tardiness_min": 0.022949299998799688,
+        "delay_and_charge_wait_min": 0.005344100000002072,
+        "energy_kwh": 0.0038183999986358685
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 3.483345
+      }
+    },
+    {
+      "record_id": "CA12_CORE_030",
+      "load_sec": 0.009292099999584025,
+      "greedy_sec": 0.06933720000051835,
+      "neighborhood_build_sec": 0.017975300001126016,
+      "lex_solve_sec": 0.3668308000014804,
+      "verification_sec": 0.0005435000002762536,
+      "total_sec": 0.4666128999997454,
+      "phase_seconds": {
+        "urgent_holds": 0.09262680000028922,
+        "total_holds": 0.150908999999956,
+        "repair_distance": 0.08463330000085989,
+        "weighted_tardiness_min": 0.029044700000667945,
+        "delay_and_charge_wait_min": 0.005354099999749451,
+        "energy_kwh": 0.004262899999957881
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 19,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 23,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 4,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 13,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 23,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 3.195192
+      }
+    },
+    {
+      "record_id": "CA12_CORE_031",
+      "load_sec": 0.009577800001352443,
+      "greedy_sec": 0.026735899999039248,
+      "neighborhood_build_sec": 0.011115899998912937,
+      "lex_solve_sec": 0.10384230000090611,
+      "verification_sec": 0.00048799999967741314,
+      "total_sec": 0.15391830000044138,
+      "phase_seconds": {
+        "urgent_holds": 0.0404435000000376,
+        "total_holds": 0.03892140000061772,
+        "repair_distance": 0.012694299999566283,
+        "weighted_tardiness_min": 0.006260199999815086,
+        "delay_and_charge_wait_min": 0.0032326000000466593,
+        "energy_kwh": 0.0022903000008227536
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 1.011944
+      }
+    },
+    {
+      "record_id": "CA12_CORE_032",
+      "load_sec": 0.0008302999995066784,
+      "greedy_sec": 0.06312099999922793,
+      "neighborhood_build_sec": 0.015403699999296805,
+      "lex_solve_sec": 0.2663479000002553,
+      "verification_sec": 0.0004309999985707691,
+      "total_sec": 0.34900719999859575,
+      "phase_seconds": {
+        "urgent_holds": 0.09134190000077069,
+        "total_holds": 0.09836869999890041,
+        "repair_distance": 0.046994599999379716,
+        "weighted_tardiness_min": 0.020556699999360717,
+        "delay_and_charge_wait_min": 0.005536000000574859,
+        "energy_kwh": 0.003550000001268927
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 19,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 0,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 9,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 3,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 0,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 3.261339
+      }
+    },
+    {
+      "record_id": "CA12_CORE_033",
+      "load_sec": 0.0006460000004153699,
+      "greedy_sec": 0.028073900000890717,
+      "neighborhood_build_sec": 0.010946300000796327,
+      "lex_solve_sec": 0.14944329999889305,
+      "verification_sec": 0.0005449000000226079,
+      "total_sec": 0.19177769999987504,
+      "phase_seconds": {
+        "urgent_holds": 0.04400109999915003,
+        "total_holds": 0.04947809999976016,
+        "repair_distance": 0.03519129999949655,
+        "weighted_tardiness_min": 0.01463309999962803,
+        "delay_and_charge_wait_min": 0.0036765000004379544,
+        "energy_kwh": 0.002463200000420329
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 26,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 25,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 9,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 2.691961
+      }
+    },
+    {
+      "record_id": "CA12_CORE_034",
+      "load_sec": 0.0003457000002526911,
+      "greedy_sec": 0.03636499999993248,
+      "neighborhood_build_sec": 0.010725100000854582,
+      "lex_solve_sec": 0.1373057000018889,
+      "verification_sec": 0.0005067000001872657,
+      "total_sec": 0.1873384000009537,
+      "phase_seconds": {
+        "urgent_holds": 0.053391899999041925,
+        "total_holds": 0.04487230000086129,
+        "repair_distance": 0.01431590000174765,
+        "weighted_tardiness_min": 0.01627809999990859,
+        "delay_and_charge_wait_min": 0.005395000000135042,
+        "energy_kwh": 0.0030525000001944136
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 13,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 2,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 55,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 1.086189
+      }
+    },
+    {
+      "record_id": "CA12_CORE_035",
+      "load_sec": 0.009079900000870111,
+      "greedy_sec": 0.0660595999997895,
+      "neighborhood_build_sec": 0.016557199998715078,
+      "lex_solve_sec": 0.29410330000246176,
+      "verification_sec": 0.0004805999997188337,
+      "total_sec": 0.38878140000088024,
+      "phase_seconds": {
+        "urgent_holds": 0.08861100000103761,
+        "total_holds": 0.09123629999885452,
+        "repair_distance": 0.0818397000002733,
+        "weighted_tardiness_min": 0.024003100001209532,
+        "delay_and_charge_wait_min": 0.0047451999998884276,
+        "energy_kwh": 0.0036680000011983793
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 3,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 19,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 3.223467
+      }
+    },
+    {
+      "record_id": "CA12_CORE_036",
+      "load_sec": 0.009329100001195911,
+      "greedy_sec": 0.023748899999191053,
+      "neighborhood_build_sec": 0.008337399998708861,
+      "lex_solve_sec": 0.16308960000060324,
+      "verification_sec": 0.000450999999884516,
+      "total_sec": 0.20666479999999865,
+      "phase_seconds": {
+        "urgent_holds": 0.04505570000037551,
+        "total_holds": 0.04388470000048983,
+        "repair_distance": 0.05876360000002023,
+        "weighted_tardiness_min": 0.011249800001678523,
+        "delay_and_charge_wait_min": 0.002281199998833472,
+        "energy_kwh": 0.001854599999205675
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 3,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 2.80551
+      }
+    },
+    {
+      "record_id": "CA12_CORE_037",
+      "load_sec": 0.0008594999999331776,
+      "greedy_sec": 0.024426599999060272,
+      "neighborhood_build_sec": 0.009347999999590684,
+      "lex_solve_sec": 0.12850710000384424,
+      "verification_sec": 0.0004879000007349532,
+      "total_sec": 0.16538159999981872,
+      "phase_seconds": {
+        "urgent_holds": 0.04011440000067523,
+        "total_holds": 0.04263130000072124,
+        "repair_distance": 0.029259900000397465,
+        "weighted_tardiness_min": 0.011703699999998207,
+        "delay_and_charge_wait_min": 0.0027077000013377983,
+        "energy_kwh": 0.002090100000714301
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 5,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 24,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 8,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 2.584774
+      }
+    },
+    {
+      "record_id": "CA12_CORE_038",
+      "load_sec": 0.0003598000002966728,
+      "greedy_sec": 0.0012950999989698175,
+      "neighborhood_build_sec": 0.006196700000145938,
+      "lex_solve_sec": 0.07492129999991448,
+      "verification_sec": 0.0004439000003912952,
+      "total_sec": 0.08445109999956912,
+      "phase_seconds": {
+        "urgent_holds": 0.02367700000104378,
+        "total_holds": 0.025231300000086776,
+        "repair_distance": 0.012521099999503349,
+        "weighted_tardiness_min": 0.010217899998679059,
+        "delay_and_charge_wait_min": 0.0018357000008109026,
+        "energy_kwh": 0.0014382999997906154
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 2,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": true,
+          "path_id": null,
+          "depart_slot": null,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 2,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 1,
+        "repair_distance": 1052,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 5.0,
+        "energy_kwh": 1.4426
+      }
+    },
+    {
+      "record_id": "CA12_CORE_039",
+      "load_sec": 0.009716800001115189,
+      "greedy_sec": 0.064560499999061,
+      "neighborhood_build_sec": 0.01525720000063302,
+      "lex_solve_sec": 0.2505086000019219,
+      "verification_sec": 0.0004227999997965526,
+      "total_sec": 0.34310890000051586,
+      "phase_seconds": {
+        "urgent_holds": 0.08864009999888367,
+        "total_holds": 0.09447149999868998,
+        "repair_distance": 0.04008900000007998,
+        "weighted_tardiness_min": 0.020158300001639873,
+        "delay_and_charge_wait_min": 0.004001000001153443,
+        "energy_kwh": 0.0031487000014749356
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 4,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 2,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 65,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 2.375298
+      }
+    },
+    {
+      "record_id": "CA12_CORE_040",
+      "load_sec": 0.009701099999801954,
+      "greedy_sec": 0.03397700000095938,
+      "neighborhood_build_sec": 0.010383200000433135,
+      "lex_solve_sec": 0.11696970000048168,
+      "verification_sec": 0.0005084000003989786,
+      "total_sec": 0.17359060000126192,
+      "phase_seconds": {
+        "urgent_holds": 0.0487911999989592,
+        "total_holds": 0.03357999999934691,
+        "repair_distance": 0.014208000000508036,
+        "weighted_tardiness_min": 0.013207600000896491,
+        "delay_and_charge_wait_min": 0.0047106000001804205,
+        "energy_kwh": 0.0024723000005906215
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 5,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 54,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 1.079981
+      }
+    },
+    {
+      "record_id": "CA12_CORE_041",
+      "load_sec": 0.0009518000006210059,
+      "greedy_sec": 0.01553789999888977,
+      "neighborhood_build_sec": 0.011667300001136027,
+      "lex_solve_sec": 0.0844864000009693,
+      "verification_sec": 0.0005258000001049368,
+      "total_sec": 0.11521739999989222,
+      "phase_seconds": {
+        "urgent_holds": 0.03279110000039509,
+        "total_holds": 0.027824900000268826,
+        "repair_distance": 0.010544400000071619,
+        "weighted_tardiness_min": 0.009153299999525188,
+        "delay_and_charge_wait_min": 0.00240490000032878,
+        "energy_kwh": 0.0017678000003797933
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 14,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 19,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 54,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.963128
+      }
+    },
+    {
+      "record_id": "CA12_CORE_042",
+      "load_sec": 0.0008453999998891959,
+      "greedy_sec": 0.04711409999981697,
+      "neighborhood_build_sec": 0.013597099999969942,
+      "lex_solve_sec": 0.24102849999871978,
+      "verification_sec": 0.0005643999993480975,
+      "total_sec": 0.3053056999997352,
+      "phase_seconds": {
+        "urgent_holds": 0.06395329999941168,
+        "total_holds": 0.10155049999957555,
+        "repair_distance": 0.041335300000355346,
+        "weighted_tardiness_min": 0.026194699999905424,
+        "delay_and_charge_wait_min": 0.005511900000783498,
+        "energy_kwh": 0.0024827999986882787
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 3,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 14,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 23,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 19,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 52,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 5.0,
+        "energy_kwh": 1.369738
+      }
+    },
+    {
+      "record_id": "CA12_CORE_043",
+      "load_sec": 0.009637600000132807,
+      "greedy_sec": 0.06734730000061973,
+      "neighborhood_build_sec": 0.018236800000522635,
+      "lex_solve_sec": 0.23635099999773956,
+      "verification_sec": 0.000525999999808846,
+      "total_sec": 0.3349643000001379,
+      "phase_seconds": {
+        "urgent_holds": 0.07752540000001318,
+        "total_holds": 0.0838951999994606,
+        "repair_distance": 0.04133199999887438,
+        "weighted_tardiness_min": 0.02429860000120243,
+        "delay_and_charge_wait_min": 0.005664699998305878,
+        "energy_kwh": 0.0036350999998830957
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 25,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 9,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 23,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 15,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 2.742173
+      }
+    },
+    {
+      "record_id": "CA12_CORE_044",
+      "load_sec": 0.009654400000727037,
+      "greedy_sec": 0.03453289999924891,
+      "neighborhood_build_sec": 0.011459600000307546,
+      "lex_solve_sec": 0.12434500000017579,
+      "verification_sec": 0.00047530000119877513,
+      "total_sec": 0.18257360000097833,
+      "phase_seconds": {
+        "urgent_holds": 0.04388019999896642,
+        "total_holds": 0.04387889999998151,
+        "repair_distance": 0.017651600001045153,
+        "weighted_tardiness_min": 0.0120853000007628,
+        "delay_and_charge_wait_min": 0.004486599998926977,
+        "energy_kwh": 0.0023624000004929258
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 5,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 13,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 53,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 1.241241
+      }
+    },
+    {
+      "record_id": "CA12_CORE_045",
+      "load_sec": 0.0002951000005850801,
+      "greedy_sec": 0.019804899999144254,
+      "neighborhood_build_sec": 0.008116599999993923,
+      "lex_solve_sec": 0.053515499997956795,
+      "verification_sec": 0.00040070000068226364,
+      "total_sec": 0.08365390000108164,
+      "phase_seconds": {
+        "urgent_holds": 0.020046500001626555,
+        "total_holds": 0.015367299998615636,
+        "repair_distance": 0.006990899999436806,
+        "weighted_tardiness_min": 0.00621320000027481,
+        "delay_and_charge_wait_min": 0.003028299999641604,
+        "energy_kwh": 0.0018692999983613845
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 1,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 3,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.751855
+      }
+    },
+    {
+      "record_id": "CA12_CORE_046",
+      "load_sec": 0.0005448000010801479,
+      "greedy_sec": 0.07052939999994123,
+      "neighborhood_build_sec": 0.01597310000033758,
+      "lex_solve_sec": 0.3034557000009954,
+      "verification_sec": 0.0005359999995562248,
+      "total_sec": 0.39369430000078864,
+      "phase_seconds": {
+        "urgent_holds": 0.1068042000006244,
+        "total_holds": 0.11212840000007418,
+        "repair_distance": 0.05217839999932039,
+        "weighted_tardiness_min": 0.02229799999986426,
+        "delay_and_charge_wait_min": 0.005544400000871974,
+        "energy_kwh": 0.004502300000240211
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 4,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 1,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 66,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 3.012583
+      }
+    },
+    {
+      "record_id": "CA12_CORE_047",
+      "load_sec": 0.009321100000306615,
+      "greedy_sec": 0.02328500000112399,
+      "neighborhood_build_sec": 0.009203999999954249,
+      "lex_solve_sec": 0.07288879999941855,
+      "verification_sec": 0.000862899998537614,
+      "total_sec": 0.11735520000001998,
+      "phase_seconds": {
+        "urgent_holds": 0.022485899999082903,
+        "total_holds": 0.024994100000185426,
+        "repair_distance": 0.012603799999851617,
+        "weighted_tardiness_min": 0.007947699999931501,
+        "delay_and_charge_wait_min": 0.0030559000006178394,
+        "energy_kwh": 0.0018013999997492647
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 28,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 24,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 26,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 3.12324
+      }
+    },
+    {
+      "record_id": "CA12_CORE_048",
+      "load_sec": 0.0008115999989968259,
+      "greedy_sec": 0.030933600000935257,
+      "neighborhood_build_sec": 0.011742999999114545,
+      "lex_solve_sec": 0.09525530000428262,
+      "verification_sec": 0.0004888000003120396,
+      "total_sec": 0.1414580999989994,
+      "phase_seconds": {
+        "urgent_holds": 0.042832800001633586,
+        "total_holds": 0.025696400000015274,
+        "repair_distance": 0.014530800001011812,
+        "weighted_tardiness_min": 0.006722000000081607,
+        "delay_and_charge_wait_min": 0.0030934000005800044,
+        "energy_kwh": 0.0023799000009603333
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 24,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 1.067569
+      }
+    },
+    {
+      "record_id": "CA12_CORE_049",
+      "load_sec": 0.00027410000075178687,
+      "greedy_sec": 0.020233200000802753,
+      "neighborhood_build_sec": 0.008172300000296673,
+      "lex_solve_sec": 0.09907060000114143,
+      "verification_sec": 0.0004105000007257331,
+      "total_sec": 0.13008500000069034,
+      "phase_seconds": {
+        "urgent_holds": 0.032697200000257,
+        "total_holds": 0.034362300000793766,
+        "repair_distance": 0.021207300000241958,
+        "weighted_tardiness_min": 0.005531400000108988,
+        "delay_and_charge_wait_min": 0.003269499999078107,
+        "energy_kwh": 0.0020029000006616116
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 9,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 5,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 9,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 5.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.766907
+      }
+    },
+    {
+      "record_id": "CA12_CORE_050",
+      "load_sec": 0.009930300000632997,
+      "greedy_sec": 0.05139919999965059,
+      "neighborhood_build_sec": 0.016087899999547517,
+      "lex_solve_sec": 0.2125237999989622,
+      "verification_sec": 0.0005046999995101942,
+      "total_sec": 0.2930637999997998,
+      "phase_seconds": {
+        "urgent_holds": 0.061259600000994396,
+        "total_holds": 0.06410399999913352,
+        "repair_distance": 0.063981799999965,
+        "weighted_tardiness_min": 0.013811099999657017,
+        "delay_and_charge_wait_min": 0.005499999999301508,
+        "energy_kwh": 0.003867299999910756
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 24,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 45,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 3.351123
+      }
+    },
+    {
+      "record_id": "CA12_CORE_051",
+      "load_sec": 0.0003336000008857809,
+      "greedy_sec": 0.016242699999565957,
+      "neighborhood_build_sec": 0.007715499999903841,
+      "lex_solve_sec": 0.12585419999959413,
+      "verification_sec": 0.0005209000009926967,
+      "total_sec": 0.15269630000148027,
+      "phase_seconds": {
+        "urgent_holds": 0.02758229999926698,
+        "total_holds": 0.02921749999950407,
+        "repair_distance": 0.03203340000072785,
+        "weighted_tardiness_min": 0.032640299999911804,
+        "delay_and_charge_wait_min": 0.0028091000003769295,
+        "energy_kwh": 0.0015715999998064945
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": true,
+          "path_id": null,
+          "depart_slot": null,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 0,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 1,
+        "repair_distance": 1042,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 1.053346
+      }
+    },
+    {
+      "record_id": "CA12_CORE_052",
+      "load_sec": 0.000529699998878641,
+      "greedy_sec": 0.06725809999988996,
+      "neighborhood_build_sec": 0.01715150000018184,
+      "lex_solve_sec": 0.2888236000017059,
+      "verification_sec": 0.0004862000005232403,
+      "total_sec": 0.3769300999992993,
+      "phase_seconds": {
+        "urgent_holds": 0.09160399999927904,
+        "total_holds": 0.09485520000089309,
+        "repair_distance": 0.06761749999895983,
+        "weighted_tardiness_min": 0.026000700001532095,
+        "delay_and_charge_wait_min": 0.005115699999805656,
+        "energy_kwh": 0.0036305000012362143
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 2,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 5,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 65,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 2.52727
+      }
+    },
+    {
+      "record_id": "CA12_CORE_053",
+      "load_sec": 0.009357499999168795,
+      "greedy_sec": 0.03562930000043707,
+      "neighborhood_build_sec": 0.012106799998946371,
+      "lex_solve_sec": 0.1241981000002852,
+      "verification_sec": 0.0004957000001013512,
+      "total_sec": 0.18394420000004175,
+      "phase_seconds": {
+        "urgent_holds": 0.042658800000936026,
+        "total_holds": 0.04388450000078592,
+        "repair_distance": 0.018068199999106582,
+        "weighted_tardiness_min": 0.012287300000025425,
+        "delay_and_charge_wait_min": 0.005003000000215252,
+        "energy_kwh": 0.0022962999992159894
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 2,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 53,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 1.103155
+      }
+    },
+    {
+      "record_id": "CA12_CORE_054",
+      "load_sec": 0.000934600000618957,
+      "greedy_sec": 0.025895099999615923,
+      "neighborhood_build_sec": 0.00984950000020035,
+      "lex_solve_sec": 0.08993519999785349,
+      "verification_sec": 0.0004804999989573844,
+      "total_sec": 0.12882259999969392,
+      "phase_seconds": {
+        "urgent_holds": 0.02576740000040445,
+        "total_holds": 0.0396480999988853,
+        "repair_distance": 0.014321900000140886,
+        "weighted_tardiness_min": 0.005670500000633183,
+        "delay_and_charge_wait_min": 0.002634099999340833,
+        "energy_kwh": 0.0018931999984488357
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 9,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 33,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 1.194344
+      }
+    },
+    {
+      "record_id": "CA12_CORE_055",
+      "load_sec": 0.0007808000009390526,
+      "greedy_sec": 0.026302799999029958,
+      "neighborhood_build_sec": 0.007696100001339801,
+      "lex_solve_sec": 0.09363400000074762,
+      "verification_sec": 0.0004241999995429069,
+      "total_sec": 0.13064389999999548,
+      "phase_seconds": {
+        "urgent_holds": 0.05086000000119384,
+        "total_holds": 0.017664099999819882,
+        "repair_distance": 0.010734399998909794,
+        "weighted_tardiness_min": 0.010100100000272505,
+        "delay_and_charge_wait_min": 0.002473399999871617,
+        "energy_kwh": 0.001802000000679982
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 55,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 0.743039
+      }
+    },
+    {
+      "record_id": "CA12_CORE_056",
+      "load_sec": 0.0003378000001248438,
+      "greedy_sec": 0.03730600000017148,
+      "neighborhood_build_sec": 0.01085620000048948,
+      "lex_solve_sec": 0.1263699999981327,
+      "verification_sec": 0.0005074999990029028,
+      "total_sec": 0.17756809999991674,
+      "phase_seconds": {
+        "urgent_holds": 0.060512699999890174,
+        "total_holds": 0.0319617000004655,
+        "repair_distance": 0.015203299999484443,
+        "weighted_tardiness_min": 0.013322099999641068,
+        "delay_and_charge_wait_min": 0.0030394999994314276,
+        "energy_kwh": 0.002330699999220087
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 4,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 55,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 1.085663
+      }
+    },
+    {
+      "record_id": "CA12_CORE_057",
+      "load_sec": 0.0003126999999949476,
+      "greedy_sec": 0.025805299999774434,
+      "neighborhood_build_sec": 0.010385499999756576,
+      "lex_solve_sec": 0.1400140999994619,
+      "verification_sec": 0.0005041000003984664,
+      "total_sec": 0.1791480000010779,
+      "phase_seconds": {
+        "urgent_holds": 0.041689100000439794,
+        "total_holds": 0.043595499999355525,
+        "repair_distance": 0.04180550000091898,
+        "weighted_tardiness_min": 0.0064961999996739905,
+        "delay_and_charge_wait_min": 0.0037868999988859287,
+        "energy_kwh": 0.0026409000001876848
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 3,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 2,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 13,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 5.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 1.238535
+      }
+    },
+    {
+      "record_id": "CA12_CORE_058",
+      "load_sec": 0.009862199998678989,
+      "greedy_sec": 0.037747600001239334,
+      "neighborhood_build_sec": 0.010626500001308159,
+      "lex_solve_sec": 0.12698270000146294,
+      "verification_sec": 0.00047479999921051785,
+      "total_sec": 0.18779719999838562,
+      "phase_seconds": {
+        "urgent_holds": 0.05551780000132567,
+        "total_holds": 0.034998900000573485,
+        "repair_distance": 0.016310799999700976,
+        "weighted_tardiness_min": 0.012955100000908715,
+        "delay_and_charge_wait_min": 0.004622200000085286,
+        "energy_kwh": 0.0025778999988688156
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 1,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 54,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.901092
+      }
+    },
+    {
+      "record_id": "CA12_CORE_059",
+      "load_sec": 0.0008342000000993721,
+      "greedy_sec": 0.026326900000640308,
+      "neighborhood_build_sec": 0.010066500000903034,
+      "lex_solve_sec": 0.12082100000225182,
+      "verification_sec": 0.00045570000111183617,
+      "total_sec": 0.1603783000009571,
+      "phase_seconds": {
+        "urgent_holds": 0.03181850000146369,
+        "total_holds": 0.038783100000728155,
+        "repair_distance": 0.037343199999668286,
+        "weighted_tardiness_min": 0.007340500000282191,
+        "delay_and_charge_wait_min": 0.0035098000007565133,
+        "energy_kwh": 0.002025899999352987
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 23,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 33,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 1.216891
+      }
+    },
+    {
+      "record_id": "CA12_CORE_060",
+      "load_sec": 0.0005113999995955965,
+      "greedy_sec": 0.0682249999990745,
+      "neighborhood_build_sec": 0.01739090000046417,
+      "lex_solve_sec": 0.26392980000127864,
+      "verification_sec": 0.0005419999997684499,
+      "total_sec": 0.3534851999993407,
+      "phase_seconds": {
+        "urgent_holds": 0.08475770000040939,
+        "total_holds": 0.10734720000073139,
+        "repair_distance": 0.04076850000092236,
+        "weighted_tardiness_min": 0.022886599999765167,
+        "delay_and_charge_wait_min": 0.004754800000227988,
+        "energy_kwh": 0.0034149999992223457
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 24,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 14,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 5,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 26,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 8,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 2.96286
+      }
+    },
+    {
+      "record_id": "CA12_CORE_061",
+      "load_sec": 0.00032670000109646935,
+      "greedy_sec": 0.029748299999482697,
+      "neighborhood_build_sec": 0.011385499999960302,
+      "lex_solve_sec": 0.1554109000007884,
+      "verification_sec": 0.0004910999996354803,
+      "total_sec": 0.19927819999975327,
+      "phase_seconds": {
+        "urgent_holds": 0.04017249999924388,
+        "total_holds": 0.07092680000096152,
+        "repair_distance": 0.029290899999978137,
+        "weighted_tardiness_min": 0.008414199999606353,
+        "delay_and_charge_wait_min": 0.003960400001233211,
+        "energy_kwh": 0.0026460999997652834
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 0,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 5.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 1.280891
+      }
+    },
+    {
+      "record_id": "CA12_CORE_062",
+      "load_sec": 0.010004800000388059,
+      "greedy_sec": 0.035553300000174204,
+      "neighborhood_build_sec": 0.008850899999742978,
+      "lex_solve_sec": 0.1515886999986833,
+      "verification_sec": 0.00044210000123712234,
+      "total_sec": 0.20851940000102331,
+      "phase_seconds": {
+        "urgent_holds": 0.0497983999994176,
+        "total_holds": 0.05228079999869806,
+        "repair_distance": 0.02210449999984121,
+        "weighted_tardiness_min": 0.02010549999977229,
+        "delay_and_charge_wait_min": 0.005395600001065759,
+        "energy_kwh": 0.001903899999888381
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 13,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 2,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 2,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 53,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 0.751795
+      }
+    },
+    {
+      "record_id": "CA12_CORE_063",
+      "load_sec": 0.0008383000003959751,
+      "greedy_sec": 0.046861899998475565,
+      "neighborhood_build_sec": 0.011826899999505258,
+      "lex_solve_sec": 0.22977539999737928,
+      "verification_sec": 0.0005261999995127553,
+      "total_sec": 0.2919296999989456,
+      "phase_seconds": {
+        "urgent_holds": 0.06558179999956337,
+        "total_holds": 0.08855140000014217,
+        "repair_distance": 0.04087880000042787,
+        "weighted_tardiness_min": 0.02687069999956293,
+        "delay_and_charge_wait_min": 0.005206299998462782,
+        "energy_kwh": 0.002686399999220157
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 1,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_12",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 53,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 0.919508
+      }
+    },
+    {
+      "record_id": "CA12_CORE_064",
+      "load_sec": 0.0007444000002578832,
+      "greedy_sec": 0.03474149999965448,
+      "neighborhood_build_sec": 0.010102199999892036,
+      "lex_solve_sec": 0.0930897999987792,
+      "verification_sec": 0.0005120999994687736,
+      "total_sec": 0.14092410000012023,
+      "phase_seconds": {
+        "urgent_holds": 0.04380750000018452,
+        "total_holds": 0.02098860000114655,
+        "repair_distance": 0.011163099999976112,
+        "weighted_tardiness_min": 0.011825399998997455,
+        "delay_and_charge_wait_min": 0.003097999999226886,
+        "energy_kwh": 0.0022071999992476776
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 22,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 14,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 54,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 0.959049
+      }
+    },
+    {
+      "record_id": "CA12_CORE_065",
+      "load_sec": 0.0003020000003743917,
+      "greedy_sec": 0.026470499999049935,
+      "neighborhood_build_sec": 0.009950399999070214,
+      "lex_solve_sec": 0.1203737000014371,
+      "verification_sec": 0.0004941999995935475,
+      "total_sec": 0.15950700000030338,
+      "phase_seconds": {
+        "urgent_holds": 0.040466800001013326,
+        "total_holds": 0.0554455000001326,
+        "repair_distance": 0.010782800000015413,
+        "weighted_tardiness_min": 0.0072832000005291775,
+        "delay_and_charge_wait_min": 0.003904799999872921,
+        "energy_kwh": 0.002490599999873666
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 0,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 15,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 19,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 5.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 1.028164
+      }
+    },
+    {
+      "record_id": "CA12_CORE_066",
+      "load_sec": 0.0008679000002302928,
+      "greedy_sec": 0.01905079999960435,
+      "neighborhood_build_sec": 0.007388899999568821,
+      "lex_solve_sec": 0.07393279999814695,
+      "verification_sec": 0.00054929999896558,
+      "total_sec": 0.10368439999911061,
+      "phase_seconds": {
+        "urgent_holds": 0.025633699999161763,
+        "total_holds": 0.02674970000043686,
+        "repair_distance": 0.010283199999321369,
+        "weighted_tardiness_min": 0.006719099999827449,
+        "delay_and_charge_wait_min": 0.002896399999372079,
+        "energy_kwh": 0.0016507000000274274
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 4,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 1,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 6,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 1,
+          "charge_blocks": 1
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 3.096724
+      }
+    },
+    {
+      "record_id": "CA12_CORE_067",
+      "load_sec": 0.0008376000005227979,
+      "greedy_sec": 0.06674289999864413,
+      "neighborhood_build_sec": 0.01708650000000489,
+      "lex_solve_sec": 0.27121160000206146,
+      "verification_sec": 0.0005161999997653766,
+      "total_sec": 0.3590301999993244,
+      "phase_seconds": {
+        "urgent_holds": 0.08832820000134234,
+        "total_holds": 0.09219889999985753,
+        "repair_distance": 0.06114759999945818,
+        "weighted_tardiness_min": 0.021058100001027924,
+        "delay_and_charge_wait_min": 0.005142699999851175,
+        "energy_kwh": 0.0033361000005243113
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 23,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_03",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 26,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 10,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 64,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 3.146777
+      }
+    },
+    {
+      "record_id": "CA12_CORE_068",
+      "load_sec": 0.009413100000529084,
+      "greedy_sec": 0.027153099999850383,
+      "neighborhood_build_sec": 0.01055389999964973,
+      "lex_solve_sec": 0.11300999999912165,
+      "verification_sec": 0.0004864000002271496,
+      "total_sec": 0.1624111000000994,
+      "phase_seconds": {
+        "urgent_holds": 0.03101980000064941,
+        "total_holds": 0.03273869999975432,
+        "repair_distance": 0.0375741999996535,
+        "weighted_tardiness_min": 0.00620840000010503,
+        "delay_and_charge_wait_min": 0.0034256999988429016,
+        "energy_kwh": 0.002043200000116485
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 12,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 2,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 1,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 17,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 33,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 1.22429
+      }
+    },
+    {
+      "record_id": "CA12_CORE_069",
+      "load_sec": 0.001056099999914295,
+      "greedy_sec": 0.046866599999702885,
+      "neighborhood_build_sec": 0.011321900001348695,
+      "lex_solve_sec": 0.20753810000314843,
+      "verification_sec": 0.0008545000000594882,
+      "total_sec": 0.2700050999992527,
+      "phase_seconds": {
+        "urgent_holds": 0.06409070000154315,
+        "total_holds": 0.06683420000081242,
+        "repair_distance": 0.04211159999977099,
+        "weighted_tardiness_min": 0.027239200000622077,
+        "delay_and_charge_wait_min": 0.0048855000004550675,
+        "energy_kwh": 0.002376899999944726
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 23,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 7,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_12",
+          "depart_slot": 11,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 18,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 27,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 53,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 10.0,
+        "energy_kwh": 1.111035
+      }
+    },
+    {
+      "record_id": "CA12_CORE_070",
+      "load_sec": 0.00032730000020819716,
+      "greedy_sec": 0.03569209999841405,
+      "neighborhood_build_sec": 0.0146110999994562,
+      "lex_solve_sec": 0.1268703000023379,
+      "verification_sec": 0.0005185999998502666,
+      "total_sec": 0.1802895000000717,
+      "phase_seconds": {
+        "urgent_holds": 0.052049099998839665,
+        "total_holds": 0.03952950000166311,
+        "repair_distance": 0.012849200000346173,
+        "weighted_tardiness_min": 0.014791900001000613,
+        "delay_and_charge_wait_min": 0.004907000000457629,
+        "energy_kwh": 0.0027436000000307104
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 16,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 6,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 5,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 8,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 10,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 21,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 55,
+        "weighted_tardiness_min": 50.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 0.929868
+      }
+    },
+    {
+      "record_id": "CA12_CORE_071",
+      "load_sec": 0.00033629999961704016,
+      "greedy_sec": 0.04014719999941008,
+      "neighborhood_build_sec": 0.01104269999996177,
+      "lex_solve_sec": 0.14267029999973602,
+      "verification_sec": 0.0005106000007799594,
+      "total_sec": 0.1965567999995983,
+      "phase_seconds": {
+        "urgent_holds": 0.07136820000050648,
+        "total_holds": 0.036223600000084843,
+        "repair_distance": 0.01517749999948137,
+        "weighted_tardiness_min": 0.0139629999994213,
+        "delay_and_charge_wait_min": 0.0033504000002722023,
+        "energy_kwh": 0.002587599999969825
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_09",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_07",
+          "depart_slot": 24,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_11",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_02",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 14,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_07",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 55,
+        "weighted_tardiness_min": 0.0,
+        "delay_and_charge_wait_min": 20.0,
+        "energy_kwh": 1.274652
+      }
+    },
+    {
+      "record_id": "CA12_CORE_072",
+      "load_sec": 0.0003015000002051238,
+      "greedy_sec": 0.0287728999992396,
+      "neighborhood_build_sec": 0.01105459999962477,
+      "lex_solve_sec": 0.16926120000061928,
+      "verification_sec": 0.00047760000052221585,
+      "total_sec": 0.21180730000014591,
+      "phase_seconds": {
+        "urgent_holds": 0.05200130000048375,
+        "total_holds": 0.052779699999518925,
+        "repair_distance": 0.048504700000194134,
+        "weighted_tardiness_min": 0.009222000000590924,
+        "delay_and_charge_wait_min": 0.004167399998550536,
+        "energy_kwh": 0.002586100001281011
+      },
+      "decisions": [
+        {
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_10",
+          "depart_slot": 3,
+          "charge_blocks": 1
+        },
+        {
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_01",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_03",
+          "held": false,
+          "path_id": "PATH_06",
+          "depart_slot": 20,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_08",
+          "depart_slot": 14,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "held": false,
+          "path_id": "PATH_04",
+          "depart_slot": 4,
+          "charge_blocks": 0
+        },
+        {
+          "mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "held": false,
+          "path_id": "PATH_05",
+          "depart_slot": 7,
+          "charge_blocks": 0
+        }
+      ],
+      "objective": {
+        "urgent_holds": 0,
+        "total_holds": 0,
+        "repair_distance": 34,
+        "weighted_tardiness_min": 5.0,
+        "delay_and_charge_wait_min": 15.0,
+        "energy_kwh": 1.061937
+      }
+    }
+  ]
+}

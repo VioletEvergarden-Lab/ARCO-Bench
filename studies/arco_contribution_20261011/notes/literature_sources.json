@@ -1,0 +1,127 @@
+{
+  "completed": "2026-10-12",
+  "purpose": "Targeted closest-literature comparison, not systematic review",
+  "sources": [
+    {
+      "id": "eifler_ijcai2020",
+      "title": "Plan-Space Explanation via Plan-Property Dependencies: Faster Algorithms & More Powerful Properties",
+      "url": "https://www.ijcai.org/proceedings/2020/0566.pdf",
+      "read_status": "primary_fulltext_targeted",
+      "read_range": "Sections 2-4, 6; pp.4092-4095; introduction and computational comparison inspected",
+      "input": "Finite planning task, hard goals, soft properties, cost bound",
+      "object": "Plan-space exclusion dependencies",
+      "output": "MUGS and explanations",
+      "computation": "BDD reachability or explicit search with pruning and nogood learning"
+    },
+    {
+      "id": "eifler_aaai2020",
+      "title": "A New Approach to Plan-Space Explanation",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/6534",
+      "read_status": "primary_abstract_metadata",
+      "read_range": "Abstract and metadata: AAAI 2020, 34(06), 9818-9826",
+      "input": "Planning task and plan properties",
+      "object": "Property dependencies",
+      "output": "Global or query-specific exclusions",
+      "computation": "Property compilation and planner queries"
+    },
+    {
+      "id": "saetti_scala2025",
+      "title": "Optimally stable plan repair",
+      "url": "https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/DD03D400C759C63E399338832020F689/S0269888925100076a.pdf/optimally_stable_plan_repair.pdf",
+      "read_status": "primary_fulltext_targeted",
+      "read_range": "Sections 2-4 definitions/compilation pp.3-8; Section 6 pp.12-13; experiment excerpts pp.17-18",
+      "input": "Planning problem and one or multiple plans",
+      "object": "Action-multiset symmetric-difference stability",
+      "output": "Nearest feasible plan",
+      "computation": "Cost-sensitive planning compilation"
+    },
+    {
+      "id": "korikov_beck2021",
+      "title": "Counterfactual Explanations via Inverse Constraint Programming",
+      "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol210-cp2021/LIPIcs.CP.2021.35/LIPIcs.CP.2021.35.pdf",
+      "read_status": "primary_fulltext_targeted",
+      "read_range": "Sections 2-5 pp.35:2-35:7; Sections 7.3 and 8 pp.35:11-35:14",
+      "input": "Model, cost vector, allowable parameter values, desired partial assignment",
+      "object": "Minimum objective-parameter perturbation",
+      "output": "Parameters making optimal foil possible",
+      "computation": "Optimal foil and inverse CP/MIP cutting-plane algorithm"
+    },
+    {
+      "id": "fischetti_lodi2003",
+      "title": "Local branching",
+      "url": "https://www.researchgate.net/publication/225135001_Local_branching",
+      "read_status": "author_uploaded_fulltext_targeted",
+      "read_range": "Sections 2-3 and Section 4 start; author manuscript pp.2-6; upload attributed to Matteo Fischetti",
+      "input": "MIP, incumbent, radius",
+      "object": "Binary-distance neighborhood",
+      "output": "Improved incumbent and branch partition",
+      "computation": "Local branching inequalities with MIP tactical search"
+    },
+    {
+      "id": "narodytska_bjorner2022",
+      "title": "Analysis of Core-Guided MaxSat Using Cores and Correction Sets",
+      "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol236-sat2022/LIPIcs.SAT.2022.26/LIPIcs.SAT.2022.26.pdf",
+      "read_status": "primary_fulltext_targeted",
+      "read_range": "Sections 2-3 pp.26:2-26:5; definitions and Algorithms 1-4",
+      "input": "Hard/soft clauses",
+      "object": "Cores and correction sets",
+      "output": "Characterization of solver computations",
+      "computation": "MaxHS and PM1 analysis"
+    },
+    {
+      "id": "guo2022",
+      "title": "Joint routing and charging optimization for eVTOL aircraft recovery",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1270963822002693",
+      "read_status": "primary_abstract_only",
+      "read_range": "Publisher abstract via search; direct URL opening failed",
+      "input": "Disrupted eVTOL operations",
+      "object": "Routing and optional charging",
+      "output": "Recovery plan",
+      "computation": "ILP, branch-and-price, tailored labeling per abstract"
+    },
+    {
+      "id": "liu2025",
+      "title": "Integrating battery-related decisions into truck-drone tandem delivery problem with limited battery resources",
+      "url": "https://doi.org/10.1016/j.trc.2025.105082",
+      "read_status": "primary_abstract_section_snippets",
+      "read_range": "Publisher problem/computational/conclusion excerpts; author-provided PDF not present in current inputs",
+      "input": "Truck-drone delivery and finite battery stock",
+      "object": "Battery and routing decisions",
+      "output": "Joint delivery solution",
+      "computation": "Model and tailored ALNS per publisher snippets"
+    },
+    {
+      "id": "jiang_nlco2026",
+      "title": "Reasoning in a Combinatorial and Constrained World: Benchmarking LLMs on Natural-Language Combinatorial Optimization",
+      "url": "https://aclanthology.org/2026.findings-acl.1529.pdf",
+      "read_status": "primary_fulltext_targeted",
+      "read_range": "Sections 2-3 PDF pp.3-6: taxonomy, reference annotation, evaluation metrics",
+      "input": "Language-described CO problem",
+      "object": "Direct discrete solutions",
+      "output": "Feasibility, reference quality, gap, efficiency and structural diagnostics",
+      "computation": "Pattern checking and solver reference comparison"
+    },
+    {
+      "id": "hao2025",
+      "title": "Large Language Models Can Solve Real-World Planning Rigorously with Formal Verification Tools",
+      "url": "https://aclanthology.org/2025.naacl-long.176.pdf",
+      "read_status": "primary_fulltext_targeted",
+      "read_range": "Sections 3.1-3.4 PDF pp.4-5",
+      "input": "Natural-language planning request",
+      "object": "Formalization and unsatisfiable-request repair",
+      "output": "Solver plan or revision suggestions",
+      "computation": "LLM to code to SMT, unsat core and information gathering"
+    },
+    {
+      "id": "yuan2026v1",
+      "title": "Replan, Repair, or Edit? A Unified Empirical Evaluation of Travel Agents for Itinerary Revision under Resource Disruptions",
+      "url": "https://arxiv.org/html/2609.19654v1",
+      "read_status": "primary_preprint_fulltext_targeted",
+      "read_range": "Sections 2-4.1; v1 dated 2026-09-17",
+      "input": "Accepted itinerary, unchanged request, disruption, updated environment",
+      "object": "Replan versus repair versus edit",
+      "output": "Complete itinerary or justified infeasibility; stability and cost evaluation",
+      "computation": "LLM-Z3, IPyHOPPER, iTIMO adapters"
+    }
+  ]
+}

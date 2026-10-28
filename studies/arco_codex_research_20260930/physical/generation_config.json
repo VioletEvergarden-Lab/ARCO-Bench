@@ -1,0 +1,514 @@
+{
+  "model": {
+    "version": "M100_Rodrigues_arxiv_v1_20211122",
+    "airframe_instrumented_mass_kg": 3.68,
+    "rotor_diameter_m": 0.3302,
+    "rotors": 4,
+    "air_density_kg_m3": 1.225,
+    "g_m_s2": 9.80665,
+    "cruise_speed_m_s": 10.0,
+    "cruise_altitude_m": 25.0,
+    "takeoff_speed_m_s": 2.5,
+    "landing_speed_m_s": 2.0,
+    "power_coefficients": {
+      "takeoff": [
+        1.97,
+        13.8
+      ],
+      "cruise": [
+        1.69,
+        16.8
+      ],
+      "landing": [
+        1.62,
+        -4.7
+      ]
+    },
+    "battery_capacity_kwh": 0.0999,
+    "reserve_fraction": 0.2,
+    "initial_fraction": 0.8,
+    "charger_input_power_w": 100.0,
+    "charging_efficiency": 0.88,
+    "slot_min": 5,
+    "max_charge_minutes": 15
+  },
+  "geometry": "radius 0.6 km regular polygon; parallel corridor midpoint offset 0.25 times chord times rank",
+  "parent_selection": "minimum ID per action group; then maximize previously unrepresented template and topology subject to 3/group; independent of model outcomes",
+  "maximum_attempts_per_parent": 1,
+  "parents": [
+    {
+      "physical_id": "ARCO_PHYS_001",
+      "parent_id": "CA12_CORE_004",
+      "pilot": true,
+      "metadata": {
+        "ancestor_id": "mtancestor_a5cbcf3ee5d490aba5304a46",
+        "attempt_id": "mtattempt_a5cbcf3ee5d490aba5304a46",
+        "attempt_rank": 88,
+        "coarse_structural_sha256": "9043cf9ec59442c67f3093cfd76534de81070829f95d2b80f81e393a3cdca546",
+        "constraint_incidence_sha256": "a7a7c358778ef63281f4882de3f67a3c20ae5da78fa71cd8e98ce6550a800b76",
+        "coupling_topology": "SHARED_DESTINATION_PAD_CAPACITY",
+        "mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_AND_PRETARGET_CHARGE_WITH_FIXED_DEPARTURES",
+        "objective_role": "L5_DELAY_CHARGE_WAIT_PREFIX_CONTROL",
+        "operational_motif": "THIRD_UAV_ROUTE_DIAMOND",
+        "structural_template_sha256": "66717906e4886eb88ada62b7ae5481c2a9a032fbb0a3d144893a49c6ef3801eb",
+        "target_uav_type": "fixed_wing_vtol_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "composed_resource_repair",
+        "generator_declared_mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_AND_PRETARGET_CHARGE_WITH_FIXED_DEPARTURES",
+        "pair_id": "PAIR_6c8777ce99d9625db5c5",
+        "pair_payload_sha256": "3fbcb441538de992282ab5896a2540153c94670fdc2f1658907dd7d985b8b92c",
+        "route": {
+          "baseline_path_id": "PATH_07",
+          "designated_route_target_path_id": "PATH_07",
+          "mission_id": "MISSION_02",
+          "uav_id": "UAV_02"
+        },
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "uav_type": "fixed_wing_vtol_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "pad",
+        "node": "VP_07",
+        "slot": 2
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_002",
+      "parent_id": "CA12_CORE_003",
+      "pilot": true,
+      "metadata": {
+        "ancestor_id": "mtancestor_ff44e7021016ca1f44bbc191",
+        "attempt_id": "mtattempt_ff44e7021016ca1f44bbc191",
+        "attempt_rank": 124,
+        "coarse_structural_sha256": "9043cf9ec59442c67f3093cfd76534de81070829f95d2b80f81e393a3cdca546",
+        "constraint_incidence_sha256": "5de993baec09844a7a444eeb879633fc65afeec4b4083fa1b7ef7995156790c3",
+        "coupling_topology": "SHARED_DESTINATION_PAD_CAPACITY",
+        "mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_PRETARGET_CHARGE_AND_DEPARTURE_RETIMING",
+        "objective_role": "L5_DELAY_CHARGE_WAIT_PREFIX_CONTROL",
+        "operational_motif": "THIRD_UAV_ROUTE_DIAMOND",
+        "structural_template_sha256": "66717906e4886eb88ada62b7ae5481c2a9a032fbb0a3d144893a49c6ef3801eb",
+        "target_uav_type": "multirotor_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "composed_resource_repair",
+        "generator_declared_mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_PRETARGET_CHARGE_AND_DEPARTURE_RETIMING",
+        "pair_id": "PAIR_b4f436aa780155d21fb6",
+        "pair_payload_sha256": "367c468e7416a4d40655e2ffd9cf40ca59dee41c7e728bc06395b9eb843ed471",
+        "route": {
+          "baseline_path_id": "PATH_10",
+          "designated_route_target_path_id": "PATH_10",
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02"
+        },
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_05",
+          "uav_id": "UAV_02",
+          "uav_type": "multirotor_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "pad",
+        "node": "VP_04",
+        "slot": 4
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_003",
+      "parent_id": "CA12_CORE_001",
+      "pilot": true,
+      "metadata": {
+        "ancestor_id": "mtancestor_2f6b136f213ce9a875fb23a7",
+        "attempt_id": "mtattempt_2f6b136f213ce9a875fb23a7",
+        "attempt_rank": 51,
+        "coarse_structural_sha256": "d9e84364c9cadcd7a1fab1927c98067c5928fbf49dd392f427ee26ab2d7fd5de",
+        "constraint_incidence_sha256": "1cbcacc19200ad5eecfa3917815035ef17fb0ed5140b20a0d63184d645d7760e",
+        "coupling_topology": "SHARED_ORIGIN_PAD_CAPACITY",
+        "mechanism": "SOC_JOINT_PRETARGET_CHARGE_AND_ROUTE_ADAPTATION",
+        "objective_role": "L5_DELAY_CHARGE_WAIT_PREFIX_CONTROL",
+        "operational_motif": "THIRD_UAV_CHAIN",
+        "structural_template_sha256": "6a5d960ec54462efde30e6b6c171d8ce78bdd6e35c8b32301ac69e58e22381ca",
+        "target_uav_type": "fixed_wing_vtol_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "soc_degradation_repair",
+        "generator_declared_mechanism": "SOC_JOINT_PRETARGET_CHARGE_AND_ROUTE_ADAPTATION",
+        "pair_id": "PAIR_8dc037bf12918709e81a",
+        "pair_payload_sha256": "f17cea6104a756c2722a37605025ee21d659bb4139621b6a6fecd9f115cfc987",
+        "route": null,
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "uav_type": "fixed_wing_vtol_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "pad",
+        "node": "VP_02",
+        "slot": 5
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_004",
+      "parent_id": "CA12_CORE_002",
+      "pilot": true,
+      "metadata": {
+        "ancestor_id": "mtancestor_1dee5e2e8fbc4e7094ae1633",
+        "attempt_id": "mtattempt_1dee5e2e8fbc4e7094ae1633",
+        "attempt_rank": 33,
+        "coarse_structural_sha256": "f478c964ca20b7cb4e261ff3f9e6d52a6b09ed412186c5aeeeb739de0b639dff",
+        "constraint_incidence_sha256": "90c23603cd749d2a1c5f3fc510888c96d699c6b53c4a05dddb5b75f19bfbd36f",
+        "coupling_topology": "SHARED_DESTINATION_PAD_CAPACITY",
+        "mechanism": "SOC_PRETARGET_CHARGE_INCREASE_WITH_FIXED_ROUTES",
+        "objective_role": "L6_ENERGY_PREFIX_CONTROL",
+        "operational_motif": "BASE_SINGLE_RESOURCE",
+        "structural_template_sha256": "9142f8c55f87661293dc93d5778e1654fe46a6e8dcb6533fa8205a4808bcfa74",
+        "target_uav_type": "fixed_wing_vtol_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "soc_degradation_repair",
+        "generator_declared_mechanism": "SOC_PRETARGET_CHARGE_INCREASE_WITH_FIXED_ROUTES",
+        "pair_id": "PAIR_5901829eda8d18a6ad6a",
+        "pair_payload_sha256": "15e3f792c3b49a35247eba4989a1048917e20de3ee9f116aee4a4d6bd4baaa2f",
+        "route": null,
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "uav_type": "fixed_wing_vtol_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "pad",
+        "node": "VP_04",
+        "slot": 7
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_005",
+      "parent_id": "CA12_CORE_005",
+      "pilot": false,
+      "metadata": {
+        "ancestor_id": "mtancestor_8d144019492c4f6b4aa21a89",
+        "attempt_id": "mtattempt_8d144019492c4f6b4aa21a89",
+        "attempt_rank": 103,
+        "coarse_structural_sha256": "5befa94f041edf2a2429d9f57c0fb4cb44edc18da7c802460f28ea59f33bfe2a",
+        "constraint_incidence_sha256": "0b8e8b05e92ba9d41598a9d3a50a7ca7b73af56d144259d42176bfc536ce3831",
+        "coupling_topology": "SHARED_CORRIDOR_CAPACITY",
+        "mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_AND_PRETARGET_CHARGE_WITH_FIXED_DEPARTURES",
+        "objective_role": "L6_ENERGY_PREFIX_CONTROL",
+        "operational_motif": "THIRD_UAV_CHAIN",
+        "structural_template_sha256": "0105499d54ae8296342d85a5df4d969baec4455ed7c1458296d031fb2111f7a5",
+        "target_uav_type": "multirotor_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "composed_resource_repair",
+        "generator_declared_mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_AND_PRETARGET_CHARGE_WITH_FIXED_DEPARTURES",
+        "pair_id": "PAIR_5987794c058ea59b206c",
+        "pair_payload_sha256": "be39cb913ea9fef581ee488962f7fa7f565e18d121540ec3711a34daf6817ae5",
+        "route": {
+          "baseline_path_id": "PATH_07",
+          "designated_route_target_path_id": "PATH_07",
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01"
+        },
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_06",
+          "uav_id": "UAV_01",
+          "uav_type": "multirotor_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "corridor",
+        "node": "COR_03",
+        "slot": 5
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_006",
+      "parent_id": "CA12_CORE_006",
+      "pilot": false,
+      "metadata": {
+        "ancestor_id": "mtancestor_7993eee8a24bee5b3b1b7634",
+        "attempt_id": "mtattempt_7993eee8a24bee5b3b1b7634",
+        "attempt_rank": 28,
+        "coarse_structural_sha256": "3f260d1f417d2c172e37f8da323a81320141478479d77bf4e42e8360b8285515",
+        "constraint_incidence_sha256": "0f74db21b9e524cbce992e37d64de00860885f6f0b7dbadc2e9c2bd1b3add330",
+        "coupling_topology": "SHARED_CORRIDOR_CAPACITY",
+        "mechanism": "SOC_PRETARGET_CHARGE_INCREASE_WITH_FIXED_ROUTES",
+        "objective_role": "L6_ENERGY_PREFIX_CONTROL",
+        "operational_motif": "THIRD_UAV_ROUTE_DIAMOND",
+        "structural_template_sha256": "941bc2d9ef9b7ec495e51a76c8bac6e7532fc59a4e1203e8d545acc029a80896",
+        "target_uav_type": "multirotor_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "soc_degradation_repair",
+        "generator_declared_mechanism": "SOC_PRETARGET_CHARGE_INCREASE_WITH_FIXED_ROUTES",
+        "pair_id": "PAIR_fc480e11e0d85505df76",
+        "pair_payload_sha256": "4c8aff14ec6de4431c6e6d2983bc565b38e6165ba63ab9eef9caf3e1cb536946",
+        "route": null,
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_01",
+          "uav_id": "UAV_03",
+          "uav_type": "multirotor_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "corridor",
+        "node": "COR_01",
+        "slot": 2
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_007",
+      "parent_id": "CA12_CORE_012",
+      "pilot": false,
+      "metadata": {
+        "ancestor_id": "mtancestor_3455a8938c2727ee274f04dc",
+        "attempt_id": "mtattempt_3455a8938c2727ee274f04dc",
+        "attempt_rank": 113,
+        "coarse_structural_sha256": "b5e4941abfaa9e3ad24f11ee118e2548f4e67b4c74658fd4f94a0fd7b5c4bc45",
+        "constraint_incidence_sha256": "9fb7274b6c0b57899f42bbd711f450be69282e2057bc643227da794ca39b7ca4",
+        "coupling_topology": "SHARED_DESTINATION_PAD_CAPACITY",
+        "mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_PRETARGET_CHARGE_AND_DEPARTURE_RETIMING",
+        "objective_role": "L4_WEIGHTED_TARDINESS_PREFIX_CONTROL",
+        "operational_motif": "BASE_SINGLE_RESOURCE",
+        "structural_template_sha256": "f78a4a716a0c23dbe43b3a467d7dad06d0c6226a6abaf3a8168823afea4b8bf4",
+        "target_uav_type": "fixed_wing_vtol_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "composed_resource_repair",
+        "generator_declared_mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_PRETARGET_CHARGE_AND_DEPARTURE_RETIMING",
+        "pair_id": "PAIR_234b99274cd7617f1d5a",
+        "pair_payload_sha256": "2bc76dff8a3983d6f575bf66136f7036a180ff7374152cd6e295463234715db8",
+        "route": {
+          "baseline_path_id": "PATH_02",
+          "designated_route_target_path_id": "PATH_02",
+          "mission_id": "MISSION_04",
+          "uav_id": "UAV_02"
+        },
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_01",
+          "uav_id": "UAV_02",
+          "uav_type": "fixed_wing_vtol_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "pad",
+        "node": "VP_04",
+        "slot": 9
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_008",
+      "parent_id": "CA12_CORE_007",
+      "pilot": false,
+      "metadata": {
+        "ancestor_id": "mtancestor_83f9c06fb80423974290283e",
+        "attempt_id": "mtattempt_83f9c06fb80423974290283e",
+        "attempt_rank": 29,
+        "coarse_structural_sha256": "f478c964ca20b7cb4e261ff3f9e6d52a6b09ed412186c5aeeeb739de0b639dff",
+        "constraint_incidence_sha256": "119220c54dd43865913c3e0a9656c03494aee426b3eb3eba97e5646783c9d3f0",
+        "coupling_topology": "SHARED_ORIGIN_PAD_CAPACITY",
+        "mechanism": "SOC_PRETARGET_CHARGE_INCREASE_WITH_FIXED_ROUTES",
+        "objective_role": "L6_ENERGY_PREFIX_CONTROL",
+        "operational_motif": "BASE_SINGLE_RESOURCE",
+        "structural_template_sha256": "9142f8c55f87661293dc93d5778e1654fe46a6e8dcb6533fa8205a4808bcfa74",
+        "target_uav_type": "multirotor_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "soc_degradation_repair",
+        "generator_declared_mechanism": "SOC_PRETARGET_CHARGE_INCREASE_WITH_FIXED_ROUTES",
+        "pair_id": "PAIR_e73c34cd2261cfbaffe2",
+        "pair_payload_sha256": "76538851fb39137d044af157531b9b77bd7ed90699d3c43ddf05fe8ab81661a1",
+        "route": null,
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_03",
+          "uav_id": "UAV_02",
+          "uav_type": "multirotor_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "pad",
+        "node": "VP_04",
+        "slot": 4
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_009",
+      "parent_id": "CA12_CORE_008",
+      "pilot": false,
+      "metadata": {
+        "ancestor_id": "mtancestor_bcc036e445363c6db0bd0ee3",
+        "attempt_id": "mtattempt_bcc036e445363c6db0bd0ee3",
+        "attempt_rank": 64,
+        "coarse_structural_sha256": "63c1cb58bb5617c9634c4acad708c5c07450bae6f42d4b44a238968998d30c16",
+        "constraint_incidence_sha256": "0dbc10914d8392122a38cceb6ab3bedf3af270732c7672b1e899a2868e39cf77",
+        "coupling_topology": "SHARED_CORRIDOR_CAPACITY",
+        "mechanism": "SOC_JOINT_PRETARGET_CHARGE_AND_ROUTE_ADAPTATION",
+        "objective_role": "L6_ENERGY_PREFIX_CONTROL",
+        "operational_motif": "THIRD_UAV_ROUTE_DIAMOND",
+        "structural_template_sha256": "941bc2d9ef9b7ec495e51a76c8bac6e7532fc59a4e1203e8d545acc029a80896",
+        "target_uav_type": "fixed_wing_vtol_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "soc_degradation_repair",
+        "generator_declared_mechanism": "SOC_JOINT_PRETARGET_CHARGE_AND_ROUTE_ADAPTATION",
+        "pair_id": "PAIR_5a26e8277ae36c0bfcfa",
+        "pair_payload_sha256": "9666cb49e96dbfbff681aac0586f94bff3228f668ac9a3f37bb19971e0984964",
+        "route": null,
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "uav_type": "fixed_wing_vtol_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "corridor",
+        "node": "COR_10",
+        "slot": 4
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_010",
+      "parent_id": "CA12_CORE_009",
+      "pilot": false,
+      "metadata": {
+        "ancestor_id": "mtancestor_9334dd7c284b6773d93ed595",
+        "attempt_id": "mtattempt_9334dd7c284b6773d93ed595",
+        "attempt_rank": 106,
+        "coarse_structural_sha256": "60a9e456ea17537de2047df9a81b3a8f396e6fa7b3adf20425c6c5f9a56b5ed1",
+        "constraint_incidence_sha256": "baf2648759d217f4d276331c2b05694e7ea987e63fde5862e46edfd8c5a7e0c2",
+        "coupling_topology": "SHARED_CORRIDOR_CAPACITY",
+        "mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_AND_PRETARGET_CHARGE_WITH_FIXED_DEPARTURES",
+        "objective_role": "L6_ENERGY_PREFIX_CONTROL",
+        "operational_motif": "THIRD_UAV_FEEDER",
+        "structural_template_sha256": "66717906e4886eb88ada62b7ae5481c2a9a032fbb0a3d144893a49c6ef3801eb",
+        "target_uav_type": "multirotor_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "composed_resource_repair",
+        "generator_declared_mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_AND_PRETARGET_CHARGE_WITH_FIXED_DEPARTURES",
+        "pair_id": "PAIR_56ce117267d6e3e74cbf",
+        "pair_payload_sha256": "05e300f4d1a7c67474f123ca50cd5d44194a8f5eea6fb1fc4bbd85fee86c5e9e",
+        "route": {
+          "baseline_path_id": "PATH_10",
+          "designated_route_target_path_id": "PATH_10",
+          "mission_id": "MISSION_03",
+          "uav_id": "UAV_02"
+        },
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_04",
+          "uav_id": "UAV_02",
+          "uav_type": "multirotor_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "corridor",
+        "node": "COR_09",
+        "slot": 2
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_011",
+      "parent_id": "CA12_CORE_010",
+      "pilot": false,
+      "metadata": {
+        "ancestor_id": "mtancestor_cea5e08ef52ddadc2cad638e",
+        "attempt_id": "mtattempt_cea5e08ef52ddadc2cad638e",
+        "attempt_rank": 70,
+        "coarse_structural_sha256": "fa4481c458a4da679fc1186078d254341ac6b4d4faa5167298c8ee3d1ab84d86",
+        "constraint_incidence_sha256": "50646cabd5cd0bdf364a3d41b147cfc448f821a046290bb9366b359655f5cd2a",
+        "coupling_topology": "SHARED_CORRIDOR_CAPACITY",
+        "mechanism": "SOC_JOINT_PRETARGET_CHARGE_AND_ROUTE_ADAPTATION",
+        "objective_role": "L6_ENERGY_PREFIX_CONTROL",
+        "operational_motif": "THIRD_UAV_FEEDER",
+        "structural_template_sha256": "941bc2d9ef9b7ec495e51a76c8bac6e7532fc59a4e1203e8d545acc029a80896",
+        "target_uav_type": "fixed_wing_vtol_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "soc_degradation_repair",
+        "generator_declared_mechanism": "SOC_JOINT_PRETARGET_CHARGE_AND_ROUTE_ADAPTATION",
+        "pair_id": "PAIR_429845edba6254a12ef3",
+        "pair_payload_sha256": "bcb4d71995c20c7473d5c403112d81b5e3c59dc3ce5d4e02f610242ab09b50d0",
+        "route": null,
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_02",
+          "uav_id": "UAV_02",
+          "uav_type": "fixed_wing_vtol_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "corridor",
+        "node": "COR_08",
+        "slot": 1
+      }
+    },
+    {
+      "physical_id": "ARCO_PHYS_012",
+      "parent_id": "CA12_CORE_024",
+      "pilot": false,
+      "metadata": {
+        "ancestor_id": "mtancestor_597b127cd587ca4e49707b22",
+        "attempt_id": "mtattempt_597b127cd587ca4e49707b22",
+        "attempt_rank": 117,
+        "coarse_structural_sha256": "b5e4941abfaa9e3ad24f11ee118e2548f4e67b4c74658fd4f94a0fd7b5c4bc45",
+        "constraint_incidence_sha256": "0e0706ba227380dbdfdb3a6a7ced15865349518660e70aeff2c75f23ee3ff1a4",
+        "coupling_topology": "SHARED_CORRIDOR_CAPACITY",
+        "mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_PRETARGET_CHARGE_AND_DEPARTURE_RETIMING",
+        "objective_role": "L4_WEIGHTED_TARDINESS_PREFIX_CONTROL",
+        "operational_motif": "BASE_SINGLE_RESOURCE",
+        "structural_template_sha256": "f78a4a716a0c23dbe43b3a467d7dad06d0c6226a6abaf3a8168823afea4b8bf4",
+        "target_uav_type": "multirotor_cargo_uav"
+      },
+      "selected_pair": {
+        "family": "composed_resource_repair",
+        "generator_declared_mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_PRETARGET_CHARGE_AND_DEPARTURE_RETIMING",
+        "pair_id": "PAIR_b842e475dcecc4e6fac0",
+        "pair_payload_sha256": "e69afa275ae7f9f742243c4707479c73b055ed3a432015206662e7d3af98f0fb",
+        "route": {
+          "baseline_path_id": "PATH_06",
+          "designated_route_target_path_id": "PATH_06",
+          "mission_id": "MISSION_01",
+          "uav_id": "UAV_01"
+        },
+        "soc": {
+          "guard_kwh": 0.05,
+          "soc_target_mission_id": "MISSION_02",
+          "uav_id": "UAV_01",
+          "uav_type": "multirotor_cargo_uav"
+        }
+      },
+      "resource": {
+        "capacity": 1,
+        "kind": "corridor",
+        "node": "COR_01",
+        "slot": 6
+      }
+    }
+  ]
+}

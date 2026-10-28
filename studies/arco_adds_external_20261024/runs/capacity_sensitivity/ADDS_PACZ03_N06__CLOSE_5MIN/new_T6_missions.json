@@ -1,0 +1,180 @@
+{
+  "protocol": "target_coordination_direct_v1",
+  "record_id": "ADDS_PACZ03_N06__CLOSE_5MIN",
+  "origin_name": "fixed_formal_G",
+  "target_prefix": 6,
+  "target_mode": "match",
+  "target_objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 4.6000000000000005,
+    "weighted_tardiness_min": 6.000000000000001,
+    "delay_and_charge_wait_min": 38.0,
+    "energy_kwh": 0.07883545640647328
+  },
+  "quality_tolerance": [
+    0.0,
+    0.0,
+    1e-07,
+    1e-05,
+    1e-05,
+    0.0001
+  ],
+  "minimize": "missions",
+  "allowed_uavs": [
+    "U01",
+    "U02",
+    "U03"
+  ],
+  "task_budget": null,
+  "chain_budget": null,
+  "no_good_supports": [],
+  "status": "optimal",
+  "feasible": true,
+  "optimal": true,
+  "lower_bound": 3,
+  "upper_bound": 3,
+  "raw_dual_bound": 3.0,
+  "analytic_distance_lower_bound": 1,
+  "solver_objective": 3.0,
+  "decisions": [
+    {
+      "mission_id": "M001",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 5.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M002",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 5.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M003",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 5.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M004",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 8.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M005",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 8.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M006",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 7.0,
+      "charge_blocks": 0
+    }
+  ],
+  "objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 4.6000000000000005,
+    "weighted_tardiness_min": 6.000000000000001,
+    "delay_and_charge_wait_min": 38.0,
+    "energy_kwh": 0.07883545640647328
+  },
+  "changed_missions": [
+    "M003",
+    "M005",
+    "M006"
+  ],
+  "changed_uavs": [
+    "U02",
+    "U03"
+  ],
+  "mission_changes": 3,
+  "chain_changes": 2,
+  "witness_source": "supplied_witness_2",
+  "independent_verification": true,
+  "rejected_candidates": [
+    {
+      "source": "origin",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    },
+    {
+      "source": "supplied_witness_0",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    },
+    {
+      "source": "supplied_witness_1",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    },
+    {
+      "source": "supplied_witness_3",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    },
+    {
+      "source": "supplied_witness_4",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    },
+    {
+      "source": "supplied_witness_5",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    },
+    {
+      "source": "supplied_witness_6",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    },
+    {
+      "source": "supplied_witness_7",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    }
+  ],
+  "solver_status": "Optimal",
+  "solver_nodes": 0,
+  "solver": "HiGHS 1.15.1",
+  "solver_threads": 1,
+  "started_utc": "2026-10-26T03:47:52.802059+00:00",
+  "budget_seconds": 60.0,
+  "elapsed_seconds": 0.00550059974193573,
+  "query_build_seconds": 0.0010123010724782944,
+  "base_build_seconds_in_query": 0.0,
+  "preparation_seconds_cumulative": 0.0027633002027869225,
+  "solver_seconds": 0.0026713996194303036,
+  "validation_seconds": 0.001816899050027132,
+  "completed_within_budget": true,
+  "variables": 111,
+  "constraints": 264,
+  "task_sha256": "729ed755cff57f99adeedc1ff3b899b30eed204790b34d14b01f51308af40f45",
+  "origin_sha256": "275db19fe22b4e078d897ec3edab48fb7e780fad63680f1d0515ad266360f58b",
+  "solver_calls_for_record": 1,
+  "query_path": "runs/capacity_sensitivity/ADDS_PACZ03_N06__CLOSE_5MIN/new_T6_missions.json"
+}

@@ -1,0 +1,211 @@
+{
+  "network": {
+    "sources": {
+      "G": {
+        "tasks": 36,
+        "admissible": 36,
+        "reference_quality": 13,
+        "statuses": {
+          "admissible_miss": 23,
+          "reference_quality": 13
+        },
+        "first_miss": {
+          "urgent_holds": 8,
+          "repair_distance": 14,
+          "total_holds": 1
+        },
+        "extra_urgent_holds": 8.0,
+        "total_hold_difference": 13.0
+      },
+      "R4": {
+        "tasks": 36,
+        "admissible": 36,
+        "reference_quality": 23,
+        "statuses": {
+          "admissible_miss": 13,
+          "reference_quality": 23
+        },
+        "first_miss": {
+          "repair_distance": 11,
+          "weighted_tardiness_min": 1,
+          "urgent_holds": 1
+        },
+        "extra_urgent_holds": 1.0,
+        "total_hold_difference": 2.0
+      },
+      "deepseek": {
+        "tasks": 36,
+        "admissible": 28,
+        "reference_quality": 24,
+        "statuses": {
+          "reference_quality": 24,
+          "infeasible": 2,
+          "admissible_miss": 4,
+          "no_answer": 6
+        },
+        "first_miss": {
+          "repair_distance": 3,
+          "weighted_tardiness_min": 1
+        },
+        "extra_urgent_holds": 0.0,
+        "total_hold_difference": 0.0
+      },
+      "luna": {
+        "tasks": 36,
+        "admissible": 36,
+        "reference_quality": 32,
+        "statuses": {
+          "reference_quality": 32,
+          "admissible_miss": 4
+        },
+        "first_miss": {
+          "repair_distance": 4
+        },
+        "extra_urgent_holds": 0.0,
+        "total_hold_difference": 0.0
+      }
+    },
+    "pairs": {
+      "G+deepseek": {
+        "tasks": 36,
+        "admissible": 36,
+        "reference_quality": 26,
+        "selected_sources": {
+          "deepseek": 16,
+          "G": 20
+        },
+        "model_only": 13,
+        "D_only": 2
+      },
+      "G+luna": {
+        "tasks": 36,
+        "admissible": 36,
+        "reference_quality": 32,
+        "selected_sources": {
+          "luna": 21,
+          "G": 15
+        },
+        "model_only": 19,
+        "D_only": 0
+      },
+      "R4+deepseek": {
+        "tasks": 36,
+        "admissible": 36,
+        "reference_quality": 31,
+        "selected_sources": {
+          "deepseek": 9,
+          "R4": 27
+        },
+        "model_only": 8,
+        "D_only": 7
+      },
+      "R4+luna": {
+        "tasks": 36,
+        "admissible": 36,
+        "reference_quality": 33,
+        "selected_sources": {
+          "luna": 11,
+          "R4": 25
+        },
+        "model_only": 10,
+        "D_only": 1
+      }
+    }
+  },
+  "core_anchor": {
+    "sources": {
+      "G": {
+        "tasks": 12,
+        "admissible": 12,
+        "reference_quality": 10,
+        "statuses": {
+          "reference_quality": 10,
+          "admissible_miss": 2
+        },
+        "first_miss": {
+          "weighted_tardiness_min": 1,
+          "repair_distance": 1
+        },
+        "extra_urgent_holds": 0,
+        "total_hold_difference": 0
+      },
+      "R4": {
+        "tasks": 12,
+        "admissible": 12,
+        "reference_quality": 12,
+        "statuses": {
+          "reference_quality": 12
+        },
+        "first_miss": {},
+        "extra_urgent_holds": 0,
+        "total_hold_difference": 0
+      },
+      "deepseek": {
+        "tasks": 12,
+        "admissible": 12,
+        "reference_quality": 12,
+        "statuses": {
+          "reference_quality": 12
+        },
+        "first_miss": {},
+        "extra_urgent_holds": 0,
+        "total_hold_difference": 0
+      },
+      "luna": {
+        "tasks": 12,
+        "admissible": 12,
+        "reference_quality": 12,
+        "statuses": {
+          "reference_quality": 12
+        },
+        "first_miss": {},
+        "extra_urgent_holds": 0,
+        "total_hold_difference": 0
+      }
+    },
+    "pairs": {
+      "G+deepseek": {
+        "tasks": 12,
+        "admissible": 12,
+        "reference_quality": 12,
+        "selected_sources": {
+          "G": 10,
+          "deepseek": 2
+        },
+        "model_only": 2,
+        "D_only": 0
+      },
+      "G+luna": {
+        "tasks": 12,
+        "admissible": 12,
+        "reference_quality": 12,
+        "selected_sources": {
+          "G": 10,
+          "luna": 2
+        },
+        "model_only": 2,
+        "D_only": 0
+      },
+      "R4+deepseek": {
+        "tasks": 12,
+        "admissible": 12,
+        "reference_quality": 12,
+        "selected_sources": {
+          "R4": 12
+        },
+        "model_only": 0,
+        "D_only": 0
+      },
+      "R4+luna": {
+        "tasks": 12,
+        "admissible": 12,
+        "reference_quality": 12,
+        "selected_sources": {
+          "R4": 12
+        },
+        "model_only": 0,
+        "D_only": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "record_id": "NEW_regions_S02_long",
+  "uav_id": "U03",
+  "precharge_mission": "M008",
+  "detour_mission": "M009",
+  "path_id": "P2",
+  "scope": "Fixed M008 arrival SOC and M009 P2 route; energy arithmetic only, not a different optimized chain.",
+  "SOC_TOL_kWh": 1e-06,
+  "SOC_TOL_Wh": 0.001,
+  "reserve_Wh": 19.98,
+  "precharge_Wh": 38.80544665833681,
+  "detour_energy_Wh": 26.46138044911342,
+  "battery_capacity_Wh": 99.9,
+  "gain_per_5min_block_Wh": 7.333333333333333,
+  "extra_energy_required_strict_Wh": 7.635933790776612,
+  "extra_energy_required_verifier_Wh": 7.6349337907766115,
+  "one_block_shortfall_strict_Wh": 0.3026004574432788,
+  "one_block_shortfall_after_tolerance_Wh": 0.3016004574432788,
+  "one_block_shortfall_fraction_of_detour_percent": 1.1435550689624634,
+  "required_detour_reduction_with_tolerance_percent": 1.1397759766285505,
+  "one_block_equivalent_thresholds": {
+    "minimum_precharge_strict_Wh": 39.10804711578009,
+    "minimum_precharge_verifier_Wh": 39.10704711578009,
+    "maximum_detour_energy_strict_Wh": 26.158779991670148,
+    "maximum_detour_energy_verifier_Wh": 26.15977999167015,
+    "maximum_reserve_strict_Wh": 19.677399542556728,
+    "maximum_reserve_verifier_Wh": 19.67839954255673
+  },
+  "block_cases": [
+    {
+      "blocks": 0,
+      "SOC_before_M009_Wh": 38.80544665833681,
+      "SOC_at_M009_arrival_Wh": 12.344066209223392,
+      "reserve_margin_Wh": -7.635933790776608,
+      "passes_energy_with_SOC_TOL": false,
+      "within_battery_capacity": true
+    },
+    {
+      "blocks": 1,
+      "SOC_before_M009_Wh": 46.13877999167015,
+      "SOC_at_M009_arrival_Wh": 19.677399542556728,
+      "reserve_margin_Wh": -0.3026004574432726,
+      "passes_energy_with_SOC_TOL": false,
+      "within_battery_capacity": true
+    },
+    {
+      "blocks": 2,
+      "SOC_before_M009_Wh": 53.47211332500348,
+      "SOC_at_M009_arrival_Wh": 27.010732875890056,
+      "reserve_margin_Wh": 7.030732875890056,
+      "passes_energy_with_SOC_TOL": true,
+      "within_battery_capacity": true
+    }
+  ],
+  "actual_reference_timing": {
+    "M008_arrival_min": 17.01968421829394,
+    "charge_start_min": 22.01968421829394,
+    "charge_finish_min": 32.01968421829394,
+    "M009_depart_min": 33,
+    "H_departure_min": 35,
+    "M009_arrival_min": 36.16081437917443,
+    "M009_due_min": 29.813523565528495,
+    "tardiness_min": 6.347290813645937
+  },
+  "actual_reference_charge_intervals": [
+    {
+      "record_id": "NEW_regions_S02_long",
+      "mission_id": "M008",
+      "uav_id": "U03",
+      "kind": "charger",
+      "resource": "V02",
+      "start_min": 22.01968421829394,
+      "end_min": 32.01968421829394
+    }
+  ],
+  "actual_reference_admissible": true,
+  "actual_reference_errors": []
+}

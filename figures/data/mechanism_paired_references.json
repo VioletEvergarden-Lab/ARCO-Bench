@@ -1,0 +1,629 @@
+{
+  "definitions": {
+    "population": "All 12 base networks; stored six-tier optimal reference repairs in both conditions.",
+    "reroutes": "Served missions whose reference service path differs from the incumbent service path.",
+    "charge_blocks": "Total five-minute charging blocks in each reference plan, not changed-charging mission counts or differences from another plan.",
+    "energy": "Total flight energy (including any positioning flights) in long minus short reference, Wh.",
+    "conditions": "10-minute and 35-minute closure durations on the same directed corridor; the served mission identities are equal."
+  },
+  "sources": [
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_S01_short.json",
+      "sha256": "8eb1b7ad9ff05522561f16486556fc4463ba680afad65daf5b030f17621d5f85"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_S01_short.json",
+      "sha256": "5c9ae30973849d9a49d5c493ab6002f725017f91b857a27b85976cf938ee980b"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_S01_long.json",
+      "sha256": "4c786e6f8ac05a354da35d4db4f8ef3649232c9349afd6f704fbf591ce879a8e"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_S01_long.json",
+      "sha256": "e8b7a83988f17c829bae1052d794936eb6c850bf70cd4b3e1b10cabdfec78c95"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_S02_short.json",
+      "sha256": "c02c386b3a14bc12bfe6df4f10cc02d189ca4ff95e71a85f8b82d9cbe2d32a49"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_S02_short.json",
+      "sha256": "a93222f9a6012ab15c2a0385d8056e391ca615c57d51fc58c20eb776d172ca3d"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_S02_long.json",
+      "sha256": "a03cea8951cb1b2d29eb6d6174a1eb50942a53ee73db941ff4af90911ddcd2b5"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_S02_long.json",
+      "sha256": "202c34c65b776f0a174d1a65014c980521ce26bb9ac3a1d58a70c701a274a63f"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_M01_short.json",
+      "sha256": "5a07bee56da7da31eefb0c2d1d0a0af50c739edababc2757db2c7db27a7a1d23"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_M01_short.json",
+      "sha256": "b2b1b6ec87a25323349bcb84016a8d7490a9097569056a9b9431722557b1c02e"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_M01_long.json",
+      "sha256": "d9a15e6cb4f204ea7631fd0fa2e9908c1bb8bc0004cb318ef0ecf6de837670dc"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_M01_long.json",
+      "sha256": "c2de97be3045c496f35ebd4a4b25bce1b3b4589231f85326b506ef124244b09d"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_M02_short.json",
+      "sha256": "2631a75c31e1c5286c846cb43a8beddea07cbe44901bfb372f26fe78170aaaaf"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_M02_short.json",
+      "sha256": "e0bbc69cb43090252205f96e9b9237f59073eb8ba4bc51d01114b063b28b0ec3"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_M02_long.json",
+      "sha256": "56d44e6a84bc9608a7290233460b8040de83f4e69a652916b31a7f359a479faa"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_M02_long.json",
+      "sha256": "54b0a1e52bb48a234c6b1ab8b08ca64b4da186fe37cafebf80f020b428c8ff57"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_L01_short.json",
+      "sha256": "a48d7679379b9c7c85d29c2ce5b9a91a1f9983a367e76d3280214f53722a4c41"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_L01_short.json",
+      "sha256": "57ae40886926eeb7d452d9a1f9044fe11d02853552689fe83ec3991068316b3d"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_L01_long.json",
+      "sha256": "bce459ae0d21644d317d739ef6f94df659a3a68bc1587830aa92bd0a91385d19"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_L01_long.json",
+      "sha256": "3053192979bef273831c47c33dfe3a40caddc55b509a09948bceb289e3981473"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_L02_short.json",
+      "sha256": "5a43805bfaf5f55faccda39464d28dc613ebd4498dc3220d4ab74b44b4e07631"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_L02_short.json",
+      "sha256": "ecc77b074868b8b0850d00292cefaf1a60179266e94943baf69eb213eaf2d463"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_ladder_L02_long.json",
+      "sha256": "4045fa31a4366262e3243c3d98c37c4a4016d1a3230a1a9f78c0a4b7816305ac"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_ladder_L02_long.json",
+      "sha256": "2a4ff286c77d7da2007cd46ae480427f17fad788d6b903f702351dc081648d5c"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_S01_short.json",
+      "sha256": "9fb9a4ecc85d1e4e1329ce0c5dfb710ba5918842c559c8ee16eed489a7bdb4f7"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_S01_short.json",
+      "sha256": "7848aea0861c3114f9588ae115ca3c6100445a282e2485b4a69e6b994c830022"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_S01_long.json",
+      "sha256": "4f8d1cae4ab49d92396faf4efffd084518f51258113b51748c81e803f90b8c4b"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_S01_long.json",
+      "sha256": "ec922b1487403c10055384920bc24a57da77b6339e7e4f44484765d6dcd2af14"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_S02_short.json",
+      "sha256": "634f08d85c666bbc7405b718debbb05861da043797befc89515c2204169a64b6"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_S02_short.json",
+      "sha256": "e8144cf3480b2a3518c5cc2498da88451b0c99cd9eb0c20eb5734d35eab45842"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_S02_long.json",
+      "sha256": "a14bb019731263931a5b66356e9da88daa700fb79004e0bd647aa85cbbd20218"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_S02_long.json",
+      "sha256": "a8460b9e24af13235adb2ae0962e45c9ccf9c9cab9f0a86e6c80ca4f0cc42a9b"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_M01_short.json",
+      "sha256": "70935cc4d5ecf78c5d55defe317b34371c648c3d0c96cc071f6bc4c39454269e"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_M01_short.json",
+      "sha256": "d1bd068cd85b769a4daa1c331b51ba4ffffdcf5bcff232c15e92977228144dec"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_M01_long.json",
+      "sha256": "a294e15d1b96056be7238402d43b6284c91f8b864198f08abc908c92814bc55c"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_M01_long.json",
+      "sha256": "bcddfdadd65840890b9dc1aff30040dfc44d09068ca43e304e714a77f7d49306"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_M02_short.json",
+      "sha256": "614341313f99e23336f77dd42db6592e952ebca71454351591287187a5e01351"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_M02_short.json",
+      "sha256": "b92f7cd1945d0d02470136a602c0586639972c6715a19df5c5b62ed67f1d2c20"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_M02_long.json",
+      "sha256": "89117d9c3d2b0a1cda2cc1808bf1fa2e1ed17489953393df11ef32d79430b0a7"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_M02_long.json",
+      "sha256": "4b92fdca71c4035741a54c6618dbe4cd0905c1fe3cd8e535b2a9cd45ba342168"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_L01_short.json",
+      "sha256": "563b42125772a0409d636fc7ad45091bcddf04df2512144ef7535bfd53da4553"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_L01_short.json",
+      "sha256": "c662f2fa6f5c462088078e90302819a556f99aa8b4aacab070c1cc32549a4072"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_L01_long.json",
+      "sha256": "cfffeb9d4cf52b41a3aaffc91b843dd8a5beb15ca1aae368116fe9c31b150bfc"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_L01_long.json",
+      "sha256": "2435d68803309ee783bd636140600d15c9783d9b454df5323049a875379837ff"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_L02_short.json",
+      "sha256": "0846c24c73299b272c74ae2aab3a0cd955918640b89d3998458e4126448cec25"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_L02_short.json",
+      "sha256": "5ad258cfb3ac833b96b35a586085e37aaeb9f1da053c4a87632e5fc950a47986"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/tasks/NEW_regions_L02_long.json",
+      "sha256": "5bc5be6f680423e5aeadac2c16402b13431890bc592654d31e08aa8b226c2e12"
+    },
+    {
+      "path": "arco_focused_revision_20261002/new_networks/references/NEW_regions_L02_long.json",
+      "sha256": "d43503611b30d1b8699051c914d787395058f1a98f322e244565f3931e5e43f4"
+    }
+  ],
+  "rows": [
+    {
+      "network_id": "NEW_ladder_S01",
+      "topology": "ladder",
+      "scale": "S",
+      "short_reroutes": 0,
+      "short_charge_blocks": 0,
+      "short_energy_Wh": 126.72580574131013,
+      "long_reroutes": 1,
+      "long_charge_blocks": 0,
+      "long_energy_Wh": 136.5881222332124,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009"
+      ],
+      "energy_long_minus_short_Wh": 9.862316491902277,
+      "label": "Ladder S01"
+    },
+    {
+      "network_id": "NEW_ladder_S02",
+      "topology": "ladder",
+      "scale": "S",
+      "short_reroutes": 0,
+      "short_charge_blocks": 0,
+      "short_energy_Wh": 125.42590416054838,
+      "long_reroutes": 1,
+      "long_charge_blocks": 0,
+      "long_energy_Wh": 132.85307302831677,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009"
+      ],
+      "energy_long_minus_short_Wh": 7.427168867768387,
+      "label": "Ladder S02"
+    },
+    {
+      "network_id": "NEW_ladder_M01",
+      "topology": "ladder",
+      "scale": "M",
+      "short_reroutes": 0,
+      "short_charge_blocks": 3,
+      "short_energy_Wh": 252.85493955568,
+      "long_reroutes": 0,
+      "long_charge_blocks": 3,
+      "long_energy_Wh": 252.85493955568,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020"
+      ],
+      "energy_long_minus_short_Wh": 0.0,
+      "label": "Ladder M01"
+    },
+    {
+      "network_id": "NEW_ladder_M02",
+      "topology": "ladder",
+      "scale": "M",
+      "short_reroutes": 0,
+      "short_charge_blocks": 5,
+      "short_energy_Wh": 288.4938809167289,
+      "long_reroutes": 0,
+      "long_charge_blocks": 5,
+      "long_energy_Wh": 288.4938809167289,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020"
+      ],
+      "energy_long_minus_short_Wh": 0.0,
+      "label": "Ladder M02"
+    },
+    {
+      "network_id": "NEW_ladder_L01",
+      "topology": "ladder",
+      "scale": "L",
+      "short_reroutes": 0,
+      "short_charge_blocks": 6,
+      "short_energy_Wh": 445.00401138953913,
+      "long_reroutes": 0,
+      "long_charge_blocks": 6,
+      "long_energy_Wh": 445.00401138953913,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020",
+        "M021",
+        "M022",
+        "M023",
+        "M024",
+        "M025",
+        "M026",
+        "M027",
+        "M028",
+        "M029",
+        "M030",
+        "M031",
+        "M032"
+      ],
+      "energy_long_minus_short_Wh": 0.0,
+      "label": "Ladder L01"
+    },
+    {
+      "network_id": "NEW_ladder_L02",
+      "topology": "ladder",
+      "scale": "L",
+      "short_reroutes": 0,
+      "short_charge_blocks": 5,
+      "short_energy_Wh": 404.9684565300964,
+      "long_reroutes": 2,
+      "long_charge_blocks": 7,
+      "long_energy_Wh": 419.43196672443173,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020",
+        "M021",
+        "M022",
+        "M023",
+        "M024",
+        "M025",
+        "M026",
+        "M027",
+        "M028",
+        "M029",
+        "M030",
+        "M031",
+        "M032"
+      ],
+      "energy_long_minus_short_Wh": 14.463510194335356,
+      "label": "Ladder L02"
+    },
+    {
+      "network_id": "NEW_regions_S01",
+      "topology": "regions",
+      "scale": "S",
+      "short_reroutes": 0,
+      "short_charge_blocks": 1,
+      "short_energy_Wh": 144.0426133234792,
+      "long_reroutes": 2,
+      "long_charge_blocks": 1,
+      "long_energy_Wh": 154.3262953706847,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009"
+      ],
+      "energy_long_minus_short_Wh": 10.283682047205502,
+      "label": "Regions S01"
+    },
+    {
+      "network_id": "NEW_regions_S02",
+      "topology": "regions",
+      "scale": "S",
+      "short_reroutes": 0,
+      "short_charge_blocks": 0,
+      "short_energy_Wh": 147.82999652798634,
+      "long_reroutes": 2,
+      "long_charge_blocks": 2,
+      "long_energy_Wh": 170.2731350391415,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009"
+      ],
+      "energy_long_minus_short_Wh": 22.443138511155155,
+      "label": "Regions S02"
+    },
+    {
+      "network_id": "NEW_regions_M01",
+      "topology": "regions",
+      "scale": "M",
+      "short_reroutes": 0,
+      "short_charge_blocks": 6,
+      "short_energy_Wh": 296.2546032976572,
+      "long_reroutes": 0,
+      "long_charge_blocks": 6,
+      "long_energy_Wh": 296.2546032976572,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020"
+      ],
+      "energy_long_minus_short_Wh": 0.0,
+      "label": "Regions M01"
+    },
+    {
+      "network_id": "NEW_regions_M02",
+      "topology": "regions",
+      "scale": "M",
+      "short_reroutes": 0,
+      "short_charge_blocks": 3,
+      "short_energy_Wh": 280.93010639393043,
+      "long_reroutes": 0,
+      "long_charge_blocks": 3,
+      "long_energy_Wh": 280.93010639393043,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020"
+      ],
+      "energy_long_minus_short_Wh": 0.0,
+      "label": "Regions M02"
+    },
+    {
+      "network_id": "NEW_regions_L01",
+      "topology": "regions",
+      "scale": "L",
+      "short_reroutes": 0,
+      "short_charge_blocks": 4,
+      "short_energy_Wh": 407.0826596095536,
+      "long_reroutes": 1,
+      "long_charge_blocks": 6,
+      "long_energy_Wh": 423.3125145639526,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020",
+        "M021",
+        "M022",
+        "M023",
+        "M024",
+        "M025",
+        "M026",
+        "M027",
+        "M028",
+        "M029",
+        "M030",
+        "M031",
+        "M032"
+      ],
+      "energy_long_minus_short_Wh": 16.229854954399002,
+      "label": "Regions L01"
+    },
+    {
+      "network_id": "NEW_regions_L02",
+      "topology": "regions",
+      "scale": "L",
+      "short_reroutes": 0,
+      "short_charge_blocks": 3,
+      "short_energy_Wh": 395.3611430444915,
+      "long_reroutes": 2,
+      "long_charge_blocks": 5,
+      "long_energy_Wh": 430.0690176107939,
+      "served_mission_ids": [
+        "M001",
+        "M002",
+        "M003",
+        "M004",
+        "M005",
+        "M006",
+        "M007",
+        "M008",
+        "M009",
+        "M010",
+        "M011",
+        "M012",
+        "M013",
+        "M014",
+        "M015",
+        "M016",
+        "M017",
+        "M018",
+        "M019",
+        "M020",
+        "M021",
+        "M022",
+        "M023",
+        "M024",
+        "M025",
+        "M026",
+        "M027",
+        "M028",
+        "M029",
+        "M030",
+        "M031",
+        "M032"
+      ],
+      "energy_long_minus_short_Wh": 34.707874566302394,
+      "label": "Regions L02"
+    }
+  ]
+}

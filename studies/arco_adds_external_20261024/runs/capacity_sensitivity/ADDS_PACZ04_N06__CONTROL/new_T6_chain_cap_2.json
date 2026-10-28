@@ -1,0 +1,126 @@
+{
+  "protocol": "target_coordination_direct_v1",
+  "record_id": "ADDS_PACZ04_N06__CONTROL",
+  "origin_name": "fixed_formal_G",
+  "target_prefix": 6,
+  "target_mode": "match",
+  "target_objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 0.0,
+    "weighted_tardiness_min": 0.0,
+    "delay_and_charge_wait_min": 12.0,
+    "energy_kwh": 0.07955108643621667
+  },
+  "quality_tolerance": [
+    0.0,
+    0.0,
+    1e-07,
+    1e-05,
+    1e-05,
+    0.0001
+  ],
+  "minimize": "missions",
+  "allowed_uavs": [
+    "U01",
+    "U02",
+    "U03"
+  ],
+  "task_budget": null,
+  "chain_budget": 2,
+  "no_good_supports": [],
+  "status": "optimal",
+  "feasible": true,
+  "optimal": true,
+  "lower_bound": 0,
+  "upper_bound": 0,
+  "raw_dual_bound": null,
+  "analytic_distance_lower_bound": 0,
+  "solver_objective": null,
+  "decisions": [
+    {
+      "mission_id": "M001",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 0.5,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M002",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 0.5,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M003",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 1.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M004",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 3.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M005",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 3.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M006",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 4.0,
+      "charge_blocks": 0
+    }
+  ],
+  "objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 0.0,
+    "weighted_tardiness_min": 0.0,
+    "delay_and_charge_wait_min": 12.0,
+    "energy_kwh": 0.07955108643621667
+  },
+  "changed_missions": [],
+  "changed_uavs": [],
+  "mission_changes": 0,
+  "chain_changes": 0,
+  "witness_source": "origin",
+  "independent_verification": true,
+  "rejected_candidates": [],
+  "solver_status": "No MIP needed",
+  "solver_nodes": 0,
+  "solver": "HiGHS 1.15.1",
+  "solver_threads": 1,
+  "started_utc": "2026-10-26T03:47:52.862559+00:00",
+  "budget_seconds": 60.0,
+  "elapsed_seconds": 0.0,
+  "query_build_seconds": 3.8599129766225815e-05,
+  "base_build_seconds_in_query": 0.0,
+  "preparation_seconds_cumulative": 6.429990753531456e-05,
+  "solver_seconds": 0.0,
+  "validation_seconds": 0.001659500878304243,
+  "completed_within_budget": true,
+  "variables": null,
+  "constraints": null,
+  "task_sha256": "c0a2cc4fc52ee63e65f6478459927304cbb142c49549ce66fc2715e551b39701",
+  "origin_sha256": "4408a16a2e2bf7861d5224962d71f1f321d96c6802e9c0fc3fd2f81316c69716",
+  "solver_calls_for_record": 0,
+  "query_path": "runs/capacity_sensitivity/ADDS_PACZ04_N06__CONTROL/new_T6_chain_cap_2.json",
+  "derivation": "Unrestricted mission lower bound applies to the subset; its verified best witness meets this chain cap",
+  "source_query": "runs/capacity_sensitivity/ADDS_PACZ04_N06__CONTROL/new_T6_missions.json"
+}

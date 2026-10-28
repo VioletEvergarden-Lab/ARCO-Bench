@@ -1,0 +1,109 @@
+{
+  "record_id": "BRIDGE_ARCO_PHYS_008",
+  "optimal": true,
+  "proved_prefix": 6,
+  "decisions": [
+    {
+      "mission_id": "MISSION_01",
+      "uav_id": "UAV_01",
+      "held": false,
+      "path_id": "PATH_05",
+      "depart_min": 30,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "MISSION_02",
+      "uav_id": "UAV_01",
+      "held": false,
+      "path_id": "PATH_08",
+      "depart_min": 10,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "MISSION_03",
+      "uav_id": "UAV_02",
+      "held": false,
+      "path_id": "PATH_02",
+      "depart_min": 20,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "MISSION_04",
+      "uav_id": "UAV_01",
+      "held": false,
+      "path_id": "PATH_06",
+      "depart_min": 0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "MISSION_05",
+      "uav_id": "UAV_02",
+      "held": false,
+      "path_id": "PATH_07",
+      "depart_min": 5,
+      "charge_blocks": 1
+    }
+  ],
+  "objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 15.0,
+    "weighted_tardiness_min": 0.0,
+    "delay_and_charge_wait_min": 25.0,
+    "energy_kwh": 0.07784706941217333
+  },
+  "phases": [
+    {
+      "tier": "urgent_holds",
+      "status": 0,
+      "seconds": 0.03921220000484027,
+      "upper_bound": 0.0,
+      "lower_bound": 0.0,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "total_holds",
+      "status": 0,
+      "seconds": 0.040943899999547284,
+      "upper_bound": 0.0,
+      "lower_bound": 0.0,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "repair_distance",
+      "status": 0,
+      "seconds": 0.04180210000049556,
+      "upper_bound": 15.0,
+      "lower_bound": 15.0,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "weighted_tardiness_min",
+      "status": 0,
+      "seconds": 0.0034310000046389177,
+      "upper_bound": 0.0,
+      "lower_bound": 0.0,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "delay_and_charge_wait_min",
+      "status": 0,
+      "seconds": 0.00240279999707127,
+      "upper_bound": 25.0,
+      "lower_bound": 25.0,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "energy_kwh",
+      "status": 0,
+      "seconds": 0.0021637000027112663,
+      "upper_bound": 0.07784706941217333,
+      "lower_bound": 0.07784706941217333,
+      "mip_gap": 0.0
+    }
+  ],
+  "build_seconds": 0.00982079999812413,
+  "total_seconds": 0.141176600001927,
+  "variables": 837,
+  "constraints": 475
+}

@@ -1,0 +1,79 @@
+{
+  "protocol": "target_coordination_direct_v1",
+  "record_id": "NEW_ladder_L02_long",
+  "origin_name": "G",
+  "target_prefix": 6,
+  "target_mode": "match",
+  "target_objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 62.0,
+    "weighted_tardiness_min": 122.0,
+    "delay_and_charge_wait_min": 159.0,
+    "energy_kwh": 0.4194319667244317
+  },
+  "quality_tolerance": [
+    0.0,
+    0.0,
+    1e-07,
+    1e-05,
+    1e-05,
+    0.0001
+  ],
+  "minimize": "feasibility",
+  "allowed_uavs": [
+    "U07"
+  ],
+  "task_budget": null,
+  "chain_budget": null,
+  "no_good_supports": [],
+  "status": "infeasible",
+  "feasible": false,
+  "optimal": false,
+  "lower_bound": null,
+  "upper_bound": null,
+  "raw_dual_bound": null,
+  "solver_objective": null,
+  "decisions": null,
+  "objective": null,
+  "changed_missions": null,
+  "changed_uavs": null,
+  "mission_changes": null,
+  "chain_changes": null,
+  "witness_source": null,
+  "independent_verification": false,
+  "rejected_candidates": [
+    {
+      "source": "origin",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    }
+  ],
+  "solver_status": "Infeasible",
+  "solver_nodes": 0,
+  "solver": "HiGHS 1.15.1",
+  "solver_threads": 1,
+  "started_utc": "2026-10-12T01:18:43.389703+00:00",
+  "budget_seconds": 30.0,
+  "elapsed_seconds": 0.8375556999817491,
+  "query_build_seconds": 0.630645899916999,
+  "base_build_seconds_in_query": 0.5487676999764517,
+  "preparation_seconds_cumulative": 0.550490100053139,
+  "solver_seconds": 0.20595940004568547,
+  "validation_seconds": 0.0009504000190645456,
+  "completed_within_budget": true,
+  "variables": 10927,
+  "constraints": 4017,
+  "query": {
+    "prefix": 6,
+    "allowed": [
+      "U07"
+    ],
+    "mission_budget": null
+  },
+  "query_key": "j6__U07__kall",
+  "mode": "cross_query_reuse",
+  "evidence": "direct_restricted_MIP_or_static_witness",
+  "direct_solver_called": true
+}

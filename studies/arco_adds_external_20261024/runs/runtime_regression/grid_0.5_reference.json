@@ -1,0 +1,115 @@
+{
+  "record_id": "TOY_GRID_0.5",
+  "optimal": true,
+  "proved_prefix": 6,
+  "decisions": [
+    {
+      "mission_id": "M001",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 3.0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M002",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "DIRECT",
+      "depart_min": 5.0,
+      "charge_blocks": 0
+    }
+  ],
+  "objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 0.0,
+    "repair_distance": 0.6000000000000001,
+    "weighted_tardiness_min": 0.0,
+    "delay_and_charge_wait_min": 8.0,
+    "energy_kwh": 0.02699430477160137
+  },
+  "phases": [
+    {
+      "tier": "urgent_holds",
+      "status": 0,
+      "seconds": 0.00047789979726076126,
+      "upper_bound": 0.0,
+      "lower_bound": 0.0,
+      "mip_gap": 0.0,
+      "proof": "final-departure pad quota",
+      "public_bound_rows": [
+        {
+          "origin": "H",
+          "final_missions": [
+            "M002"
+          ],
+          "movement_quota": 12
+        }
+      ]
+    },
+    {
+      "tier": "total_holds",
+      "status": 0,
+      "seconds": 0.00029690004885196686,
+      "upper_bound": 0.0,
+      "lower_bound": 0.0,
+      "mip_gap": 0.0,
+      "proof": "final-departure pad quota",
+      "public_bound_rows": [
+        {
+          "origin": "H",
+          "final_missions": [
+            "M002"
+          ],
+          "movement_quota": 12
+        }
+      ]
+    },
+    {
+      "tier": "repair_distance",
+      "status": 0,
+      "seconds": 0.01007159985601902,
+      "upper_bound": 0.6,
+      "lower_bound": 0.6,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "weighted_tardiness_min",
+      "status": 0,
+      "seconds": 0.0011378000490367413,
+      "upper_bound": 0.0,
+      "lower_bound": 0.0,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "delay_and_charge_wait_min",
+      "status": 0,
+      "seconds": 0.0010336004197597504,
+      "upper_bound": 8.0,
+      "lower_bound": 8.0,
+      "mip_gap": 0.0
+    },
+    {
+      "tier": "energy_kwh",
+      "status": 0,
+      "seconds": 0.0009531001560389996,
+      "upper_bound": 0.02699430477160137,
+      "lower_bound": 0.02699430477160137,
+      "mip_gap": 0.0
+    }
+  ],
+  "build_seconds": 0.0003021000884473324,
+  "total_seconds": 0.017756500281393528,
+  "variables": 22,
+  "constraints": 63,
+  "prefix_values": "extracted finite-option plan",
+  "solver_threads": 1,
+  "solver": "HiGHS 1.15.1",
+  "warm_start": "preceding tier integer plan",
+  "continuous_prefix_tol": 1e-05,
+  "anytime_preserves_seed": true,
+  "service_bound_proofs": true,
+  "runtime_version": "adds_complete_sortie_v1",
+  "l3_scale": 10.0,
+  "complete_sorties": true
+}

@@ -1,0 +1,616 @@
+{
+  "record_id": "ADDS_PACZ02_N06__CONTROL",
+  "schema_version": "arco_continuous_events_v1",
+  "adaptation": "ADDS complete fixed delivery sortie: loaded service, fixed empty return",
+  "model": {
+    "version": "M100_Rodrigues_arxiv_v1_20211122",
+    "airframe_instrumented_mass_kg": 3.68,
+    "rotor_diameter_m": 0.3302,
+    "rotors": 4,
+    "air_density_kg_m3": 1.225,
+    "g_m_s2": 9.80665,
+    "cruise_speed_m_s": 10.0,
+    "cruise_altitude_m": 25.0,
+    "takeoff_speed_m_s": 2.5,
+    "landing_speed_m_s": 2.0,
+    "power_coefficients": {
+      "takeoff": [
+        1.97,
+        13.8
+      ],
+      "cruise": [
+        1.69,
+        16.8
+      ],
+      "landing": [
+        1.62,
+        -4.7
+      ]
+    },
+    "battery_capacity_kwh": 0.0999,
+    "reserve_fraction": 0.2,
+    "initial_fraction": 0.8,
+    "charger_input_power_w": 100.0,
+    "charging_efficiency": 0.88,
+    "slot_min": 5,
+    "max_charge_minutes": 15
+  },
+  "timing": {
+    "departure_grid_min": 0.5,
+    "resource_window_min": 1,
+    "pad_window_min": 1,
+    "charge_block_min": 5,
+    "max_charge_blocks": 0,
+    "turnaround_min": 0,
+    "load_min": 0.08333333333333333,
+    "unload_min": 0.08333333333333333,
+    "horizon_departure_min": 12
+  },
+  "nodes": [
+    {
+      "vertiport_id": "PACZ_02",
+      "xy_km": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "vertiport_id": "BUD_693",
+      "xy_km": [
+        0.015057879110099748,
+        -0.013063130930066108
+      ]
+    },
+    {
+      "vertiport_id": "BUD_991",
+      "xy_km": [
+        0.09995861196005718,
+        -0.037198052699677644
+      ]
+    },
+    {
+      "vertiport_id": "BUD_671",
+      "xy_km": [
+        -0.026075769339920955,
+        0.127199153220281
+      ]
+    },
+    {
+      "vertiport_id": "BUD_963",
+      "xy_km": [
+        0.04985363953001797,
+        -0.056500363379716874
+      ]
+    },
+    {
+      "vertiport_id": "BUD_484",
+      "xy_km": [
+        0.19916512598004193,
+        0.059935044369660316
+      ]
+    },
+    {
+      "vertiport_id": "BUD_723",
+      "xy_km": [
+        0.17872399404994213,
+        0.14903018451016398
+      ]
+    }
+  ],
+  "corridors": [
+    {
+      "corridor_id": "C_PACZ_02_BUD_484",
+      "origin": "PACZ_02",
+      "destination": "BUD_484",
+      "distance_km": 0.2079878769309383,
+      "geometry_xy_km": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.19916512598004193,
+          0.059935044369660316
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_BUD_484_PACZ_02",
+      "origin": "BUD_484",
+      "destination": "PACZ_02",
+      "distance_km": 0.2079878769309383,
+      "geometry_xy_km": [
+        [
+          0.19916512598004193,
+          0.059935044369660316
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_PACZ_02_BUD_671",
+      "origin": "PACZ_02",
+      "destination": "BUD_671",
+      "distance_km": 0.12984440814538484,
+      "geometry_xy_km": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.026075769339920955,
+          0.127199153220281
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_BUD_671_PACZ_02",
+      "origin": "BUD_671",
+      "destination": "PACZ_02",
+      "distance_km": 0.12984440814538484,
+      "geometry_xy_km": [
+        [
+          -0.026075769339920955,
+          0.127199153220281
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_PACZ_02_BUD_693",
+      "origin": "PACZ_02",
+      "destination": "BUD_693",
+      "distance_km": 0.019934520636083232,
+      "geometry_xy_km": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.015057879110099748,
+          -0.013063130930066108
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_BUD_693_PACZ_02",
+      "origin": "BUD_693",
+      "destination": "PACZ_02",
+      "distance_km": 0.019934520636083232,
+      "geometry_xy_km": [
+        [
+          0.015057879110099748,
+          -0.013063130930066108
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_PACZ_02_BUD_723",
+      "origin": "PACZ_02",
+      "destination": "BUD_723",
+      "distance_km": 0.23270638569729296,
+      "geometry_xy_km": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.17872399404994213,
+          0.14903018451016398
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_BUD_723_PACZ_02",
+      "origin": "BUD_723",
+      "destination": "PACZ_02",
+      "distance_km": 0.23270638569729296,
+      "geometry_xy_km": [
+        [
+          0.17872399404994213,
+          0.14903018451016398
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_PACZ_02_BUD_963",
+      "origin": "PACZ_02",
+      "destination": "BUD_963",
+      "distance_km": 0.07535035790511563,
+      "geometry_xy_km": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.04985363953001797,
+          -0.056500363379716874
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_BUD_963_PACZ_02",
+      "origin": "BUD_963",
+      "destination": "PACZ_02",
+      "distance_km": 0.07535035790511563,
+      "geometry_xy_km": [
+        [
+          0.04985363953001797,
+          -0.056500363379716874
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_PACZ_02_BUD_991",
+      "origin": "PACZ_02",
+      "destination": "BUD_991",
+      "distance_km": 0.10665561039921566,
+      "geometry_xy_km": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.09995861196005718,
+          -0.037198052699677644
+        ]
+      ]
+    },
+    {
+      "corridor_id": "C_BUD_991_PACZ_02",
+      "origin": "BUD_991",
+      "destination": "PACZ_02",
+      "distance_km": 0.10665561039921566,
+      "geometry_xy_km": [
+        [
+          0.09995861196005718,
+          -0.037198052699677644
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "fleet": [
+    {
+      "uav_id": "U01",
+      "initial_soc_kwh": 0.07992,
+      "battery_capacity_kwh": 0.0999,
+      "reserve_kwh": 0.01998,
+      "available_min": 0,
+      "initial_vertiport": "PACZ_02"
+    },
+    {
+      "uav_id": "U02",
+      "initial_soc_kwh": 0.07992,
+      "battery_capacity_kwh": 0.0999,
+      "reserve_kwh": 0.01998,
+      "available_min": 0,
+      "initial_vertiport": "PACZ_02"
+    },
+    {
+      "uav_id": "U03",
+      "initial_soc_kwh": 0.07992,
+      "battery_capacity_kwh": 0.0999,
+      "reserve_kwh": 0.01998,
+      "available_min": 0,
+      "initial_vertiport": "PACZ_02"
+    }
+  ],
+  "missions": [
+    {
+      "mission_id": "M001",
+      "uav_id": "U01",
+      "sequence_index": 1,
+      "origin": "PACZ_02",
+      "destination": "BUD_693",
+      "payload_kg": 0.5,
+      "priority": "routine",
+      "release_min": 0,
+      "due_min": 3.908224201060139,
+      "paths": [
+        {
+          "path_id": "DIRECT",
+          "origin": "PACZ_02",
+          "destination": "BUD_693",
+          "corridor_ids": [
+            "C_PACZ_02_BUD_693"
+          ]
+        }
+      ],
+      "incoming": null,
+      "return_path": {
+        "path_id": "DIRECT",
+        "origin": "BUD_693",
+        "destination": "PACZ_02",
+        "corridor_ids": [
+          "C_BUD_693_PACZ_02"
+        ]
+      },
+      "source_demand_excel_row": 79,
+      "source_demand_id": 78
+    },
+    {
+      "mission_id": "M002",
+      "uav_id": "U02",
+      "sequence_index": 1,
+      "origin": "PACZ_02",
+      "destination": "BUD_991",
+      "payload_kg": 0.5,
+      "priority": "routine",
+      "release_min": 0,
+      "due_min": 4.05275935066536,
+      "paths": [
+        {
+          "path_id": "DIRECT",
+          "origin": "PACZ_02",
+          "destination": "BUD_991",
+          "corridor_ids": [
+            "C_PACZ_02_BUD_991"
+          ]
+        }
+      ],
+      "incoming": null,
+      "return_path": {
+        "path_id": "DIRECT",
+        "origin": "BUD_991",
+        "destination": "PACZ_02",
+        "corridor_ids": [
+          "C_BUD_991_PACZ_02"
+        ]
+      },
+      "source_demand_excel_row": 105,
+      "source_demand_id": 104
+    },
+    {
+      "mission_id": "M003",
+      "uav_id": "U03",
+      "sequence_index": 1,
+      "origin": "PACZ_02",
+      "destination": "BUD_671",
+      "payload_kg": 0.5,
+      "priority": "routine",
+      "release_min": 0,
+      "due_min": 5.591407346908975,
+      "paths": [
+        {
+          "path_id": "DIRECT",
+          "origin": "PACZ_02",
+          "destination": "BUD_671",
+          "corridor_ids": [
+            "C_PACZ_02_BUD_671"
+          ]
+        }
+      ],
+      "incoming": null,
+      "return_path": {
+        "path_id": "DIRECT",
+        "origin": "BUD_671",
+        "destination": "PACZ_02",
+        "corridor_ids": [
+          "C_BUD_671_PACZ_02"
+        ]
+      },
+      "source_demand_excel_row": 115,
+      "source_demand_id": 114
+    },
+    {
+      "mission_id": "M004",
+      "uav_id": "U01",
+      "sequence_index": 2,
+      "origin": "PACZ_02",
+      "destination": "BUD_963",
+      "payload_kg": 0.5,
+      "priority": "routine",
+      "release_min": 0,
+      "due_min": 5.500583929841859,
+      "paths": [
+        {
+          "path_id": "DIRECT",
+          "origin": "PACZ_02",
+          "destination": "BUD_963",
+          "corridor_ids": [
+            "C_PACZ_02_BUD_963"
+          ]
+        }
+      ],
+      "incoming": null,
+      "return_path": {
+        "path_id": "DIRECT",
+        "origin": "BUD_963",
+        "destination": "PACZ_02",
+        "corridor_ids": [
+          "C_BUD_963_PACZ_02"
+        ]
+      },
+      "source_demand_excel_row": 128,
+      "source_demand_id": 127
+    },
+    {
+      "mission_id": "M005",
+      "uav_id": "U02",
+      "sequence_index": 2,
+      "origin": "PACZ_02",
+      "destination": "BUD_484",
+      "payload_kg": 0.5,
+      "priority": "routine",
+      "release_min": 0,
+      "due_min": 7.721646461551564,
+      "paths": [
+        {
+          "path_id": "DIRECT",
+          "origin": "PACZ_02",
+          "destination": "BUD_484",
+          "corridor_ids": [
+            "C_PACZ_02_BUD_484"
+          ]
+        }
+      ],
+      "incoming": null,
+      "return_path": {
+        "path_id": "DIRECT",
+        "origin": "BUD_484",
+        "destination": "PACZ_02",
+        "corridor_ids": [
+          "C_BUD_484_PACZ_02"
+        ]
+      },
+      "source_demand_excel_row": 156,
+      "source_demand_id": 155
+    },
+    {
+      "mission_id": "M006",
+      "uav_id": "U03",
+      "sequence_index": 2,
+      "origin": "PACZ_02",
+      "destination": "BUD_723",
+      "payload_kg": 0.5,
+      "priority": "routine",
+      "release_min": 0,
+      "due_min": 7.762843976162155,
+      "paths": [
+        {
+          "path_id": "DIRECT",
+          "origin": "PACZ_02",
+          "destination": "BUD_723",
+          "corridor_ids": [
+            "C_PACZ_02_BUD_723"
+          ]
+        }
+      ],
+      "incoming": null,
+      "return_path": {
+        "path_id": "DIRECT",
+        "origin": "BUD_723",
+        "destination": "PACZ_02",
+        "corridor_ids": [
+          "C_BUD_723_PACZ_02"
+        ]
+      },
+      "source_demand_excel_row": 264,
+      "source_demand_id": 263
+    }
+  ],
+  "resources": {
+    "corridor": {
+      "C_PACZ_02_BUD_484": 3,
+      "C_BUD_484_PACZ_02": 3,
+      "C_PACZ_02_BUD_671": 3,
+      "C_BUD_671_PACZ_02": 3,
+      "C_PACZ_02_BUD_693": 3,
+      "C_BUD_693_PACZ_02": 3,
+      "C_PACZ_02_BUD_723": 3,
+      "C_BUD_723_PACZ_02": 3,
+      "C_PACZ_02_BUD_963": 3,
+      "C_BUD_963_PACZ_02": 3,
+      "C_PACZ_02_BUD_991": 3,
+      "C_BUD_991_PACZ_02": 3
+    },
+    "pad": {
+      "PACZ_02": 3,
+      "BUD_693": 6,
+      "BUD_991": 6,
+      "BUD_671": 6,
+      "BUD_963": 6,
+      "BUD_484": 6,
+      "BUD_723": 6
+    },
+    "charger": {
+      "PACZ_02": 0,
+      "BUD_693": 0,
+      "BUD_991": 0,
+      "BUD_671": 0,
+      "BUD_963": 0,
+      "BUD_484": 0,
+      "BUD_723": 0
+    }
+  },
+  "baseline": {
+    "decisions": [
+      {
+        "mission_id": "M001",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "DIRECT",
+        "depart_min": 0.5,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M002",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "DIRECT",
+        "depart_min": 0.5,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M003",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "DIRECT",
+        "depart_min": 2.0,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M004",
+        "uav_id": "U01",
+        "held": false,
+        "path_id": "DIRECT",
+        "depart_min": 2.0,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M005",
+        "uav_id": "U02",
+        "held": false,
+        "path_id": "DIRECT",
+        "depart_min": 4.0,
+        "charge_blocks": 0
+      },
+      {
+        "mission_id": "M006",
+        "uav_id": "U03",
+        "held": false,
+        "path_id": "DIRECT",
+        "depart_min": 4.0,
+        "charge_blocks": 0
+      }
+    ]
+  },
+  "intervention": {
+    "resource_intervals": [],
+    "initial_soc_overrides": {}
+  },
+  "source_context": {
+    "dataset": "ADDS v1.0",
+    "city_case": "Katowice",
+    "locker_id": "PACZ_02",
+    "base_id": "ADDS_PACZ02_N06",
+    "geometry": "Saved simulation model geometry in metres; translated to a local kilometre frame; not map-registered",
+    "demand": "Generated workbook records, not observed UAV deliveries",
+    "parcel_availability": "Selected parcels available at the locker at t=0",
+    "dispatch": "Three fixed chains assigned round-robin in source workbook order",
+    "resource": "Hub capacity is the declared count of takeoff/landing reservations per one-minute window, not locker storage capacity",
+    "return_policy": "Return begins immediately after recipient unloading; every executed task returns to the same hub"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "protocol": "target_coordination_direct_v1",
+  "record_id": "NET_S02_C",
+  "origin_name": "G",
+  "target_prefix": 2,
+  "target_mode": "match",
+  "target_objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 1.0,
+    "repair_distance": 1055.0,
+    "weighted_tardiness_min": 9.0,
+    "delay_and_charge_wait_min": 71.0,
+    "energy_kwh": 0.09181219337564318
+  },
+  "quality_tolerance": [
+    0.0,
+    0.0,
+    1e-07,
+    1e-05,
+    1e-05,
+    0.0001
+  ],
+  "minimize": "missions",
+  "allowed_uavs": [
+    "U01",
+    "U02",
+    "U03"
+  ],
+  "task_budget": null,
+  "chain_budget": null,
+  "no_good_supports": [],
+  "status": "optimal",
+  "feasible": true,
+  "optimal": true,
+  "lower_bound": 2,
+  "upper_bound": 2,
+  "raw_dual_bound": 1.9999999999999991,
+  "solver_objective": 2.0,
+  "decisions": [
+    {
+      "mission_id": "M001",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 0,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M002",
+      "uav_id": "U01",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 47,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M003",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 1,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M004",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 14,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M005",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 21,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M006",
+      "uav_id": "U02",
+      "held": false,
+      "path_id": "P2",
+      "depart_min": 46,
+      "charge_blocks": 0
+    },
+    {
+      "mission_id": "M007",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "P1",
+      "depart_min": 13,
+      "charge_blocks": 2
+    },
+    {
+      "mission_id": "M008",
+      "uav_id": "U03",
+      "held": false,
+      "path_id": "P2",
+      "depart_min": 47,
+      "charge_blocks": 1
+    },
+    {
+      "mission_id": "M009",
+      "uav_id": "U03",
+      "held": true,
+      "path_id": null,
+      "depart_min": null,
+      "charge_blocks": 0
+    }
+  ],
+  "objective": {
+    "urgent_holds": 0.0,
+    "total_holds": 1.0,
+    "repair_distance": 1081.2,
+    "weighted_tardiness_min": 80.4357445826456,
+    "delay_and_charge_wait_min": 102.0,
+    "energy_kwh": 0.09576133429675342
+  },
+  "changed_missions": [
+    "M006",
+    "M008"
+  ],
+  "changed_uavs": [
+    "U02",
+    "U03"
+  ],
+  "mission_changes": 2,
+  "chain_changes": 2,
+  "witness_source": "MIP",
+  "independent_verification": true,
+  "rejected_candidates": [
+    {
+      "source": "origin",
+      "admissible": true,
+      "errors": [],
+      "target_met": false
+    }
+  ],
+  "solver_status": "Optimal",
+  "solver_nodes": 1,
+  "solver": "HiGHS 1.15.1",
+  "solver_threads": 1,
+  "started_utc": "2026-10-11T20:27:23.963538+00:00",
+  "budget_seconds": 30.0,
+  "elapsed_seconds": 1.0324808000586927,
+  "query_build_seconds": 0.06130930013023317,
+  "base_build_seconds_in_query": 0.054489900008775294,
+  "preparation_seconds_cumulative": 0.05467139999382198,
+  "solver_seconds": 0.9703303000424057,
+  "validation_seconds": 0.0008411998860538006,
+  "completed_within_budget": true,
+  "variables": 1705,
+  "constraints": 1210,
+  "research_round": "initial",
+  "input_task_path": "arco_closing_study/networks/tasks/NET_S02_C.json",
+  "input_reference_path": "arco_closing_study/networks/references/NET_S02_C.json"
+}

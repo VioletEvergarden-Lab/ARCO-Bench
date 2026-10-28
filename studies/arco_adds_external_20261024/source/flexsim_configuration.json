@@ -1,0 +1,857 @@
+{
+  "source": "source\\flexsim_8to24mb_sample.bin",
+  "source_sha256": "135f7e094274b10e9f8400ce9c821dc67d0eb78a357447fcf0a93c0e780a3613",
+  "source_start_offset": 8388608,
+  "decode_rule": "struct.unpack('>d', bytes.fromhex(h[8:] + h[:8]))[0]",
+  "units": {
+    "Time": {
+      "Name": "second",
+      "Abbreviation": "s",
+      "Multiple": 1.0,
+      "Plural": "seconds"
+    },
+    "Length": {
+      "Name": "meter",
+      "Abbreviation": "m",
+      "Multiple": 1.0,
+      "Plural": "meters"
+    },
+    "Fluid": {
+      "Name": "liter",
+      "Abbreviation": "l",
+      "Multiple": 1.0,
+      "Plural": "liters",
+      "Type": 0.0
+    }
+  },
+  "units_evidence": {
+    "offset_start": 12659789,
+    "offset_end_exclusive": 12666841,
+    "sha256": "7b76039cfc86947722f0dcf08c85aaab08c04f2ee42d0455763354213aa3c123"
+  },
+  "dane_table_rows": [
+    {
+      "row": 1,
+      "values": [
+        "Liczba paczek",
+        150.0
+      ],
+      "saved_column_names": [
+        "Liczba p",
+        "Col 2"
+      ]
+    },
+    {
+      "row": 2,
+      "values": [
+        "",
+        0.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 3,
+      "values": [
+        "",
+        0.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 4,
+      "values": [
+        "",
+        0.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 5,
+      "values": [
+        "Średnie zużycie paliwa kurier diesel [l/100km]",
+        10.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 6,
+      "values": [
+        "Średnie zużycie paliwa kurier benz [l/100km]",
+        12.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 7,
+      "values": [
+        "Średnie zużycie enegii kurier elektr [kWh/100km]",
+        20.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 8,
+      "values": [
+        "Wartość energetyczna Diesla [kWh/l]",
+        10.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 9,
+      "values": [
+        "Wartość energetyczna Benz [kWh/l]",
+        9.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 10,
+      "values": [
+        "Struktura pojazdow osobowych - diesel %",
+        55.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 11,
+      "values": [
+        "Struktura pojazdow osobowych - benz %",
+        40.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 12,
+      "values": [
+        "Struktura pojazdow osobowych - elektryczne %",
+        5.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 13,
+      "values": [
+        "Minimalna odległość do podrózy niepieszej [m]",
+        1500.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 14,
+      "values": [
+        "Średnie zużycie paliwa osobowy diesel [l/100km]",
+        7.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 15,
+      "values": [
+        "Średnie zużycie paliwa osobowy benz [l/100km]",
+        8.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 16,
+      "values": [
+        "Średnie zużycie enegii osobowy elektr [kWh/100km]",
+        13.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 17,
+      "values": [
+        "Przelicznik 1l diesla na CO2 [kg/l]",
+        2.7
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 18,
+      "values": [
+        "Przelicznik 1l benzyny na CO2 [kg/l]",
+        2.3
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 19,
+      "values": [
+        "Przelicznik 1l kWhna CO2 [kg/kWh]",
+        0.6571
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 20,
+      "values": [
+        "Liczba dronów w paczkomacie",
+        2.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 21,
+      "values": [
+        "Wysokość przelotu drona]",
+        7.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 22,
+      "values": [
+        "Max liczba pięter budynku wielorodzinnego",
+        10.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 23,
+      "values": [
+        "Czas załadunku/rozładunku 1 paczki w dronie",
+        15.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 24,
+      "values": [
+        "Max ładownosć drona [kg]",
+        10.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 25,
+      "values": [
+        "Max prędkość drona na pusto [m/s]",
+        16.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 26,
+      "values": [
+        "Czas załadunku drona [s]",
+        5.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 27,
+      "values": [
+        "Czas rozładunku drona [s]",
+        5.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 28,
+      "values": [
+        "Wsp redukcji predkosci drona wzgledem wagi",
+        0.5
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 29,
+      "values": [
+        "Maks. ladownosc drona [kg]",
+        6.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 30,
+      "values": [
+        "wsp. zwiekszenia odległosci",
+        5.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 31,
+      "values": [
+        "Miesiąc wiatrów {1,4,7,11}",
+        4.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 32,
+      "values": [
+        "Min prędkość drona]",
+        5.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 33,
+      "values": [
+        "Max prędkość drona]",
+        25.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 34,
+      "values": [
+        "wsk kary za wiatr boczny",
+        0.2
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 35,
+      "values": [
+        "",
+        0.0
+      ],
+      "saved_column_names": [
+        "",
+        ""
+      ]
+    }
+  ],
+  "dane_evidence": {
+    "offset_start": 22107852,
+    "offset_end_exclusive": 22121882,
+    "sha256": "2d1e1a2d1735e88dfbc0a3963ce2a0835f990370cf8431997447cb7c0b1baa6f"
+  },
+  "dane_row_references_in_captured_code": {
+    "30": {
+      "column": 2,
+      "occurrence_count": 3,
+      "code_offsets": [
+        14154124,
+        14165503,
+        14189377
+      ]
+    },
+    "1": {
+      "column": 2,
+      "occurrence_count": 5,
+      "code_offsets": [
+        14231589,
+        16565934,
+        18248098,
+        18363965,
+        19005226
+      ]
+    },
+    "2": {
+      "column": 2,
+      "occurrence_count": 5,
+      "code_offsets": [
+        14231589,
+        16565934,
+        18248098,
+        18363965,
+        19005226
+      ]
+    },
+    "3": {
+      "column": 2,
+      "occurrence_count": 5,
+      "code_offsets": [
+        14231589,
+        16565934,
+        18248098,
+        18363965,
+        19005226
+      ]
+    },
+    "4": {
+      "column": 2,
+      "occurrence_count": 5,
+      "code_offsets": [
+        14231589,
+        16565934,
+        18248098,
+        18363965,
+        19005226
+      ]
+    },
+    "5": {
+      "column": 2,
+      "occurrence_count": 7,
+      "code_offsets": [
+        14653272,
+        15013055,
+        18194564,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "6": {
+      "column": 2,
+      "occurrence_count": 7,
+      "code_offsets": [
+        14653272,
+        15013055,
+        18194564,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "8": {
+      "column": 2,
+      "occurrence_count": 12,
+      "code_offsets": [
+        14653272,
+        15013055,
+        18194564,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "9": {
+      "column": 2,
+      "occurrence_count": 12,
+      "code_offsets": [
+        14653272,
+        15013055,
+        18194564,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "7": {
+      "column": 2,
+      "occurrence_count": 7,
+      "code_offsets": [
+        14653272,
+        15013055,
+        18194564,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "10": {
+      "column": 2,
+      "occurrence_count": 5,
+      "code_offsets": [
+        14653272,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "11": {
+      "column": 2,
+      "occurrence_count": 5,
+      "code_offsets": [
+        14653272,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "12": {
+      "column": 2,
+      "occurrence_count": 5,
+      "code_offsets": [
+        14653272,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "14": {
+      "column": 2,
+      "occurrence_count": 5,
+      "code_offsets": [
+        14653272,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "15": {
+      "column": 2,
+      "occurrence_count": 5,
+      "code_offsets": [
+        14653272,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "16": {
+      "column": 2,
+      "occurrence_count": 5,
+      "code_offsets": [
+        14653272,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "17": {
+      "column": 2,
+      "occurrence_count": 12,
+      "code_offsets": [
+        14653272,
+        15013055,
+        18194564,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "18": {
+      "column": 2,
+      "occurrence_count": 12,
+      "code_offsets": [
+        14653272,
+        15013055,
+        18194564,
+        18486209,
+        18525143,
+        18958321,
+        19150801
+      ]
+    },
+    "19": {
+      "column": 2,
+      "occurrence_count": 14,
+      "code_offsets": [
+        14653272,
+        15013055,
+        17585699,
+        18194564,
+        18486209,
+        18525143,
+        18958321,
+        19113790,
+        19150801
+      ]
+    },
+    "13": {
+      "column": 2,
+      "occurrence_count": 1,
+      "code_offsets": [
+        14808861
+      ]
+    },
+    "20": {
+      "column": 2,
+      "occurrence_count": 10,
+      "code_offsets": [
+        15100479,
+        15273148,
+        16751844,
+        16905890,
+        17597250,
+        17618468,
+        17956438,
+        19020261,
+        19058188,
+        19090006
+      ]
+    },
+    "22": {
+      "column": 2,
+      "occurrence_count": 4,
+      "code_offsets": [
+        15413226,
+        15420113,
+        16428492,
+        16435385
+      ]
+    },
+    "25": {
+      "column": 2,
+      "occurrence_count": 8,
+      "code_offsets": [
+        16182688,
+        17127209,
+        17232248,
+        17313077,
+        17515626,
+        17648528,
+        17859116,
+        19487017
+      ]
+    },
+    "28": {
+      "column": 2,
+      "occurrence_count": 8,
+      "code_offsets": [
+        16182688,
+        17127209,
+        17232248,
+        17313077,
+        17515626,
+        17648528,
+        17859116,
+        19487017
+      ]
+    },
+    "29": {
+      "column": 2,
+      "occurrence_count": 10,
+      "code_offsets": [
+        16182688,
+        17127209,
+        17191876,
+        17232248,
+        17313077,
+        17515626,
+        17648528,
+        17859116,
+        19487017,
+        19728577
+      ]
+    },
+    "31": {
+      "column": 2,
+      "occurrence_count": 1,
+      "code_offsets": [
+        19416582
+      ]
+    },
+    "32": {
+      "column": 2,
+      "occurrence_count": 2,
+      "code_offsets": [
+        19487017,
+        19510309
+      ]
+    },
+    "33": {
+      "column": 2,
+      "occurrence_count": 2,
+      "code_offsets": [
+        19487017,
+        19510309
+      ]
+    },
+    "34": {
+      "column": 2,
+      "occurrence_count": 2,
+      "code_offsets": [
+        19776533,
+        19797332
+      ]
+    }
+  },
+  "network_node_count": 82,
+  "locker_count": 5,
+  "node_table_evidence": {
+    "offset_start": 20013673,
+    "offset_end_exclusive": 20047622,
+    "sha256": "d686986a08efc413d6d243be894b1c4d2cc082b40e0b39f86113ee75b963d687"
+  },
+  "locker_table_evidence": {
+    "offset_start": 20047627,
+    "offset_end_exclusive": 20054483,
+    "sha256": "4ee17d22ed1d10d0af993cb68b43ee5c48d7b7aeaddda46cb8a08c445539ff59"
+  },
+  "locker_distance_checks": [
+    {
+      "locker": "PACZ_01",
+      "node": "10277",
+      "xy_euclidean_model_units": 49.590841891220556,
+      "stored_distance": 247.95420945610277,
+      "ratio": 5.0
+    },
+    {
+      "locker": "PACZ_02",
+      "node": "10065",
+      "xy_euclidean_model_units": 14.461991940135153,
+      "stored_distance": 72.30995970067576,
+      "ratio": 5.0
+    },
+    {
+      "locker": "PACZ_03",
+      "node": "200736",
+      "xy_euclidean_model_units": 73.45689746050284,
+      "stored_distance": 367.2844873025142,
+      "ratio": 5.0
+    },
+    {
+      "locker": "PACZ_04",
+      "node": "200753",
+      "xy_euclidean_model_units": 53.55744279082452,
+      "stored_distance": 267.7872139541226,
+      "ratio": 5.0
+    },
+    {
+      "locker": "PACZ_05",
+      "node": "200749",
+      "xy_euclidean_model_units": 17.165857243397536,
+      "stored_distance": 85.8292862169877,
+      "ratio": 5.000000000000001
+    }
+  ],
+  "GIS_named_node": {
+    "value": "23.2",
+    "interpretation": "Module version, not geographic reference or map configuration.",
+    "evidence": {
+      "offset_start": 13235647,
+      "offset_end_exclusive": 13235707,
+      "sha256": "eeec7c8e7770142ec20bec639a80f34ff1731eb52424746c3249c5d8ec827c07"
+    }
+  },
+  "model_release": {
+    "value": "25.1",
+    "evidence": {
+      "offset_start": 12659683,
+      "offset_end_exclusive": 12659785,
+      "sha256": "f0cd4a624ff90c0f0cd7a0ccf69e053daaa1262bc4d758afbc66f44194780bcc"
+    }
+  },
+  "georeference_keywords_in_this_fragment": {
+    "latitude": 0,
+    "longitude": 0,
+    "EPSG": 0,
+    "ScaleFactor": 0,
+    "projection": 0,
+    "origin": 0
+  },
+  "captured_source_code_count": 165,
+  "distance_multiplier_interpretation": {
+    "Dane_row": 30,
+    "value": 5.0,
+    "source_label": "wsp. zwiekszenia odległosci",
+    "uses_in_captured_code": [
+      "network distance multiplied into userDistance",
+      "nearest building-to-node distance multiplied into Budynki_przeliczone column 8",
+      "nearest locker-to-node distance multiplied into Paczkomaty column 6"
+    ],
+    "coordinate_import": "Wezly, Budynki_przeliczone and Paczkomaty X/Y values passed directly to setloc; no factor 5 applied to XY in these code blocks.",
+    "uav_direct_distance_evidence": {
+      "code_offsets": [
+        15676336,
+        19797332
+      ],
+      "formula": "sqrt((x2-x1)^2+(y2-y1)^2)",
+      "result_column": 5,
+      "energy_use": "Emp or wind-adjusted Emp3 multiplied by direct distance in column 5; no factor 5 in these source blocks.",
+      "caution": "Source inspection of sampled blocks, not a complete dynamic execution trace."
+    },
+    "scope": "The geometric unit is one model meter. The stored ground/access distances have a separate configured inflation factor. This does not establish geographic CRS."
+  },
+  "scope": "Saved model configuration and source strings only; no FlexSim simulation or source-code execution."
+}

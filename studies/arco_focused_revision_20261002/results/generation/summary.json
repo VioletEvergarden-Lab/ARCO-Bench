@@ -1,0 +1,101 @@
+{
+  "protocol": "new_generation_v1_20261003",
+  "scheduled": 96,
+  "completed": 96,
+  "main": {
+    "deepseek": {
+      "scheduled": 24,
+      "statuses": {
+        "admissible": 19,
+        "no_answer": 2,
+        "infeasible": 3
+      },
+      "admissible": 19,
+      "service_target": 19,
+      "reference_quality": 19,
+      "certified_reference_denominator": 24,
+      "available_time": {
+        "hits": 19,
+        "denominator": 24,
+        "median_among_hits": 258.41061850002734
+      }
+    },
+    "luna": {
+      "scheduled": 24,
+      "statuses": {
+        "admissible": 22,
+        "no_answer": 2
+      },
+      "admissible": 22,
+      "service_target": 22,
+      "reference_quality": 22,
+      "certified_reference_denominator": 24,
+      "available_time": {
+        "hits": 22,
+        "denominator": 24,
+        "median_among_hits": 237.31559805001598
+      }
+    }
+  },
+  "all_attempts": {
+    "deepseek": {
+      "scheduled": 48,
+      "statuses": {
+        "admissible": 43,
+        "no_answer": 2,
+        "infeasible": 3
+      },
+      "admissible": 43,
+      "service_target": 43,
+      "reference_quality": 42,
+      "certified_reference_denominator": 48,
+      "available_time": {
+        "hits": 43,
+        "denominator": 48,
+        "median_among_hits": 258.41061850002734
+      }
+    },
+    "luna": {
+      "scheduled": 48,
+      "statuses": {
+        "admissible": 28,
+        "no_answer": 20
+      },
+      "admissible": 28,
+      "service_target": 28,
+      "reference_quality": 26,
+      "certified_reference_denominator": 48,
+      "available_time": {
+        "hits": 28,
+        "denominator": 48,
+        "median_among_hits": 286.50090439998894
+      }
+    }
+  },
+  "main_static_pairing": {
+    "Full-MILP+deepseek": {
+      "completed_model_attempts": 24,
+      "reference_quality": 24,
+      "model_only_reference_quality": 0,
+      "model_strictly_improves": 0
+    },
+    "Full-MILP+luna": {
+      "completed_model_attempts": 24,
+      "reference_quality": 24,
+      "model_only_reference_quality": 0,
+      "model_strictly_improves": 0
+    },
+    "Iter-R4+deepseek": {
+      "completed_model_attempts": 24,
+      "reference_quality": 23,
+      "model_only_reference_quality": 2,
+      "model_strictly_improves": 2
+    },
+    "Iter-R4+luna": {
+      "completed_model_attempts": 24,
+      "reference_quality": 23,
+      "model_only_reference_quality": 2,
+      "model_strictly_improves": 2
+    }
+  }
+}

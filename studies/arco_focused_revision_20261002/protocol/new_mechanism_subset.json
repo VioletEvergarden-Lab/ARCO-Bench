@@ -1,0 +1,15 @@
+{
+  "selection_rule": "For each topology, first S then M then L and ascending network ID with an observed short-to-long increase in both rerouting and charging changes. At most one long task per topology; fixed-route and fixed-charge diagnostics each. No network or generated model output is removed.",
+  "selected_tasks": [
+    "NEW_ladder_L02_long",
+    "NEW_regions_S02_long"
+  ],
+  "restrictions": [
+    "incumbent_service_routes",
+    "incumbent_charge_counts"
+  ],
+  "maximum_solves": 4,
+  "budget_seconds": 1800,
+  "service_prefix": "match the certified unrestricted reference urgent and total holds",
+  "selection_uses": "deterministic short/long reference actions only; before model output"
+}

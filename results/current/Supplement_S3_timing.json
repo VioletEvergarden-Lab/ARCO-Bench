@@ -1,0 +1,101 @@
+[
+  {
+    "source": "MILP_construction",
+    "boundary": "archived six sequential solves; excludes build/load/probe",
+    "n": 72,
+    "mean_sec": 0.08196009722222222,
+    "median_sec": 0.074477,
+    "p95_sec": 0.15347415,
+    "max_sec": 0.174981
+  },
+  {
+    "source": "policy",
+    "boundary": "archived construct(); excludes file loading/writing",
+    "n": 72,
+    "mean_sec": 0.0904923,
+    "median_sec": 0.08127,
+    "p95_sec": 0.17642306000000002,
+    "max_sec": 0.1942095
+  },
+  {
+    "source": "deepseek",
+    "boundary": "archived POST intent to terminal frozen; network/generation/polling/persistence",
+    "n": 72,
+    "mean_sec": 207.4109481388889,
+    "median_sec": 199.36600349999998,
+    "p95_sec": 372.58409720000003,
+    "max_sec": 424.286553
+  },
+  {
+    "source": "policy_deepseek",
+    "boundary": "archived local parse+verify+compare after candidates available",
+    "n": 72,
+    "mean_sec": 0.0008080972222222222,
+    "median_sec": 0.00081695,
+    "p95_sec": 0.0009221850000000001,
+    "max_sec": 0.0012984
+  },
+  {
+    "source": "qwen",
+    "boundary": "archived POST intent to terminal frozen; network/generation/polling/persistence",
+    "n": 72,
+    "mean_sec": 230.12117729166667,
+    "median_sec": 216.1859715,
+    "p95_sec": 358.69588930000003,
+    "max_sec": 569.333909
+  },
+  {
+    "source": "policy_qwen",
+    "boundary": "archived local parse+verify+compare after candidates available",
+    "n": 72,
+    "mean_sec": 0.0007571472222222222,
+    "median_sec": 0.0007891,
+    "p95_sec": 0.0010220950000000004,
+    "max_sec": 0.0013793
+  },
+  {
+    "source": "luna",
+    "boundary": "archived POST intent to terminal frozen; network/generation/polling/persistence",
+    "n": 72,
+    "mean_sec": 427.0268994861111,
+    "median_sec": 312.41574049999997,
+    "p95_sec": 1268.36559955,
+    "max_sec": 3608.452307
+  },
+  {
+    "source": "policy_luna",
+    "boundary": "archived local parse+verify+compare after candidates available",
+    "n": 72,
+    "mean_sec": 0.0007594875,
+    "median_sec": 0.0007646,
+    "p95_sec": 0.0008726500000000001,
+    "max_sec": 0.0010529
+  },
+  {
+    "source": "deepseek_explicit",
+    "boundary": "recorded HTTP-call elapsed; includes failed attempts when timed",
+    "n": 72,
+    "mean_sec": 400.0201445847229,
+    "median_sec": 391.60287639999297,
+    "p95_sec": 680.5294271049846,
+    "max_sec": 932.6861303999904
+  },
+  {
+    "source": "deepseek_complete",
+    "boundary": "recorded POST intent to terminal; includes timed failed attempts",
+    "n": 72,
+    "mean_sec": 317.67032613888887,
+    "median_sec": 310.19844850000004,
+    "p95_sec": 511.20319880000005,
+    "max_sec": 589.693088
+  },
+  {
+    "source": "luna_complete",
+    "boundary": "recorded POST intent to terminal; includes timed failed attempts",
+    "n": 72,
+    "mean_sec": 179.41601202777778,
+    "median_sec": 127.225655,
+    "p95_sec": 316.22609885,
+    "max_sec": 1731.751444
+  }
+]

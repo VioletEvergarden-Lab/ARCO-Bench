@@ -1,0 +1,152 @@
+{
+  "comparison": {
+    "extra_holds": {
+      "G": {
+        "urgent_holds": 8.0,
+        "total_holds": 13.0
+      },
+      "R4": {
+        "urgent_holds": 1.0,
+        "total_holds": 2.0
+      },
+      "Full-MILP": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0
+      },
+      "Iter-R4": {
+        "urgent_holds": 1.0,
+        "total_holds": 3.0
+      },
+      "R_frac": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0
+      }
+    },
+    "quality_gains_over_R4": {
+      "Iter-R4": [
+        "NET_M01_B",
+        "NET_M01_C",
+        "NET_M02_C",
+        "NET_M03_B",
+        "NET_M03_C",
+        "NET_S02_C"
+      ],
+      "R_frac": [
+        "NET_L02_B",
+        "NET_L04_A",
+        "NET_L04_B",
+        "NET_M01_B",
+        "NET_M01_C"
+      ]
+    },
+    "R4_vector_equal_to_historical": {
+      "NET_L01_A": true,
+      "NET_L01_B": true,
+      "NET_L01_C": true,
+      "NET_L02_A": true,
+      "NET_L02_B": true,
+      "NET_L02_C": true,
+      "NET_L03_A": true,
+      "NET_L03_B": true,
+      "NET_L03_C": true,
+      "NET_L04_A": true,
+      "NET_L04_B": true,
+      "NET_L04_C": true,
+      "NET_M01_A": true,
+      "NET_M01_B": true,
+      "NET_M01_C": true,
+      "NET_M02_A": true,
+      "NET_M02_B": true,
+      "NET_M02_C": true,
+      "NET_M03_A": true,
+      "NET_M03_B": true,
+      "NET_M03_C": true,
+      "NET_M04_A": true,
+      "NET_M04_B": true,
+      "NET_M04_C": true,
+      "NET_S01_A": true,
+      "NET_S01_B": true,
+      "NET_S01_C": true,
+      "NET_S02_A": true,
+      "NET_S02_B": true,
+      "NET_S02_C": true,
+      "NET_S03_A": true,
+      "NET_S03_B": true,
+      "NET_S03_C": true,
+      "NET_S04_A": true,
+      "NET_S04_B": true,
+      "NET_S04_C": true
+    },
+    "Full_before_valid_model_response": {
+      "deepseek": {
+        "denominator": 28,
+        "service": 28,
+        "quality": 27,
+        "quality_exceptions": [
+          "NET_L02_B"
+        ]
+      },
+      "luna": {
+        "denominator": 36,
+        "service": 36,
+        "quality": 35,
+        "quality_exceptions": [
+          "NET_L02_B"
+        ]
+      }
+    },
+    "L02_B_times": {
+      "Full-MILP": {
+        "first_service_seconds": "203.0241455999785",
+        "first_reference_quality_seconds": "328.51877979998244",
+        "full_proof_seconds": "401.58891449996736",
+        "total_seconds": "401.5924236999708"
+      },
+      "R_frac": {
+        "first_service_seconds": "21.295202600013",
+        "first_reference_quality_seconds": "254.49885319999885",
+        "full_proof_seconds": "",
+        "total_seconds": "361.12542290001875"
+      },
+      "deepseek": {
+        "historical_response_seconds": 274.066522
+      },
+      "luna": {
+        "historical_response_seconds": 297.473023
+      }
+    }
+  },
+  "new_comparison": {
+    "extra_holds": {
+      "G": {
+        "urgent_holds": 2.0,
+        "total_holds": 6.0
+      },
+      "R4": {
+        "urgent_holds": 0.0,
+        "total_holds": 3.0
+      },
+      "Full-MILP": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0
+      },
+      "Iter-R4": {
+        "urgent_holds": 0.0,
+        "total_holds": 1.0
+      },
+      "R_frac": {
+        "urgent_holds": 0.0,
+        "total_holds": 0.0
+      }
+    },
+    "quality_gains_over_R4": {
+      "Iter-R4": [
+        "NEW_ladder_L02_long",
+        "NEW_regions_L02_long"
+      ],
+      "R_frac": [
+        "NEW_regions_L02_short"
+      ]
+    }
+  }
+}

@@ -1,0 +1,195 @@
+[
+  {
+    "record_id": "ARCO_PHYS_001",
+    "parent_id": "CA12_CORE_004",
+    "incumbent_pre_disruption_valid": true,
+    "incumbent_post_disruption_valid": false,
+    "post_disruption_errors": [
+      "CLOSED_CORRIDOR_SUBMISSION",
+      "CLOSED_CORRIDOR_SUBMISSION",
+      "SOC_RESERVE_VIOLATION",
+      "CLOSED_CORRIDOR_SUBMISSION",
+      "PAD_OVER_CAPACITY"
+    ],
+    "mapped_resource": {
+      "capacity": 1,
+      "kind": "pad",
+      "node": "VP_07",
+      "slot": 2
+    },
+    "selection_metadata": {
+      "ancestor_id": "mtancestor_a5cbcf3ee5d490aba5304a46",
+      "attempt_id": "mtattempt_a5cbcf3ee5d490aba5304a46",
+      "attempt_rank": 88,
+      "coarse_structural_sha256": "9043cf9ec59442c67f3093cfd76534de81070829f95d2b80f81e393a3cdca546",
+      "constraint_incidence_sha256": "a7a7c358778ef63281f4882de3f67a3c20ae5da78fa71cd8e98ce6550a800b76",
+      "coupling_topology": "SHARED_DESTINATION_PAD_CAPACITY",
+      "mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_AND_PRETARGET_CHARGE_WITH_FIXED_DEPARTURES",
+      "objective_role": "L5_DELAY_CHARGE_WAIT_PREFIX_CONTROL",
+      "operational_motif": "THIRD_UAV_ROUTE_DIAMOND",
+      "structural_template_sha256": "66717906e4886eb88ada62b7ae5481c2a9a032fbb0a3d144893a49c6ef3801eb",
+      "target_uav_type": "fixed_wing_vtol_cargo_uav"
+    },
+    "selected_pair": {
+      "family": "composed_resource_repair",
+      "generator_declared_mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_AND_PRETARGET_CHARGE_WITH_FIXED_DEPARTURES",
+      "pair_id": "PAIR_6c8777ce99d9625db5c5",
+      "pair_payload_sha256": "3fbcb441538de992282ab5896a2540153c94670fdc2f1658907dd7d985b8b92c",
+      "route": {
+        "baseline_path_id": "PATH_07",
+        "designated_route_target_path_id": "PATH_07",
+        "mission_id": "MISSION_02",
+        "uav_id": "UAV_02"
+      },
+      "soc": {
+        "guard_kwh": 0.05,
+        "soc_target_mission_id": "MISSION_01",
+        "uav_id": "UAV_02",
+        "uav_type": "fixed_wing_vtol_cargo_uav"
+      }
+    },
+    "generation_attempt": 1,
+    "disruption_rule": "half of remaining chain flight energy after first flight; original closed corridors for 3 slots from first incumbent use; selected resource at maximum incumbent occupancy"
+  },
+  {
+    "record_id": "ARCO_PHYS_002",
+    "parent_id": "CA12_CORE_003",
+    "incumbent_pre_disruption_valid": true,
+    "incumbent_post_disruption_valid": false,
+    "post_disruption_errors": [
+      "CLOSED_CORRIDOR_SUBMISSION",
+      "CLOSED_CORRIDOR_SUBMISSION",
+      "SOC_RESERVE_VIOLATION",
+      "PAD_OVER_CAPACITY"
+    ],
+    "mapped_resource": {
+      "capacity": 1,
+      "kind": "pad",
+      "node": "VP_04",
+      "slot": 4
+    },
+    "selection_metadata": {
+      "ancestor_id": "mtancestor_ff44e7021016ca1f44bbc191",
+      "attempt_id": "mtattempt_ff44e7021016ca1f44bbc191",
+      "attempt_rank": 124,
+      "coarse_structural_sha256": "9043cf9ec59442c67f3093cfd76534de81070829f95d2b80f81e393a3cdca546",
+      "constraint_incidence_sha256": "5de993baec09844a7a444eeb879633fc65afeec4b4083fa1b7ef7995156790c3",
+      "coupling_topology": "SHARED_DESTINATION_PAD_CAPACITY",
+      "mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_PRETARGET_CHARGE_AND_DEPARTURE_RETIMING",
+      "objective_role": "L5_DELAY_CHARGE_WAIT_PREFIX_CONTROL",
+      "operational_motif": "THIRD_UAV_ROUTE_DIAMOND",
+      "structural_template_sha256": "66717906e4886eb88ada62b7ae5481c2a9a032fbb0a3d144893a49c6ef3801eb",
+      "target_uav_type": "multirotor_cargo_uav"
+    },
+    "selected_pair": {
+      "family": "composed_resource_repair",
+      "generator_declared_mechanism": "COMPOSED_EDGE_AVOIDING_REROUTE_PRETARGET_CHARGE_AND_DEPARTURE_RETIMING",
+      "pair_id": "PAIR_b4f436aa780155d21fb6",
+      "pair_payload_sha256": "367c468e7416a4d40655e2ffd9cf40ca59dee41c7e728bc06395b9eb843ed471",
+      "route": {
+        "baseline_path_id": "PATH_10",
+        "designated_route_target_path_id": "PATH_10",
+        "mission_id": "MISSION_04",
+        "uav_id": "UAV_02"
+      },
+      "soc": {
+        "guard_kwh": 0.05,
+        "soc_target_mission_id": "MISSION_05",
+        "uav_id": "UAV_02",
+        "uav_type": "multirotor_cargo_uav"
+      }
+    },
+    "generation_attempt": 1,
+    "disruption_rule": "half of remaining chain flight energy after first flight; original closed corridors for 3 slots from first incumbent use; selected resource at maximum incumbent occupancy"
+  },
+  {
+    "record_id": "ARCO_PHYS_003",
+    "parent_id": "CA12_CORE_001",
+    "incumbent_pre_disruption_valid": true,
+    "incumbent_post_disruption_valid": false,
+    "post_disruption_errors": [
+      "CLOSED_CORRIDOR_SUBMISSION",
+      "SOC_RESERVE_VIOLATION",
+      "PAD_OVER_CAPACITY"
+    ],
+    "mapped_resource": {
+      "capacity": 1,
+      "kind": "pad",
+      "node": "VP_02",
+      "slot": 5
+    },
+    "selection_metadata": {
+      "ancestor_id": "mtancestor_2f6b136f213ce9a875fb23a7",
+      "attempt_id": "mtattempt_2f6b136f213ce9a875fb23a7",
+      "attempt_rank": 51,
+      "coarse_structural_sha256": "d9e84364c9cadcd7a1fab1927c98067c5928fbf49dd392f427ee26ab2d7fd5de",
+      "constraint_incidence_sha256": "1cbcacc19200ad5eecfa3917815035ef17fb0ed5140b20a0d63184d645d7760e",
+      "coupling_topology": "SHARED_ORIGIN_PAD_CAPACITY",
+      "mechanism": "SOC_JOINT_PRETARGET_CHARGE_AND_ROUTE_ADAPTATION",
+      "objective_role": "L5_DELAY_CHARGE_WAIT_PREFIX_CONTROL",
+      "operational_motif": "THIRD_UAV_CHAIN",
+      "structural_template_sha256": "6a5d960ec54462efde30e6b6c171d8ce78bdd6e35c8b32301ac69e58e22381ca",
+      "target_uav_type": "fixed_wing_vtol_cargo_uav"
+    },
+    "selected_pair": {
+      "family": "soc_degradation_repair",
+      "generator_declared_mechanism": "SOC_JOINT_PRETARGET_CHARGE_AND_ROUTE_ADAPTATION",
+      "pair_id": "PAIR_8dc037bf12918709e81a",
+      "pair_payload_sha256": "f17cea6104a756c2722a37605025ee21d659bb4139621b6a6fecd9f115cfc987",
+      "route": null,
+      "soc": {
+        "guard_kwh": 0.05,
+        "soc_target_mission_id": "MISSION_04",
+        "uav_id": "UAV_02",
+        "uav_type": "fixed_wing_vtol_cargo_uav"
+      }
+    },
+    "generation_attempt": 1,
+    "disruption_rule": "half of remaining chain flight energy after first flight; original closed corridors for 3 slots from first incumbent use; selected resource at maximum incumbent occupancy"
+  },
+  {
+    "record_id": "ARCO_PHYS_004",
+    "parent_id": "CA12_CORE_002",
+    "incumbent_pre_disruption_valid": true,
+    "incumbent_post_disruption_valid": false,
+    "post_disruption_errors": [
+      "CLOSED_CORRIDOR_SUBMISSION",
+      "SOC_RESERVE_VIOLATION",
+      "PAD_OVER_CAPACITY"
+    ],
+    "mapped_resource": {
+      "capacity": 1,
+      "kind": "pad",
+      "node": "VP_04",
+      "slot": 7
+    },
+    "selection_metadata": {
+      "ancestor_id": "mtancestor_1dee5e2e8fbc4e7094ae1633",
+      "attempt_id": "mtattempt_1dee5e2e8fbc4e7094ae1633",
+      "attempt_rank": 33,
+      "coarse_structural_sha256": "f478c964ca20b7cb4e261ff3f9e6d52a6b09ed412186c5aeeeb739de0b639dff",
+      "constraint_incidence_sha256": "90c23603cd749d2a1c5f3fc510888c96d699c6b53c4a05dddb5b75f19bfbd36f",
+      "coupling_topology": "SHARED_DESTINATION_PAD_CAPACITY",
+      "mechanism": "SOC_PRETARGET_CHARGE_INCREASE_WITH_FIXED_ROUTES",
+      "objective_role": "L6_ENERGY_PREFIX_CONTROL",
+      "operational_motif": "BASE_SINGLE_RESOURCE",
+      "structural_template_sha256": "9142f8c55f87661293dc93d5778e1654fe46a6e8dcb6533fa8205a4808bcfa74",
+      "target_uav_type": "fixed_wing_vtol_cargo_uav"
+    },
+    "selected_pair": {
+      "family": "soc_degradation_repair",
+      "generator_declared_mechanism": "SOC_PRETARGET_CHARGE_INCREASE_WITH_FIXED_ROUTES",
+      "pair_id": "PAIR_5901829eda8d18a6ad6a",
+      "pair_payload_sha256": "15e3f792c3b49a35247eba4989a1048917e20de3ee9f116aee4a4d6bd4baaa2f",
+      "route": null,
+      "soc": {
+        "guard_kwh": 0.05,
+        "soc_target_mission_id": "MISSION_02",
+        "uav_id": "UAV_02",
+        "uav_type": "fixed_wing_vtol_cargo_uav"
+      }
+    },
+    "generation_attempt": 1,
+    "disruption_rule": "half of remaining chain flight energy after first flight; original closed corridors for 3 slots from first incumbent use; selected resource at maximum incumbent occupancy"
+  }
+]

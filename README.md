@@ -6,13 +6,12 @@ The saved evidence covers Core-72, controlled network studies, coordination and 
 
 ## Install and run
 
-Use Python 3.12. The recorded scoring environment is Python 3.12.4, NumPy 1.26.4 and SciPy 1.13.1 on 64-bit Windows. From the package directory:
+The supported and tested platform for this replication package, including all eight study checks, is 64-bit Windows with Python 3.12.4, NumPy 1.26.4 and SciPy 1.13.1. The complete study replay is not supported on Linux or macOS in this version. From the package directory:
 
 ```sh
 python -m venv .venv
 # Windows PowerShell:
 .\.venv\Scripts\Activate.ps1
-# Linux/macOS: source .venv/bin/activate
 python -m pip install -r requirements.txt
 python -B smoke_submission.py
 python -B rescore.py --responses responses/luna_complete.jsonl --output local_results/luna

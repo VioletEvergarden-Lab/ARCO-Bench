@@ -1,6 +1,8 @@
 # Reproducing the saved results
 
-Run commands from the directory containing `README.md`. Python 3.12.4 on Windows x86-64 is the recorded environment. The Core-72 scorer requires NumPy 1.26.4 and SciPy 1.13.1. Study replay also imports HiGHS/highspy 1.15.1, NetworkX 3.2.1 and Matplotlib 3.8.4; openpyxl 3.1.5 reads the ADDS workbook.
+Run commands from the directory containing `README.md`. The supported and tested platform for the complete replay below is Windows x86-64 with Python 3.12.4. The Core-72 scorer requires NumPy 1.26.4 and SciPy 1.13.1. Study replay also imports HiGHS/highspy 1.15.1, NetworkX 3.2.1 and Matplotlib 3.8.4; openpyxl 3.1.5 reads the ADDS workbook.
+
+The eight-group study entry is Windows-only in this version: archived helpers import `msvcrt` and read Windows-style paths in saved records. Linux and macOS are not supported for the complete study replay; success of an individual command does not establish full-platform support.
 
 ```sh
 python -m pip install -r requirements-studies.txt

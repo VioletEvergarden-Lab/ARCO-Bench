@@ -1,6 +1,6 @@
 """Post-development transfer on four prespecified fresh paired network bases.
 Reuses unchanged generation/solver/verifier; writes only current research folder.
-Run: D:\\Code\\python.exe arco_contribution_20261011/scripts/fresh_transfer.py all --workers 2
+Run: python studies/arco_contribution_20261011/scripts/fresh_transfer.py all --workers 2
 Resume-safe: saved references and per-query terminal records are reused.
 """
 from pathlib import Path

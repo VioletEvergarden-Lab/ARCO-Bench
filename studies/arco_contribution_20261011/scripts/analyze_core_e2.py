@@ -1,6 +1,6 @@
 """Controlled Core E2: four complete Luna misses and four DeepSeek controls.
 Only replay saved decisions and derive support/budget answers; no optimization/API.
-Run: D:\\Code\\python.exe arco_contribution_20261011/scripts/analyze_core_e2.py
+Run: python studies/arco_contribution_20261011/scripts/analyze_core_e2.py
 """
 from pathlib import Path
 from collections import Counter

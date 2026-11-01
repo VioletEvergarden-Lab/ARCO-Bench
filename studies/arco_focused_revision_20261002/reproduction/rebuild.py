@@ -1,4 +1,4 @@
-"""Rebuild result tables and vector figures from archived outputs only."""
+"""Rebuild result tables from archived outputs only."""
 from pathlib import Path
 import argparse,subprocess,sys
 ROOT=Path(__file__).resolve().parents[1]
@@ -25,7 +25,7 @@ def main():
         if count!=n and not a.allow_partial:raise SystemExit(f'Incomplete stored comparison {folder.name}: {count}/{n}')
     run('mechanism_metrics.py');run('preference_analyze.py')
     run('physical_sensitivity.py','replay');run('summarize_physics_core.py')
-    # This also rebuilds reference, restriction, paired-event and figure outputs.
+    # This also rebuilds reference, restriction and paired-event tables.
     run('new_offline_summary.py')
     run('optimization_summary.py')
     run('optimization_summary.py','--runs',ROOT/'results/new_comparison/runs','--references',ROOT/'new_networks/references','--expected','24')
@@ -34,6 +34,5 @@ def main():
     run('score_new_models.py');run('selection_arrival_analysis.py')
     run('analyze_generated_structure.py')
     run('summarize_final_generation.py')
-    run('draw_figure3.py');run('draw_focused_results.py')
-    print('Saved-result tables and figures rebuilt; optimizer calls = 0; model requests = 0.')
+    print('Saved-result tables rebuilt; optimizer calls = 0; model requests = 0.')
 if __name__=='__main__':main()

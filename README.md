@@ -19,7 +19,7 @@ python -B rescore.py --responses responses/luna_complete.jsonl --output local_re
 
 The smoke check prints `PASS`. The scoring example writes `local_results/luna/SUMMARY.json` and `SCORED_RECORDS.jsonl`; the saved Luna panel contains 72 records and 68 reference-quality repairs. These commands disable network connections and require no API key.
 
-Install `requirements-studies.txt` for the network studies, saved-query diagnostics and figure scripts. Those studies use HiGHS/highspy 1.15.1, NetworkX 3.2.1 and Matplotlib 3.8.4. Installation may download packages; the bundled experiment inputs and saved-output checks work offline.
+Install `requirements-studies.txt` for the network studies and saved-query diagnostics. Those studies use HiGHS/highspy 1.15.1 and NetworkX 3.2.1; openpyxl 3.1.5 reads the ADDS workbook. Installation may download packages; the bundled experiment inputs and saved-output checks work offline.
 
 ## Contents
 

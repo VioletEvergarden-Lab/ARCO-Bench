@@ -1,9 +1,8 @@
-"""Rebuild paired-study tables and vector figures, without optimization or API use."""
+"""Rebuild paired-study tables without optimization or API use."""
 import copy,csv,hashlib,itertools,statistics
 from new_networks import ROOT,OUT,Engine,read,write
 from new_references import summarize
 from new_mechanisms import summarize as event_summary,charger_order
-from new_figures import pairs,case
 
 def run():
  summarize();event_summary();checks=[];charger_rows=[]
@@ -32,6 +31,6 @@ def run():
  for row in bindings:assert hashlib.sha256((ROOT/row['request_path']).read_bytes()).hexdigest()==row['request_sha256']
  hashes=read(ROOT/'protocol/new_task_hashes.json')
  for filename,h in hashes.items():assert hashlib.sha256((OUT/'tasks'/filename).read_bytes()).hexdigest()==h
- write(ROOT/'results/new_summary.json',stats);write(ROOT/'results/new_checks.json',{'pair_checks':checks,'valid_reference_count':len(rows),'frozen_task_hashes_match':True,'prepared_request_hashes_match':True,'distinct_planned_attempts':96,'checks':'pair identity; all reference verification; completed six-layer certificates; frozen task and request identities'});pairs();case();print(stats)
+ write(ROOT/'results/new_summary.json',stats);write(ROOT/'results/new_checks.json',{'pair_checks':checks,'valid_reference_count':len(rows),'frozen_task_hashes_match':True,'prepared_request_hashes_match':True,'distinct_planned_attempts':96,'checks':'pair identity; all reference verification; completed six-layer certificates; frozen task and request identities'});print(stats)
 
 if __name__=='__main__':run()

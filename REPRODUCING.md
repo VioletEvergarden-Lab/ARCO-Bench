@@ -1,6 +1,6 @@
 # Reproducing the saved results
 
-Run commands from the directory containing `README.md`. The supported and tested platform for the complete replay below is Windows x86-64 with Python 3.12.4. The Core-72 scorer requires NumPy 1.26.4 and SciPy 1.13.1. Study replay also imports HiGHS/highspy 1.15.1, NetworkX 3.2.1 and Matplotlib 3.8.4; openpyxl 3.1.5 reads the ADDS workbook.
+Run commands from the directory containing `README.md`. The supported and tested platform for the complete replay below is Windows x86-64 with Python 3.12.4. The Core-72 scorer requires NumPy 1.26.4 and SciPy 1.13.1. Study replay also imports HiGHS/highspy 1.15.1 and NetworkX 3.2.1; openpyxl 3.1.5 reads the ADDS workbook.
 
 The eight-group study entry is Windows-only in this version: archived helpers import `msvcrt` and read Windows-style paths in saved records. Linux and macOS are not supported for the complete study replay; success of an individual command does not establish full-platform support.
 
@@ -37,10 +37,6 @@ The network checks cover 60 conditions, 300 deterministic plans and 120 initial 
 ADDS provides operational context through a public logistics simulation dataset. Generated source demand, locker assignments and saved model geometry are distinguished from the experimental UAV assignments, deadlines, closures and reservation capacities. The source workbook, geometry and construction inputs are bundled; the [ADDS dataset DOI](https://doi.org/10.5281/zenodo.20491777) supplies the full upstream dataset. No FlexSim installation is needed for replay.
 
 For individual records, use `admit.py` for public feasibility or `rescore.py` for reference evaluation. Each response JSONL row contains `record_id` and `raw_text`; the output contract is `schema/output.schema.json`. The `private` evaluator directory names refer to information withheld at generation time, not to a private GitHub dependency.
-
-## Figures
-
-`figures/published/` contains the ten figures supplied with the manuscript. `figures/index.json` maps them to data and source scripts. Run `python -B figures/redraw.py` to write regenerated figures to `figures/generated/`, or use `--only m01b` for a single saved-plan figure. Eight figures reproduce the supplied rendering. Supplementary S1 has a reconstruction from the same data with a different layout; Figure 1 is preserved as supplied because its editable composition source was not included.
 
 ## Optional recomputation and new model outputs
 

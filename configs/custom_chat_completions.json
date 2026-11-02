@@ -1,0 +1,12 @@
+{
+  "name": "my_model",
+  "adapter": "chat_completions",
+  "base_url": "https://YOUR_API_HOST/v1",
+  "model": "YOUR_MODEL_ID",
+  "api_key_env": "MODEL_API_KEY",
+  "prompt_variant": "deepseek",
+  "parameters": {"temperature": 0, "max_tokens": 128000},
+  "suites": ["core72", "original36", "paired24", "adds15"],
+  "concurrency": 1,
+  "timeout_seconds": 7200
+}

@@ -1,0 +1,14 @@
+{
+  "name": "my_responses_model",
+  "adapter": "responses",
+  "base_url": "https://api.openai.com/v1",
+  "model": "YOUR_MODEL_ID",
+  "api_key_env": "OPENAI_API_KEY",
+  "prompt_variant": "luna",
+  "parameters": {"max_output_tokens": 128000, "background": true, "store": false, "stream": false, "tools": []},
+  "suites": ["core72", "original36", "paired24", "adds15"],
+  "concurrency": 1,
+  "timeout_seconds": 120,
+  "poll_seconds": 10,
+  "poll_window_seconds": 14400
+}

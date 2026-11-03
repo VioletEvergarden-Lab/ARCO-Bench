@@ -1,4 +1,4 @@
-"""Offline tests: real local HTTP transport, frozen fixtures, no paid APIs."""
+"""Offline interface tests using reference solutions and a loopback server."""
 from contextlib import contextmanager
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -14,9 +14,23 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from benchmark.config import load as load_config
-from benchmark.data import PRIMARY, SUITES, archived_outputs, canonical, cases, public_task, read
+from benchmark.data import PRIMARY, SUITES, canonical, cases, public_task, read
 from benchmark.runner import prepare
 from benchmark.storage import run_lock, write
+
+
+def reference_outputs(selected):
+    out = []
+    for c in selected:
+        if c['suite'] in ('core72', 'core_anchors'):
+            plan = read(ROOT / 'data/private/evaluator_records' / (c['record_id'] + '.json'))['gold_public_output']
+        else:
+            suite = 'paired24' if c['suite'] == 'paired_repeats' else c['suite']
+            ref = read(ROOT / 'references' / suite / (c['record_id'] + '.json'))
+            plan = dict(record_id=c['public_record_id'], decisions=ref['decisions'])
+        out.append({k: c[k] for k in ('attempt_id', 'suite', 'record_id', 'repeat')} |
+                   {'raw_text': plan if isinstance(plan, str) else json.dumps(plan), 'status': 'completed'})
+    return out
 
 
 class Service:
@@ -24,7 +38,7 @@ class Service:
         self.mode = mode; self.fault = fault; self.posts = []; self.gets = []; self.pending = {}
         self.key = 'local-test-credential'
         selected = cases(PRIMARY, 'luna')
-        self.answers = {c['public_record_id']: r['raw_text'] for c, r in zip(selected, archived_outputs(selected, 'luna'))}
+        self.answers = {c['public_record_id']: r['raw_text'] for c, r in zip(selected, reference_outputs(selected))}
 
     def start(self):
         service = self
@@ -126,15 +140,18 @@ class BenchmarkTests(unittest.TestCase):
                 self.assertEqual(body, case['body'])
                 self.assertEqual(public_task(case)['record_id'], case['public_record_id'])
 
-    def test_saved_results_match_all_paper_primary_counts(self):
-        expected = {'deepseek': [69, 24, 19, 13], 'luna': [68, 32, 22, 15]}
-        for provider in expected:
+    def test_reference_solutions_score_across_all_suites(self):
+        for provider in ('deepseek', 'luna'):
             output = self.root / provider
-            self.cli('replay', '--provider', provider, '--output', output)
+            answers = self.root / (provider + '_answers.jsonl')
+            selected = cases(SUITES, provider)
+            answers.write_text(''.join(json.dumps(r) + '\n' for r in reference_outputs(selected)), encoding='utf-8')
+            self.cli('score', '--config', ROOT / 'configs' / ('paper_' + provider + '.json'),
+                     '--suite', *SUITES, '--responses', answers, '--output', output)
             groups = read(output / 'summary.json')['groups']
-            self.assertEqual([groups[s]['reference_quality'] for s in PRIMARY], expected[provider])
-            self.assertEqual(groups['core72']['selected_reference_quality'], 71)
-            self.assertEqual(groups['adds15']['reference_quality_within_600s'], 9 if provider == 'deepseek' else 11)
+            self.assertEqual({s: groups[s]['reference_quality'] for s in SUITES}, SUITES)
+            self.assertEqual(groups['core72']['selected_reference_quality'], 72)
+            self.assertIsNone(groups['adds15']['reference_quality_within_600s'])
 
     def test_chat_http_all_147_tasks_then_import_and_rescore(self):
         with self.service() as (service, cfg, env):
@@ -142,7 +159,7 @@ class BenchmarkTests(unittest.TestCase):
             self.cli('run', '--config', cfg, '--env-file', env, '--output', output)
             self.assertEqual(len(service.posts), 147)
             groups = read(output / 'summary.json')['groups']
-            self.assertEqual([groups[s]['reference_quality'] for s in PRIMARY], [68, 32, 22, 15])
+            self.assertEqual([groups[s]['reference_quality'] for s in PRIMARY], [72, 36, 24, 15])
             imported = self.root / 'imported'
             self.cli('score', '--config', cfg, '--responses', output / 'responses.jsonl', '--output', imported)
             self.assertEqual(groups, read(imported / 'summary.json')['groups'])
@@ -231,10 +248,12 @@ class BenchmarkTests(unittest.TestCase):
     def test_public_validation_does_not_read_reference_files(self):
         script = '''import sys
 from pathlib import Path
-from benchmark.data import ROOT, PRIMARY, cases, archived_outputs
+from benchmark.data import ROOT, PRIMARY, cases
+sys.path.insert(0,str(ROOT/'tests'))
+from test_benchmark import reference_outputs
 fixtures = {}
 for suite in PRIMARY:
- c = cases([suite], 'luna')[0]; fixtures[suite] = (c, archived_outputs([c], 'luna')[0]['raw_text'])
+ c = cases([suite], 'luna')[0]; fixtures[suite] = (c, reference_outputs([c])[0]['raw_text'])
 def audit(event,args):
  if event == 'open' and args and isinstance(args[0], (str,bytes)):
   p=str(args[0]).replace(chr(92),'/')
@@ -243,6 +262,7 @@ def audit(event,args):
 sys.addaudithook(audit)
 from benchmark.evaluate import Evaluator
 suite=sys.argv[1]; c,text=fixtures[suite]; e=Evaluator(suite,'luna'); assert e.validate(c['attempt_id'],text)['admissible']
+assert e.validate(c['attempt_id'],e.greedy(c['attempt_id']))['admissible']
 '''
         for suite in PRIMARY:
             result = subprocess.run([sys.executable, '-B', '-c', script, suite], cwd=ROOT, capture_output=True, text=True)

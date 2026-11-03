@@ -1,16 +1,14 @@
-"""Unified preparation, generation, scoring and saved-output replay."""
+"""Unified preparation, model generation and independent scoring."""
 import argparse
 import collections
 import concurrent.futures
 import copy
 import json
-import subprocess
-import sys
 from pathlib import Path
 from urllib.parse import parse_qsl, urlsplit
 from benchmark import adapters
 from benchmark.config import credential, load as load_config
-from benchmark.data import ROOT, PRIMARY, SUITES, archived_outputs, canonical, cases, digest, messages, read, select
+from benchmark.data import ROOT, PRIMARY, SUITES, canonical, cases, digest, messages, read, select
 from benchmark.evaluate import Worker
 from benchmark.storage import jsonl, output_path, run_lock, table, write
 from benchmark.transport import MODEL_OUTPUT, attempt
@@ -43,7 +41,7 @@ def prepare(config, selected, output, resume=False):
     output = output_path(output)
     adapter = adapters.load(config['adapter'])
     inputs = [(c, request(c, config, adapter)) for c in selected]
-    entries = [{k: v for k, v in c.items() if k not in ('body', 'archived_terminal')} |
+    entries = [{k: v for k, v in c.items() if k != 'body'} |
                {'prepared_request_sha256': digest(canonical(req))} for c, req in inputs]
     manifest = dict(format_version=1, config=config, config_sha256=digest(canonical(config)), cases=entries,
                     suite_counts=dict(collections.Counter(c['suite'] for c in selected)),
@@ -90,7 +88,7 @@ def summaries(rows, config, mode):
     return dict(mode=mode, model=config['model'], prompt_variant=config['prompt_variant'],
                 planned_attempts=len(rows), groups=groups,
                 metric_denominator='All planned attempts in a suite, only when each has a model output; otherwise rate is null.',
-                selection='Public verifier and lexicographic comparison of the saved greedy plan and the new candidate; ties keep greedy.',
+                selection='Public verifier and lexicographic comparison of the computed greedy plan and the candidate; ties keep greedy.',
                 availability='Request preparation through response parsing and public validation; resumed attempts include interruption time.',
                 optimizer_calls=0)
 
@@ -197,12 +195,12 @@ def import_records(path, selected):
 
 
 def parser():
-    p = argparse.ArgumentParser(description='Run, score or replay ARCO-Bench with one model configuration.')
+    p = argparse.ArgumentParser(description='Run or score ARCO-Bench with one model configuration.')
     sub = p.add_subparsers(dest='command', required=True)
     sub.add_parser('list', help='List available task suites')
-    for name in ('prepare', 'run', 'score', 'replay'):
+    for name in ('prepare', 'run', 'score'):
         q = sub.add_parser(name)
-        q.add_argument('--config', type=Path, required=name != 'replay')
+        q.add_argument('--config', type=Path, required=True)
         q.add_argument('--output', type=Path, required=True)
         q.add_argument('--suite', nargs='+', choices=[*SUITES, 'all'])
         q.add_argument('--record-id', action='append')
@@ -212,9 +210,6 @@ def parser():
             q.add_argument('--resume', action='store_true')
         if name == 'score':
             q.add_argument('--responses', type=Path, required=True)
-        if name == 'replay':
-            q.add_argument('--provider', choices=['deepseek', 'luna'], default='luna')
-            q.add_argument('--checks', action='store_true', help='Also run all eight saved-study diagnostic checks')
     return p
 
 
@@ -222,7 +217,7 @@ def main(argv=None):
     args = parser().parse_args(argv)
     if args.command == 'list':
         print(json.dumps({'primary_suites': list(PRIMARY), 'suites': SUITES}, indent=2)); return 0
-    config = load_config(args.config or ROOT / 'configs' / ('paper_' + args.provider + '.json'))
+    config = load_config(args.config)
     selected = selected_cases(config, args)
     if args.command == 'run':
         if 'YOUR_' in config['model'] or 'YOUR_' in config['base_url']:
@@ -237,11 +232,4 @@ def main(argv=None):
     if args.command == 'score':
         records = import_records(args.responses, selected)
         score_records(config, selected, records, output, 'imported_outputs')
-    else:
-        if config['prompt_variant'] != args.provider:
-            raise ValueError('Replay provider and prompt_variant must match')
-        score_records(config, selected, archived_outputs(selected, args.provider), output, 'archived_outputs')
-        if args.checks:
-            subprocess.run([sys.executable, '-B', str(ROOT / 'studies/replay_saved.py'), '--group', 'all',
-                            '--output', str(output / 'saved_studies')], cwd=ROOT, check=True)
     return 0

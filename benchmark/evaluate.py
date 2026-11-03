@@ -8,7 +8,7 @@ import subprocess
 import sys
 import threading
 from pathlib import Path
-from benchmark.data import ROOT, OLD, PAIRED, ADDS, cases, public_task, read
+from benchmark.data import ROOT, cases, public_task, read
 
 
 def deny(*args, **kwargs):
@@ -27,12 +27,8 @@ class Evaluator:
             import admit
             self.public = admit.public_runtime()
             self.private = None
-        elif suite == 'adds15':
-            sys.path.insert(0, str(ADDS / 'scripts'))
-            from adds_runtime import load_runtime
-            self.engine, *_ = load_runtime()
         else:
-            sys.path.insert(0, str(OLD))
+            sys.path.insert(0, str(ROOT / 'vendor' / ('adds' if suite == 'adds15' else 'network')))
             self.engine = importlib.import_module('continuous_engine')
         import scipy.optimize
         import highspy
@@ -85,12 +81,8 @@ class Evaluator:
                         reference_objective=self.references[rid]['objective'],
                         first_difference=result['lexicographic_first_difference'],
                         construct_fidelity=result['construct_fidelity'])
-        if self.suite == 'adds15':
-            p = ADDS / 'runs/deterministic' / (rid + '__Full-MILP.json')
-        elif self.suite in ('paired24', 'paired_repeats'):
-            p = PAIRED / 'new_networks/references' / (rid + '.json')
-        else:
-            p = OLD / 'networks/references' / (rid + '.json')
+        suite = 'paired24' if self.suite == 'paired_repeats' else self.suite
+        p = ROOT / 'references' / suite / (rid + '.json')
         ref = read(p)
         certified = bool(ref.get('optimal') or ref.get('global_optimal'))
         if aid not in self.reference_checks:
@@ -106,18 +98,23 @@ class Evaluator:
         return dict(reference_quality=rq, reference_certified=certified, reference_objective=ref['objective'], first_difference=first)
 
     def greedy(self, aid):
-        c = self.cases[aid]; rid = c['record_id']
+        c = self.cases[aid]; task = self.tasks[aid]
+        if not hasattr(self, 'policy'):
+            self.policy = {}
+        if aid in self.policy:
+            return self.policy[aid]
         if self.suite in ('core72', 'core_anchors'):
-            if not hasattr(self, 'policy'):
-                self.policy = {r['record_id']: r['raw_text'] for r in
-                               (json.loads(s) for s in (ROOT / 'responses/policy.jsonl').read_text().splitlines() if s)}
-            return self.policy[rid]
-        if self.suite == 'adds15':
-            p = ADDS / 'runs/deterministic' / (rid + '__G.json')
+            if not hasattr(self, 'greedy_runtime'):
+                from rescore import load
+                folder = ROOT / 'vendor/scripts'
+                self.greedy_runtime = (load('greedy_policy', folder / 'run_candidate_a_v12p1_resource_aware_greedy_baseline_v1.py'),
+                                       load('greedy_core', folder / 'integrated_repair_phase_minus1d_core_v1.py'))
+            policy, core = self.greedy_runtime
+            decisions, _ = policy.construct(task['instance'], task['intervention'], task['baseline'], core)
         else:
-            folder = 'new_comparison' if self.suite in ('paired24', 'paired_repeats') else 'comparison'
-            p = PAIRED / 'results' / folder / 'runs' / (rid + '__G.json')
-        return json.dumps(dict(record_id=c['public_record_id'], decisions=read(p)['decisions']))
+            decisions = self.engine.Engine(task).greedy()
+        self.policy[aid] = json.dumps(dict(record_id=c['public_record_id'], decisions=decisions))
+        return self.policy[aid]
 
     def score(self, aid, text, eligible=True):
         v = self.validate(aid, text) if eligible else dict(schema_valid=False, admissible=False, objective=None, errors=[])

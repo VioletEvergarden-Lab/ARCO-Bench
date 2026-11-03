@@ -1,4 +1,4 @@
-"""Single offline entry point; invokes the unmodified archived scorer."""
+"""Core-72 offline scoring with the original verifier and quality criteria."""
 import argparse, importlib.util, json, socket, sys
 from pathlib import Path
 
